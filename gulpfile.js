@@ -57,9 +57,9 @@ gulp.task('textures-json', function() {
 
     gulp.src(['images/backgrounds/textures/*.jpg', 'images/backgrounds/textures/*.png'])
         .pipe(directoryMap({
-        filename: 'textures.json'
-    }))
-    .pipe(gulp.dest('styleguide/compiled-assets'));
+            filename: 'textures.json'
+        }))
+        .pipe(gulp.dest('styleguide/compiled-assets'));
 
 });
 
@@ -67,15 +67,15 @@ gulp.task('patterns-json', function() {
 
     gulp.src(['images/backgrounds/patterns/**/*.jpg', 'images/backgrounds/patterns/**/*.png'])
         .pipe(directoryMap({
-        filename: 'patterns.json'
-    }))
-    .pipe(gulp.dest('styleguide/compiled-assets'));
+            filename: 'patterns.json'
+        }))
+        .pipe(gulp.dest('styleguide/compiled-assets'));
 
 });
 
 gulp.task('styles', function() {
-    gulp.src('source/css/*.scss')
-        .pipe(sass({            
+    gulp.src('source/scss/*.scss')
+        .pipe(sass({
             sass: 'scss',
             fonts: 'fonts',
             debug: true,
@@ -84,13 +84,13 @@ gulp.task('styles', function() {
             sourceComments: true,
             sourcemap: false
         })).on('error', gutil.log)
-      //  .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+        //  .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(gulp.dest('source/css'))
         //.pipe(gulp.dest('app/assets/temp'))
-        
-        .pipe(notify({
-            message: 'Styles task complete'
-        }));
+
+    .pipe(notify({
+        message: 'Styles task complete'
+    }));
 
 
 });
@@ -99,7 +99,7 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
     gulp.watch('source/javascripts/header**/*.js', ['headerjs']);
     gulp.watch('source/javascripts/footer/**/*.js', ['footerjs']);
-    gulp.watch('source/css/**/*.scss', ['styles']);
+    gulp.watch('source/scss/**/*.scss', ['styles']);
 });
 
 
