@@ -1,0 +1,17 @@
+.contents-view td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contents-view table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contentsview .odd:first-child {
+    border-top: 1px solid #ccc;
+}
+
+.contents-view caption a, .contents-view caption {
+    color: #000;
+}

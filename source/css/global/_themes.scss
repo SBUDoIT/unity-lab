@@ -1,0 +1,17 @@
+.blurb-light-theme {
+    .blurb-card {
+        color: #FFF;
+        a {
+            color: $light-gray;
+        }
+        a:hover {
+            color: $gray;
+        }
+    }
+}
+
+.dark-theme {
+    h1, h2, h3, h4, h5, h6, p, a, div, span {
+        color: #333;
+    }
+}

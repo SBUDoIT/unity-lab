@@ -1,0 +1,14 @@
+.row-striped {
+    tr.odd {
+        background-color: #fff;
+    }
+    tr.even {
+        background-color: $light-gray;
+    }
+}
+
+.row-rounded {
+    tr {
+        border-radius: 5px;
+    }
+}

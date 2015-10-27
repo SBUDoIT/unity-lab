@@ -1,0 +1,112 @@
+/* Styles unique to styleguide only */
+/* line 3, stdin */
+.todo, .todo li {
+  list-style: none;
+  list-style-type: none; }
+
+/* line 8, stdin */
+.todo li:before {
+  content: "TODO:";
+  margin-right: 1em; }
+
+/* line 13, stdin */
+.icon-exp {
+  padding: .5em;
+  margin-right: .3em;
+  margin-top: .3em;
+  border: 0.1em solid #ccc;
+  background-color: #fff;
+  display: inline-block; }
+
+/* line 22, stdin */
+.color-blurb {
+  min-height: 50px;
+  padding: 1em;
+  text-align: center;
+  border-radius: .7em;
+  margin-bottom: .7em; }
+
+/* icon catalog */
+/* line 31, stdin */
+ul.icons li {
+  width: 60px;
+  border: 3px solid #ccc;
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+  padding: 5px; }
+
+/* line 40, stdin */
+ul.icons li:hover {
+  border: 3px solid #990000; }
+
+/* line 44, stdin */
+ul.icons li span:before {
+  font-size: 1.5em; }
+
+/* line 48, stdin */
+.overlay-card, .color-card {
+  height: 100px;
+  margin: 0 0 1em; }
+
+/* line 53, stdin */
+.color-picker li, .overlay-picker li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-left: 5px; }
+
+/* line 61, stdin */
+.padding-picker li {
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-left: 5px;
+  background-color: #fff;
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/* line 71, stdin */
+.highlightcard {
+  border-width: 5px; }
+
+/* this is the floating div with all the class names and fun stuff */
+/* line 76, stdin */
+.class_box {
+  position: fixed;
+  width: 300px;
+  right: 1em;
+  top: 10em;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px #a4a4a4;
+  box-shadow: 0px 0px 5px 0px #a4a4a4;
+  border: 1px solid gray;
+  z-index: 99999;
+  float: right;
+  text-align: right;
+  display: none;
+  font-weight: bold; }
+
+/* line 92, stdin */
+.class_box h2 {
+  background-color: #4D4F53;
+  color: #E3E5DD;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 5px 10px; }
+
+/* line 102, stdin */
+.class_box p {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 0px; }
+
+/* line 108, stdin */
+.class_icon {
+  border: 3px solid #4D4F53;
+  text-align: center;
+  padding: 5px 5px 5px 15px;
+  background-color: white; }
