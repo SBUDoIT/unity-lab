@@ -1,0 +1,23 @@
+ol.number {
+    list-style: none !important;
+    counter-reset: number-counter;
+    > li {
+        margin: 0 0 4px;
+        position: relative;
+    }
+    > li:before {
+        content: counter(number-counter) ".";
+        counter-increment: number-counter;
+        padding: 0 8px 0 0;
+        position: absolute;
+        left: -20px;
+    }
+}
+
+ol.upper-alpha > li {
+    list-style: upper-alpha !important;
+}
+
+ol.linenums, ol.linenums li {
+    list-style-type: decimal;
+}

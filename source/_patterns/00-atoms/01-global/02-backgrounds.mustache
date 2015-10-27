@@ -1,0 +1,318 @@
+
+
+<script type="text/javascript">
+
+
+
+
+function getColors()
+{
+	colors = [];
+	//foreach color card
+	
+	$("#colors .allowed-colors .color-card").each(function() {
+
+		classList = $(this).attr('class').split(/\s+/);
+	 	
+	 	$.each(classList, function(index, item) {
+	 		
+	 		if(item.indexOf('bg-') == 0)
+	 		{
+	 			colors.push(item);
+	 		}
+	 	});
+ 	});
+
+ 	
+
+ 	return colors;
+}
+
+function getOverlays()
+{
+	overlays = [];
+	//foreach color card
+	
+	$("#colors .overlay-card").each(function() {
+
+		classList = $(this).attr('class').split(/\s+/);
+	 	
+	 	$.each(classList, function(index, item) {
+	 		
+	 		if(item.indexOf('overlay-') == 0 && item != 'overlay-card')
+	 		{
+	 			overlays.push(item);
+	 		}
+	 	});
+ 	});
+
+ 	return overlays;
+}
+
+function load()
+{
+  	
+  	//get array of colors, build into html list
+  	colors = getColors();
+  	
+
+  	overlays = getOverlays();
+  	overlayList = '';
+	$.each(overlays, function(index, item) {
+				overlayList += "<li class=" + item + "></li>";
+		});	
+  	
+
+  	//create array of paddings, build into html list
+  	paddings = ['fluffy', 'cushy', 'airy', 'spacey', 'comfy', 'cozy', 'snug', 'tight'];
+  	paddingList = '';
+
+  	$.each(paddings, function(index, item) {
+  		paddingList += "<li class=" + item + ">" + item + "</li>";
+  	});
+
+  	//read list of textures from json
+  	$.getJSON("../../data/textures.json", function ( data ) { 
+
+		var items = [];
+		
+
+		var i = 0;
+		var texture="";
+		var container = '';
+		var bgColor = '';
+		$.each(data, function (key, val) {
+				
+			texture = key;
+			defaultColor = data[key].bgDefault;
+			
+			if(!defaultColor)
+				defaultColor='bg-red';
+
+			whitelist = data[key].bgWhitelist;		
+			blacklist = data[key].bgBlacklist;
+			if(whitelist)
+			{
+				
+				colorList = '';
+				$.each(whitelist, function(index, item) {
+  					colorList += "<li class=" + item + "></li>";
+  				});
+			}
+			else if(blacklist)
+			{
+				
+				colorList = '';
+				$.each(colors, function(index, item) {
+					
+  					if($.inArray(item, blacklist) < 0)
+  					{
+  						colorList += "<li class=" + item + "></li>";
+  					}
+  					
+  				});	
+			}
+			else
+			{
+				colorList = '';
+				$.each(colors, function(index, item) {
+  						colorList += "<li class=" + item + "></li>";
+  				});	
+			}
+
+	
+			
+
+            defaultPadding = "fluffy"
+			texture = "bg-texture-" + texture;
+			heading = defaultPadding + " " + texture + " " + defaultColor;
+			 items.push( "<section id='texture-" + i + "' class='" + defaultColor + " " + defaultPadding + " " + texture + "'><div class='container'><div class='row'><div class='col-sm-12'><h2 class='section-header section-themeable'>" + heading + "</h2><ul class='color-picker'>" + colorList + "</ul><ul class='padding-picker'>" + paddingList + "</ul></div></div></div></section>" );
+			 i++;
+		});
+
+ 		$( "#bg-textures").append(items.join(""));
+
+ 			//when a padding size gets clicked on...
+	 	$('#bg-textures .padding-picker li').click( function() {
+
+		 	li = $(this); //padding that got clicked on
+	 		section = $(this).parent().closest("section"); //section the padding item lives in
+	 		classList = section.attr('class').split(/\s+/); //build array of classes on that section
+
+		 	$.each(classList, function(index, item) { //search classes remove existing padding
+
+		 		if($.inArray(item, paddings) >= 0)
+		 		{
+		 			section.removeClass(item);
+		 		}
+		 	});
+
+	 		section.addClass(li.attr('class')); //add clicked padding to section
+	 		$('#' + section[0].id + ' h2').html(section.attr('class'));
+	 	});
+
+	 	 		//when a color gets clicked on...
+		$('#bg-textures .color-picker li').click( function() {
+
+		 	li = $(this); //what got clicked
+ 			section = $(this).parent().closest("section"); //the section the clicked item lives in
+ 			classList = section.attr('class').split(/\s+/); //build array of classes on that section
+			
+			//search class array looking for bg-color 				
+ 			$.each(classList, function(index, item) {
+ 		
+		 		if(item.indexOf('bg-') == 0 && item.indexOf('bg-texture') < 0)
+		 		{
+		 			section.removeClass(item);
+		 		}
+ 			});
+
+ 			//add clicked bg-color to section
+ 			section.addClass(li.attr('class'));
+ 			
+ 			$('#' + section[0].id + ' h2').html(section.attr('class'));
+ 		});
+
+ 	});
+
+
+	$.getJSON("../../data/patterns.json", function ( data ) { 
+
+		var items = [];
+
+				
+
+		var i = 0;
+		var pattern="";
+		var container = '';
+		var overlayColor = '';
+		$.each(data, function (key, val) {
+
+
+
+			pattern = key;
+
+			overlayDefault = data[key].overlayDefault;
+			
+			if(!overlayDefault)
+				overlayDefault='overlay-red';
+
+			whitelist = data[key].overlayWhitelist;		
+			blacklist = data[key].overlayBlacklist;
+			if(whitelist)
+			{
+
+				overlayList = '';
+				$.each(whitelist, function(index, item) {
+  					overlayList += "<li class=" + item + "></li>";
+  				});
+			}
+			else if(blacklist)
+			{
+				
+				overlayList = '';
+				$.each(overlays, function(index, item) {
+					
+  					if($.inArray(item, blacklist) < 0)
+  					{
+  						overlayList += "<li class=" + item + "></li>";
+  					}
+  				});	
+			}
+			else
+			{
+				overlayList = '';
+				$.each(overlays, function(index, item) {
+  						overlayList += "<li class=" + item + "></li>";
+  				});	
+			}
+
+			console.log(overlayList);
+
+
+	
+			pattern = "bg-pattern-" + pattern;
+			heading = "fluffy " + pattern + " " + overlayDefault;
+			 items.push( "<section id='pattern-" + i + "' class='" + overlayDefault + " fluffy " + pattern + "'><div class='container'><div class='row'><div class='col-sm-12'><h2 class='section-header white'>" + heading + "</h2><ul class='overlay-picker'>" + overlayList + "</ul><ul class='padding-picker'>" + paddingList + "</ul></div></div></div></section>" );
+			 i++;
+		});
+
+ 		$( "#bg-patterns").append(items.join(""));
+
+ 		//when a color gets clicked on...
+		$('#bg-patterns .overlay-picker li').click( function() {
+
+		 	li = $(this); //what got clicked
+ 			section = $(this).parent().closest("section");
+ 			heading = $(this).closest("h2");
+ 			
+ 			classList = section.attr('class').split(/\s+/); //build array of classes on that section
+			
+			//search class array looking for bg-color 				
+ 			$.each(classList, function(index, item) {
+ 		
+		 		if(item.indexOf('overlay-') == 0)
+		 		{
+		 			section.removeClass(item);
+		 		}
+ 			});
+
+ 			//add clicked bg-color to section
+ 			section.addClass(li.attr('class'));
+ 			$('#' + section[0].id + ' h2').html(section.attr('class'));
+ 			
+ 			
+ 		});
+
+		//when a padding size gets clicked on...
+	 	$('#bg-patterns .padding-picker li').click( function() {
+
+		 	li = $(this); //padding that got clicked on
+	 		section = $(this).parent().closest("section"); //section the padding item lives in
+	 		classList = section.attr('class').split(/\s+/); //build array of classes on that section
+
+		 	$.each(classList, function(index, item) { //search classes remove existing padding
+
+		 		if($.inArray(item, paddings) > 0)
+		 		{
+		 			
+		 			section.removeClass(item);
+		 		}
+		 	});
+
+	 		section.addClass(li.attr('class')); //add clicked padding to section
+	 		$('#' + section[0].id + ' h2').html(section.attr('class'));
+	 	});
+
+ 	});
+}
+
+ 
+ 	
+function setup()
+{
+
+
+
+load();
+
+
+
+}
+  
+
+
+  $(document).ready(setup);
+</script>
+
+
+<div id="bg-textures">
+<section class='fluffy'><div class='container'><div class='row'><div class='col-sm-12'><h2 class='section-header'>Textures</h2><p class="introduction">Textures are translucent background images that repeat in both x and y direction. They're coloring is modified by placing a background color on the bottom.</p></div></div></div></section>
+</div>
+
+
+<div id="bg-patterns">
+
+<section class='fluffy'><div class='container'><div class='row'><div class='col-sm-12'><h2 class='section-header'>Patterns</h2><p class="introduction">Patterns are opaque background images that repeat in both x and y direction. They're coloring is modified by placing a color overlay on top.</p></div></div></div></section>
+
+</div>
