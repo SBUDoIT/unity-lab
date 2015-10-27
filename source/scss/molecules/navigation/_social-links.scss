@@ -1,0 +1,81 @@
+    .social-link
+    {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+border-radius: 50%;
+color: #fff;
+padding: 30px;
+    }
+
+    .social-link--icon:before
+    {
+        margin-right: 0;
+          font-family: 'sbu-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Enable Ligatures ================ */
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+  
+    
+    .social-link--facebook
+    {
+        background-color: $facebook;
+        //padding: 12px 12px 0;
+    }
+
+    .social-link--facebook .social-link--icon:before
+    {
+        content: "\eee8";
+    }
+
+    .social-link--twitter
+    {
+        background-color: $twitter;
+     
+    }
+
+    .social-link--twitter .social-link--icon:before
+    {
+        content: "\eeed";
+    }
+
+    .social-link--youtube
+    {
+        background-color: $red;
+        
+    }
+
+    .social-link--flickr
+    {
+        background-color: #0063dc;
+        
+    }
+
+
+    .social-link--instagram
+    {
+        background-color: #3f729b;
+        
+
+    }
+
+   .social-link--yammer
+   {
+    background-color: $yammer;
+    
+   }
+

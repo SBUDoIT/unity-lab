@@ -1,0 +1,171 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "f93b8628ad324527f07b581416a70fe3",
+    "content-hash": "f218a51339225927d3215d8ec3cdd4ba",
+    "packages": [
+        {
+            "name": "pattern-lab/plugin-kss",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pattern-lab/plugin-php-kss.git",
+                "reference": "eb58bb92394bdb913fdc7fb713b17faf0311af1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pattern-lab/plugin-php-kss/zipball/eb58bb92394bdb913fdc7fb713b17faf0311af1b",
+                "reference": "eb58bb92394bdb913fdc7fb713b17faf0311af1b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.6",
+                "scan/kss-php": "~1.0"
+            },
+            "type": "patternlab-plugin",
+            "extra": {
+                "patternlab": {
+                    "dist": {
+                        "componentDir": [
+                            {
+                                "*": "*"
+                            }
+                        ]
+                    },
+                    "onready": "",
+                    "callback": "Dispatcher.addListener(\"codePanelRenderDone\", PluginKSS.insert);"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PatternLab\\KSSPlugin": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Olsen",
+                    "email": "dmolsen@gmail.com",
+                    "homepage": "http://dmolsen.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "KSS Plugin for Pattern Lab ",
+            "homepage": "http://patternlab.io",
+            "keywords": [
+                "kss",
+                "pattern lab",
+                "style guide"
+            ],
+            "time": "2015-02-07 19:19:22"
+        },
+        {
+            "name": "scan/kss-php",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scaninc/kss-php.git",
+                "reference": "eb44330cc01c6f0202e3621644de1a18c6955d27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scaninc/kss-php/zipball/eb44330cc01c6f0202e3621644de1a18c6955d27",
+                "reference": "eb44330cc01c6f0202e3621644de1a18c6955d27",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/finder": "~2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Scan\\Kss\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Russell Ahlstrom",
+                    "email": "russell.ahlstrom@gmail.com",
+                    "homepage": "http://russell.ahlstromology.com"
+                }
+            ],
+            "description": "A PHP implementation of KSS: a methodology for documenting CSS and generating styleguides",
+            "keywords": [
+                "css documentation",
+                "kss",
+                "styleguide"
+            ],
+            "time": "2014-08-18 19:04:07"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v2.7.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d",
+                "reference": "2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-10-11 09:39:48"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "pattern-lab/plugin-kss": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

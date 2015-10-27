@@ -1,6 +1,14 @@
-<ul class="nav-footer">
-	<li><a href="{{ url }}">Home</a></li>
-	<li><a href="{{ url }}">About</a></li>
-	<li><a href="{{ url }}">Blog</a></li>
-	<li><a href="{{ url }}">Contact</a></li>
-</ul>
+<div class="nav-footer">
+    <h2 class="nav-footer--heading">Contact DoIT</h2>
+    <ul class="nav-footer--list">
+        <li class="nav-footer--item"><a class="nav-footer--link" href="{{ url }}">Home</a></li>
+        <li class="nav-footer--item"><a class="nav-footer--link" href="{{ url }}">About</a></li>
+        <li class="nav-footer--item"><a class="nav-footer--link" href="{{ url }}">Blog</a>
+            <ul class="nav-footer--list">
+                <li class="nav-footer--item"><a class="nav-footer--link" href="{{ url }}">Blog Page 1</a></li>
+                <li class="nav-footer--item"><a class="nav-footer--link" href="{{ url }}">Blog Page 2</a></li>
+            </ul>
+        </li>
+        <li class="nav-footer--item"><a class="nav-footer--link" href="{{ url }}">Contact</a></li>
+    </ul>
+</div>

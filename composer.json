@@ -1,0 +1,7 @@
+{
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require": {
+		"pattern-lab/plugin-kss": "dev-master"
+	}
+}
