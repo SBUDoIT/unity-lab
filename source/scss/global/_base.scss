@@ -13,6 +13,7 @@
 @import "mixins";
 @import "extendables";
 @import "misc";
+
 html {
     box-sizing: border-box;
 }
@@ -32,10 +33,6 @@ html {
     padding: 0;
     position: absolute;
     width: 1px;
-}
-
-.align-left {
-    text-align: left !important;
 }
 
 .position-relative {
