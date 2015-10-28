@@ -1,0 +1,49 @@
+/* ==========================================================================
+Hero
+========================================================================== */
+.hero-modern {
+    position: relative;
+    padding: 60px 0 60px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    width: 100%;
+    &.hero-size-small {
+        min-height: 400px;
+        .hero-content {
+            margin: 100px 0 100px 0;
+            font-weight: 300;
+        }
+    }
+    &.hero-size-medium {
+        min-height: 600px;
+        .hero-content {
+            margin: 150px 0 150px 0;
+            font-weight: 300;
+        }
+    }
+    &.hero-size-large {
+        min-height: 800px;
+        .hero-content {
+            margin: 200px 0 200px 0;
+            font-weight: 300;
+        }
+    }
+}
+
+.hero-modern--content {
+    text-align: center;
+    padding: 2em 0;
+
+    p
+    {
+        margin: 1em 0;
+    }
+    p a
+    {
+        color: #ccc;
+        border-bottom: 1px #ccc dashed;
+    }
+}
+

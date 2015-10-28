@@ -1,8 +1,9 @@
 {
-	"emergency": {
-		"alertClass" : "emergency",
+	"notification": {
+		"alertClass" : "notification",
 		"excerpt" : {
 			"short" : "Emergency! This is a variation of the core homepage template."
-		}
+		},
+		"title": "This is a Notification"
 	}
 }

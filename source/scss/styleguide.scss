@@ -1,3 +1,7 @@
+@import "libraries/breakpoint/breakpoint";
+@import "libraries/bootstrap/bootstrap/variables";
+@import "global/variables";
+
 /* Styles unique to styleguide only */
 
 .todo, .todo li {
@@ -47,8 +51,13 @@ ul.icons li span:before {
 
 .overlay-card, .color-card {
     height: 100px;
-    margin: 0 0 1em;
+  
+     width: 30%; 
+     float: left; 
+     margin: 1.5%;
 }
+
+
 
 .color-picker li, .overlay-picker li {
     width: 30px;
@@ -111,3 +120,25 @@ ul.icons li span:before {
     padding: 5px 5px 5px 15px;
     background-color: white;
 }
+
+#hero-example
+{
+
+
+background-image:url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-550.jpg);
+
+
+
+@include breakpoint($break2)
+{
+    background-image:url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-1200.jpg);
+}
+
+@include breakpoint($break3)
+{  
+    background-image:url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-1600.jpg);
+}
+
+
+}
+

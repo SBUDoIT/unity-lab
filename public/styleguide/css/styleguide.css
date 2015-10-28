@@ -892,12 +892,3 @@ div.clear {
 /******************************************************************/
 /* End Pattern Lab Interface code */
 
-.overlay-card, .color-card {
-    height: 100px;
-    margin: 0 0 1em;
-}
-
-.sg-main {
-    max-width: 70em;
-    margin: 0 auto;
-}

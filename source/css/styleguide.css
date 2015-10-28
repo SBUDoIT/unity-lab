@@ -1,15 +1,22 @@
+/*
+$grids: add-grid(1);
+$grids: add-grid(4 at $break);
+$grids: add-grid(16 at $break2);
+$grids: add-grid(16 at $break3);
+$grids: add-grid(16 at $break4);
+*/
 /* Styles unique to styleguide only */
-/* line 3, stdin */
+/* line 7, stdin */
 .todo, .todo li {
   list-style: none;
   list-style-type: none; }
 
-/* line 8, stdin */
+/* line 12, stdin */
 .todo li:before {
   content: "TODO:";
   margin-right: 1em; }
 
-/* line 13, stdin */
+/* line 17, stdin */
 .icon-exp {
   padding: .5em;
   margin-right: .3em;
@@ -18,7 +25,7 @@
   background-color: #fff;
   display: inline-block; }
 
-/* line 22, stdin */
+/* line 26, stdin */
 .color-blurb {
   min-height: 50px;
   padding: 1em;
@@ -27,7 +34,7 @@
   margin-bottom: .7em; }
 
 /* icon catalog */
-/* line 31, stdin */
+/* line 35, stdin */
 ul.icons li {
   width: 60px;
   border: 3px solid #ccc;
@@ -36,20 +43,22 @@ ul.icons li {
   text-align: center;
   padding: 5px; }
 
-/* line 40, stdin */
+/* line 44, stdin */
 ul.icons li:hover {
   border: 3px solid #990000; }
 
-/* line 44, stdin */
+/* line 48, stdin */
 ul.icons li span:before {
   font-size: 1.5em; }
 
-/* line 48, stdin */
+/* line 52, stdin */
 .overlay-card, .color-card {
   height: 100px;
-  margin: 0 0 1em; }
+  width: 30%;
+  float: left;
+  margin: 1.5%; }
 
-/* line 53, stdin */
+/* line 62, stdin */
 .color-picker li, .overlay-picker li {
   width: 30px;
   height: 30px;
@@ -57,7 +66,7 @@ ul.icons li span:before {
   display: inline-block;
   margin-left: 5px; }
 
-/* line 61, stdin */
+/* line 70, stdin */
 .padding-picker li {
   border: 1px solid #fff;
   display: inline-block;
@@ -67,12 +76,12 @@ ul.icons li span:before {
   padding-left: 10px;
   padding-right: 10px; }
 
-/* line 71, stdin */
+/* line 80, stdin */
 .highlightcard {
   border-width: 5px; }
 
 /* this is the floating div with all the class names and fun stuff */
-/* line 76, stdin */
+/* line 85, stdin */
 .class_box {
   position: fixed;
   width: 300px;
@@ -88,7 +97,7 @@ ul.icons li span:before {
   display: none;
   font-weight: bold; }
 
-/* line 92, stdin */
+/* line 101, stdin */
 .class_box h2 {
   background-color: #4D4F53;
   color: #E3E5DD;
@@ -98,15 +107,27 @@ ul.icons li span:before {
   margin: 0px;
   padding: 5px 10px; }
 
-/* line 102, stdin */
+/* line 111, stdin */
 .class_box p {
   text-align: left;
   padding: 10px;
   margin-bottom: 0px; }
 
-/* line 108, stdin */
+/* line 117, stdin */
 .class_icon {
   border: 3px solid #4D4F53;
   text-align: center;
   padding: 5px 5px 5px 15px;
   background-color: white; }
+
+/* line 124, stdin */
+#hero-example {
+  background-image: url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-550.jpg); }
+  @media (min-width: 800px) {
+    /* line 124, stdin */
+    #hero-example {
+      background-image: url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-1200.jpg); } }
+  @media (min-width: 960px) {
+    /* line 124, stdin */
+    #hero-example {
+      background-image: url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-1600.jpg); } }
