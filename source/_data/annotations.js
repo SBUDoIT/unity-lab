@@ -31,9 +31,15 @@ var comments = {
 		"comment": "<p>The hero area highlights one major story using a large image and a captivating headline.</p>"
 	},
 	{
+		"el": "#hero-example",
+		"title" : "Hero Images",
+		"comment": "The hero images are loaded via an external piece of CSS"
+	},
+	{
 		"el": ".heading-annotation",
 		"title" : "Headings",
 		"comment": "<ul><li>The Site Name is always H1</li><li>Each new section should restart from h1.</li><li>Sub-headings should be H2’s, sub-sub-headings should be H3’s, etc.</li><li>Do not skip headings, do not break heading nesting</li><li>Each heading should contain valuable keywords, if not, it’s a wasted heading.</li><li>In longer pieces of content, a heading is what helps a reader skip to the parts that they find interesting.</li></ul>Sources: <a href='http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824'>http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824</a>"
 	}
+
 ]
 };

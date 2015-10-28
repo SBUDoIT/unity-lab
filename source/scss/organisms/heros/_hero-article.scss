@@ -1,8 +1,8 @@
-.hero-bottom-fade {
+.hero-article {
     position: relative;
 }
 
-.hero-bottom-fade--content-wrap {
+.hero-article--content-wrap {
     margin: 0;
     padding: 1em 2em;
     background: rgba(255, 255, 255, 0.4);
@@ -28,21 +28,21 @@
     /* IE6-9 */
 }
 
-.hero-bottom-fade--content-text {
+.hero-article--content-text {
     max-width: 1200px;
     margin: 0 auto;
     color: #fff;
 }
 
-.hero-bottom-fade--content-heading {
+.hero-article--content-heading {
     font-size: 2.5em;
 }
 
-.hero-bottom-fade--content-text a {
+.hero-article--content-text a {
     color: #fff;
 }
 
-.hero-bottom-fade--content-text p a {
+.hero-article--content-text p a {
     color: #ccc;
     border-bottom: 1px dashed #ccc;
     text-decoration: none;
