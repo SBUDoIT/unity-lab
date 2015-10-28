@@ -1,17 +1,26 @@
-    .social-link
-    {
-        display: inline-block;
-        width: 200px;
-        height: 200px;
-border-radius: 50%;
-color: #fff;
-padding: 30px;
-    }
+.social-link {
+    display: inline-block;
+    padding: 10px 10px 0;
+    margin: 0 4px;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    border: 1px solid #383838;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.4em;
+    line-height: 0;
+    text-shadow: 0 0 4px rgba(70, 70, 70, 0.3);
+    color: #ccc;
+}
 
-    .social-link--icon:before
-    {
-        margin-right: 0;
-          font-family: 'sbu-icons';
+.social-link:hover {
+    color: #fff;
+}
+
+.social-link:before {
+    margin-right: 0;
+    font-family: 'sbu-icons';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -28,54 +37,53 @@ padding: 30px;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    }
-  
-    
-    .social-link--facebook
-    {
-        background-color: $facebook;
-        //padding: 12px 12px 0;
-    }
+}
 
-    .social-link--facebook .social-link--icon:before
-    {
-        content: "\eee8";
-    }
+.social-link--facebook {
+    background-color: $facebook;
+    //padding: 12px 12px 0;
+}
 
-    .social-link--twitter
-    {
-        background-color: $twitter;
-     
-    }
+.social-link--facebook:before {
+    content: "\f09a";
+}
 
-    .social-link--twitter .social-link--icon:before
-    {
-        content: "\eeed";
-    }
+.social-link--twitter {
+    background-color: $twitter;
+}
 
-    .social-link--youtube
-    {
-        background-color: $red;
-        
-    }
+.social-link--twitter:before {
+    content: "\eeed";
+}
 
-    .social-link--flickr
-    {
-        background-color: #0063dc;
-        
-    }
+.social-link--youtube {
+    background-color: $red;
+}
 
+.social-link--youtube:before {
+    content: "\eef3";
+}
 
-    .social-link--instagram
-    {
-        background-color: #3f729b;
-        
+.social-link--flickr {
+    background-color: #0063dc;
+}
 
-    }
+.social-link--flickr:before {
+    content: "\f16e";
+}
 
-   .social-link--yammer
-   {
+.social-link--instagram {
+    background-color: #3f729b;
+}
+
+.social-link--instagram:before {
+    content: "\f16d";
+}
+
+.social-link--yammer {
     background-color: $yammer;
-    
-   }
+}
 
+.social-link--yammer:before {
+    content: "\e601";
+}
