@@ -1,11 +1,13 @@
 &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
 	{{&gt; organisms-header }}
+	{{&gt; molecules-primary-nav}}
+
 	&lt;div role=&quot;main&quot;&gt;
 		{{# emergency }}
 			{{&gt; organisms-alert:emergency }}
 		{{/ emergency }}
 		{{# hero }}
-			{{&gt; organisms-hero-modern }}
+			
 		{{/ hero}}
 
 		{{# notification }}
@@ -13,26 +15,47 @@
 		{{/ notification }}
 		
 		
-		&lt;div class=&quot;row fluffy&quot;&gt;
+&lt;section class=&quot;fluffy&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;drop-accordion-cards&quot;&gt;
+         {{# listItems.three }}
+                
+                    {{&gt; molecules-drop-accordion }} 
+                
+            {{/ listItems.three }}                
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
 
-		&lt;div class=&quot;container&quot;&gt;
-		&lt;div class=&quot;col-sm-12&quot;&gt;
-		&lt;h2 class=&quot;text-center&quot;&gt;Accordions!&lt;/h2&gt;
-		{{&gt; organisms-accordion}}
-	&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;/div&gt;
 
 
-&lt;div class=&quot;row fluffy bg-light-gray&quot;&gt;
 
-		&lt;div class=&quot;container&quot;&gt;
-		&lt;div class=&quot;col-sm-12&quot;&gt;
-		&lt;h2 class=&quot;text-center&quot;&gt;Tab!&lt;/h2&gt;
-		{{&gt; organisms-tab}}
-	&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;/div&gt;
+&lt;section class=&quot;fluffy&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+
+         {{# listItems.three }}
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    {{&gt; molecules-simple-blurb }} 
+                &lt;/div&gt;
+            {{/ listItems.three }}
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;fluffy&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+         {{# listItems.three }}
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    {{&gt; molecules-classic-blurb }} 
+                &lt;/div&gt;
+            {{/ listItems.three }}                
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
 
 
 

@@ -1,0 +1,76 @@
+/* Drop accordion */
+
+.drop-accordion-cards {
+    margin: 0 0 1.1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.drop-accordion-card {
+    margin-bottom: 2em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.drop-accordion-card--tab,
+.drop-accordion-card--link {
+    background: $x-light-gray;
+    color: $dark-gray;
+    display: block;
+    border: 1px solid $gray;
+    font-size: 1.3em;
+    font-family: 'Trade Gothic W01 Light';
+    cursor: pointer;
+    z-index: 101;
+    padding: 1em 1.5em;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .drop-accordion-card--icon {
+        display: inline-block;
+        font-size: 2em;
+        margin-right: 1em;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        color: $red;
+    }
+}
+
+.js-drop-accordion-card__active .drop-accordion-card--icon {
+    color: $red;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.drop-accordion-card--content-wrap {
+    margin: -1.1em 0 0 0;
+    background: $x-light-gray;
+    border: 0.1em solid $gray;
+    z-index: 100;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: none;
+}
+
+.drop-accordion-card--content
+{
+
+    
+    padding: 3em;
+
+    p,
+    li {
+        font-size: 1.1em;
+        line-height: 1.8em;
+    }
+}

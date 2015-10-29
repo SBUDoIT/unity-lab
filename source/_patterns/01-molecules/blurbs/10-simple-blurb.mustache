@@ -1,0 +1,24 @@
+<div class="simple-blurb" data-match-height="simple-blurb">
+   
+	{{# icon }}
+    <span class="simple-blurb--icon {{icon}}"></span>
+    {{/ icon }}
+
+    <h2 class="simple-blurb--heading">{{ headline.medium }}</h2>
+    
+	{{# headline.short }}
+    <h3 class="simple-blurb--subheading">{{ headline.short }}</h3>
+    {{/ headline.short }}
+
+    <div class="simple-blurb--item">
+        {{{paragraph.double}}}
+    </div>
+
+    
+    {{# cta }}
+    <div class="simple-blurb--cta">
+        <a href="{{cta.url}}" class="{{cta.class}}">{{cta.text}}</a>
+    </div>
+    {{/ cta }}
+
+</div>

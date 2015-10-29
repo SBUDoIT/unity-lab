@@ -1,11 +1,13 @@
 <div class="page" id="page">
 	{{> organisms-header }}
+	{{> molecules-primary-nav}}
+
 	<div role="main">
 		{{# emergency }}
 			{{> organisms-alert:emergency }}
 		{{/ emergency }}
 		{{# hero }}
-			{{> organisms-hero-modern }}
+			
 		{{/ hero}}
 
 		{{# notification }}
@@ -13,26 +15,47 @@
 		{{/ notification }}
 		
 		
-		<div class="row fluffy">
+<section class="fluffy">
+    <div class="container">
+        <div class="row">
+        <div class="drop-accordion-cards">
+         {{# listItems.three }}
+                
+                    {{> molecules-drop-accordion }} 
+                
+            {{/ listItems.three }}                
+        </div>
+    </div>
+</section>
 
-		<div class="container">
-		<div class="col-sm-12">
-		<h2 class="text-center">Accordions!</h2>
-		{{> organisms-accordion}}
-	</div>
-	</div>
-	</div>
 
 
-<div class="row fluffy bg-light-gray">
 
-		<div class="container">
-		<div class="col-sm-12">
-		<h2 class="text-center">Tab!</h2>
-		{{> organisms-tab}}
-	</div>
-	</div>
-	</div>
+<section class="fluffy">
+    <div class="container">
+        <div class="row">
+
+         {{# listItems.three }}
+                <div class="col-md-4">
+                    {{> molecules-simple-blurb }} 
+                </div>
+            {{/ listItems.three }}
+        </div>
+    </div>
+</section>
+
+<section class="fluffy">
+    <div class="container">
+        <div class="row">
+         {{# listItems.three }}
+                <div class="col-md-4">
+                    {{> molecules-classic-blurb }} 
+                </div>
+            {{/ listItems.three }}                
+        </div>
+    </div>
+</section>
+
 
 
 

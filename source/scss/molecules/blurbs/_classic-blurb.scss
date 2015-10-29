@@ -1,0 +1,50 @@
+.classic-blurb {
+
+    position: relative;
+    margin-bottom: 3em;
+}
+
+.classic-blurb--icon {
+
+        @extend .blurb--icon;
+
+        position: absolute;
+        height: 2em;
+        width: 2em;
+        left: 0;
+        top: -.45em;
+        text-align: center;
+        font-size: 3em;
+        display: inline-block;
+        line-height: 1;
+
+}
+
+.classic-blurb--content
+{
+
+        padding-left: 6em;
+}
+
+.classic-blurb--heading {
+
+    @extend .blurb--heading
+}
+
+.classic-blurb--subheading {
+
+    @extend .blurb--subheading
+}
+
+.classic-blurb--item {
+
+    @extend .blurb--item;
+
+}
+
+.classic-blurb-cta {
+
+            @extend .blurb--call-to-action;
+        }
+
+

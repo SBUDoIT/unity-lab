@@ -1,0 +1,31 @@
+
+.simple-blurb {
+
+    padding: 2em;
+}
+
+.simple-blurb--icon {
+
+        @extend .blurb--icon;
+}
+
+
+    .simple-blurb--heading {
+
+        @extend .blurb--heading;
+    }
+    .simple-blurb--subheading {
+
+        @extend .blurb--subheading;
+        margin-top: -.3em;
+    }
+
+    .simple-blurb--item {
+        @extend .blurb--item;
+    }
+
+    .simple-blurb--cta {
+
+        @extend .blurb--cta;
+
+    }
