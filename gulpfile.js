@@ -97,7 +97,7 @@ gulp.task('styles', function() {
 
 
 gulp.task('watch', function() {
-    gulp.watch('source/javascripts/header**/*.js', ['headerjs']);
+    gulp.watch('source/javascripts/header/**/*.js', ['headerjs']);
     gulp.watch('source/javascripts/footer/**/*.js', ['footerjs']);
     gulp.watch('source/scss/**/*.scss', ['styles']);
 });

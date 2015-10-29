@@ -23,6 +23,9 @@
 				"alt": "16x9 Image"
 			}
 		},
+
+		"icon" : "sbuicon-glass",
+
 		"headline": {
 			"short": "Lorizzle pimpin' dolizzle sit amet I",
 			"medium": "Rizzle adipiscing elizzle. Nullam sapien velizzle, shit volutpizzle, my"
@@ -96,6 +99,9 @@
 				"alt": "16x9 Image"
 			}
 		},
+
+		"icon" : "sbuicon-music",
+
 		"headline": {
 			"short": "Veggies sunt bona vobis, proinde vos",
 			"medium": "Postulo esse magis azuki bean burdock brussels sprout quandong komatsun"
@@ -169,6 +175,9 @@
 				"alt": "16x9 Image"
 			}
 		},
+
+		"icon" : "sbuicon-search2",
+
 		"headline": {
 			"short": "Bacon ipsum dolor sit amet spare rib",
 			"medium": "Tongue pancetta short ribs bacon. Kielbasa ball tip cow bresaola, capic"
@@ -242,6 +251,9 @@
 				"alt": "16x9 Image"
 			}
 		},
+
+		"icon" : "sbuicon-envelope-o",
+
 		"headline": {
 			"short": "Nesciunt sunt cillum keytar Pitchfork",
 			"medium": "Tote bag mixtape PBR Helvetica scenester forage four loko. Irure Tonx"
@@ -319,6 +331,9 @@
 			"short": "Blog meme masthead DocumentCloud Fou",
 			"medium": "Square tabloid Andy Carvin stupid commenters, Nick Denton mathewi semip"
 		},
+
+		"icon" : "sbuicon-heart",
+
 		"excerpt": {
 			"short": "I love the Weather & Opera section Groupon copyright in the slot, Journal Register open newsroom analytics future totally blowing up on Twitter AOL.",
 			"medium": "CTR mthomps Flipboard do what you do best and link to the rest Buttry media bias Journal Register RT, newspaper strike do what you do best and link to the rest semipermeable learnings cognitive surplus mathewi, Encyclo Google News.",
@@ -388,6 +403,9 @@
 				"alt": "16x9 Image"
 			}
 		},
+
+		"icon" : "sbuicon-star",
+
 		"headline": {
 			"short": "Hong Kong Phooey, number one super g",
 			"medium": "Hong Kong Phooey, quicker than the human eye. He's got style, a groovy"
@@ -461,6 +479,7 @@
 				"alt": "16x9 Image"
 			}
 		},
+		"icon" : "sbuicon-star-o",
 		"headline": {
 			"short": "Now that we know who you are, I know",
 			"medium": "Who I am. I'm not a mistake! It all makes sense! In a comic, you know"
@@ -538,6 +557,7 @@
 			"short": "Webtwo ipsum dolor sit amet, eskobo",
 			"medium": "Chumby doostang bebo. Wakoopa oooj geni zoho loopt eskobo sifteo chart"
 		},
+		"icon" : "sbuicon-user2",
 		"excerpt": {
 			"short": "Dropio, chumby waze dopplr plugg oooj yammer jibjab imvu yuntaa knewton, mobly trulia airbnb bitly chegg tivo empressr knewton. Plickers spock voxy.",
 			"medium": "Zooomr kippt voxy zinch appjet napster trulia, zappos wufoo zapier spotify mzinga jaiku fleck, disqus lijit voxy voki yoono. Dogster elgg jibjab xobni kazaa bebo udemy sifteo kiko, elgg knewton skype mog octopart zoodles kazaa udem.",
@@ -585,6 +605,7 @@
 	},
 	"9": {
 		"title": "Rebel Mission to Ord Mantell",
+		"icon" : "sbuicon-film",
 		"img": {
 			"avatar": {
 				"src": "http://placeimg.com/100/100/any/sepia",
@@ -680,10 +701,14 @@
 				"alt": "16x9 Image"
 			}
 		},
+
+		"icon" : "sbuicon-th-large",
+
 		"headline": {
 			"short": "The swallow may fly south with the sun",
 			"medium": "On second thoughts, let's not go there. It is a silly place. You don't"
 		},
+
 		"excerpt": {
 			"short": "The swallow may fly south with the sun, and the house martin or the plover may seek warmer climes in winter, yet these are not strangers to our land.",
 			"medium": "The Knights Who Say Ni demand a sacrifice! Found them? In Mercia?! The coconut's tropical! Where'd you get the coconuts? Why do you think that she is a witch? I am your king. You don't vote for kings. But you are dressed as one. Oh, ow!",
@@ -753,6 +778,7 @@
 				"alt": "16x9 Image"
 			}
 		},
+		"icon" : "sbuicon-th",
 		"headline": {
 			"short": "Carrot cake fruitcake dessert apple",
 			"medium": "Pie powder lemon drops sesame snaps cake brownie. Biscuit ice cream gin"
@@ -826,6 +852,7 @@
 				"alt": "16x9 Image"
 			}
 		},
+		"icon" : "sbuicon-th-list",
 		"headline": {
 			"short": "Cauliflower cheese cream cheese baby",
 			"medium": "Lancashire cheesy feet rubber cheese cheese and wine gouda the big chee"
