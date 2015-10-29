@@ -1,9 +1,9 @@
 {
 	"notification": {
 		"alertClass" : "notification",
-		"excerpt" : {
+		"alertExcerpt" : {
 			"short" : "Emergency! This is a variation of the core homepage template."
 		},
-		"title": "This is a Notification"
+		"alertTitle": "This is a Notification"
 	}
 }
