@@ -1,23 +1,23 @@
-//Extensions for blurbs
+//Extensions for cards
 
-.blurb--icon {
+.card--icon {
 
     font-size: 3em;
     padding: .5em 0;
 }
 
-.blurb--heading {
+.card--heading {
 
     color: $red;
     font-size: 1.7em;
 }
-.blurb--subheading {
+.card--subheading {
 
     color: $dark-gray;
     font-size: 1.3em;
 }
 
-.blurb--item {
+.card--text {
 
     font-size: 1.1em;
     line-height: 1.7em;
