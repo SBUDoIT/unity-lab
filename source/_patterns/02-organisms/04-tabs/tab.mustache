@@ -1,50 +1,23 @@
 
-  <div class="nav-tabs-navigation">
-            <div class="nav-tabs-wrapper">
-            <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-                <li class="active"><a href="#link1" data-toggle="tab" aria-expanded="true">How To</a></li>
-                <li class=""><a href="#code" data-toggle="tab" aria-expanded="false">Code</a></li>
-                <li class=""><a href="#link3" data-toggle="tab" aria-expanded="false">Link</a></li>
-            </ul>
-            </div>
-        </div>
-        <div id="my-tab-content" class="tab-content">
-            <div class="tab-pane active" id="link1">
-                <p>
-            
-                    Click on the next tab to see the code for this.
+<div class="nav-tabs-wrapper">
+<ul class="nav nav-tabs" data-tabs="tabs">
+    {{# listItems.four }}
+    <li><a href="#{{index}}" data-toggle="tab">{{.}} {{index}} - {{headline.short}}</a></li>
+    {{/ listItems.four }}
+    
+</ul>
+<div class="tab-content">
+    
+ 
+    {{# listItems.four }}
 
-                </p>
-            </div>
-            <div class="tab-pane" id="code">
-                <pre>
-                    <code>
+    <div class="tab-pane" id="{{index}}">
+        <h1>{{index}} - {{headline.short}}</h1>
+        {{{paragraph.double}}}
+    </div>
 
-        &lt;div class=&quot;nav-tabs-navigation&quot;&gt;
-            &lt;div class=&quot;nav-tabs-wrapper&quot;&gt;
-                &lt;ul id=&quot;tabs&quot; class=&quot;nav nav-tabs&quot; data-tabs=&quot;tabs&quot;&gt;
-                    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#link1&quot; data-toggle=&quot;tab&quot; aria-expanded=&quot;true&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class=&quot;&quot;&gt;&lt;a href=&quot;#link2&quot; data-toggle=&quot;tab&quot; aria-expanded=&quot;false&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class=&quot;&quot;&gt;&lt;a href=&quot;#link3&quot; data-toggle=&quot;tab&quot; aria-expanded=&quot;false&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
+    
+    {{/ listItems.four }}
 
-        &lt;div id=&quot;my-tab-content&quot; class=&quot;tab-content&quot;&gt;
-            &lt;div class=&quot;tab-pane active&quot; id=&quot;link1&quot;&gt;
-                &lt;p&gt;Tab text here&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;tab-pane&quot; id=&quot;link2&quot;&gt;
-                &lt;p&gt;Second tab text here&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;tab-pane&quot; id=&quot;link3&quot;&gt;
-                &lt;p&gt;Third tab text here&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-                    </code>
-                </pre>  
-            </div>
-            <div class="tab-pane" id="link3">
-                <p>Lorem ipsum Dolore deserunt in magna dolor ullamco Excepteur ullamco qui et mollit.</p>
-            </div>
-        </div>
+</div>
+    </div>
