@@ -72,6 +72,13 @@
 }
 
 
+.button-trans {
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
 .clearfix {
     *zoom: 1;
 

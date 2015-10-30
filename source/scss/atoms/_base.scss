@@ -29,14 +29,10 @@
 @import "global/colors";
 @import "global/fonts";
 
-@import "buttons/sbu-button";
-@import "buttons/rounded-flat-button";
-@import "buttons/service-button";
-@import "buttons/outline-button";
-@import "buttons/rounded-outline-button";
-@import "buttons/simple-button";
-@import "buttons/simple-button-fade";
-@import "buttons/circle-button";
+@import "buttons/default-button";
+@import "buttons/impact-button";
+@import "buttons/subtle-button";
+@import "buttons/secondary-button";
 
 @import "forms/forms";
 
