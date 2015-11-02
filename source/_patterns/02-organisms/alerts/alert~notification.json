@@ -1,0 +1,10 @@
+{
+	"alert": {
+		"class" : "notification",
+		"excerpt" : {
+			"short" : "notification! This is a variation of the core homepage template."
+		},
+		"title" : "notification! Don't Call an ambulance"
+		
+	}
+}

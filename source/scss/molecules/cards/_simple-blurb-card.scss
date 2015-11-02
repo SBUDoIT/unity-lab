@@ -1,0 +1,28 @@
+.simple-blurb-card {
+    padding: 2em;
+}
+
+.simple-blurb-card--icon {
+    @extend .card--icon;
+}
+
+.simple-blurb-card--image {
+    @extend .card--image;
+}
+
+.simple-blurb-card--heading {
+    @extend .card--heading;
+}
+
+.simple-blurb-card--subheading {
+    @extend .card--subheading;
+    margin-top: -.3em;
+}
+
+.simple-blurb-card--text {
+    @extend .card--text;
+}
+
+.simple-blurb-card--cta {
+    @extend .card--cta;
+}
