@@ -5,7 +5,9 @@
 		"short": false
 	},
 
-	"icon":false,
+	
+
+	"icon" : false,
 
 	"cta" : false
 	

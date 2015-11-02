@@ -1,4 +1,7 @@
-.nav-footer--list, .nav-footer--item
+.footer-nav
+{
+
+ul, ul li
 {
 	margin: 0;
     padding: 0;
@@ -6,23 +9,24 @@
     list-style-type: none;
 }
 
-.nav-footer--list .nav-footer--list
+ul ul
 {
 	margin-left: 1em;
 }
 
-.nav-footer--link
+a
 {
 	color: #eee;
 }
 
-.nav-footer--link:hover, .nav-footer--link:focus
+a:hover, a:focus
 {
 	color: #cccccc;
     border-bottom: 0.1em dashed #ccc;
 }
 
-.nav-footer--heading
+.footer-nav--heading
 {
 	color: #eee;
+}
 }
