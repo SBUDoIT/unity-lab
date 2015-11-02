@@ -1,24 +1,26 @@
 //Extensions for cards
 
 .card--icon {
-
     font-size: 3em;
     padding: .5em 0;
 }
 
 .card--heading {
-
     color: $red;
     font-size: 1.7em;
 }
-.card--subheading {
 
+.card--subheading {
     color: $dark-gray;
     font-size: 1.3em;
 }
 
 .card--text {
-
     font-size: 1.1em;
     line-height: 1.7em;
+}
+
+.card--image {
+    max-width: 100%;
+    height: auto;
 }

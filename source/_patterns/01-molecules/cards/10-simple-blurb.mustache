@@ -4,6 +4,12 @@
     <span class="simple-blurb-card--icon {{icon}}"></span>
     {{/ icon }}
 
+    {{^ icon }}
+    {{# img}}
+    <img class="simple-blurb-card--image" src="{{img.landscape-16x9.src}}" />
+    {{/ img }}
+    {{/icon}}
+
     <h2 class="simple-blurb-card--heading">{{ headline.medium }}</h2>
     
 	{{# headline.short }}
