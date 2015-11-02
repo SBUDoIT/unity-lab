@@ -1,0 +1,96 @@
+.event-card {
+    margin: 20px 15px;
+    max-width: 500px;
+}
+
+.event-card--heading {
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 15px;
+    margin: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    a {
+        color: $white;
+    }
+}
+
+/*h3 {
+    font-size: 18px;
+    line-height: 36px;
+    margin: 0px;
+}*/
+
+.event-card--content {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: 0px;
+    //font-family: 'Trade Gothic Next W01', Arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 20px;
+    color: #333;
+    a {
+        color: $red;
+    }
+    a:hover {
+        color: $red;
+        border-bottom: 1px $red dashed;
+    }
+}
+
+.event-card--date-time:before {
+    @extend .sbuicon;
+    color: $red;
+    content: "\ea4d";
+    margin-right: 1em;
+}
+
+.event-card--map:before {
+    @extend .sbuicon;
+    color: $red;
+    content: "\ea38";
+    margin-right: 1em;
+}
+
+.event-card--audience:before {
+    @extend .sbuicon;
+    color: $red;
+    content: "\eaf4";
+    margin-right: 1em;
+}
+
+.event-card--register {
+    background-color: #eee;
+    padding: 1em 0.5em;
+    color: #333;
+    border: 1px solid #ddd;
+    border-top: 0px;
+    text-align: center;
+}
+
+.event-card--button {
+    border-radius: 3px;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    color: #6a6a6a;
+    margin-right: 5px;
+}
+
+.event-card--button:hover {
+    background-color: #fff;
+    color: #6a6a6a;
+}
+
+.event-card--registration-button:before {
+    @extend .sbuicon;
+    content: "\ed5c";
+    margin-right: 0.75em;
+}
+
+.event-card--add-to-cal-button:before {
+    @extend .sbuicon;
+    content: "\f073";
+    margin-right: 0.75em;
+}
