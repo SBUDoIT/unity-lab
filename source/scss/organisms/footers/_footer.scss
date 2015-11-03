@@ -3,6 +3,8 @@
     background: #252525;
 }   
  
+ .site-footer
+ {
     .address, .address a, .codes {
         line-height: 1.7em;
     }
@@ -22,12 +24,8 @@
         margin: 0 0 4px;
         display: block;
     }
-    a {
-        color: #ccc;
-    }
-    a:hover {
-        color: #fff;
-    }
+  
+
     .address-link .icon {
         display: inline-block;
         margin: 0 6px 0 0;
@@ -65,3 +63,4 @@
             text-align: left;
         }
     }
+}

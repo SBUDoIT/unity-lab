@@ -17,31 +17,72 @@ a.arrow-link:after {
     font-size: 1em;
 }
 
-i.heading-icon {
-    display: block;
-    margin-bottom: 2em;
+    .dashed-link {
+            
+    border-bottom: .1em dashed;
+        color: $dark-gray;
+        border-bottom: .1em dashed #333;
+
+        &:hover,
+        &:focus {
+            
+            color: $red;
+            border-bottom: none;
+                
+        }
+    }
+
+.read-more-link
+{
+
+
+    display: inline-block;
+    margin-top: 1em;
+    border-bottom: .1em dashed;
+
+
 }
 
+    .view-all-link {
+
+        color: $red;
+           display: inline-block;
+        margin-top: 1em;
+        padding: .5em;
+        border: .1em solid $light-gray;
+
+        &:hover,
+        &:focus {
+
+            color: $black;
+            border: .1em solid $dark-gray;
+        }
+
+    
+}
+
+
+
 //TODO Line spacing seems different between styleguides -- doesn't seem to be set on these links, perhaps theres a global line height that needs to be adjusted
-a[href$=".pdf"]:after {
+a[href$=".pdf"].file-link:after {
     content: "\f1c1";
     @extend .sbuicon-after;
 }
 
-a[href$=".xls"]:after,
-a[href$=".xlsx"]:after {
+a[href$=".xls"].file-link:after,
+a[href$=".xlsx"].file-link:after {
     content: "\f1c3";
     @extend .sbuicon-after;
 }
 
-a[href$=".doc"]:after,
-a[href$=".docx"]:after {
+a[href$=".doc"].file-link:after,
+a[href$=".docx"].file-link:after {
     content: "\f1c2";
     @extend .sbuicon-after;
 }
 
-a[href$=".ppt"]:after,
-a[href$=".pptx"]:after {
+a[href$=".ppt"].file-link:after,
+a[href$=".pptx"].file-link:after {
     content: "\f1c4";
     @extend .sbuicon-after;
 }

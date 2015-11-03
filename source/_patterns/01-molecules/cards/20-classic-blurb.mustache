@@ -3,6 +3,14 @@
     <span class="classic-blurb-card--icon {{icon}}"></span>
     {{/ icon }}
 
+    {{^ icon }}
+    {{# img}}
+    <div class="classic-blurb-card--image-wrap">
+    <img class="classic-blurb-card--image" src="{{img.landscape-4x3.src}}" />
+    </div>
+    {{/ img }}
+    {{/icon}}
+
     <div class="classic-blurb-card--content">
         <h2 class="classic-blurb-card--heading">{{ headline.medium }}</h2>
         

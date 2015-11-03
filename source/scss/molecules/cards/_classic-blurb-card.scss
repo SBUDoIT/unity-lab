@@ -20,6 +20,18 @@
 
 }
 
+.classic-blurb-card--image {
+    @extend .card--image;
+
+     width: 200px;
+}
+
+.classic-blurb-card--image-wrap
+{
+    float: left;
+    padding: 0 1em;
+}
+
 .classic-blurb-card--content
 {
 
