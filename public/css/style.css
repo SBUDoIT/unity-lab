@@ -7201,13 +7201,8 @@ $grids: add-grid(16 at $break4);
   color: #333333;
   font-size: 1.3em; }
 
-<<<<<<< HEAD
 /* line 27, /Users/nicholasciuffo/GIT/unity-lab/source/scss/global/_extendables.scss */
-.card-item-font, .site-footer {
-=======
-/* line 27, /Users/rich/git/unity-lab/source/scss/global/_extendables.scss */
 .card-item-font {
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
   font-size: 1.1em;
   line-height: 1.7em; }
 
@@ -7243,7 +7238,8 @@ $grids: add-grid(16 at $break4);
   border: 0.1em solid #eeeeee; }
 
 /* line 75, /Users/nicholasciuffo/GIT/unity-lab/source/scss/global/_extendables.scss */
-.button-trans, .default-button, .impact-button, .subtle-button, .secondary-button {
+.button-trans, .default-button, .impact-button, .rounded-outline-button,
+.subtle-button, .secondary-button {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
@@ -7264,13 +7260,8 @@ $grids: add-grid(16 at $break4);
 .no-padding {
   padding: 0; }
 
-<<<<<<< HEAD
 /* line 106, /Users/nicholasciuffo/GIT/unity-lab/source/scss/global/_extendables.scss */
-.sbuicon, .icon-checkmark-circle:before, .icon-info2:before, .icon-calendar:before, .icon-cancel-circle:before, .icon-warning:before, #main-prefix ul li a:after, .arrow-bullets li:before, .check-bullets li:before, a.arrow-link:after, a.dual-tone-card span:after, .main-site-nav-wrap .main-site-nav ul li.expanded > a:after, .site-footer ul.menu li a:after {
-=======
-/* line 99, /Users/rich/git/unity-lab/source/scss/global/_extendables.scss */
 .sbuicon, .icon-checkmark-circle:before, .icon-info2:before, .icon-calendar:before, .icon-cancel-circle:before, .icon-warning:before, #main-prefix ul li a:after, .arrow-bullets li:before, .check-bullets li:before, a.arrow-link:after, .event-card--date-time:before, .event-card--map:before, .event-card--audience:before, .event-card--registration-button:before, .event-card--add-to-cal-button:before, .main-site-nav-wrap .main-site-nav ul li.expanded > a:after {
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
   font-family: 'sbu-icons';
   speak: none;
   font-style: normal;
@@ -16118,13 +16109,8 @@ body {
   -o-transform: skew(8deg) rotate(3deg);
   transform: skew(8deg) rotate(3deg); }
 
-<<<<<<< HEAD
 /* line 4, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/global/_box-model.scss */
-.fluffy, .site-footer .top-footer {
-=======
-/* line 4, /Users/rich/git/unity-lab/source/scss/atoms/global/_box-model.scss */
 .fluffy, .shield-footer {
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
   padding: 6em 0; }
 
 /* line 8, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/global/_box-model.scss */
@@ -17368,6 +17354,7 @@ body {
     background: #990000; }
 
 /* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+.rounded-outline-button,
 .subtle-button {
   display: inline-block;
   padding: 10px 10px 14px 16px;
@@ -17380,12 +17367,15 @@ body {
   text-align: left;
   margin: 0 1em 1em 0;
   cursor: pointer; }
-  /* line 16, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
-  .subtle-button:hover, .subtle-button:focus {
+  /* line 17, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+  .rounded-outline-button:hover, .rounded-outline-button:focus,
+  .subtle-button:hover,
+  .subtle-button:focus {
     color: #333333;
     background: #eeeeee;
     border: 1px solid #333333; }
-  /* line 23, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+  /* line 24, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+  .rounded-outline-button .icon,
   .subtle-button .icon {
     display: inline-block;
     vertical-align: middle; }
@@ -17420,6 +17410,22 @@ body {
   .secondary-button.selected {
     border: 3px solid rgba(128, 219, 240, 0.5);
     padding: 10px 4px; }
+
+/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_hero-button.scss */
+.hero-button {
+  display: inline-block;
+  background: rgba(51, 51, 51, 0.8);
+  padding: 1em;
+  text-transform: uppercase;
+  border-bottom: rgba(255, 255, 255, 0.5);
+  box-sizing: inherit;
+  cursor: pointer;
+  font-family: "Trade Gothic Next W01", Arial, sans-serif; }
+
+@media (min-width: 800px) {
+  /* line 14, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_hero-button.scss */
+  .hero-button {
+    margin: 0 1em 1em 0; } }
 
 /* Form */
 /*.contactForm {
@@ -18225,678 +18231,30 @@ a.btn:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #fff; }
 
-<<<<<<< HEAD
-/* svg animation */
-/* line 2, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box {
-  width: 300px;
-  height: 460px;
-  position: relative;
-  background: white;
-  display: inline-block;
-  margin: 0 10px;
-  cursor: pointer;
-  color: #2c3e50;
-  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.4);
-  -webkit-transition: background 0.4s 0.5s;
-  transition: background 0.4s 0.5s; }
-
-/* line 16, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box:hover {
-  background: rgba(255, 255, 255, 0);
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s; }
-
-/* line 22, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box img {
-  padding-top: 25px; }
-
-/* line 26, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box h3 {
-  font-family: Helvetica;
-  font-size: 30px;
-  line-height: 55px;
-  margin: 0;
-  font-weight: 400;
-  width: 100%; }
-
-/* line 35, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box span {
-  display: block;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 13px;
-  padding: 5px; }
-
-/* line 44, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box h3,
-.box span {
-  -webkit-transition: color 0.4s 0.5s;
-  transition: color 0.4s 0.5s; }
-
-/* line 50, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box:hover h3,
-.box:hover span {
-  color: #fff;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s; }
-
-/* line 57, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box svg {
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-/* line 63, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box svg line {
-  stroke-width: 8;
-  stroke: #ecf0f1;
-  fill: none;
-  -webkit-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out; }
-
-/* line 71, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box:hover svg line {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s; }
-
-/* line 76, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box svg line.top,
-.box svg line.bottom {
-  stroke-dasharray: 330 240; }
-
-/* line 81, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box svg line.left,
-.box svg line.right {
-  stroke-dasharray: 490 400; }
-
-/* line 86, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box:hover svg line.top {
-  -webkit-transform: translateX(-600px);
-  transform: translateX(-600px); }
-
-/* line 91, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box:hover svg line.bottom {
-  -webkit-transform: translateX(600px);
-  transform: translateX(600px); }
-
-/* line 96, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box:hover svg line.left {
-  -webkit-transform: translateY(920px);
-  transform: translateY(920px); }
-
-/* line 101, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.box:hover svg line.right {
-  -webkit-transform: translateY(-920px);
-  transform: translateY(-920px); }
-
-/* line 106, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.color-1 .box {
-  box-shadow: inset 0 0 0 10px #2c3e50; }
-
-/* line 110, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.color-1 .box:hover h3,
-.color-1 .box:hover span {
-  color: #fe6f83; }
-
-/* line 115, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.color-1 .box svg line {
-  stroke-width: 8; }
-
-/* line 119, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.color-1 .box:hover svg line {
-  stroke: #fe6f83; }
-
-/* Frame */
-/* line 124, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.frame-1 .box {
-  background: transparent;
-  color: #fff;
-  box-shadow: none;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s; }
-
-/* line 132, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.frame-1 .box:hover {
-  background: rgba(0, 0, 0, 0.4); }
-
-/* line 136, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.frame-1 .box h3,
-.frame-1 .box span {
-  -webkit-transition: none;
-  transition: none; }
-
-/* line 142, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.frame-1 .box svg line {
-  -webkit-transition: all .5s;
-  transition: all .5s; }
-
-/* line 147, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.frame-1 .box:hover svg line {
-  stroke-width: 10;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s; }
-
-/* line 153, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.frame-1 .box:hover svg line.top {
-  -webkit-transform: translateX(-300px);
-  transform: translateX(-300px); }
-
-/* line 158, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.frame-1 .box:hover svg line.bottom {
-  -webkit-transform: translateX(300px);
-  transform: translateX(300px); }
-
-/* line 163, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.frame-1 .box:hover svg line.left {
-  -webkit-transform: translateY(460px);
-  transform: translateY(460px); }
-
-/* line 168, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.frame-1 .box:hover svg line.right {
-  -webkit-transform: translateY(-460px);
-  transform: translateY(-460px); }
-
-/* Spin */
-/* line 174, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box {
-  box-shadow: none;
-  background: rgba(0, 0, 0, 0.4);
-  -webkit-transition: none;
-  transition: none;
-  color: #fff; }
-
-/* line 182, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box h3,
-.spin-1 .box span {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s; }
-
-/* line 192, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box:hover h3,
-.spin-1 .box:hover span {
-  -webkit-transform: scale(1);
-  transform: scale(1); }
-
-/* line 198, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box svg line {
-  stroke-width: 30;
-  -webkit-transition: all .4s;
-  transition: all .4s; }
-
-/* line 204, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box:hover svg line {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s; }
-
-/* line 209, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box:hover svg line {
-  stroke-width: 0; }
-
-/* line 213, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box svg line.top,
-.spin-1 .box svg line.bottom {
-  stroke-dasharray: 300; }
-
-/* line 218, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box svg line.left,
-.spin-1 .box svg line.right {
-  stroke-dasharray: 460; }
-
-/* line 223, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box:hover svg line.top {
-  -webkit-transform: translateX(-300px);
-  transform: translateX(-300px); }
-
-/* line 228, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box:hover svg line.bottom {
-  -webkit-transform: translateX(300px);
-  transform: translateX(300px); }
-
-/* line 233, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box:hover svg line.left {
-  -webkit-transform: translateY(460px);
-  transform: translateY(460px); }
-
-/* line 238, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_animated-card.scss */
-.spin-1 .box:hover svg line.right {
-  -webkit-transform: translateY(-460px);
-  transform: translateY(-460px); }
-
-/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_contact-card.scss */
-.contact-card {
-  width: 40%;
-  border: 1px solid #ccc;
-  padding: 1em;
-  /*
-        .panel-2col-stacked {
-            .panel-col-first {
-                width: 120px;
-            }
-    
-            .panel-col-last {
-                width: auto;
-            }
-        }
-       */ }
-  /* line 6, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_contact-card.scss */
-  .contact-card h2 {
-    margin-top: 0px; }
-
-/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_dual-tone-card.scss */
-a.dual-tone-card {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  border: 1px solid #000;
-  color: #fff;
-  padding: 5px;
-  background: #fff;
-  display: block;
-  border-radius: 2px;
-  margin: 0 0 10px;
-  box-shadow: 3px 3px 5px #aaa; }
-  /* line 14, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_dual-tone-card.scss */
-  a.dual-tone-card span {
-    display: block;
-    padding: 5px 0 0 0;
-    background: #900;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 2px;
-    box-shadow: 0 0 3px #500 inset;
-    text-align: center;
-    font-size: 1.2em; }
-    @media (min-width: 992px) {
-      /* line 14, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_dual-tone-card.scss */
-      a.dual-tone-card span {
-        padding: 25px 0 0 0; } }
-  /* line 29, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_dual-tone-card.scss */
-  a.dual-tone-card span:after {
-    text-align: center;
-    display: block;
-    content: "\f061";
-    background: #000;
-    margin: 5px 0 0 0;
-    padding: 5px 0 8px;
-    border-radius: 0 0 2px 2px; }
-    @media (min-width: 992px) {
-      /* line 29, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_dual-tone-card.scss */
-      a.dual-tone-card span:after {
-        margin: 15px 0 0 0;
-        padding: 10px 0 13px; } }
-
-/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_image-card.scss */
-.image-card {
-  margin-top: 1em;
-  margin-bottom: 1em; }
-  /* line 7, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_image-card.scss */
-  .image-card h1, .image-card h2, .image-card h3, .image-card h4, .image-card h5, .image-card h6 {
-    margin: 0.75em 0; }
-
-/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_presenter-card.scss */
-.presenter-card {
-  margin-bottom: 3em; }
-  /* line 4, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_presenter-card.scss */
-  .presenter-card .presenter-card-image {
-    width: 100%; }
-    /* line 7, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_presenter-card.scss */
-    .presenter-card .presenter-card-image img {
-      margin-left: auto;
-      margin-right: auto; }
-  /* line 13, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_presenter-card.scss */
-  .presenter-card .presenter-card-text {
-    text-align: center;
-    padding: 1em 0 0 0; }
-    /* line 17, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_presenter-card.scss */
-    .presenter-card .presenter-card-text span:before {
-      margin-right: 0.7em; }
-    /* line 21, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_presenter-card.scss */
-    .presenter-card .presenter-card-text span:after {
-      margin-right: 0.2em; }
-    /* line 25, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_presenter-card.scss */
-    .presenter-card .presenter-card-text span {
-      margin-bottom: 0.2em; }
-
-/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_star-list-card.scss */
-.star-list-card {
-  background: #1f0000;
-  border: 4px solid #ebcccc;
-  padding: 20px 30px; }
-  /* line 8, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_star-list-card.scss */
-  .star-list-card a, .star-list-card li, .star-list-card li:before {
-    color: #fff; }
-  /* line 13, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_star-list-card.scss */
-  .star-list-card h3 {
-    font-family: 'Trade Gothic W01 Light';
-    color: #fff;
-    font-size: 1.2em;
-    margin: 0 0 20px 5px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #fff;
-    text-indent: -5px;
-    width: auto;
-    display: inline-block;
-    padding: 0 5px 0 0; }
-    /* line 26, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_star-list-card.scss */
-    .star-list-card h3 span {
-      font-family: 'CenturyExpandedLTW01-It';
-      text-transform: lowercase;
-      display: inline-block;
-      padding: 0 3px 0 0;
-      letter-spacing: .025em; }
-
-/* cards */
-/* line 2, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_text-card.scss */
-.text-card {
-  margin-bottom: 1em;
-  padding: 1em; }
-
-/* line 7, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_text-card.scss */
-.text-card-body {
-  margin-bottom: 1em; }
-
-/* -------------------------------------------------------------------
-Simple Card
-------------------------------------------------------------------- */
-/* line 5, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-.simple__card {
-  background: transparent;
-  border: 1px solid #000;
-  padding: 25px 20px;
-  margin: 15px 0 30px;
-  border-radius: 2px;
-  text-align: left;
-  background-color: #fff; }
-
-/* line 15, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-.simple__card.best {
-  border-color: #990000;
-  box-shadow: 10px 10px 5px 0px #666666;
-  border-width: 3px; }
-
-/* line 21, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-.simple__card .small {
-  margin: 0; }
-
-/* line 25, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-.borderline {
-  position: relative;
-  background: #000;
-  display: block;
-  height: 1px;
-  width: 100%;
-  margin: 20px 0 15px; }
-
-/* line 34, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-.simple__card h4 {
-  color: #111;
-  margin: 0; }
-
-/* line 40, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-.simple__card-details {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 23px; }
-
-/* line 46, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-.simple__card-details li {
-  padding: 7px 0; }
-
-/* line 50, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-.simple__card-details li > span {
-  text-decoration: line-through;
-  color: #aaa; }
-
-/* line 58, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-.simple-card, .sbubox-card {
-  background: transparent;
-  border: 1px solid #000;
-  padding: 25px 20px;
-  margin: 15px 0 30px;
-  border-radius: 2px;
-  text-align: left;
-  background-color: #fff; }
-  /* line 68, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-  .simple-card.best, .sbubox-card.best {
-    border-color: #990000;
-    box-shadow: 10px 10px 5px 0px #666666;
-    border-width: 3px; }
-  /* line 74, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-  .simple-card .small, .sbubox-card .small {
-    margin: 0; }
-  /* line 78, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-  .simple-card .borderline, .sbubox-card .borderline {
-    position: relative;
-    background: #eaeaea;
-    display: block;
-    height: 1px;
-    width: 100%;
-    margin: 20px 0 15px; }
-  /* line 87, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-  .simple-card h4, .sbubox-card h4 {
-    color: #111;
-    margin: 0; }
-  /* line 93, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-  .simple-card .card-details, .sbubox-card .card-details {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 23px; }
-  /* line 99, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-  .simple-card .card-details li, .sbubox-card .card-details li {
-    padding: 7px 0; }
-  /* line 103, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple.scss */
-  .simple-card .card-details li > span, .sbubox-card .card-details li > span {
-    text-decoration: line-through;
-    color: #aaa; }
-
-/* -------------------------------------------------------------------
-Responsive Media Querries
-------------------------------------------------------------------- */
-@media (max-width: 768px) {
-  /* line 8, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_clear-box.scss */
-  .clear-box {
-    margin: 25px 20px; } }
-
-@media (max-width: 500px) {
-  /* line 16, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_clear-box.scss */
-  .clear-box {
-    padding: 25px 20px;
-    margin-top: 50px; }
-    /* line 21, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_clear-box.scss */
-    .clear-box h2 {
-      font-size: 25px; }
-    /* line 26, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_clear-box.scss */
-    .clear-box p {
-      color: #fff; } }
-
-@media (max-width: 767px) {
-  /* line 35, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_clear-box.scss */
-  .clear-box {
-    margin-left: 20px;
-    margin-right: 20px; } }
-
-/* -------------------------------------------------------------------
-Clear Box
-------------------------------------------------------------------- */
-/* line 47, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_clear-box.scss */
-.clear-box, .clearbox-card {
-  margin: 15px 0 30px;
-  padding: 20px 20px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 4px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); }
-  /* line 56, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_clear-box.scss */
-  .clear-box ul li, .clearbox-card ul li {
-    list-style: disc;
-    list-style-position: outside;
-    color: #fff;
-    margin-left: 2em; }
-    /* line 65, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_clear-box.scss */
-    .clear-box ul li a, .clearbox-card ul li a {
-      color: #fff;
-      text-decoration: underline; }
-      /* line 70, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_clear-box.scss */
-      .clear-box ul li a:hover, .clearbox-card ul li a:hover {
-        color: #111; }
-
-/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_events.scss */
-.event {
-  margin: 20px 15px;
-  max-width: 100%; }
-  /* line 6, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_events.scss */
-  .event h2 {
-    color: #fff;
-    font-size: 18px;
-    line-height: 24px;
-    padding: 15px;
-    margin: 0px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px; }
-  /* line 16, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_events.scss */
-  .event h3 {
-    font-size: 18px;
-    line-height: 36px;
-    margin: 0px; }
-  /* line 22, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_events.scss */
-  .event .content {
-    background: #fff;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-top: 0px; }
-  /* line 29, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_events.scss */
-  .event p {
-    font-family: 'Trade Gothic Next W01', Arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #333;
-    margin-bottom: 10px; }
-  /* line 37, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_events.scss */
-  .event i {
-    margin: 5px;
-    color: #990000; }
-  /* line 42, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_events.scss */
-  .event .register {
-    background-color: #eee;
-    padding: 15px 5px 5px;
-    color: #333;
-    border: 1px solid #ddd;
-    border-top: 0px; }
-    /* line 49, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_events.scss */
-    .event .register i {
-      color: #6a6a6a; }
-    /* line 54, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_events.scss */
-    .event .register p {
-      text-align: center; }
-    /* line 58, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_events.scss */
-    .event .register a {
-      border-radius: 3px;
-      border: 1px solid #333;
-      padding: 5px 10px;
-      color: #6a6a6a;
-      margin-right: 5px; }
-
-/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_horizontal-card-img.scss */
-.horizontal-card-o {
-  position: relative;
-  padding: .5em 0 1.5em 12.5em;
-  margin: 4em 0 4em 0;
-  text-align: left;
-  display: block; }
-  /* line 7, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_horizontal-card-img.scss */
-  .horizontal-card-o h4 {
-    color: #990000;
-    line-height: 1em; }
-  /* line 11, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_horizontal-card-img.scss */
-  .horizontal-card-o p {
-    font-size: inherit; }
-  /* line 14, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_horizontal-card-img.scss */
-  .horizontal-card-o img {
-    width: 100%;
-    height: auto;
-    display: block; }
-=======
-/* line 3, /Users/rich/git/unity-lab/source/scss/molecules/cards/_cards-base.scss */
+/* line 3, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_cards-base.scss */
 .card--icon, .classic-blurb-card--icon, .simple-blurb-card--icon {
   font-size: 3em;
   padding: .5em 0; }
 
-/* line 8, /Users/rich/git/unity-lab/source/scss/molecules/cards/_cards-base.scss */
+/* line 8, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_cards-base.scss */
 .card--heading, .classic-blurb-card--heading, .simple-blurb-card--heading, .polaroid-card--heading {
   color: #990000;
   font-size: 1.7em; }
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
 
-/* line 13, /Users/rich/git/unity-lab/source/scss/molecules/cards/_cards-base.scss */
+/* line 13, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_cards-base.scss */
 .card--subheading, .classic-blurb-card--subheading, .simple-blurb-card--subheading {
   color: #333333;
   font-size: 1.3em; }
 
-<<<<<<< HEAD
-@media only screen and (min-width: 960px){
->>>>>>> b98bae4c41f7d40d559d79eca537150fbd8accb2
-  .promo-box-round-title-1 {
-    width: 31.333%;
-    float: none;
-    margin: 0 1% 15px;
-    max-width: 280px;
-    padding: 60px 15px;
-  }
-}
-*/
-/* line 21, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_promo-boxes.scss */
-.promo-box-round-title-1 {
-  display: inline-block;
-  border: 1px solid #675757;
-  box-shadow: 0 0 10px rgba(103, 87, 87, 0.2);
-  padding: 60px 15px;
-  text-transform: uppercase;
-  border-radius: 15px;
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  transition: all 0.1s;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left 80%;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 1em; }
-
-/* line 40, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_promo-boxes.scss */
-.promo-box-round-title-1 span {
-  display: inline-block;
-  font-family: 'Trade Gothic Next W01';
-  text-transform: uppercase;
-  border-radius: 30px;
-  background: #000;
-  color: #fff;
-  padding: 0.5em;
-  width: 100%;
-  text-align: center;
-  border: 1px solid #fff;
-  max-width: 508px;
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  transition: all 0.1s; }
-=======
-/* line 18, /Users/rich/git/unity-lab/source/scss/molecules/cards/_cards-base.scss */
+/* line 18, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_cards-base.scss */
 .card--text, .classic-blurb-card--text, .simple-blurb-card--text, .polaroid-card--text {
   font-size: 1.1em;
   line-height: 1.7em; }
 
-/* line 23, /Users/rich/git/unity-lab/source/scss/molecules/cards/_cards-base.scss */
+/* line 23, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_cards-base.scss */
 .card--image, .simple-blurb-card--image, .polaroid-card--image {
   max-width: 100%;
   height: auto; }
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
 
 /* Drop accordion */
 /* line 3, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_drop-accordion-card.scss */
@@ -18970,43 +18328,13 @@ Clear Box
     font-size: 1.1em;
     line-height: 1.8em; }
 
-<<<<<<< HEAD
-/* line 3, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/blurbs/_blurbs-base.scss */
-.blurb--icon, .classic-blurb--icon, .simple-blurb--icon {
-  font-size: 3em;
-  padding: .5em 0; }
-
-/* line 9, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/blurbs/_blurbs-base.scss */
-.blurb--heading, .classic-blurb--heading, .simple-blurb--heading {
-  color: #990000;
-  font-size: 1.7em; }
-
-/* line 14, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/blurbs/_blurbs-base.scss */
-.blurb--subheading, .classic-blurb--subheading, .simple-blurb--subheading {
-  color: #333333;
-  font-size: 1.3em; }
-
-/* line 20, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/blurbs/_blurbs-base.scss */
-.blurb--item, .classic-blurb--item, .simple-blurb--item {
-  font-size: 1.1em;
-  line-height: 1.7em; }
-
-/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/blurbs/_classic-blurb.scss */
-.classic-blurb {
-  position: relative;
-  margin-bottom: 3em; }
-
-/* line 7, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/blurbs/_classic-blurb.scss */
-.classic-blurb--icon {
-=======
-/* line 1, /Users/rich/git/unity-lab/source/scss/molecules/cards/_classic-blurb-card.scss */
+/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_classic-blurb-card.scss */
 .classic-blurb-card {
   position: relative;
   margin-bottom: 3em; }
 
-/* line 7, /Users/rich/git/unity-lab/source/scss/molecules/cards/_classic-blurb-card.scss */
+/* line 7, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_classic-blurb-card.scss */
 .classic-blurb-card--icon {
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
   position: absolute;
   height: 2em;
   width: 2em;
@@ -19017,34 +18345,19 @@ Clear Box
   display: inline-block;
   line-height: 1; }
 
-<<<<<<< HEAD
-/* line 23, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/blurbs/_classic-blurb.scss */
-.classic-blurb--content {
-  padding-left: 6em; }
-
-/* line 2, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/blurbs/_simple-blurb.scss */
-.simple-blurb {
-  padding: 2em; }
-
-/* line 17, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/blurbs/_simple-blurb.scss */
-.simple-blurb--subheading {
-  margin-top: -.3em; }
-
-/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/media/_screenshots.scss */
-=======
-/* line 23, /Users/rich/git/unity-lab/source/scss/molecules/cards/_classic-blurb-card.scss */
+/* line 23, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_classic-blurb-card.scss */
 .classic-blurb-card--content {
   padding-left: 6em; }
 
-/* line 1, /Users/rich/git/unity-lab/source/scss/molecules/cards/_simple-blurb-card.scss */
+/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple-blurb-card.scss */
 .simple-blurb-card {
   padding: 2em; }
 
-/* line 17, /Users/rich/git/unity-lab/source/scss/molecules/cards/_simple-blurb-card.scss */
+/* line 17, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_simple-blurb-card.scss */
 .simple-blurb-card--subheading {
   margin-top: -.3em; }
 
-/* line 2, /Users/rich/git/unity-lab/source/scss/molecules/cards/_polaroid-card.scss */
+/* line 2, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_polaroid-card.scss */
 .polaroid-card {
   display: block;
   border: #B7B5B6 1px solid;
@@ -19057,16 +18370,16 @@ Clear Box
   margin: 10px auto;
   max-width: 400px; }
 
-/* line 19, /Users/rich/git/unity-lab/source/scss/molecules/cards/_polaroid-card.scss */
+/* line 19, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_polaroid-card.scss */
 .polaroid-card--heading {
   color: #990000; }
 
-/* line 24, /Users/rich/git/unity-lab/source/scss/molecules/cards/_polaroid-card.scss */
+/* line 24, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_polaroid-card.scss */
 .polaroid-card:hover {
   -webkit-box-shadow: 0px 0px 8px #990000;
   box-shadow: 0px 0px 8px #990000; }
 
-/* line 29, /Users/rich/git/unity-lab/source/scss/molecules/cards/_polaroid-card.scss */
+/* line 29, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_polaroid-card.scss */
 .polaroid-card--text {
   color: #000; }
 
@@ -19083,12 +18396,12 @@ Clear Box
     }
 }
 */
-/* line 1, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
 .event-card {
   margin: 20px 15px;
   max-width: 500px; }
 
-/* line 6, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+/* line 6, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
 .event-card--heading {
   color: #fff;
   font-size: 18px;
@@ -19097,7 +18410,7 @@ Clear Box
   margin: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px; }
-  /* line 14, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+  /* line 14, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
   .event-card--heading a {
     color: white; }
 
@@ -19106,7 +18419,7 @@ Clear Box
     line-height: 36px;
     margin: 0px;
 }*/
-/* line 25, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+/* line 25, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
 .event-card--content {
   background: #fff;
   padding: 15px;
@@ -19115,33 +18428,33 @@ Clear Box
   font-size: 0.9em;
   line-height: 20px;
   color: #333; }
-  /* line 34, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+  /* line 34, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
   .event-card--content a {
     color: #990000; }
-  /* line 37, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+  /* line 37, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
   .event-card--content a:hover {
     color: #990000;
     border-bottom: 1px #990000 dashed; }
 
-/* line 43, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+/* line 43, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
 .event-card--date-time:before {
   color: #990000;
   content: "\ea4d";
   margin-right: 1em; }
 
-/* line 50, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+/* line 50, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
 .event-card--map:before {
   color: #990000;
   content: "\ea38";
   margin-right: 1em; }
 
-/* line 57, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+/* line 57, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
 .event-card--audience:before {
   color: #990000;
   content: "\eaf4";
   margin-right: 1em; }
 
-/* line 64, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+/* line 64, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
 .event-card--register {
   background-color: #eee;
   padding: 1em 0.5em;
@@ -19150,7 +18463,7 @@ Clear Box
   border-top: 0px;
   text-align: center; }
 
-/* line 73, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+/* line 73, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
 .event-card--button {
   border-radius: 3px;
   border: 1px solid #333;
@@ -19158,23 +18471,22 @@ Clear Box
   color: #6a6a6a;
   margin-right: 5px; }
 
-/* line 81, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+/* line 81, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
 .event-card--button:hover {
   background-color: #fff;
   color: #6a6a6a; }
 
-/* line 86, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+/* line 86, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
 .event-card--registration-button:before {
   content: "\ed5c";
   margin-right: 0.75em; }
 
-/* line 92, /Users/rich/git/unity-lab/source/scss/molecules/cards/_event-card.scss */
+/* line 92, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/cards/_event-card.scss */
 .event-card--add-to-cal-button:before {
   content: "\f073";
   margin-right: 0.75em; }
 
-/* line 1, /Users/rich/git/unity-lab/source/scss/molecules/media/_screenshots.scss */
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
+/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/media/_screenshots.scss */
 .screenshot {
   position: relative;
   overflow: hidden;
@@ -19273,7 +18585,6 @@ Clear Box
 .image-gallery ul li img {
   cursor: pointer; }
 
-<<<<<<< HEAD
 /* line 15, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/media/_image-gallery.scss */
 .modal-body {
   padding: 5px !important; }
@@ -19283,26 +18594,11 @@ Clear Box
   border-radius: 0; }
 
 /* line 23, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/media/_image-gallery.scss */
-=======
-/* line 15, /Users/rich/git/unity-lab/source/scss/molecules/media/_image-gallery.scss */
-.modal-body {
-  padding: 5px !important; }
-
-/* line 19, /Users/rich/git/unity-lab/source/scss/molecules/media/_image-gallery.scss */
-.modal-content {
-  border-radius: 0; }
-
-/* line 23, /Users/rich/git/unity-lab/source/scss/molecules/media/_image-gallery.scss */
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
 .modal-dialog img {
   text-align: center;
   margin: 0 auto; }
 
-<<<<<<< HEAD
 /* line 28, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/media/_image-gallery.scss */
-=======
-/* line 28, /Users/rich/git/unity-lab/source/scss/molecules/media/_image-gallery.scss */
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
 .controls {
   width: 50px;
   display: block;
@@ -19310,31 +18606,19 @@ Clear Box
   padding-top: 8px;
   font-weight: bold; }
 
-<<<<<<< HEAD
 /* line 36, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/media/_image-gallery.scss */
-=======
-/* line 36, /Users/rich/git/unity-lab/source/scss/molecules/media/_image-gallery.scss */
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
 .next {
   float: right;
   text-align: right; }
 
 /*override modal for demo only*/
-<<<<<<< HEAD
 /* line 42, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/media/_image-gallery.scss */
-=======
-/* line 42, /Users/rich/git/unity-lab/source/scss/molecules/media/_image-gallery.scss */
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
 .modal-dialog {
   max-width: 500px;
   padding-top: 90px; }
 
 @media screen and (min-width: 768px) {
-<<<<<<< HEAD
   /* line 48, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/media/_image-gallery.scss */
-=======
-  /* line 48, /Users/rich/git/unity-lab/source/scss/molecules/media/_image-gallery.scss */
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
   .modal-dialog {
     width: 500px;
     padding-top: 90px; } }
@@ -19343,51 +18627,28 @@ Clear Box
 .breadcrumb > li + li:before {
   content: ">"; }
 
-<<<<<<< HEAD
-/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
-.nav-footer--list, .nav-footer--item {
-=======
-/* line 4, /Users/rich/git/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
+/* line 4, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
 .footer-nav ul, .footer-nav ul li {
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
   margin: 0;
   padding: 0;
   list-style: none;
   list-style-type: none; }
 
-<<<<<<< HEAD
-/* line 9, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
-.nav-footer--list .nav-footer--list {
-  margin-left: 1em; }
-
-/* line 14, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
-.nav-footer--link {
-  color: #eee; }
-
-/* line 19, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
-.nav-footer--link:hover, .nav-footer--link:focus {
-  color: #cccccc;
-  border-bottom: 0.1em dashed #ccc; }
-
-/* line 25, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
-.nav-footer--heading {
-=======
-/* line 12, /Users/rich/git/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
+/* line 12, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
 .footer-nav ul ul {
   margin-left: 1em; }
 
-/* line 17, /Users/rich/git/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
+/* line 17, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
 .footer-nav a {
   color: #eee; }
 
-/* line 22, /Users/rich/git/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
+/* line 22, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
 .footer-nav a:hover, .footer-nav a:focus {
   color: #cccccc;
   border-bottom: 0.1em dashed #ccc; }
 
-/* line 28, /Users/rich/git/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
+/* line 28, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/navigation/_footer-nav.scss */
 .footer-nav .footer-nav--heading {
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
   color: #eee; }
 
 /* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/molecules/navigation/_main-nav.scss */
@@ -20166,228 +19427,15 @@ Clear Box
   width: 100%;
   height: auto; }
 
-<<<<<<< HEAD
-/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-.footer {
-  background-color: #000000;
-  width: 100%;
-  color: #fff;
-  float: left;
-  padding: 1.25em 1em; }
-  @media (min-width: 960px) {
-    /* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-    .footer {
-      padding: 1.25em 0px; } }
-
-/* line 12, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-.footer a {
-  color: #fff;
-  text-decoration: none; }
-
-/* line 17, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-.footer a:hover {
-  text-decoration: underline;
-  text-color: #fff; }
-
-/* line 22, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-.footer h2 {
-  border-bottom: 0px;
-  color: #fff; }
-
-/* line 27, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-.footer ul, #footer ul li {
-  margin: 0px;
-  padding: 0px;
-  list-style: none; }
-
-/* line 33, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-#footer #social-footer .social-icon {
-  float: left;
-  margin: 5px 10% 0px 0px; }
-
-/* line 40, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-#footer #bottom-footer ul {
-  margin: 10px auto;
-  text-align: center;
-  width: 100px; }
-
-/* line 45, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-#footer #bottom-footer .content a {
-  color: #fff; }
-
-/* line 51, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-.footer-menu ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  list-style-image: none; }
-
-/* line 58, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-.footer-menu ul li {
-  margin: 0px;
-  padding: 0px;
-  list-style-image: none;
-  list-style-type: none; }
-
-/* line 65, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-.footer-menu a {
-  color: #fff;
-  text-decoration: none; }
-
-/* line 70, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-.footer-menu h2 {
-  font-size: 1.0em;
-  color: #fff; }
-
-/* line 75, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-#footer #bottom-footer ul.menu {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  list-style-type: none; }
-  /* line 80, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  #footer #bottom-footer ul.menu li {
-    display: inline;
-    padding: 0px 10px; }
-  /* line 86, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  #footer #bottom-footer ul.menu li.last {
-    border: 0px; }
-
-/* line 91, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-.site-footer {
-  background: #252525;
-  background-size: cover;
-  color: white; }
-  /* line 93, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer .top-footer {
-    display: block;
-    background: #252525;
-    color: #ccc;
-    border-bottom: 1px solid #aaa;
-    font-family: 'Trade Gothic Next W01';
-    font-size: 1em;
-    position: relative;
-    z-index: 1;
-    background-image: url("../assets/images/backgrounds/images/shieldbg.png");
-    background-size: cover; }
-    /* line 103, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-    .site-footer .top-footer h1, .site-footer .top-footer h2, .site-footer .top-footer h3, .site-footer .top-footer h4, .site-footer .top-footer h5 {
-      color: #eee; }
-    /* line 106, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-    .site-footer .top-footer h1 {
-      font-size: 2em; }
-    /* line 109, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-    .site-footer .top-footer h2 {
-      font-size: 1.7em; }
-    /* line 112, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-    .site-footer .top-footer h3 {
-      font-size: 1.2em; }
-  /* line 118, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer .bottom-footer {
-    display: block;
-    background: #121212;
-    color: #ccc;
-    padding: 1em 0;
-    font-family: 'Trade Gothic Next W01';
-    font-size: 1em;
-    position: relative;
-    z-index: 1; }
-  /* line 129, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer ul.menu li {
-    list-style-image: none;
-    list-style-type: none;
-    margin-left: 0; }
-    /* line 133, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-    .site-footer ul.menu li a:after {
-      display: inline-block;
-      content: "\f105";
-      margin: 0 0 0 8px;
-      position: relative;
-      z-index: 1;
-      font-size: 1em; }
-  /* line 144, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer .address, .site-footer .address a, .site-footer .codes {
-    line-height: 1.7em; }
-  /* line 147, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer .codes {
-    display: block;
-    line-height: 1.7em;
-    width: 200px;
-    margin: 0 auto;
-    border: 1px solid #000;
-    padding: 10px 0;
-    background: #191919; }
-  /* line 156, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer .address .serif-italic,
-  .site-footer .codes .serif-italic {
-    font-size: 1.3em;
-    line-height: 1.4em;
-    margin: 0 0 4px;
-    display: block; }
-  /* line 163, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer a {
-    color: #ccc; }
-  /* line 166, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer a:hover {
-    color: #fff; }
-  /* line 169, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer .address-link .icon {
-    display: inline-block;
-    margin: 0 6px 0 0;
-    font-size: 1.2em; }
-  /* line 174, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer .small-button,
-  .site-footer .phone a,
-  .site-footer .footer-bar span a {
-    font-size: .8em;
-    display: inline-block;
-    padding: 1px 8px 3px;
-    border: 1px solid #383838;
-    margin: 8px auto;
-    background: #222;
-    border-radius: 3px; }
-  /* line 185, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer .phone {
-    display: block; }
-  /* line 188, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer .phone a {
-    color: #ddd;
-    width: 100px;
-    padding-top: 0px 8px 1px; }
-  /* line 193, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer .social h5 {
-    font-size: 1.4em;
-    font-family: 'ITCFranklinGothicW01-Md 812695';
-    text-transform: uppercase;
-    margin: 0 0 15px;
-    color: #ccc; }
-  @media (min-width: 992px) {
-    /* line 201, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-    .site-footer .footer-links {
-      text-align: left; } }
-  /* line 209, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer h2 {
-    color: white;
-    font-size: 1.3em;
-    padding: .5em 0 .5em 0;
-    margin: 0.5em 0 0.5em 0; }
-  /* line 215, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-  .site-footer ul li a {
-    color: #eeeeee; }
-    /* line 217, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
-    .site-footer ul li a:hover, .site-footer ul li a:focus {
-      color: #cccccc;
-      border-bottom: 0.1em dashed #f6f6f6; }
-=======
-/* line 2, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+/* line 2, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
 .site-footer {
   background: #252525; }
 
-/* line 6, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+/* line 6, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
 .address, .address a, .codes {
   line-height: 1.7em; }
 
-/* line 9, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+/* line 9, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
 .codes {
   display: block;
   line-height: 1.7em;
@@ -20397,7 +19445,7 @@ Clear Box
   padding: 10px 0;
   background: #191919; }
 
-/* line 18, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+/* line 18, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
 .address .serif-italic,
 .codes .serif-italic {
   font-size: 1.3em;
@@ -20405,21 +19453,21 @@ Clear Box
   margin: 0 0 4px;
   display: block; }
 
-/* line 25, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+/* line 25, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
 a {
   color: #ccc; }
 
-/* line 28, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+/* line 28, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
 a:hover {
   color: #fff; }
 
-/* line 31, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+/* line 31, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
 .address-link .icon {
   display: inline-block;
   margin: 0 6px 0 0;
   font-size: 1.2em; }
 
-/* line 36, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+/* line 36, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
 .small-button,
 .phone a,
 .footer-bar span a {
@@ -20431,17 +19479,17 @@ a:hover {
   background: #222;
   border-radius: 3px; }
 
-/* line 47, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+/* line 47, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
 .phone {
   display: block; }
 
-/* line 50, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+/* line 50, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
 .phone a {
   color: #ddd;
   width: 100px;
   padding-top: 0px 8px 1px; }
 
-/* line 55, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+/* line 55, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
 .social h5 {
   font-size: 1.4em;
   font-family: 'ITCFranklinGothicW01-Md 812695';
@@ -20450,11 +19498,11 @@ a:hover {
   color: #ccc; }
 
 @media (min-width: 992px) {
-  /* line 63, /Users/rich/git/unity-lab/source/scss/organisms/footers/_footer.scss */
+  /* line 63, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_footer.scss */
   .footer-links {
     text-align: left; } }
 
-/* line 1, /Users/rich/git/unity-lab/source/scss/organisms/footers/_shield-footer.scss */
+/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_shield-footer.scss */
 .shield-footer {
   display: block;
   background: #252525;
@@ -20466,19 +19514,18 @@ a:hover {
   z-index: 1;
   background-image: url("../../images/backgrounds/images/shieldbg.png");
   background-size: cover; }
-  /* line 11, /Users/rich/git/unity-lab/source/scss/organisms/footers/_shield-footer.scss */
+  /* line 11, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_shield-footer.scss */
   .shield-footer h1, .shield-footer h2, .shield-footer h3, .shield-footer h4, .shield-footer h5 {
     color: #eee; }
-  /* line 14, /Users/rich/git/unity-lab/source/scss/organisms/footers/_shield-footer.scss */
+  /* line 14, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_shield-footer.scss */
   .shield-footer h1 {
     font-size: 2em; }
-  /* line 17, /Users/rich/git/unity-lab/source/scss/organisms/footers/_shield-footer.scss */
+  /* line 17, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_shield-footer.scss */
   .shield-footer h2 {
     font-size: 1.7em; }
-  /* line 20, /Users/rich/git/unity-lab/source/scss/organisms/footers/_shield-footer.scss */
+  /* line 20, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/footers/_shield-footer.scss */
   .shield-footer h3 {
     font-size: 1.2em; }
->>>>>>> 25a50a19e6f1a4b4fd96a4fd7d51d36278988875
 
 /* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/organisms/headers/header.scss */
 .logo-wrapper {

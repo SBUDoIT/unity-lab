@@ -7238,7 +7238,8 @@ $grids: add-grid(16 at $break4);
   border: 0.1em solid #eeeeee; }
 
 /* line 75, /Users/nicholasciuffo/GIT/unity-lab/source/scss/global/_extendables.scss */
-.button-trans, .default-button, .impact-button, .subtle-button, .secondary-button {
+.button-trans, .default-button, .impact-button, .rounded-outline-button,
+.subtle-button, .secondary-button {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
@@ -17353,6 +17354,7 @@ body {
     background: #990000; }
 
 /* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+.rounded-outline-button,
 .subtle-button {
   display: inline-block;
   padding: 10px 10px 14px 16px;
@@ -17365,12 +17367,15 @@ body {
   text-align: left;
   margin: 0 1em 1em 0;
   cursor: pointer; }
-  /* line 16, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
-  .subtle-button:hover, .subtle-button:focus {
+  /* line 17, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+  .rounded-outline-button:hover, .rounded-outline-button:focus,
+  .subtle-button:hover,
+  .subtle-button:focus {
     color: #333333;
     background: #eeeeee;
     border: 1px solid #333333; }
-  /* line 23, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+  /* line 24, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+  .rounded-outline-button .icon,
   .subtle-button .icon {
     display: inline-block;
     vertical-align: middle; }
@@ -17405,6 +17410,22 @@ body {
   .secondary-button.selected {
     border: 3px solid rgba(128, 219, 240, 0.5);
     padding: 10px 4px; }
+
+/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_hero-button.scss */
+.hero-button {
+  display: inline-block;
+  background: rgba(51, 51, 51, 0.8);
+  padding: 1em;
+  text-transform: uppercase;
+  border-bottom: rgba(255, 255, 255, 0.5);
+  box-sizing: inherit;
+  cursor: pointer;
+  font-family: "Trade Gothic Next W01", Arial, sans-serif; }
+
+@media (min-width: 800px) {
+  /* line 14, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_hero-button.scss */
+  .hero-button {
+    margin: 0 1em 1em 0; } }
 
 /* Form */
 /*.contactForm {
