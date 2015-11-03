@@ -1,0 +1,38 @@
+.link-card {
+
+	text-align: left;
+	margin-bottom: 2em;
+}
+
+
+	.link-card--icon {
+
+		font-size: 3em;
+		padding: 1em 0;
+		color: $red;
+	}
+
+	.link-card--heading {
+		font-size: 1.3em;
+		color: $dark-gray;
+		
+	}
+
+	.link-card--text {
+
+		
+		padding: .2em;
+
+		ul, ul li
+		{
+			@extend .list-style-none;
+
+		}
+
+		ul li
+		{
+			padding: 0.25em 0;
+		}
+
+	}
+

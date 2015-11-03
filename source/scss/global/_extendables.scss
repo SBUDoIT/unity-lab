@@ -7,68 +7,12 @@
 
 /* Heading, subheading, paragraph, and media styles for cards */
 
-.card-icon {
-
-    font-size: 3em;
-    padding: .5em 0;
-}
-
-.card-title {
-
-    color: $red;
-    font-size: 1.7em;
-}
-.card-subtitle {
-
-    color: $dark-gray;
-    font-size: 1.3em;
-}
-
-.card-item-font {
-
-    font-size: 1.1em;
-    line-height: 1.7em;
-}
-
-.card-call-to-action {
-
-    margin-top: 2em;
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: .5em;
-    border: .1em solid $red;
-
-    &:hover,
-    &:focus, {
-
-        color: $dark-gray;
-        border: .1em solid $dark-gray;
-    }
-}
-
-/* Link Types */
-
-.dashed-link {
-
-    border-bottom: .1em dashed;
-
-}
-
-.read-more {
-
-    display: inline-block;
-    margin-top: 1em;
-    border-bottom: .1em dashed;
-
-}
-
-.view-all {
-
-        display: inline-block;
-        margin-top: 1em;
-        padding: .5em;
-        border: .1em solid $light-gray;
+.list-style-none
+{
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -94,11 +38,54 @@
 }
 
 
-/* Paddings */
 
-.no-padding {
+.hide-accessible-mobile {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    //TODO: Why do we set width and height on this?
+    //width: 2000px;
+    //height: 2000px;
 
+    @include breakpoint($screen-md) {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+.hide-accessible {
+    position: absolute !important;
+    top: -99999px !important;
+    left: -99999px !important;
+    width: 2000px;
+    height: 2000px;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
     padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.col-centered {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+
+.spacer {
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 28px;
 }
 
 
@@ -153,105 +140,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.hide-accessible-mobile {
-    position: absolute;
-    top: -99999px;
-    left: -99999px;
-    //TODO: Why do we set width and height on this?
-    //width: 2000px;
-    //height: 2000px;
-
-    @include breakpoint($screen-md) {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-}
-
-.hide-accessible {
-    position: absolute !important;
-    top: -99999px !important;
-    left: -99999px !important;
-    width: 2000px;
-    height: 2000px;
-}
-
-.visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.col-centered {
-    float: none !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-//http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns
-.row-centered {
-    text-align:center;
-}
-.column-centered {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:left;
-    /* inline-block space fix */
-    margin-right:-4px;
-}
-
-/* 5 column bootstrap */
-.col-xs-5ths,
-.col-sm-5ths,
-.col-md-5ths,
-.col-lg-5ths {
-    position: relative;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
-    width: 20%;
-    float: left;
-}
-
-@media (min-width: 768px) {
-    .col-sm-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-
-@media (min-width: 992px) {
-    .col-md-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-
-@media (min-width: 1200px) {
-    .col-lg-5ths {
-        width: 20%;
-        float: left;
-    }
-}
-
-/* end 5 column bootstrap */
-
-.spacer {
-    display: block;
-    width: 100%;
-    background: #fff;
-    height: 28px;
-}
-
-.padding-top-btm-15 {
-    padding: 15px 0px;
-}
 
 .icon-square-bg {
     height: 70px;
@@ -261,25 +149,3 @@
     padding-right: 0px !important; //override pull-left padding
 }
 
-.light-theme {
-    
-    .section-header, .section-footer
-    {
-
-
-    h1, h2, h3, h4, h5, h6, p, a, a:visited, a:active, div, span {
-        color: #FFF;
-    }
-
-
-    a:hover {
-        color: #ccc;
-    }
-}
-}
-
-.dark-theme {
-    h1, h2, h3, h4, h5, h6, p, a, div, span {
-        color: #333;
-    }
-}
