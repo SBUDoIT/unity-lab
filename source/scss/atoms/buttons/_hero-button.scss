@@ -1,0 +1,17 @@
+.hero-button {
+	display: inline-block;
+	background: rgba(51,51,51,.8);
+	padding: 1em;
+	text-transform: uppercase;
+	border-bottom: rgba(255,255,255, .5);
+	box-sizing: inherit;
+	cursor: pointer;
+	font-family: $font;
+	@extend .border-trans;
+}
+
+@media (min-width: 800px) {
+	.hero-button {
+	    margin: 0 1em 1em 0;
+	}
+}
