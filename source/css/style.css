@@ -17711,9 +17711,18 @@ html {
 .sbuicon-keyboard-o:before {
   content: "\f11c"; }
 
+<<<<<<< HEAD
+/* line 75, /Users/nicholasciuffo/GIT/unity-lab/source/scss/global/_extendables.scss */
+.button-trans, .default-button, .impact-button, .rounded-outline-button,
+.subtle-button, .secondary-button {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+=======
 /* line 1194, /Users/nicholasciuffo/GIT/unity-lab/source/scss/libraries/university-icons/_university-icons.scss */
 .sbuicon-flag-o:before {
   content: "\f11d"; }
+>>>>>>> 6e001b2840c49dadf4e8d0efe9a088965a8179bd
 
 /* line 1198, /Users/nicholasciuffo/GIT/unity-lab/source/scss/libraries/university-icons/_university-icons.scss */
 .sbuicon-flag-checkered:before {
@@ -29950,6 +29959,7 @@ a.sbu-button:active {
 .rounded-outline-button, .rounded-outline-button-block {
 =======
 /* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+.rounded-outline-button,
 .subtle-button {
 >>>>>>> 8554fadc29111fe42fd8eb4486eea6483ab24dae
   display: inline-block;
@@ -30431,12 +30441,15 @@ Simple Button
 =======
   margin: 0 1em 1em 0;
   cursor: pointer; }
-  /* line 16, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
-  .subtle-button:hover, .subtle-button:focus {
+  /* line 17, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+  .rounded-outline-button:hover, .rounded-outline-button:focus,
+  .subtle-button:hover,
+  .subtle-button:focus {
     color: #333333;
     background: #eeeeee;
     border: 1px solid #333333; }
-  /* line 23, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+  /* line 24, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_subtle-button.scss */
+  .rounded-outline-button .icon,
   .subtle-button .icon {
     display: inline-block;
     vertical-align: middle; }
@@ -30472,6 +30485,22 @@ Simple Button
     border: 3px solid rgba(128, 219, 240, 0.5);
     padding: 10px 4px; }
 >>>>>>> 8554fadc29111fe42fd8eb4486eea6483ab24dae
+
+/* line 1, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_hero-button.scss */
+.hero-button {
+  display: inline-block;
+  background: rgba(51, 51, 51, 0.8);
+  padding: 1em;
+  text-transform: uppercase;
+  border-bottom: rgba(255, 255, 255, 0.5);
+  box-sizing: inherit;
+  cursor: pointer;
+  font-family: "Trade Gothic Next W01", Arial, sans-serif; }
+
+@media (min-width: 800px) {
+  /* line 14, /Users/nicholasciuffo/GIT/unity-lab/source/scss/atoms/buttons/_hero-button.scss */
+  .hero-button {
+    margin: 0 1em 1em 0; } }
 
 /* Form */
 /*.contactForm {
