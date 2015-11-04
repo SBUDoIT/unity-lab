@@ -58,7 +58,7 @@ ul.icons li span:before {
   float: left;
   margin: 1.5%; }
 
-/* line 62, stdin */
+/* line 59, stdin */
 .color-picker li, .overlay-picker li {
   width: 30px;
   height: 30px;
@@ -66,7 +66,7 @@ ul.icons li span:before {
   display: inline-block;
   margin-left: 5px; }
 
-/* line 70, stdin */
+/* line 67, stdin */
 .padding-picker li {
   border: 1px solid #fff;
   display: inline-block;
@@ -76,12 +76,12 @@ ul.icons li span:before {
   padding-left: 10px;
   padding-right: 10px; }
 
-/* line 80, stdin */
+/* line 77, stdin */
 .highlightcard {
   border-width: 5px; }
 
 /* this is the floating div with all the class names and fun stuff */
-/* line 85, stdin */
+/* line 82, stdin */
 .class_box {
   position: fixed;
   width: 300px;
@@ -97,7 +97,7 @@ ul.icons li span:before {
   display: none;
   font-weight: bold; }
 
-/* line 101, stdin */
+/* line 98, stdin */
 .class_box h2 {
   background-color: #4D4F53;
   color: #E3E5DD;
@@ -107,27 +107,27 @@ ul.icons li span:before {
   margin: 0px;
   padding: 5px 10px; }
 
-/* line 111, stdin */
+/* line 108, stdin */
 .class_box p {
   text-align: left;
   padding: 10px;
   margin-bottom: 0px; }
 
-/* line 117, stdin */
+/* line 114, stdin */
 .class_icon {
   border: 3px solid #4D4F53;
   text-align: center;
   padding: 5px 5px 5px 15px;
   background-color: white; }
 
-/* line 124, stdin */
+/* line 121, stdin */
 #hero-example {
-  background-image: url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-550.jpg); }
+  background-image: url("../../images/sample/wolfie-550.jpg"); }
   @media (min-width: 800px) {
-    /* line 124, stdin */
+    /* line 121, stdin */
     #hero-example {
-      background-image: url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-1200.jpg); } }
+      background-image: url("../../images/sample/wolfie-1200.jpg"); } }
   @media (min-width: 960px) {
-    /* line 124, stdin */
+    /* line 121, stdin */
     #hero-example {
-      background-image: url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-1600.jpg); } }
+      background-image: url("../../images/sample/wolfie-1600.jpg"); } }

@@ -1,0 +1,23 @@
+.hero__small {
+    min-height: 400px;
+    .container {
+        margin: 100px auto;
+        font-weight: 300;
+    }
+}
+
+.hero__medium {
+    min-height: 600px;
+    .container {
+        margin: 150px auto;
+        font-weight: 300;
+    }
+}
+
+.hero__large {
+    min-height: 800px;
+    .container {
+        margin: 200px auto;
+        font-weight: 300;
+    }
+}
