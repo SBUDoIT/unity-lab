@@ -1,7 +1,6 @@
 /* ==========================================================================
 Hero
 ========================================================================== */
-.hero-modern
 .hero-modern {
     position: relative;
     padding: 60px 0 60px 0;
@@ -10,27 +9,6 @@ Hero
     background-position: center center;
     color: #fff;
     width: 100%;
-    &.hero-size-small {
-        min-height: 400px;
-        .hero-content {
-            margin: 100px 0 100px 0;
-            font-weight: 300;
-        }
-    }
-    &.hero-size-medium {
-        min-height: 600px;
-        .hero-content {
-            margin: 150px 0 150px 0;
-            font-weight: 300;
-        }
-    }
-    &.hero-size-large {
-        min-height: 800px;
-        .hero-content {
-            margin: 200px 0 200px 0;
-            font-weight: 300;
-        }
-    }
 }
 
 .hero-modern--content {

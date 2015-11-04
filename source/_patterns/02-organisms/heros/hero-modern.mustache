@@ -1,23 +1,20 @@
-<section id="hero-example" class="hero-modern overlay-dark-gray hero-size-small">
-        <div class="container">
-          <div class="hero-modern--content">
-              <div class="row hero-lead">
-                <div class="col-sx-12 col-sm-12 col-md-12">
-                  <h1 class="hero-modern--heading animated fadeInDown white">{{headline.medium}}</h1>
-                
-                  {{{paragraphs.double}}}
-                  </div>                
-                </div>
-              </div>
-
-                            <div class="row hero-buttons">
-
-                  <div class="col-sm-12 col-md-6"><a data-match-height="hero-buttons" class="outline-button block text-center" href="#">Button 1</a></div><div class="col-sm-12 col-md-6"><a data-match-height="hero-buttons" class="outline-button block text-center" href="#">Button 2</a></div>
-              </div>
-            
-              
-                        </div>
-          </div>
-      </section>
-
-   
+<section id="hero-example" class="hero-modern overlay-dark-gray hero__medium">
+  <div class="container">
+    <div class="row">
+      <div class="col-sx-12 col-sm-12 col-md-12">
+        <div class="hero-modern--content">
+          <h1 class="hero-modern--heading animated fadeInDown white">{{headline.medium}}</h1>
+          
+          {{{paragraphs.double}}}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {{# listItems.two }}
+      <div class="col-sm-12 col-md-6">
+        <a data-match-height="hero-buttons" class="hero-button block text-center" href="{{url}}">{{headline.short}}</a>
+      </div>
+      {{/ listItems.two}}
+    </div>
+  </div>
+</section>

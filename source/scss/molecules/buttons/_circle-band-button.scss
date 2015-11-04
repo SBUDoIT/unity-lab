@@ -5,7 +5,6 @@
 // .disabled          - Dims the button to indicate it cannot be used.
 //Styleguide circle-band-button
 
-
 .circle-band-button {
     display: block;
     background-size: cover;
@@ -13,7 +12,7 @@
     background-position: center;
     width: 150px;
     height: 150px;
-    margin: 0 auto 25px;
+    //margin: 0 auto 25px;
     border-radius: 50%;
     overflow: hidden;
     -webkit-box-sizing: border-box;
@@ -58,6 +57,7 @@
         margin: 82px 0 0 0;
     }
 }
+
 
 .circle-band-button:hover .circle-band-button--label {
     background-color: rgba(51, 204, 204, 0.6);

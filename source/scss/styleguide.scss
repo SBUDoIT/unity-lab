@@ -51,13 +51,10 @@ ul.icons li span:before {
 
 .overlay-card, .color-card {
     height: 100px;
-  
-     width: 30%; 
-     float: left; 
-     margin: 1.5%;
+    width: 30%;
+    float: left;
+    margin: 1.5%;
 }
-
-
 
 .color-picker li, .overlay-picker li {
     width: 30px;
@@ -121,24 +118,13 @@ ul.icons li span:before {
     background-color: white;
 }
 
-#hero-example
-{
+#hero-example {
+    background-image: url("../../images/sample/wolfie-550.jpg");
+    @include breakpoint($break2) {
+        background-image: url("../../images/sample/wolfie-1200.jpg");
+    }
 
-
-background-image:url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-550.jpg);
-
-
-
-@include breakpoint($break2)
-{
-    background-image:url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-1200.jpg);
+    @include breakpoint($break3) {
+        background-image: url("../../images/sample/wolfie-1600.jpg");
+    }
 }
-
-@include breakpoint($break3)
-{  
-    background-image:url(http://it.stonybrook.edu/sites/all/modules/custom/doit_banners/default_banners/wolfie-1600.jpg);
-}
-
-
-}
-

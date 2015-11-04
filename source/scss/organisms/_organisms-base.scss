@@ -11,6 +11,7 @@
 
 @import "headers/header";
 
+@import "heros/hero-base.scss";
 @import "heros/hero-classic";
 @import "heros/hero-article";
 @import "heros/hero-contact-card";
@@ -30,4 +31,4 @@
 @import "text/star-title";
 @import "text/text-reveal";
 
-@import "timeline/vertical";
+@import "timelines/vertical-timeline";
