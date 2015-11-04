@@ -52,7 +52,7 @@
     right: 0;
     top: 0;
     @include transition(all 0.3s ease-out);
-    h2 {
+    .reveal-card--reveal--heading {
         border-bottom: 1px solid #333;
         padding: 0 0 12px;
     }
