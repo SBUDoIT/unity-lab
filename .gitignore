@@ -3,3 +3,5 @@ node_modules
 .sass-cache
 public
 vendor
+source/css
+source/js
