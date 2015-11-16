@@ -4,8 +4,8 @@
 		"medium":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)",
 		"short": false
 	},
-
 	
+	"iframe.src" : false,
 
 	"icon" : false,
 

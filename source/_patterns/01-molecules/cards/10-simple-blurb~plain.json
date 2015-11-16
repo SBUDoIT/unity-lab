@@ -5,6 +5,8 @@
 		"short": false
 	},
 
+	"iframe.src" : false,
+
 	"img" : false,
 
 	"icon" : false,

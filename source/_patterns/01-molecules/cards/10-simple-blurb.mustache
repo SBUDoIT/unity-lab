@@ -1,14 +1,21 @@
 <div class="simple-blurb-card" data-match-height="simple-blurb-card">
    
-	{{# icon }}
+
+    {{# iframe.src }}  
+    <div class="simple-blurb-card--video-container">  
+        <iframe class="simple-blurb-card--video" src="{{iframe.src}}" allowfullscreen /></iframe>
+    </div>
+    {{/ iframe.src }}
+
+
+    {{# icon }}
     <span class="simple-blurb-card--icon {{icon}}"></span>
     {{/ icon }}
 
-    {{^ icon }}
+
     {{# img}}
     <img class="simple-blurb-card--image" src="{{img.landscape-16x9.src}}" />
     {{/ img }}
-    {{/icon}}
 
     <h2 class="simple-blurb-card--heading">{{ headline.medium }}</h2>
     
