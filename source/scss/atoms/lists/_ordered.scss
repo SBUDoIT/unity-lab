@@ -1,13 +1,12 @@
-
 ol.number {
 
     list-style: none !important;
     counter-reset: number-counter;
-    
+
     
     > li {
         margin-bottom: 14px;
-        position: relative;
+        
     }
     > li:before {
         content: counter(number-counter) ".";

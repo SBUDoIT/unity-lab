@@ -34,21 +34,20 @@
     text-align: center;
     font-size: 1.2em;
     @include breakpoint($screen-md) {
-        padding: 25px 0 0 0;
+        padding: 25px 0 25px 0;
     }
 }
 
-.dual-tone-button--content:after {
+span.dual-tone-button--icon {
     @extend .sbuicon;
     text-align: center;
     display: block;
-    content: "\f061";
     background: #000;
-    margin: 5px 0 0 0;
+    margin: 0;
     padding: 5px 0 8px;
     border-radius: 0 0 2px 2px;
     @include breakpoint($screen-md) {
-        margin: 15px 0 0 0;
+        margin: 0px 0 0 0;
         padding: 10px 0 13px;
     }
 }
