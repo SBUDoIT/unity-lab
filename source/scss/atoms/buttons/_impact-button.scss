@@ -1,4 +1,4 @@
-.impact-button {
+.impact-button, .impact-button:visited, .impact-button:active {
     display: inline-block;
     padding: 12px 7px;
     background: $red;
@@ -39,3 +39,4 @@
         background: $red;
     }
 }
+
