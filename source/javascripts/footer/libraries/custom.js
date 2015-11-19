@@ -4,7 +4,7 @@
 		 * CountTo Animation
 		/* ---------------------------------------------- */
 
-		$('.count-item').each(function() {
+		$('.count-item, .stat-card').each(function() {
 			$(this).appear(function() {
 				var number = $(this).find('.count-to').data('countto');
 				$(this).find('.count-to').countTo({from: 0, to: number, speed: 1200, refreshInterval: 30});
