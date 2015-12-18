@@ -20,14 +20,7 @@ var template = require('lodash.template');
 var through = require('through2');
 var directoryMap = require("gulp-directory-map");
 
-gulp.task('cleantemp', function() {
-    return gulp.src('.temp', {
-            read: false
-        })
-        .pipe(clean({
-            force: true
-        }));
-});
+
 
 gulp.task('cleandist', function() {
     return gulp.src('.dist', {
