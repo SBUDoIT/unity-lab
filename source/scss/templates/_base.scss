@@ -69,4 +69,26 @@ body {
     margin: 1em 0;
 }
 
+.unity-sidebar-prefix
+{
+    #main-content
+    {
+     @include make-lg-column(9);   
+    @include make-lg-column-push(3);         
+
+    }
+    #main-prefix
+    {
+         @include make-lg-column(3);
+         @include make-lg-column-pull(9);
+         
+    }
+
+    .container .container
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 @import "responsive-2col";

@@ -1,4 +1,5 @@
-<section id="hero-example" class="hero-classic hero__large">
+<section id="hero-example" class="hero-classic">
+  <div class="hero--content fluffy">
   <div class="container">
   <div class="row">
   <div class="col-xs-12">
@@ -6,14 +7,13 @@
   </div>
   </div>
   <div class="row">
-  <div class="col-xs-12">
-      {{# listItems.three }}
-      
-        <a data-match-height="hero-buttons" class="hero-button" href="{{url}}">{{headline.short}}</a>
-      
+   {{# listItems.three }}
+      <div class="col-xs-12 col-md-4">    
+        <a data-match-height="hero-buttons" class="hero-button button-block" href="{{url}}">{{headline.short}}</a>
+      </div>  
       {{/ listItems.three}}
-    </div>
 
     </div>
+  </div>
   </div>
 </section>

@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/unity-lab":{"rsync__auto":"true","rsync__exclude":null,"rsync__args":["--verbose","--archive","--delete","-z","--chmod=ugo=rwX"],"id":null,"create":true,"mount_options":[],"guestpath":"/var/www/unity-lab","hostpath":"D:/git/unity-lab","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"D:/git/unity-lab","disabled":false}}}
