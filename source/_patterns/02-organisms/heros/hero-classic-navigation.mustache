@@ -1,0 +1,43 @@
+<section id="hero-example" class="hero-classic">
+    <div class="hero--navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <a class="secondary-button button-block" data-match-height="hero-button" href="index.html">Current Students</a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <a class="secondary-button button-block" data-match-height="hero-button" href="colors.html">High School Students</a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <a class="secondary-button button-block" data-match-height="hero-button" href="sbu-icons.html">Visiting Students</a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <a class="secondary-button" data-match-height="hero-button" href="https://yahoo.com">Incoming Students</a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <a class="secondary-button" data-match-height="hero-button" href="https://google.com">International Students</a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <a class="secondary-button" data-match-height="hero-button" href="https://google.com">Adults & Professionals</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero--content fluffy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>SOLAR</h1>
+                </div>
+            </div>
+            <div class="row">
+                 {{# listItems.three }}
+                  <div class="col-xs-12 col-md-4">    
+                    <a data-match-height="hero-buttons" class="hero-button button-block" href="{{url}}">{{headline.short}}</a>
+                  </div>  
+                  {{/ listItems.three}}
+            </div>
+        </div>
+    </div>
+</section>
