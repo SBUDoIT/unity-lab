@@ -103,3 +103,24 @@ ul.default-bullets, {
         @extend .sbuicon;
     }
 }
+
+/* Using ICONS as bullets
+The list-icon-group class styles the <li></li> elements as a whole.
+The list-icon class styles the individual icons to ensure equidistant spacing.
+
+<ul class="list-icon-group">
+    <li><span class="sbuicon-apple list-icon">Apple</li>
+</ul>
+
+ */
+
+ul.list-icon-group li {
+
+    margin-top: 0.5em;
+}
+.list-icon {
+
+    display: inline-block;
+    width: 20px;
+    @extend .no-bullets;
+}
