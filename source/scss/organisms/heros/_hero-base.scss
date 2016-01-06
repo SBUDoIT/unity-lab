@@ -1,6 +1,6 @@
 .hero__small {
     min-height: 400px;
-    .container {
+    .content-wrap {
         margin: 100px auto;
         font-weight: 300;
     }
@@ -8,7 +8,7 @@
 
 .hero__medium {
     min-height: 600px;
-    .container {
+    .content-wrap {
         margin: 150px auto;
         font-weight: 300;
     }
@@ -16,8 +16,46 @@
 
 .hero__large {
     min-height: 800px;
-    .container {
+    .content-wrap {
         margin: 200px auto;
         font-weight: 300;
     }
+}
+
+
+
+
+.hero--navigation{
+    
+    
+    margin: 1em auto 0 auto;
+
+    a{
+        margin-bottom: 30px;
+    }
+}
+
+//.hero--navigation
+//{
+//    $i: 1;
+//    $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+//     @for $i from (1 + 1) through $grid-columns {
+//    $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+//  }
+//  #{$list} {
+//   
+//    padding-left:  0.5em;
+//    padding-right: 0.5em;
+//    margin-bottom: 1em;
+//    
+//  }
+//}
+
+
+.hero--logo
+{
+    width: 100%;
+    height: auto;
+    min-width: 170px;
+    
 }
