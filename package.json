@@ -1,10 +1,6 @@
 {
-  "name": "unity",
+  "name": "unity-lab",
   "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/SBUDoIT/unity.git"
-  },
   "dependencies": {
     "gulp-jshint-html-reporter": "^0.1.2"
   },
