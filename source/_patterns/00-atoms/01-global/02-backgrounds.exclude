@@ -9,13 +9,13 @@ function getColors()
 {
 	colors = [];
 	//foreach color card
-	
+
 	$("#colors .allowed-colors .color-card").each(function() {
 
 		classList = $(this).attr('class').split(/\s+/);
-	 	
+
 	 	$.each(classList, function(index, item) {
-	 		
+
 	 		if(item.indexOf('bg-') == 0)
 	 		{
 	 			colors.push(item);
@@ -23,7 +23,7 @@ function getColors()
 	 	});
  	});
 
- 	
+
 
  	return colors;
 }
@@ -32,13 +32,13 @@ function getOverlays()
 {
 	overlays = [];
 	//foreach color card
-	
+
 	$("#colors .overlay-card").each(function() {
 
 		classList = $(this).attr('class').split(/\s+/);
-	 	
+
 	 	$.each(classList, function(index, item) {
-	 		
+
 	 		if(item.indexOf('overlay-') == 0 && item != 'overlay-card')
 	 		{
 	 			overlays.push(item);
@@ -51,17 +51,17 @@ function getOverlays()
 
 function load()
 {
-  	
+
   	//get array of colors, build into html list
   	colors = getColors();
-  	
+
 
   	overlays = getOverlays();
   	overlayList = '';
 	$.each(overlays, function(index, item) {
 				overlayList += "<li class=" + item + "></li>";
-		});	
-  	
+		});
+
 
   	//create array of paddings, build into html list
   	paddings = ['fluffy', 'cushy', 'airy', 'spacey', 'comfy', 'cozy', 'snug', 'tight'];
@@ -72,28 +72,28 @@ function load()
   	});
 
   	//read list of textures from json
-  	$.getJSON("../../data/textures.json", function ( data ) { 
+  	$.getJSON("../../data/textures.json", function ( data ) {
 
 		var items = [];
-		
+
 
 		var i = 0;
 		var texture="";
 		var container = '';
 		var bgColor = '';
 		$.each(data, function (key, val) {
-				
+
 			texture = key;
 			defaultColor = data[key].bgDefault;
-			
+
 			if(!defaultColor)
 				defaultColor='bg-red';
 
-			whitelist = data[key].bgWhitelist;		
+			whitelist = data[key].bgWhitelist;
 			blacklist = data[key].bgBlacklist;
 			if(whitelist)
 			{
-				
+
 				colorList = '';
 				$.each(whitelist, function(index, item) {
   					colorList += "<li class=" + item + "></li>";
@@ -101,27 +101,27 @@ function load()
 			}
 			else if(blacklist)
 			{
-				
+
 				colorList = '';
 				$.each(colors, function(index, item) {
-					
+
   					if($.inArray(item, blacklist) < 0)
   					{
   						colorList += "<li class=" + item + "></li>";
   					}
-  					
-  				});	
+
+  				});
 			}
 			else
 			{
 				colorList = '';
 				$.each(colors, function(index, item) {
   						colorList += "<li class=" + item + "></li>";
-  				});	
+  				});
 			}
 
-	
-			
+
+
 
             defaultPadding = "fluffy"
 			texture = "bg-texture-" + texture;
@@ -157,10 +157,10 @@ function load()
 		 	li = $(this); //what got clicked
  			section = $(this).parent().closest("section"); //the section the clicked item lives in
  			classList = section.attr('class').split(/\s+/); //build array of classes on that section
-			
-			//search class array looking for bg-color 				
+
+			//search class array looking for bg-color
  			$.each(classList, function(index, item) {
- 		
+
 		 		if(item.indexOf('bg-') == 0 && item.indexOf('bg-texture') < 0)
 		 		{
 		 			section.removeClass(item);
@@ -169,18 +169,18 @@ function load()
 
  			//add clicked bg-color to section
  			section.addClass(li.attr('class'));
- 			
+
  			$('#' + section[0].id + ' h2').html(section.attr('class'));
  		});
 
  	});
 
 
-	$.getJSON("../../data/patterns.json", function ( data ) { 
+	$.getJSON("../../data/patterns.json", function ( data ) {
 
 		var items = [];
 
-				
+
 
 		var i = 0;
 		var pattern="";
@@ -193,11 +193,11 @@ function load()
 			pattern = key;
 
 			overlayDefault = data[key].overlayDefault;
-			
+
 			if(!overlayDefault)
 				overlayDefault='overlay-red';
 
-			whitelist = data[key].overlayWhitelist;		
+			whitelist = data[key].overlayWhitelist;
 			blacklist = data[key].overlayBlacklist;
 			if(whitelist)
 			{
@@ -209,28 +209,28 @@ function load()
 			}
 			else if(blacklist)
 			{
-				
+
 				overlayList = '';
 				$.each(overlays, function(index, item) {
-					
+
   					if($.inArray(item, blacklist) < 0)
   					{
   						overlayList += "<li class=" + item + "></li>";
   					}
-  				});	
+  				});
 			}
 			else
 			{
 				overlayList = '';
 				$.each(overlays, function(index, item) {
   						overlayList += "<li class=" + item + "></li>";
-  				});	
+  				});
 			}
 
-			console.log(overlayList);
+			//console.log(overlayList);
 
 
-	
+
 			pattern = "bg-pattern-" + pattern;
 			heading = "fluffy " + pattern + " " + overlayDefault;
 			 items.push( "<section id='pattern-" + i + "' class='" + overlayDefault + " fluffy " + pattern + "'><div class='container'><div class='row'><div class='col-sm-12'><h2 class='section-header white'>" + heading + "</h2><ul class='overlay-picker'>" + overlayList + "</ul><ul class='padding-picker'>" + paddingList + "</ul></div></div></div></section>" );
@@ -245,12 +245,12 @@ function load()
 		 	li = $(this); //what got clicked
  			section = $(this).parent().closest("section");
  			heading = $(this).closest("h2");
- 			
+
  			classList = section.attr('class').split(/\s+/); //build array of classes on that section
-			
-			//search class array looking for bg-color 				
+
+			//search class array looking for bg-color
  			$.each(classList, function(index, item) {
- 		
+
 		 		if(item.indexOf('overlay-') == 0)
 		 		{
 		 			section.removeClass(item);
@@ -260,8 +260,8 @@ function load()
  			//add clicked bg-color to section
  			section.addClass(li.attr('class'));
  			$('#' + section[0].id + ' h2').html(section.attr('class'));
- 			
- 			
+
+
  		});
 
 		//when a padding size gets clicked on...
@@ -275,7 +275,7 @@ function load()
 
 		 		if($.inArray(item, paddings) > 0)
 		 		{
-		 			
+
 		 			section.removeClass(item);
 		 		}
 		 	});
@@ -287,8 +287,8 @@ function load()
  	});
 }
 
- 
- 	
+
+
 function setup()
 {
 
@@ -299,7 +299,7 @@ load();
 
 
 }
-  
+
 
 
   $(document).ready(setup);
