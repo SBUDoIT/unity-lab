@@ -6,15 +6,15 @@
     $colorName: nth($i, 1);
     $colorVar: nth($i, 2);
 
-    .#{$colorName} { 
+    .#{$colorName} {
         color: $colorVar !important;
     }
 
-    .#{$colorName}-before:before { 
+    .#{$colorName}-before:before {
         color: $colorVar !important;
     }
 
-    .#{$colorName}-before-children *:before { 
+    .#{$colorName}-before-children *:before {
         color: $colorVar !important;
     }
 }
@@ -23,19 +23,15 @@
     $colorName: nth($i, 1);
     $colorVar: nth($i, 2);
 
-    .#{$colorName} { 
+    .#{$colorName} {
         color: $colorVar !important;
     }
 
-    .#{$colorName}-before:before { 
+    .#{$colorName}-before:before {
         color: $colorVar !important;
     }
 
-    .#{$colorName}-before-children *:before { 
+    .#{$colorName}-before-children *:before {
         color: $colorVar !important;
     }
 }
-
-
-
-
