@@ -1,3 +1,32 @@
+.font-default{
+  font-family: $font;
+  font-weight: normal;
+}
+
+.font-default--heavy{
+  font-family: $font;
+  font-weight: 900;
+}
+
+.font-default--medium {
+  font-family: $font;
+  font-weight: 500;
+}
+
+.font-default--light {
+  font-family: $font;
+  font-weight: 300;
+}
+
+.italic
+{
+  font-style: italic;
+}
+
+.font-alt{
+  font-family: $font-alt;
+}
+
 .introduction, .intro-text {
     font-size: 1.3em;
     line-height: 1.5em;
@@ -19,12 +48,13 @@
 }
 
 .serif {
-    font-family: 'CenturyExpandedLTW01-Ro';
+    font-family: $font-alt;
     font-weight: 400;
 }
 
 .serif-italic {
-    font-family: 'CenturySchoolbookW01-It 927458';
+    font-family: $font-alt;
+    font-style: italic;
     font-weight: 400;
 }
 
