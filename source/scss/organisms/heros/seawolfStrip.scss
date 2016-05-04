@@ -27,7 +27,7 @@
 }
 
 .seawolfStrip {
-  background: #800000 url(../../img/branding/rays/rays-vertical-1.jpg) repeat top center fixed;
+  background: #800000 url('http://stonybrook.edu/sb/far-beyond/img/branding/rays/red-rays-full.jpg') repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -37,7 +37,7 @@
   z-index: 10; }
 @media (min-width: 800px) {
   .seawolfStrip {
-    background: #800000 url(../../img/home-apr15/redSwooshes.jpg) repeat top center fixed;
+    background: #800000 url('http://stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg') repeat top center fixed;
   }
 }
   .seawolfStrip::after {
