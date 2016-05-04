@@ -73,15 +73,15 @@ body {
 {
     #main-content
     {
-     @include make-lg-column(9);   
-    @include make-lg-column-push(3);         
+     @include make-lg-column(9);
+    @include make-lg-column-push(3);
 
     }
     #main-prefix
     {
          @include make-lg-column(3);
          @include make-lg-column-pull(9);
-         
+
     }
 
     .container .container
@@ -92,3 +92,4 @@ body {
 }
 
 @import "responsive-2col";
+@import "campaign-banners";
