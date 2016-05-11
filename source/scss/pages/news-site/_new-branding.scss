@@ -16,12 +16,47 @@
     transition: none;
 }
 
+.rays-border-left,
+.rays-border-right {
+    position: relative;
+}
+
+.rays-border-left:before,
+.rays-border-right:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2.5%;
+    max-width: 20px;
+    background-image: url("https://mobile.cc.stonybrook.edu/sb/img/branding/rays/red-rays-full.jpg");
+    background-size: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    content: "";
+}
+
+.rays-border-left:before {
+    left: 0;
+    background-image: url("https://mobile.cc.stonybrook.edu/sb/img/branding/rays/border/marquee-ray-strip-left.png");
+    background-size: 100%;
+    background-size: cover;
+    background-position: 0 0;
+}
+
+.rays-border-right:after {
+    right: 0;
+    background-image: url("https://mobile.cc.stonybrook.edu/sb/img/branding/rays/border/marquee-ray-strip-right.png");
+    background-size: 100%;
+    background-size: cover;
+    background-position: 0 0;
+}
 
 .grid-item_category {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../img/branding/rays/triangles/red-triangle-1.png");
+    background: url("http://mobile.cc.stonybrook.edu/sb/img/branding/rays/triangles/red-triangle-1.png");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 234px;
@@ -42,14 +77,14 @@
 
 
 .grid-item_category--primary {
-    background: url("../img/branding/rays/triangles/red-triangle-1.png");
+    background: url("http://mobile.cc.stonybrook.edu/sb/img/branding/rays/triangles/red-triangle-1.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 
 .grid-item_category--secondary {
-    background: url("../img/branding/rays/triangles/white-triangle-1.png");
+    background: url("http://mobile.cc.stonybrook.edu/sb/img/branding/rays/triangles/white-triangle-1.png");
     background-size: 100%;
     background-repeat: no-repeat;
     text-shadow: none;
@@ -301,7 +336,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/controls/x.png) no-repeat center center;
+    background: url('http://mobile.cc.stonybrook.edu/sb/img/controls/x.png') no-repeat center center;
     background-size: cover;
 }
 
