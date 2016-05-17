@@ -8,12 +8,13 @@
     text-align: center;
     position: relative;
     padding: 1%;
-    margin: 1em;
-    max-width: 400px;
+    margin: 1em 0;
+
 }
 
 .polaroid-card--image {
     @extend .card--image;
+    width: 100%;
 }
 
 .polaroid-card--heading {
@@ -41,7 +42,7 @@ a.polaroid-card:hover {
             display: block;
         }
     }
-  
+
     li:hover {
         -webkit-box-shadow: 0px 0px 8px #990000;
         box-shadow: 0px 0px 8px #990000;
