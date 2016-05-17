@@ -6,6 +6,7 @@
 
 @import "cards/cards-base";
 
+@import "cards/boldMoves-news-card";
 @import "cards/box-card";
 @import "cards/drop-accordion-card";
 @import "cards/classic-blurb-card";
@@ -15,9 +16,11 @@
 @import "cards/link-card";
 @import "cards/list-card";
 @import "cards/reveal-card";
+@import "cards/slideout-panel";
 @import "cards/stat-card";
+@import "cards/tiles";
 @import "cards/whatsComingUp";
-@import "cards/boldMoves-news-card";
+
 
 @import "media/screenshots";
 @import "media/image-gallery";

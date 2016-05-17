@@ -26,6 +26,13 @@
   }
 }
 
+/* Button Margin Fix */
+
+.seawolfStrip .btn {
+  margin-top: 0;
+  margin-left: 0;
+}
+
 .seawolfStrip {
   background: #800000 url('http://stonybrook.edu/sb/far-beyond/img/branding/rays/red-rays-full.jpg') repeat top center fixed;
   -webkit-background-size: cover;
@@ -63,7 +70,8 @@
         font-size: 44px;
       }
       .seawolfStrip {
-        padding: 7rem 0;
+        padding: 7rem
+
       }
     }
     @media (min-width: 1161px) {
