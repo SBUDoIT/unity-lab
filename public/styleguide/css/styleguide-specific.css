@@ -107,3 +107,7 @@
     line-height: 1;
 }
 
+.overlay-card, .color-card {
+    height: 100px;
+    margin: 0 0 1em;
+}
