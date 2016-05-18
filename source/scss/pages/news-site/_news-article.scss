@@ -94,7 +94,7 @@ html, body, .mag-article-container, .mag-article_header {
 	display: block;
 }
 
-.title {
+.YOU-MUST-SCOPE-YOUR-CLASS-NAMES-title {
 	z-index: 1000;
 	margin: 0 auto;
 	padding: 0 25% 0 1.25em;
@@ -109,12 +109,12 @@ html, body, .mag-article-container, .mag-article_header {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-.title p.subline {
+.YOU-MUST-SCOPE-YOUR-CLASS-NAMES-title p.subline {
 	font-size: 1.25em;
 	line-height: 1.075em;
 }
 
-.title p {
+.YOU-MUST-SCOPE-YOUR-CLASS-NAMES-title p {
 	color: #fff;
 	padding: 0 0 0.9em;
 	font-weight: 300;
@@ -123,20 +123,20 @@ html, body, .mag-article-container, .mag-article_header {
 	line-height: 1.1em;
 }
 
-.title h1,
-.title p.subline {
+.YOU-MUST-SCOPE-YOUR-CLASS-NAMES-title h1,
+.YOU-MUST-SCOPE-YOUR-CLASS-NAMES-title p.subline {
 	line-height: 1;
 }
 
-.title p.subline {
+.YOU-MUST-SCOPE-YOUR-CLASS-NAMES-title p.subline {
 	font-size: 1.15em;
 }
 
 @media only screen and (min-width: 400px) and (max-width: 752px) {
-	.title p {
+	.YOU-MUST-SCOPE-YOUR-CLASS-NAMES-title p {
 	    font-size: 1.3em;
 	}
-	.title p.subline {
+	.YOU-MUST-SCOPE-YOUR-CLASS-NAMES-title p.subline {
 	    font-size: 1.55em;
 	}
 }
