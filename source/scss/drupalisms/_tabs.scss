@@ -28,7 +28,7 @@ ul.tabs.primary li:before
 
 }
 
-ul.tabs.primary li.active {
+ul.tabs.primary li.active, ul.tabs.primary li.active a {
     background-color: #999;
     border-radius: .25em;
 }
@@ -40,6 +40,7 @@ ul.tabs.primary li a {
     background-color: #666;
     border-radius: .25em;
 }
+
 
 ul.tabs.primary li:hover {
     background-color: #333;

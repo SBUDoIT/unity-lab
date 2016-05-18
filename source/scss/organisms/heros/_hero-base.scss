@@ -1,23 +1,23 @@
 .hero__small {
-    min-height: 400px;
-    .content-wrap {
-        margin: 100px auto;
+    min-height: 250px;
+    .content-wrap, .hero-modern--content {
+        margin: 70px auto;
         font-weight: 300;
     }
 }
 
 .hero__medium {
-    min-height: 600px;
-    .content-wrap {
-        margin: 150px auto;
+    min-height: 500px;
+    .content-wrap, .hero-modern--content {
+        margin: 140px auto;
         font-weight: 300;
     }
 }
 
 .hero__large {
-    min-height: 800px;
-    .content-wrap {
-        margin: 200px auto;
+    min-height: 750px;
+    .content-wrap, .hero-modern--content {
+        margin: 210px auto;
         font-weight: 300;
     }
 }
@@ -26,8 +26,8 @@
 
 
 .hero--navigation{
-    
-    
+
+
     margin: 1em auto 0 auto;
 
     a{
@@ -43,11 +43,11 @@
    $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
  }
  #{$list} {
-  
+
    padding-left:  0.5em;
    padding-right: 0.5em;
    margin-bottom: 1em;
-   
+
  }
 }
 
@@ -57,5 +57,5 @@
     width: 100%;
     height: auto;
     min-width: 170px;
-    
+
 }

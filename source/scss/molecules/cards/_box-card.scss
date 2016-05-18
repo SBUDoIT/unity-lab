@@ -1,11 +1,19 @@
 /* cards */
 .box-card {
-    margin: 1em;
+    margin: 1em 0;
     padding: 1em;
     width: 100%;
     max-width: 500px;
     border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+
+    h1,h2,h3,h4,h5,h6{
+        color: #000;
+    }
 }
+
+
 
 .box-card--content {
     margin-bottom: 1em;

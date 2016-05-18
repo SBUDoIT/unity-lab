@@ -17,18 +17,27 @@ a.arrow-link:after {
     font-size: 1em;
 }
 
+a.ellipsis-link:after {
+    display: inline-block;
+    content: "...";
+    margin: 0 0 0 0px;
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+}
+
     .dashed-link {
-            
+
     border-bottom: .1em dashed;
         color: $dark-gray;
         border-bottom: .1em dashed #333;
 
         &:hover,
         &:focus {
-            
+
             color: $red;
             border-bottom: none;
-                
+
         }
     }
 
@@ -58,7 +67,7 @@ a.arrow-link:after {
             border: .1em solid $dark-gray;
         }
 
-    
+
 }
 
 
