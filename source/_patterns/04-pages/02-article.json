@@ -7,11 +7,11 @@
 	},
 	"img": {
 		"landscape-4x3": {
-			"src": "../../releases/latest/images/sample/landscape-16x9-mountains.jpg",
+			"src": "/images/sample/landscape-16x9-mountains.jpg",
 			"alt": "Mountains"
 		},
 		"landscape-16x9": {
-			"src": "../../releases/latest/images/sample/landscape-16x9-mountains.jpg",
+			"src": "/images/sample/landscape-16x9-mountains.jpg",
 			"alt": "Mountains"
 		}
 	},
