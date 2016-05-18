@@ -86,6 +86,7 @@ gulp.task('images', function() {
 });
 
 
+
 gulp.task('textures-json', function() {
 
     gulp.src(['images/backgrounds/textures/*.jpg', 'images/backgrounds/textures/*.png'])
@@ -135,5 +136,6 @@ gulp.task('watch', function() {
     gulp.watch('source/js_src/footer/**/*.js', ['footerjs']);
     gulp.watch('source/scss/**/*.scss', ['styles']);
     gulp.watch('source/images_src/**/*', ['images']);
+
     gulp.watch('source/fonts_src/**/*', ['fonts']);
 });
