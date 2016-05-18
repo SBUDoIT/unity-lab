@@ -1,6 +1,6 @@
 {
   "name": "unity-lab",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "gulp-jshint-html-reporter": "^0.1.2"
   },
@@ -9,6 +9,7 @@
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-bless": "^3.0.1",
+    "gulp-bump": "^2.1.0",
     "gulp-clean": "^0.3.1",
     "gulp-compass": "^2.0.3",
     "gulp-concat": "^2.5.2",

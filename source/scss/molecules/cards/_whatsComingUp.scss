@@ -1,5 +1,5 @@
 .whatsComingUp {
-  background: #800000 url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg/img/branding/rays/rays-vertical-1.jpg') repeat top center fixed;
+  background: #800000 url('../images/backgrounds/images/redSwooshes.jpg') repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,7 +8,7 @@
 }
 @media (min-width: 800px) {
   .whatsComingUp {
-    background: #800000 url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg/img/home-apr15/redSwooshes.jpg') repeat top center fixed;
+    background: #800000 url('../images/backgrounds/images/redSwooshes.jpg') repeat top center fixed;
   }
 }
   .whatsComingUp::after {
