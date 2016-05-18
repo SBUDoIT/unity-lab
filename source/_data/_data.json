@@ -4,19 +4,19 @@
 	"bodyClass": "body",
 	"img": {
 		"landscape-4x3": {
-			"src": "/placeholder_content/images/fpo_4x3.png",
+			"src": "/placeholders/images/fpo_4x3.png",
 			"alt": "4x3 Image"
 		},
 		"landscape-16x9": {
-			"src": "/placeholder_content/images/fpo_16x9.png",
+			"src": "/placeholders/images/fpo_16x9.png",
 			"alt": "16x9 Image"
 		},
 		"square": {
-			"src": "/placeholder_content/images/fpo_square.png",
+			"src": "/placeholders/images/fpo_square.png",
 			"alt": "Square Thumbnail"
 		},
 		"avatar" : {
-			"src" : "/placeholder_content/images/fpo_avatar.png",
+			"src" : "/placeholders/images/fpo_avatar.png",
 			"alt" : "Person Name"
 		},
 		"rectangle": {
