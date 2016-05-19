@@ -798,7 +798,7 @@
 		},
 
 		"excerpt": {
-			"x-small" : "Atomorum elaboraret ei pri",			
+			"x-small" : "Atomorum elaboraret ei pri",
 			"short": "The swallow may fly south with the sun, and the house martin or the plover may seek warmer climes in winter, yet these are not strangers to our land.",
 			"medium": "The Knights Who Say Ni demand a sacrifice! Found them? In Mercia?! The coconut's tropical! Where'd you get the coconuts? Why do you think that she is a witch? I am your king. You don't vote for kings. But you are dressed as one. Oh, ow!",
 			"long": "Well, I didn't vote for you. Burn her! Be quiet! He hasn't got shit all over him. Where'd you get the coconuts? The swallow may fly south with the sun, and the house martin or the plover may seek warmer climes in winter, yet these are not strangers to our land. No! Yes, yes. A bit. But she's got a wart. Shut up! Will you shut up?! I have to push the pram a lot. Now, look here, my good man. Frighten us, English pig-dogs! Go and boil your bottoms."
@@ -964,6 +964,7 @@
 			"medium": "Lancashire cheesy feet rubber cheese cheese and wine gouda the big chee"
 		},
 		"excerpt": {
+			"x-small": "Queso fromage.",
 			"short": "Queso fromage. Taleggio boursin bavarian bergkase cream cheese when the cheese comes out everybody's happy port-salut halloumi pecorino. Caerphilly cut the cheese manchego camembert de normandie goat melted cheese cheese and biscuit.",
 			"medium": "Pecorino queso lancashire. Manchego lancashire cheesy feet emmental babybel cheese strings dolcelatte bavarian bergkase. Ricotta cheese slices cheesy grin cow cheesecake smelly cheese mascarpone lancashire. Cow say cheese babybel do.",
 			"long": "Cheesy grin macaroni cheese airedale. Fromage frais airedale cheese and wine brie cow swiss swiss mozzarella. Emmental cheese triangles edam rubber cheese pepper jack ricotta airedale airedale. Brie parmesan smelly cheese cheese strings stinking bishop cheese strings taleggio. Bocconcini blue castello gouda. Everyone loves caerphilly rubber cheese halloumi smelly cheese melted cheese melted cheese bavarian bergkase. Rubber cheese ricotta emm."
