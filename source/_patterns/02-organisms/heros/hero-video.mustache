@@ -1,0 +1,31 @@
+
+
+<section id="hero-example" class="hero-classic overlay-black">
+
+<div id="video-container">
+<video autoplay loop class="fillWidth">
+<source src="/placeholders/video/video.mp4" type="video/mp4"/>
+<source src="/placeholders/video/video.webm" type="video/webm"/>
+Your browser does not support the video tag. I suggest you upgrade your browser.
+</video>
+</div><!-- end video-container -->
+
+  <div class="hero--content fluffy">
+  <div class="container">
+  <div class="row">
+  <div class="col-xs-12">
+      <h1>SOLAR!</h1>
+      <div class="introduction">{{{paragraph.double}}}</div>
+  </div>
+  </div>
+  <div class="row">
+   {{# listItems.three }}
+      <div class="col-xs-12 col-md-4">
+        <a data-match-height="hero-buttons" class="hero-button button-block" href="{{url}}">{{headline.short}}</a>
+      </div>
+      {{/ listItems.three}}
+
+    </div>
+  </div>
+  </div>
+</section>

@@ -15,8 +15,8 @@
 		{
 			"img": {
 				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-climber.jpg",
-					"alt": "Climber"	
+					"src": "/images/sample/tout-4x3-climber.jpg",
+					"alt": "Climber"
 				}
 			},
 			"headline" : {
@@ -26,8 +26,8 @@
 		{
 			"img": {
 				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-stream.jpg",
-					"alt": "Stream hiking"	
+					"src": "/images/sample/tout-4x3-stream.jpg",
+					"alt": "Stream hiking"
 				}
 			},
 			"headline" : {
@@ -37,8 +37,8 @@
 		{
 			"img": {
 				"landscape-4x3": {
-					"src": "../../images/sample/tout-4x3-climbers.jpg",
-					"alt": "Explore hiking trails"	
+					"src": "/images/sample/tout-4x3-climbers.jpg",
+					"alt": "Explore hiking trails"
 				}
 			},
 			"headline" : {
@@ -50,8 +50,8 @@
 		{
 			"img": {
 				"square": {
-					"src": "../../images/sample/thumb-square-river.jpg",
-					"alt": "Post Thumbnail"	
+					"src": "/images/sample/thumb-square-river.jpg",
+					"alt": "Post Thumbnail"
 				}
 			},
 			"headline" : {
@@ -64,8 +64,8 @@
 		{
 			"img": {
 				"square": {
-					"src": "../../images/sample/thumb-square-ivy.jpg",
-					"alt": "Ivy"	
+					"src": "/images/sample/thumb-square-ivy.jpg",
+					"alt": "Ivy"
 				}
 			},
 			"headline" : {
@@ -78,8 +78,8 @@
 		{
 			"img": {
 				"square": {
-					"src": "../../images/sample/thumb-square-yosemite.jpg",
-					"alt": "Yosemite"	
+					"src": "/images/sample/thumb-square-yosemite.jpg",
+					"alt": "Yosemite"
 				}
 			},
 			"headline" : {
@@ -92,8 +92,8 @@
 		{
 			"img": {
 				"square": {
-					"src": "../../images/sample/thumb-square-fire.jpg",
-					"alt": "Fire"	
+					"src": "/images/sample/thumb-square-fire.jpg",
+					"alt": "Fire"
 				}
 			},
 			"headline" : {
@@ -106,8 +106,8 @@
 		{
 			"img": {
 				"square": {
-					"src": "../../images/sample/thumb-square-gear.jpg",
-					"alt": "Camping Gear"	
+					"src": "/images/sample/thumb-square-gear.jpg",
+					"alt": "Camping Gear"
 				}
 			},
 			"headline" : {
