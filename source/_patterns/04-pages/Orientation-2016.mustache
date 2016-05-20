@@ -1,9 +1,207 @@
+<style>
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus{
+	color:#fff;
+	background-color:transparent;
+  font-family: 'Effra W01', sans-serif;
+  font-weight: 700;
+}
+.navbar-default{
+	background-color:transparent;
+	border-color:transparent;
+}
+.navbar-default .navbar-nav>.active>a:after{
+	content:"\2192";
+	display:inline-block;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	margin-left:10px;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+
+	-webkit-transition:all .25s;
+	   -moz-transition:all .25s;
+	    -ms-transition:all .25s;
+	     -o-transition:all .25s;
+	        transition:all .25s;
+}
+.navbar-nav>li>a{
+	padding:5px 15px;
+	font-weight:400;
+	font-style:italic;
+
+	-webkit-transition:all .25s;
+	   -moz-transition:all .25s;
+	    -ms-transition:all .25s;
+	     -o-transition:all .25s;
+	        transition:all .25s;
+}
+.navbar-nav>li>a:hover{
+	padding-left:25px;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form{
+	border-color: transparent;
+}
+
+
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: none;
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
+
+@media screen and (max-width: 992px){
+	#headernavigation{
+		background:rgba(0,0,0,.5);
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus{
+		background-color:transparent;
+	}
+	.navbar-default .navbar-toggle{
+		margin-top: 15px;
+	}
+}
+@media screen and (min-width: 992px){
+	.navbar-fixed-top{
+		top:100px;
+		z-index:9999;
+	}
+	.navbar-default{
+		width:280px;
+	}
+	.navbar-nav>li{
+		float:none !important;
+	}
+}
+
+.fullScreenImage {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: scroll;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introHeader {
+  font-size: 72px;
+  font-family: 'Effra W01', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  border-left: 10px;
+  border-color: #990000;
+}
+.introParagraph {
+  font-size: 24px;
+  font-family: 'Museo Slab W01', 'Museo Slab', Gerogia, serif;
+  font-weight: 200;
+  line-height: 1.3;
+}
+
+.player {font-size: 1px;}
+
+.gradientOverlay-dark {
+  position: relative;
+}
+
+.gradientOverlay-dark:before {
+position: absolute;
+display: block;
+content: " ";
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
+display: block;
+z-index: 0;
+background-image: linear-gradient(to bottom left,#000000,transparent);
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+.noLeftPadding {
+  padding-left: 0;
+}
+.noRightPadding {
+  padding-right: 0;
+}
+</style>
+
 <!-- This Acts As a Border  -->
 <section class="snug" style="background-image: url('/images/backgrounds/images/redSwooshes.jpg'); background-size: cover;"></section>
 <!-- End Border  -->
 
+<div id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-<section class="homepage-hero-module">
+		<div class="navbar-header">
+			<!-- responsive navigation -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<i class="sbuicon-bars"></i>
+			</button> <!-- /.navbar-toggle -->
+
+		</div> <!-- /.navbar-header -->
+
+		<nav class="collapse navbar-collapse">
+			<!-- Main navigation -->
+			<ul id="headernavigation" class="nav navbar-nav">
+        <li class="white" style="background-color: #990000; padding: 10px 15px; line-height: 1.2; text-transform: uppercase; font-family: 'Effra W01', sans-serif;
+        font-weight: 500;">Explore the Orientation Guide</li>
+				<li class="active"><a href="#topOfPage">Top</a></li>
+				<li class=""><a href="#gettingstarted">Getting Started</a></li>
+				<li class=""><a href="#onlineLearning">Online Learning</a></li>
+				<li class=""><a href="#applications">Apps for Success</a></li>
+        <li class=""><a href="#services">On Campus Services</a></li>
+        <li class=""><a href="#support">Getting Help</a></li>
+			</ul> <!-- /.nav .navbar-nav -->
+		</nav> <!-- /.navbar-collapse  -->
+	</div>
+
+<section id="topOfPage" class="homepage-hero-module">
     <div class="video-container">
         <video controls autoplay class="fillWidth">
             <source src="http://mobile.cc.stonybrook.edu/sb/40underforty/video/sbu-40-under-40.mp4" type="video/mp4">
@@ -18,19 +216,19 @@
 </section>
 
 <!-- This Acts As a Border  -->
-<section class="snug" style="background-image: url('/images/backgrounds/images/redSwooshes.jpg'); background-size: cover;"></section>
+<section class="cozy" style="background-image: url('/images/backgrounds/images/redSwooshes.jpg'); background-size: cover;"></section>
 <!-- End Border  -->
 
 
-<section class="getting-started-section" style="background-image: url(''); background-size: cover;">
-    <!-- Wrapper -->
+<!-- Not in use for now <section class="getting-started-section" style="background-image: url(''); background-size: cover;">
+
     <div class="container">
         <div class="cozy">
             <h2 style="font-size: 72px; font-family: 'Effra W01', sans-serif; font-weight: 700; line-height: 1;">Getting Started</h2>
             <p style="font-size: 24px; font-family: 'Museo Slab W01', 'Museo Slab', Gerogia, serif; font-weight: 200; line-height: 1.3;">These three essential services are your gateway to all the Division of Information Technology has to offer. Explore each service to learn more about how they work.</p>
             <hr>
         </div>
-        <!-- Main -->
+
         <div id="main">
             <div class="inner">
                 <section class="tiles">
@@ -71,18 +269,87 @@
             </div>
         </div>
     </div>
+</section> -->
+
+
+
+<section id="gettingstarted" class="fullScreenImage gradientOverlay-dark" style="background-image: url('https://farm2.staticflickr.com/1482/25965495516_980e1d2c35_k_d.jpg')">
+
+    <div class="fluffy container">
+        <div class="col-xs-12 col-md-6">
+            <h2 class="introHeader white">Getting Started</h2>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <p class="introParagraph white">These three services are your gateway to all the Division of Information Technology has to offer. Explore each service to learn more about how they work.</p>
+
+          <div class="col-md-4 col-sm-12 noLeftPadding">
+            <h3 class="default-button button-large panelSOLAR-btn">SOLAR</h3>
+          </div>
+          <div class="col-md-4 col-sm-12 noLeftPadding">
+            <h3 class="default-button button-large white panelNetID-btn">NetID</h3>
+          </div>
+          <div class="col-md-4 col-sm-12 noLeftPadding noRightPadding">
+            <h3 class="default-button button-large white panelWiFi-btn">WiFi</h3>
+          </div>
+        </div>
+    </div>
 </section>
 
-<div class="cozy">
+<section id="onlineLearning" class="fullScreenImage gradientOverlay-dark" style="background-image: url('http://unsplash.com/photos/C3V88BOoRoM/download')">
 
-</div>
+    <div class="fluffy container">
+        <div class="col-xs-12 col-md-6" style="border: 1px solid #fff; margin-bottom : 5px;">
+            <h2 class="introHeader white redBorder-left">Online Learning</h2>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <p class="introParagraph white">These three essential services are your gateway to all the Division of Information Technology has to offer. Explore each service to learn more about how they work.</p>
+        </div>
+    </div>
+</section>
 
-<footer class="sbu-footer">
-    <nav class="more-nav-v3 clearfix">
-        <div class="container">
-            <!-- Using bootstrap .container class for consistency -->
-            <div class="more-nav-v3-wrapper">
-                <div class="more-nav-v3-col">
+<section id="applications" class="fullScreenImage gradientOverlay-dark" style="background-image: url('https://farm2.staticflickr.com/1482/25965495516_980e1d2c35_k_d.jpg')">
+
+    <div class="fluffy container">
+        <div class="col-xs-12 col-md-6" style="border: 1px solid #fff; margin-bottom : 5px;">
+            <h2 class="introHeader white redBorder-left">Google Apps for Education</h2>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <p class="introParagraph white">These three essential services are your gateway to all the Division of Information Technology has to offer. Explore each service to learn more about how they work.</p>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="fullScreenImage gradientOverlay-dark" style="background-image: url('https://farm2.staticflickr.com/1482/25965495516_980e1d2c35_k_d.jpg')">
+
+    <div class="fluffy container">
+        <div class="col-xs-12 col-md-6" style="border: 1px solid #fff; margin-bottom : 5px;">
+            <h2 class="introHeader white redBorder-left">On Campus Facilities</h2>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <p class="introParagraph white">These three essential services are your gateway to all the Division of Information Technology has to offer. Explore each service to learn more about how they work.</p>
+        </div>
+    </div>
+</section>
+
+<section id="support" class="fullScreenImage gradientOverlay-dark" style="background-image: url('https://farm2.staticflickr.com/1482/25965495516_980e1d2c35_k_d.jpg')">
+
+    <div class="fluffy container">
+        <div class="col-xs-12 col-md-6" style="border: 1px solid #fff; margin-bottom : 5px;">
+            <h2 class="introHeader white redBorder-left">Support</h2>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <p class="introParagraph white">These three essential services are your gateway to all the Division of Information Technology has to offer. Explore each service to learn more about how they work.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="farBeyondFooter">
+<nav class="farBeyondFooter-nav clearfix">
+        <div class="container"> <!-- Using bootstrap .container class for consistency -->
+            <div class="farBeyondFooter-nav-wrapper">
+                <div class="farBeyondFooter-nav-col">
                     <strong>Main Nav</strong>
                     <ul class="border-box clearfix">
                         <li class="clearfix">
@@ -111,7 +378,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="more-nav-v3-col">
+                <div class="farBeyondFooter-nav-col">
                     <strong>Info For</strong>
                     <ul class="border-box clearfix">
                         <li class="clearfix">
@@ -143,7 +410,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="more-nav-v3-col">
+                <div class="farBeyondFooter-nav-col">
                     <strong>Find</strong>
                     <ul class="border-box clearfix">
                         <li class="clearfix">
@@ -175,7 +442,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="more-nav-v3-col">
+                <div class="farBeyondFooter-nav-col">
                     <strong>Shortcuts</strong>
                     <ul class="border-box clearfix">
                         <li class="clearfix">
@@ -218,20 +485,9 @@
                 </div>
                 <a class="social-wall-link" href="http://stonybrook.edu/social/"><span>Check out our Social Media Wall&nbsp;<i class="sbuicon-long-arrow-right"></i></span></a>
                 <a href="http://stonybrook.edu/" class="univ-logo-stacked clearfix"><img src="//mobile.cc.stonybrook.edu/sb/img/branding/logo/sbu/primary/72/stony-brook-university-logo-vertical.png" alt="Stony Brook University logo"></a>
-            </div>
+             </div>
         </div>
     </nav>
-    <div class="footer-container clearfix">
-        <footer class="footer-bar">
-            <nav class="wrapper">
-                <span><span id="directedit" class="copyright">©</span> 2016 Stony Brook University</span> | <span>Stony Brook, NY 11794</span> | <span class="last">(631) 632-6000</span>
-                <div class="clearfix policy-links">
-                    <a class="item" href="http://www.stonybrook.edu/sb/access">Accessibility</a>
-                    <a class="item" href="http://www.stonybrook.edu/sb/privacy">Privacy Policy</a>
-                </div>
-            </nav>
-        </footer>
-    </div>
 
 
 
@@ -244,7 +500,7 @@
 
         <div class="slideout-panel-container">
             <div class="slideout-panel-content">
-                <h2 class="section-title">What is SOLAR?</h2>
+                <h2 class="slideoutPanelSectionTitle">What is SOLAR?</h2>
             </div>
             <!-- slideout-panel-content -->
         </div>
@@ -463,8 +719,255 @@
 
 
             });
+
         }
     </script>
+    <script>
+    jQuery(document).ready(function($) {
+      $('#main-menu #headernavigation').onePageNav({
+          currentClass: 'active',
+          changeHash: false,
+          scrollSpeed: 750,
+          scrollThreshold: 0.5,
+          scrollOffset: 0,
+          filter: '',
+          easing: 'swing'
+      });
+    });
+
+
+    </script>
+
+    <script>
+    /*
+ * jQuery One Page Nav Plugin
+ * http://github.com/davist11/jQuery-One-Page-Nav
+ *
+ * Copyright (c) 2010 Trevor Davis (http://trevordavis.net)
+ * Dual licensed under the MIT and GPL licenses.
+ * Uses the same license as jQuery, see:
+ * http://jquery.org/license
+ *
+ * @version 2.2.0
+ *
+ * Example usage:
+ * $('#nav').onePageNav({
+ *   currentClass: 'current',
+ *   changeHash: false,
+ *   scrollSpeed: 750
+ * });
+ */
+
+;(function($, window, document, undefined){
+
+	// our plugin constructor
+	var OnePageNav = function(elem, options){
+		this.elem = elem;
+		this.$elem = $(elem);
+		this.options = options;
+		this.metadata = this.$elem.data('plugin-options');
+		this.$nav = this.$elem.find('a');
+		this.$win = $(window);
+		this.sections = {};
+		this.didScroll = false;
+		this.$doc = $(document);
+		this.docHeight = this.$doc.height();
+	};
+
+	// the plugin prototype
+	OnePageNav.prototype = {
+		defaults: {
+			currentClass: 'current',
+			changeHash: false,
+			easing: 'swing',
+			filter: '',
+			scrollSpeed: 750,
+			scrollOffset: 0,
+			scrollThreshold: 0.5,
+			begin: false,
+			end: false,
+			scrollChange: false
+		},
+
+		init: function() {
+			var self = this;
+
+			// Introduce defaults that can be extended either
+			// globally or using an object literal.
+			self.config = $.extend({}, self.defaults, self.options, self.metadata);
+
+			//Filter any links out of the nav
+			if(self.config.filter !== '') {
+				self.$nav = self.$nav.filter(self.config.filter);
+			}
+
+			//Handle clicks on the nav
+			self.$nav.on('click.onePageNav', $.proxy(self.handleClick, self));
+
+			//Get the section positions
+			self.getPositions();
+
+			//Handle scroll changes
+			self.bindInterval();
+
+			//Update the positions on resize too
+			self.$win.on('resize.onePageNav', $.proxy(self.getPositions, self));
+
+			return this;
+		},
+
+		adjustNav: function(self, $parent) {
+			self.$elem.find('.' + self.config.currentClass).removeClass(self.config.currentClass);
+			$parent.addClass(self.config.currentClass);
+		},
+
+		bindInterval: function() {
+			var self = this;
+			var docHeight;
+
+			self.$win.on('scroll.onePageNav', function() {
+				self.didScroll = true;
+			});
+
+			self.t = setInterval(function() {
+				docHeight = self.$doc.height();
+
+				//If it was scrolled
+				if(self.didScroll) {
+					self.didScroll = false;
+					self.scrollChange();
+				}
+
+				//If the document height changes
+				if(docHeight !== self.docHeight) {
+					self.docHeight = docHeight;
+					self.getPositions();
+				}
+			}, 250);
+		},
+
+		getHash: function($link) {
+			return $link.attr('href').split('#')[1];
+		},
+
+		getPositions: function() {
+			var self = this;
+			var linkHref;
+			var topPos;
+			var $target;
+
+			self.$nav.each(function() {
+				linkHref = self.getHash($(this));
+				$target = $('#' + linkHref);
+
+				if($target.length) {
+					topPos = $target.offset().top;
+					self.sections[linkHref] = Math.round(topPos) - self.config.scrollOffset;
+				}
+			});
+		},
+
+		getSection: function(windowPos) {
+			var returnValue = null;
+			var windowHeight = Math.round(this.$win.height() * this.config.scrollThreshold);
+
+			for(var section in this.sections) {
+				if((this.sections[section] - windowHeight) < windowPos) {
+					returnValue = section;
+				}
+			}
+
+			return returnValue;
+		},
+
+		handleClick: function(e) {
+			var self = this;
+			var $link = $(e.currentTarget);
+			var $parent = $link.parent();
+			var newLoc = '#' + self.getHash($link);
+
+			if(!$parent.hasClass(self.config.currentClass)) {
+				//Start callback
+				if(self.config.begin) {
+					self.config.begin();
+				}
+
+				//Change the highlighted nav item
+				self.adjustNav(self, $parent);
+
+				//Removing the auto-adjust on scroll
+				self.unbindInterval();
+
+				//Scroll to the correct position
+				$.scrollTo(newLoc, self.config.scrollSpeed, {
+					axis: 'y',
+					easing: self.config.easing,
+					offset: {
+						top: -self.config.scrollOffset
+					},
+					onAfter: function() {
+						//Do we need to change the hash?
+						if(self.config.changeHash) {
+							window.location.hash = newLoc;
+						}
+
+						//Add the auto-adjust on scroll back in
+						self.bindInterval();
+
+						//End callback
+						if(self.config.end) {
+							self.config.end();
+						}
+					}
+				});
+			}
+
+			e.preventDefault();
+		},
+
+		scrollChange: function() {
+			var windowTop = this.$win.scrollTop();
+			var position = this.getSection(windowTop);
+			var $parent;
+
+			//If the position is set
+			if(position !== null) {
+				$parent = this.$elem.find('a[href$="#' + position + '"]').parent();
+
+				//If it's not already the current section
+				if(!$parent.hasClass(this.config.currentClass)) {
+					//Change the highlighted nav item
+					this.adjustNav(this, $parent);
+
+					//If there is a scrollChange callback
+					if(this.config.scrollChange) {
+						this.config.scrollChange($parent);
+					}
+				}
+			}
+		},
+
+		unbindInterval: function() {
+			clearInterval(this.t);
+			this.$win.unbind('scroll.onePageNav');
+		}
+	};
+
+	OnePageNav.defaults = OnePageNav.prototype.defaults;
+
+	$.fn.onePageNav = function(options) {
+		return this.each(function() {
+			new OnePageNav(this, options).init();
+		});
+	};
+
+})( jQuery, window , document );
+
+
+
+/* jquery.nav.js  End
+-----------------------------------------------------------------------------*/
+</script>
 
 
     <!-- /container -->

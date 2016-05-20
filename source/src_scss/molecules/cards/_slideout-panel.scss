@@ -124,7 +124,7 @@
   transition: top 0.3s 0s;
 }
 .slideout-panel-header .slideout-panel-title {
-  font-family: 'Effra W01', sans-serif;
+  font-family: $font;
   text-transform: uppercase;
   font-size: 72px;
   padding-left: 50px;
@@ -298,6 +298,16 @@
   /* smooth scrolling on touch devices */
   -webkit-overflow-scrolling: touch;
 }
+
+/* Stylings for inner Slideout Panel Content */
+
+.slideoutPanelSectionTitle {
+  font-family: $font;
+  text-transform: uppercase;
+  font-weight: 900;
+
+}
+
 .slideout-panel-content p:first-of-type {
   margin-top: 0;
 }
