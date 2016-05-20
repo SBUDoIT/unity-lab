@@ -18,7 +18,7 @@
                             <script type="text/javascript">
                             var partialName = "{{ patternPartial }}";
                             console.log(partialName);
-                            if(partialName.startsWith("atom") || partialName.startsWith("molecule") || parialName.startsWith("organism"))
+                            if(partialName.startsWith("atom") || partialName.startsWith("molecule") || (partialName.startsWith("organism") && partialName.indexOf("section") < 0))
                             {
                                 $(".{{ patternPartial }}.partial-wrap").wrap("<div class='container'><div class='row'><div class='col-sm-12'></div></div></div>");
                             }
