@@ -1,19 +1,20 @@
-<!-- Begin Footer -->
+<div class="top-footer fluffy">
+    <div class="container">
+        <div class="row">
 
-
-            <div class="container bottom-footer centered">
-                <div class="row">
-                    <nav class="wrapper">
-                        <div class="col col-md-4 footer-links" data-match-height="items-footer">
-                        </div>
-                        <div class="col col-md-4 text-center" data-match-height="items-footer">
-                            {{> molecules-social-links }}
-                        </div>
-                    </nav>
+            {{# listItems.four }}
+                <div class="col-md-3">
+                    {{> molecules-footer-nav }}
                 </div>
-            </div>
+            {{/ listItems.four }}
+        </div>
+        <div class="row">
 
-        <!-- jQuery -->
-
-
-<!-- End Footer -->
+            {{# listItems.three }}
+                <div class="col-md-3">
+                    {{> molecules-footer-nav }}
+                </div>
+            {{/ listItems.three }}
+        </div>
+    </div>
+</div>
