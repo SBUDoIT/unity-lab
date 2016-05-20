@@ -10,7 +10,7 @@
 .background-image-section-center
 {
 	@extend .section-light-theme;
-	
+
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -24,7 +24,7 @@
     background-size: cover;
 }
 
-.background-image-section-content 
+.background-image-section-content
 {
     padding: 80px 60px;
 }
