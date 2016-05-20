@@ -3,26 +3,18 @@
 		"index" : "1",
 		"title": "Nullizzle shizznit velizzle, hizzle, suscipit own yo', gravida vizzle, arcu.",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/people",
-				"alt": "Avatar"
-			},
-			"square": {
-				"src": "http://placeimg.com/300/300/nature",
-				"alt": "Square"
-			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/tech",
-				"alt": "Rectangle"
-			},
-			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/tech",
-				"alt": "4x3 Image"
-			},
-			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/tech",
-				"alt": "16x9 Image"
-			}
+            "square": {
+                "src": "/placeholders/images/sbu/regatta-1200x1200.jpg",
+                "alt": "Square"
+            },
+            "landscape-4x3": {
+                "src": "/placeholders/images/sbu/regatta-1200x900.jpg",
+                "alt": "4x3 Image"
+            },
+            "landscape-16x9": {
+                "src": "/placeholders/images/sbu/regatta-1600x900.jpg",
+                "alt": "16x9 Image"
+            }
 		},
 
 		"list" : "<ul><li><a href=\"{{url}}\">Provide Feedback</a></li><li><a href=\"{{url}}\">Staff Directory</a></li></ul>",
@@ -90,24 +82,17 @@
 		"index" : "2",
 		"title": "Veggies sunt bona vobis, proinde vos postulo",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/nature",
-				"alt": "Avatar"
-			},
-			"square": {
-				"src": "http://placeimg.com/300/300/tech",
+            "square": {
+				"src": "/placeholders/images/sbu/regatta-800x800.jpg",
 				"alt": "Square"
 			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/people",
-				"alt": "Rectangle"
-			},
+
 			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/people",
+				"src": "/placeholders/images/sbu/regatta-800x600.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/people",
+				"src": "/placeholders/images/sbu/regatta-800x450.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -116,6 +101,7 @@
 		"list" : "<ul><li><a href=\"{{url}}\">Archives</a></li></ul>",
 
 		"headline": {
+            "x-small" : "Ex enim aperiam sit",
 			"short": "Veggies sunt bona vobis, proinde vos",
 			"medium": "Postulo esse magis azuki bean burdock brussels sprout quandong komatsun"
 		},
@@ -175,24 +161,16 @@
 		"index" : "3",
 		"title": "Bacon ipsum dolor sit amet turducken strip steak beef ribs shank",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/tech",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "http://placeimg.com/300/300/people",
+				"src": "/placeholders/images/sbu/regatta-640x640.jpg",
 				"alt": "Square"
 			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/nature",
-				"alt": "Rectangle"
-			},
 			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/nature",
+				"src": "/placeholders/images/sbu/regatta-640x480.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/nature",
+				"src": "/placeholders/images/sbu/regatta-640x360.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -201,6 +179,7 @@
 		"list" : "<ul><li><a href=\"{{url}}\">Upcoming Events</a></li><li><a href=\"{{url}}\">Workshops</a></li></ul>",
 
 		"headline": {
+            "x-small" : "Vis graeci",
 			"short": "Bacon ipsum dolor sit amet spare rib",
 			"medium": "Tongue pancetta short ribs bacon. Kielbasa ball tip cow bresaola, capic"
 		},
@@ -260,24 +239,16 @@
 		"index" : "4",
 		"title": "Whatever swag accusamus occupy, gentrify butcher tote bag",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/animals",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "http://placeimg.com/300/300/arch",
+				"src": "/placeholders/images/sbu/sac-1200x1200.jpg",
 				"alt": "Square"
 			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/people/grayscale",
-				"alt": "Rectangle"
-			},
 			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/people/greyscale",
+				"src": "/placeholders/images/sbu/sac-1200x900.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/people/greyscale",
+				"src": "/placeholders/images/sbu/sac-1600x900.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -286,6 +257,7 @@
 		"list" : "<ul><li><a href=\"{{url}}\">Services A-Z</a></li><li><a href=\"{{url}}\">Services By Category</a></li></ul>",
 
 		"headline": {
+            "x-small" : "Tattooed Williamsburg",
 			"short": "Nesciunt sunt cillum keytar Pitchfork",
 			"medium": "Tote bag mixtape PBR Helvetica scenester forage four loko. Irure Tonx"
 		},
@@ -345,24 +317,17 @@
 		"index" : "5",
 		"title": "Marshall McLuhan Colbert bump backpack journalist vast wasteland Romenesko CPM",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/people/grayscale",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "http://placeimg.com/300/300/animals",
+				"src": "/placeholders/images/sbu/sac-800x800.jpg",
 				"alt": "Square"
 			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/arch",
-				"alt": "Rectangle"
-			},
+
 			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/arch",
+				"src": "/placeholders/images/sbu/sac-800x600.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/arch",
+				"src": "/placeholders/images/sbu/sac-800x450.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -431,24 +396,16 @@
 		"index" : "6",
 		"title": "Thunder, thunder, thundercats, Ho!",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/arch",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "http://placeimg.com/300/300/animals",
+				"src": "/placeholders/images/sbu/sac-640x640.jpg",
 				"alt": "Square"
 			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/people/grayscale",
-				"alt": "Rectangle"
-			},
 			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/people/grayscale",
+				"src": "/placeholders/images/sbu/sac-640x480.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/people/grayscale",
+				"src": "/placeholders/images/sbu/sac-640x360.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -457,6 +414,7 @@
 		"list" : "<ul><li><a href=\"{{url}}\">Annual Reports</a></li><li><a href=\"{{url}}\">Hot Team Reports</a></li><li><a href=\"{{url}}\">TechQual+ Survey</a></li></ul>",
 
 		"headline": {
+            "x-small" : "Essent accusamus mel",
 			"short": "Hong Kong Phooey, number one super g",
 			"medium": "Hong Kong Phooey, quicker than the human eye. He's got style, a groovy"
 		},
@@ -516,24 +474,16 @@
 		"index" : "7",
 		"title": "Yeah, I like animals better than people sometimes",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/any",
-				"alt": "Avatar"
-			},
-			"square": {
-				"src": "http://placeimg.com/300/300/any",
+            "square": {
+				"src": "/placeholders/images/sbu/library-1200x1200.jpg",
 				"alt": "Square"
 			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/any",
-				"alt": "Rectangle"
-			},
 			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/any",
+				"src": "/placeholders/images/sbu/library-1200x900.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/any",
+				"src": "/placeholders/images/sbu/library-1600x900.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -600,24 +550,17 @@
 		"index" : "8",
 		"title": "Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/any/grayscale",
-				"alt": "Avatar"
-			},
-			"square": {
-				"src": "http://placeimg.com/300/300/any/grayscale",
+            "square": {
+				"src": "/placeholders/images/sbu/library-800x800.jpg",
 				"alt": "Square"
 			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/any/grayscale",
-				"alt": "Rectangle"
-			},
+
 			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/any/grayscale",
+				"src": "/placeholders/images/sbu/library-800x600.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/any/grayscale",
+				"src": "/placeholders/images/sbu/library-800x450.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -686,28 +629,21 @@
 		"icon" : "sbuicon-film",
 		"list" : "<ul><li><a href=\"{{url}}\">Project Management Office</a></li><li><a href=\"{{url}}\">Project Status</a></li><li><a href=\"{{url}}\">Request a Project</a></li></ul>",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/any/sepia",
-				"alt": "Avatar"
-			},
-			"square": {
-				"src": "http://placeimg.com/300/300/any/sepia",
+            "square": {
+				"src": "/placeholders/images/sbu/library-640x640.jpg",
 				"alt": "Square"
 			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/any/sepia",
-				"alt": "Rectangle"
-			},
 			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/any/sepia",
+				"src": "/placeholders/images/sbu/library-640x480.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/any/sepia",
+				"src": "/placeholders/images/sbu/library-640x360.jpg",
 				"alt": "16x9 Image"
 			}
 		},
 		"headline": {
+            "x-small" : "Pri at omnis",
 			"short": "All right. Well, take care of yourself, Han",
 			"medium": "You don't believe in the Force, do you? The Force is strong with this one"
 		},
@@ -767,24 +703,16 @@
 		"index" : "10",
 		"title": "Help, help, I'm being repressed!",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/tech/grayscale",
-				"alt": "Avatar"
-			},
-			"square": {
-				"src": "http://placeimg.com/300/300/nature/grayscale",
+            "square": {
+				"src": "/placeholders/images/sbu/sac-1200x1200.jpg",
 				"alt": "Square"
 			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/arch/grayscale",
-				"alt": "Rectangle"
-			},
 			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/arch/grayscale",
+				"src": "/placeholders/images/sbu/sac-1200x900.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/arch/grayscale",
+				"src": "/placeholders/images/sbu/sac-1600x900.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -793,6 +721,7 @@
 		"list" : "<ul><li><a href=\"{{url}}\">Annual Reports</a></li><li><a href=\"{{url}}\">Hot Team Reports</a></li><li><a href=\"{{url}}\">TechQual+ Survey</a></li></ul>",
 
 		"headline": {
+            "x-small" : "Atomorum elaboraret ei pri",
 			"short": "The swallow may fly south with the sun",
 			"medium": "On second thoughts, let's not go there. It is a silly place. You don't"
 		},
@@ -853,30 +782,24 @@
 		"index" : "11",
 		"title": "Danish danish candy canes bonbon cheesecake danish marzipan",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/tech/sepia",
-				"alt": "Avatar"
-			},
-			"square": {
-				"src": "http://placeimg.com/300/300/animals/sepia",
+            "square": {
+				"src": "/placeholders/images/sbu/sac-800x800.jpg",
 				"alt": "Square"
 			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/arch/sepia",
-				"alt": "Rectangle"
-			},
+
 			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/arch/sepia",
+				"src": "/placeholders/images/sbu/sac-800x600.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/arch/sepia",
+				"src": "/placeholders/images/sbu/sac-800x450.jpg",
 				"alt": "16x9 Image"
 			}
 		},
 		"icon" : "sbuicon-th",
 		"list" : "<ul><li><a href=\"{{url}}\">Knowledge Base</a></li><li><a href=\"{{url}}\">Submit a Ticket</a></li><li><a href=\"{{url}}\">Training &amp; Development</a></li></ul>",
 		"headline": {
+            "x-small" : "Duo omnes scripta",
 			"short": "Carrot cake fruitcake dessert apple",
 			"medium": "Pie powder lemon drops sesame snaps cake brownie. Biscuit ice cream gin"
 		},
@@ -936,30 +859,23 @@
 		"index" : "12",
 		"title": "Cottage cheese brie lancashire. Boursin when the cheese comes out.",
 		"img": {
-			"avatar": {
-				"src": "http://placeimg.com/100/100/people/sepia",
-				"alt": "Avatar"
-			},
-			"square": {
-				"src": "http://placeimg.com/300/300/people/sepia",
+            "square": {
+				"src": "/placeholders/images/sbu/sac-640x640.jpg",
 				"alt": "Square"
 			},
-			"rectangle": {
-				"src": "http://placeimg.com/400/300/people/sepia",
-				"alt": "Rectangle"
-			},
 			"landscape-4x3": {
-				"src": "http://placeimg.com/400/300/people/sepia",
+				"src": "/placeholders/images/sbu/sac-640x480.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "http://placeimg.com/640/360/people/sepia",
+				"src": "/placeholders/images/sbu/sac-640x360.jpg",
 				"alt": "16x9 Image"
 			}
 		},
 		"icon" : "sbuicon-th-list",
 		"list" : "<ul><li><a href=\"{{url}}\">Archives</a></li></ul>",
 		"headline": {
+            "x-small" : "Cauliflower cheese",
 			"short": "Cauliflower cheese cream cheese baby",
 			"medium": "Lancashire cheesy feet rubber cheese cheese and wine gouda the big chee"
 		},

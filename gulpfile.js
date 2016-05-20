@@ -222,6 +222,11 @@ gulp.task('watch', function () {
     ['images']
   );
 
+  gulp.watch(
+    config.placeholders.src,
+    ['placeholders']
+  );
+
   // Watch Sass
   gulp.watch(
     config.scss.src,
