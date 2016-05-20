@@ -5,7 +5,9 @@
     height: 300px;
     overflow: hidden;
     position: relative;
-    width: 400px;
+    //width: 400px;
+    max-width: 100%;
+    width: 100%;
 }
 
 .reveal-card--overlay {
