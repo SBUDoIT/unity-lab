@@ -1,27 +1,25 @@
 <div class="classic-blurb-card">
-    {{# icon }}
+    {{# showicon }}
     <span class="classic-blurb-card--icon {{icon}}"></span>
-    {{/ icon }}
+    {{/ showicon }}
 
-    {{^ icon }}
-    {{# img}}
+    {{^ showicon }}
     <div class="classic-blurb-card--image-wrap">
     <img class="classic-blurb-card--image" src="{{img.landscape-4x3.src}}" />
     </div>
-    {{/ img }}
-    {{/icon}}
+    {{/showicon}}
 
     <div class="classic-blurb-card--content">
         <h2 class="classic-blurb-card--heading">{{ headline.medium }}</h2>
-        
+
         {{# headline.short }}
         <h3 class="classic-blurb-card--subheading">{{ headline.short }}</h3>
         {{/ headline.short }}
-        
+
         <div class="classic-blurb-card--text">
-            {{{paragraph.double}}}
+            {{{paragraph.medium}}}
         </div>
-        
+
         {{# cta }}
         <div class="classic-blurb-card--cta">
             <a href="{{cta.url}}" class="{{cta.class}}">{{cta.text}}</a>
