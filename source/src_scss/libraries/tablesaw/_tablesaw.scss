@@ -53,9 +53,10 @@ table.tablesaw {
     text-shadow: 0 1px 0 #fff;
     width: 100%;
     /* Theming */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), color-stop(50%, rgba(255, 255, 255, 0.1)), color-stop(55%, rgba(170, 170, 170, 0.1)), to(rgba(120, 120, 120, 0.15)));
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(170, 170, 170, 0.1) 55%, rgba(120, 120, 120, 0.15) 100%);
-    background-image: linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(170, 170, 170, 0.1) 55%, rgba(120, 120, 120, 0.15) 100%);
+    //FIX: GRADIENT
+    //background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), color-stop(50%, rgba(255, 255, 255, 0.1)), color-stop(55%, rgba(170, 170, 170, 0.1)), to(rgba(120, 120, 120, 0.15)));
+    //background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(170, 170, 170, 0.1) 55%, rgba(120, 120, 120, 0.15) 100%);
+    //background: linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(170, 170, 170, 0.1) 55%, rgba(120, 120, 120, 0.15) 100%);
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
     -webkit-box-sizing: border-box;
@@ -77,9 +78,10 @@ table.tablesaw {
 
 .tablesaw-enhanced .tablesaw-bar .btn:active {
     background-color: #ddd;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 100, 100, 0.35)), to(rgba(255, 255, 255, 0)));
-    background-image: -webkit-linear-gradient(top, rgba(100, 100, 100, 0.35) 0%, rgba(255, 255, 255, 0) 70%);
-    background-image: linear-gradient(top, rgba(100, 100, 100, 0.35) 0%, rgba(255, 255, 255, 0) 70%);
+    //FIX: GRADIENT
+    //background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 100, 100, 0.35)), to(rgba(255, 255, 255, 0)));
+    //background-image: -webkit-linear-gradient(top, rgba(100, 100, 100, 0.35) 0%, rgba(255, 255, 255, 0) 70%);
+    //background-image: linear-gradient(top, rgba(100, 100, 100, 0.35) 0%, rgba(255, 255, 255, 0) 70%);
 }
 
 .tablesaw-enhanced .tablesaw-bar .btn:hover,

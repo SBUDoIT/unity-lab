@@ -2,7 +2,7 @@
 
     position: relative;
     background-size: cover;
- 
+
     @include breakpoint($break-phone)
     {
         height: 450px;
@@ -51,7 +51,7 @@
         {
             background-color: #fff;
             background-color: rgba(255,255,255,0.75);
-            
+
             width: 100%;
             max-width: 800px;
             border: 1px solid #ccc;
@@ -76,14 +76,14 @@
 
             .contact-card-text
             {
-                  
+
                 float: left;
 
                  @include breakpoint($break-tablet)
                 {
                     margin-left: 2em;
                 }
-                
+
 
                 h1, h2
                 {

@@ -1,10 +1,11 @@
 
-.site-footer {
-    background: #252525;
-}   
- 
  .site-footer
  {
+     strong{
+         font-weight: 700;
+         font-size: 1.15em;
+     }
+
     .address, .address a, .codes {
         line-height: 1.7em;
     }
@@ -24,7 +25,7 @@
         margin: 0 0 4px;
         display: block;
     }
-  
+
 
     .address-link .icon {
         display: inline-block;
@@ -57,7 +58,7 @@
         margin: 0 0 15px;
         color: #ccc;
     }
-   
+
     .footer-links {
         @include breakpoint($screen-md) {
             text-align: left;

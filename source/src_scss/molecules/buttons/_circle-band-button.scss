@@ -5,49 +5,78 @@
 // .disabled          - Dims the button to indicate it cannot be used.
 //Styleguide circle-band-button
 
-.circle-band-button {
+@mixin circle-band-button($diameter){
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 150px;
-    height: 150px;
+    width: $diameter* 1px;
+    height: $diameter * 1px;
     //margin: 0 auto 25px;
     border-radius: 50%;
     overflow: hidden;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    .circle-band-button--label {
+
+        font-size: 1.3em;
+
+
+        margin: (($diameter*0.42) * 1px) 0 0 0;
+
+
+        display: block;
+        opacity: .75;
+        background: #000;
+        height: 36px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: normal;
+        letter-spacing: .01em;
+        text-rendering: optimizeLegibility;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        padding: 5px 0 0 0;
+        -webkit-transition: box-shadow .3s;
+        -moz-transition: box-shadow .3s;
+        transition: box-shadow .3s;
+        box-shadow: 0 0 0 100px rgba(45, 195, 232, 0);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+
 }
 
-.circle-band-button--label {
-    display: block;
-    opacity: .75;
-    background: #000;
-    height: 36px;
-    color: #fff;
-    font-size: 1.3em;
-    font-family: 'TradeGothicW01-BoldCn20 675334', 'Oswald';
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: normal;
-    letter-spacing: .01em;
-    text-rendering: optimizeLegibility;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 57px 0 0 0;
-    padding: 5px 0 0 0;
-    -webkit-transition: box-shadow .3s;
-    -moz-transition: box-shadow .3s;
-    transition: box-shadow .3s;
-    box-shadow: 0 0 0 100px rgba(45, 195, 232, 0);
-    -moz-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
+
+.circle-band-button--small {
+    @include circle-band-button(150);
+
 }
+
+
+.circle-band-button--large {
+    @include circle-band-button(300);
+}
+
+
+
+
+.circle-band-button {
+    @include circle-band-button(250);
+}
+
+
+
+
+
 
 @include breakpoint($screen-xs) {
     width: 200px;

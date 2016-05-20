@@ -8,7 +8,23 @@
     position: relative;
     z-index: 10;
 
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+
+        @include breakpoint($screen-lg) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
     .main-site-nav {
+
+        ul.open ul.open a {
+            background-color: $dark-red;
+        }
+
+
         ul {
             list-style-type: none;
               padding: 0;
@@ -21,6 +37,17 @@
                 content:'';
                 display:none;
             }
+
+            li > a:after {
+                @include breakpoint($screen-lg) {
+                    @extend .sbuicon;
+                    content: "\edc6";
+                    margin-left: 5px;
+                    top: 1px;
+                }
+            }
+            li > a:only-child:after { content: ''; }
+
 
             li {
                 float: left;
@@ -37,8 +64,8 @@
                     font-family: 'Trade Gothic Next W01', Arial, sans-serif;
                     font-weight: normal;
                     font-size: 14px;
-                    background-color: #990000;
-                    border: 1px solid #990000;
+                    background-color: $red;
+                    border: 1px solid $red;
                     display: block;
                     padding: 10px 15px 12px 12px;
                     min-width: 80px;
@@ -87,13 +114,13 @@
                     li {
                         float: none;
                         border: 0 none;
-                        background: #333;
+                        background: $red;
                         width: 100%;
                         font-size: 1em;
                         box-sizing: border-box;
-                        border-bottom: 1px solid #282828;
-                        border-left: 1px solid #282828;
-                        border-right: 1px solid #282828 !important;
+                        border-bottom: 1px solid #660000;
+                        border-left: 1px solid $dark-red;
+                        border-right: 1px solid $dark-red !important;
                     }
                 }
             }
@@ -161,7 +188,7 @@
             display: block;
             margin: 0px;
             border: 0px;
-            background-color: #3d3d3d;
+
             width: auto;
             padding: 12px 15px;
             font-size: 13px;
@@ -195,6 +222,10 @@
             em {
                 cursor: pointer;
             }
+        }
+
+        .main-nav-trigger:focus, .open-sub:focus{
+            outline: none;
         }
     }
 
@@ -255,7 +286,7 @@
     }
 
     .main-site-nav ul li ul li a {
-        background-color: #990000 !important;
+        background-color: #990000;
         padding: 9px 3px 9px 22px !important;
     }
 

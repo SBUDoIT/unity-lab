@@ -1,32 +1,55 @@
-.site-footer, .site-footer .content
-{
 
-ul, ul li
-{
-	margin: 0;
-    padding: 0;
-    list-style: none;
-    list-style-type: none;
+
+.footer-nav{
+    color: $black;
+    margin-bottom: 2em;
+    strong{
+        text-transform: uppercase;
+            margin: 20px 0 5px 0;
+    }
+    ul, ul li
+    {
+    	margin: 0;
+        padding: 0;
+        list-style: none;
+        list-style-type: none;
+    }
+
+    ul li{
+        margin: 0 5.5% 2px 0;
+    }
+
+    ul ul
+    {
+    	margin-left: 1em;
+    }
+
+    ul li a{
+        padding: 5px 0 3px 0;
+        font-weight: 500;
+    }
+    a:hover{
+        border-bottom: 2px solid $red;
+        color: $red;
+
+    }
 }
 
-ul ul
-{
-	margin-left: 1em;
-}
+.shield-footer {
 
-a
-{
-	color: #eee;
-}
+    .footer-nav{
+        color: $gray;
 
-a:hover, a:focus
-{
-	color: #cccccc;
-    border-bottom: 0.1em dashed #ccc;
-}
 
-.footer-nav--heading
-{
-	color: #eee;
-}
+        ul li a{
+            color: $white;
+        }
+        a:hover{
+            border-bottom: 2px solid $white;
+            color: $white;
+
+        }
+    }
+
+
 }

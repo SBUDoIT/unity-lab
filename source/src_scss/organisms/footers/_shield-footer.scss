@@ -1,25 +1,4 @@
  .shield-footer {
-        display: block;
-        background: #252525;
-        color: #ccc;
-        border-bottom: 1px solid #aaa;
-        @extend .fluffy;
-        font-family: 'Trade Gothic Next W01';
-        font-size: 1em;
-        position: relative;
-        z-index: 1;
-        h1, h2, h3, h4, h5 {
-            color: #eee;
-        }
-        h1 {
-            font-size: 2em;
-        }
-        h2 {
-            font-size: 1.7em;
-        }
-        h3 {
-            font-size: 1.2em;
-        }
         background-image: url("../images/backgrounds/images/shieldbg.png");
         background-size: cover;
     }
