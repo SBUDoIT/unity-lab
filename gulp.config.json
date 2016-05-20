@@ -1,0 +1,57 @@
+{
+    "wwwroot": "./public",
+
+    "scss": {
+        "src": "./source/src_scss/**/*.scss",
+        "files": "./source/src_scss/style.scss",
+        "dest": "./public/css"
+    },
+
+    "sg_scss": {
+        "src": "./source/src_scss/styleguide-customizations.scss",
+        "dest": "./public/styleguide/css"
+    },
+
+    "fonts": {
+        "src": "./source/src_fonts/**/*",
+        "dest": "./public/fonts"
+    },
+
+    "images": {
+        "src": "./source/src_images/**/*",
+        "dest": "./public/images"
+    },
+
+    "placeholders": {
+        "src": "./source/placeholders/**/*",
+        "dest": "./public/placeholders"
+    },
+
+    "jsheader":
+    {
+        "src": ["./source/src_js/header/libraries/**/*.js", "./source/src_js/header/custom/**/*.js"],
+        "dest": "./public/js/header"
+    },
+
+    "jsfooter":
+    {
+        "src": ["./source/src_js/footer/libraries/**/*.js", "./source/src_js/footer/custom/**/*.js"],
+        "dest": "./public/js/footer"
+    },
+
+    "patternlab": {
+       "styleguide": {
+         "src": [
+           "core/styleguide/**"
+         ],
+         "dest": "public/styleguide/"
+       },
+
+       "src": [
+         "source/_patterns/**/*.mustache",
+         "source/_patterns/**/*.json",
+         "source/_data/*.json"
+       ]
+    }
+
+}

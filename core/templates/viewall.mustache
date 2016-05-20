@@ -1,18 +1,36 @@
-		
+
 		<!-- View All Patterns in a Pattern Sub-Type -->
 		<div class="sg-main" role="main">
-			
+
 			<!-- Patterns -->
 			<div id="sg-patterns">
 				{{# partials }}
 					<div id="{{ patternPartial }}" class="sg-pattern">
-						<h2 class="content-header" ><a href="../../patterns/{{ patternLink }}" class="patternLink" data-patternpartial="{{ patternPartial }}">{{ patternName }}</a></h2>
+						<h2 class="content-header sg-component-header" ><a href="../../patterns/{{ patternLink }}" class="patternLink" data-patternpartial="{{ patternPartial }}">{{ patternName }}</a></h2>
+
 						<div class="sg-pattern-body">
-							{{{ patternPartialCode }}}
+
+
+                            <div class="{{ patternPartial}} partial-wrap">
+                                    {{{ patternPartialCode }}}
+                            </div>
+
+                            <script type="text/javascript">
+                            var partialName = "{{ patternPartial }}";
+                            console.log(partialName);
+                            if(partialName.startsWith("atom") || partialName.startsWith("molecule") || parialName.startsWith("organism"))
+                            {
+                                $(".{{ patternPartial }}.partial-wrap").wrap("<div class='container'><div class='row'><div class='col-sm-12'></div></div></div>");
+                            }
+                            else {
+
+                            }
+                            </script>
+
 							<div class="sg-code" style="display: none">
 								{{# patternLineageExists }}
 									<div class="sg-code-contains">
-										This pattern contains: 
+										This pattern contains:
 										{{# patternLineages }}
 											<a href="{{ lineagePath }}"><code>{{ lineagePattern }}</code></a>
 										{{/ patternLineages }}
@@ -37,13 +55,12 @@
 					</div>
 				{{/ partials }}
 			</div> <!--end #sg-patterns-->
-	
+
 		</div><!--end .sg-main-->
-		
+
 		<!-- JS to hook everything together and do annotations -->
 		<script>
 			// handle injection of items from PHP
 			var patternPartial = "{{ patternPartial }}";
 			var lineage = "";
 		</script>
-		

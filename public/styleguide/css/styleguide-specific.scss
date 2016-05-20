@@ -124,6 +124,11 @@ $animate-quick: 0.2s;
     }
 }
 
+.overlay-card, .color-card {
+    height: 100px;
+    margin: 0 0 1em;
+}
+
 .sg-label {
     line-height: 1;
 }
