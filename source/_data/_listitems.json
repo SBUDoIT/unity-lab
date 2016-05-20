@@ -17,6 +17,10 @@
             }
 		},
 
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/EUyujom0UaU"
+        },
+
 		"list" : "<ul><li><a href=\"{{url}}\">Provide Feedback</a></li><li><a href=\"{{url}}\">Staff Directory</a></li></ul>",
 
 		"icon" : "sbuicon-glass",
@@ -39,6 +43,8 @@
 		"double" : "<p>Lorem ipsum dolor sit amet, <a href='#'>consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <a href='#'>culpa qui officia</a> deserunt mollit anim id est laborum.</p>"
 		},
 		"description": "Fizzle crazy tortor. Sed rizzle. Ass pimpin' dolor dapibizzle turpis tempizzle fo shizzle my nizzle. Maurizzle pellentesque its fo rizzle izzle turpis. Get down get down we gonna chung nizzle. Shizzlin dizzle eleifend rhoncizzle break it down. In yo ghetto platea dictumst. Bling bling dapibizzle. Curabitur break yo neck, yall fo, pretizzle eu, go to hizzle dope, own yo' vitae, nunc. Bizzle suscipizzle. Ass semper velit sizzle fo.",
+        "location": "West Campus - Earth & Space Sciences Building - Room: 001",
+        "audience": "Clubs, Faculty, Guests, Researchers, Staff, Students, Teaching Assistants (TA's)",
 		"url": "http://lorizzle.nl/",
 		"name": {
 			"first": "Junius",
@@ -48,6 +54,11 @@
 			"last": "Koolen",
 			"lasti": "K"
 		},
+        "stat" : {
+	        "number": "200.00",
+	       "presymbol": "$",
+	       "postsymbol": false
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -76,6 +87,14 @@
 			"long": "20",
 			"short": "20"
 		},
+
+        "cta" :
+        {
+            "url":"#",
+            "text":"Call to Action Text",
+            "class":"default-button button-block"
+        },
+
 		"seconds": "31"
 	},
 	"2": {
@@ -96,6 +115,10 @@
 				"alt": "16x9 Image"
 			}
 		},
+
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/mkyZrWsj8K4"
+        },
 
 		"icon" : "sbuicon-music",
 		"list" : "<ul><li><a href=\"{{url}}\">Archives</a></li></ul>",
@@ -118,7 +141,16 @@
 		"double" : "<p>Donec malesuada enim a odio fringilla, nec porttitor orci lacinia. Mauris vel ornare ante. Pellentesque iaculis nisi id ipsum interdum dictum non tempus justo. Donec eget dolor at turpis sodales luctus.</p><p> Duis consectetur leo quis magna hendrerit egestas. Vivamus dignissim turpis magna, eget volutpat urna porta id. Praesent volutpat fermentum odio, eu facilisis quam sollicitudin sit amet. Fusce eget lorem varius, auctor dui non, tempor ligula. Nullam quis metus nec tortor sollicitudin tincidunt sed vel lorem. Nulla sed porttitor augue. Integer tincidunt eu diam non molestie. In vel scelerisque libero. Aliquam gravida at nibh vulputate lobortis. Nulla bibendum imperdiet ipsum a lacinia.</p>"
 	},
 		"description": "Mung bean squash sorrel taro coriander collard greens gumbo bitterleaf tomato. Taro water chestnut celtuce turnip yarrow celery endive scallion black-eyed pea onion. Aubergine dulse turnip greens mustard salsify garlic soybean parsley bitterleaf desert raisin courgette.",
+        "location": "West Campus - Wang Center - Room: Theater",
+        "audience": "Faculty, Researchers",
 		"url": "http://veggieipsum.com",
+        "cta" :
+        {
+            "url":"#",
+            "text":"Call to Action Text",
+            "class":"impact-button"
+        },
+
 		"name": {
 			"first": "Siguror",
 			"firsti": "S",
@@ -127,6 +159,11 @@
 			"last": "Hanigan",
 			"lasti": "H"
 		},
+        "stat" : {
+	        "number": "75",
+	       "presymbol": false,
+	       "postsymbol": "%"
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -175,6 +212,10 @@
 			}
 		},
 
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/0b4pkTsMP8w"
+        },
+
 		"icon" : "sbuicon-search2",
 		"list" : "<ul><li><a href=\"{{url}}\">Upcoming Events</a></li><li><a href=\"{{url}}\">Workshops</a></li></ul>",
 
@@ -196,7 +237,16 @@
 		"double" : "<p>Nullam lobortis elementum enim nec porta. Quisque facilisis ullamcorper nisl at pharetra. Donec sit amet nisl turpis. Fusce odio nunc, euismod eget ligula eget, cursus accumsan nisl. Vivamus sollicitudin odio a erat malesuada commodo.</p><p>Quisque ac odio vel massa tempor euismod ac nec massa. Maecenas congue sapien a diam blandit, sed facilisis augue aliquam. Pellentesque laoreet, ante quis pulvinar consequat, justo elit ultricies tortor, sed ultrices elit nisi in ligula. Sed pharetra ipsum eros, id ullamcorper felis convallis sed. Nam varius ultrices aliquet. Nam ornare fermentum ante, ac malesuada leo maximus ac.</p>"
 	},
 		"description": "Boudin sausage jerky pastrami ground round salami biltong. Sausage fatback strip steak doner pork loin, pork belly drumstick ham short loin hamburger shankle. Short ribs sirloin rump tri-tip beef biltong. Meatball pig salami, jowl pork loin fatback short loin drumstick andouille.",
+        "location": "Endeavour 120",
+        "audience": "Faculty, Staff",
 		"url": "http://baconipsum.com/",
+        "cta" :
+        {
+            "url":"#",
+            "text":"Click Me, Under the moonlight",
+            "class":"default-button button-medium"
+        },
+
 		"name": {
 			"first": "Teun",
 			"firsti": "T",
@@ -205,6 +255,11 @@
 			"last": "Richard",
 			"lasti": "R"
 		},
+        "stat" : {
+	        "number": "50",
+	       "presymbol": false,
+	       "postsymbol": false
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -253,6 +308,10 @@
 			}
 		},
 
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/Kd-ZJrdNajY"
+        },
+
 		"icon" : "sbuicon-envelope-o",
 		"list" : "<ul><li><a href=\"{{url}}\">Services A-Z</a></li><li><a href=\"{{url}}\">Services By Category</a></li></ul>",
 
@@ -274,7 +333,15 @@
 		"double" : "<p>Lorem ipsum dolor sit amet, <a href='#'>consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <a href='#'>culpa qui officia</a> deserunt mollit anim id est laborum.</p>"
 		},
 		"description": "Fanny pack ullamco et veniam semiotics. Shoreditch PBR reprehenderit cliche, magna Tonx aesthetic. Narwhal photo booth DIY aute post-ironic anim. Vice cliche brunch est before they sold out fap, street art Odd Future fashion axe messenger bag nihil Tonx tattooed. Nihil hashtag incididunt, do eu art party Banksy jean shorts four loko typewriter.",
+        "location": "West Campus - Earth & Space Sciences Building - Room: 001",
+        "audience": "Faculty, Staff, Students",
 		"url": "http://hipsteripsum.me/",
+        "cta" :
+        {
+            "url":"#",
+            "text":"Call to Action Text",
+            "class":"subtle-button"
+        },
 		"name": {
 			"first": "Duane",
 			"firsti": "D",
@@ -283,6 +350,11 @@
 			"last": "Wilms",
 			"lasti": "W"
 		},
+        "stat" : {
+	        "number": "56.22",
+	       "presymbol": "$",
+	       "postsymbol": false
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -337,6 +409,10 @@
 			"medium": "Square tabloid Andy Carvin stupid commenters, Nick Denton mathewi semip"
 		},
 
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/Wt1t1eUyx0c"
+        },
+
 		"icon" : "sbuicon-heart",
 		"list" : "<ul><li><a href=\"{{url}}\">Project Management Office</a></li><li><a href=\"{{url}}\">Project Status</a></li><li><a href=\"{{url}}\">Request a Project</a></li></ul>",
 
@@ -353,7 +429,15 @@
 		"double" : "<p>Lorem ipsum dolor sit amet, <a href='#'>consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <a href='#'>culpa qui officia</a> deserunt mollit anim id est laborum.</p>"
 		},
 		"description": "Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.",
+        "location": "West Campus - Staller Center - Room: Paul W. Zuccaire Gallery",
+        "audience": "Faculty, Staff, Teaching Assistants (TA's)",
 		"url": "http://www.niemanlab.org/journo-ipsum/",
+        "cta" :
+        {
+            "url":"#",
+            "text":"Large Button CTA",
+            "class":"default-button button-large"
+        },
 		"name": {
 			"first": "Frans",
 			"firsti": "F",
@@ -362,6 +446,11 @@
 			"last": "Keegan",
 			"lasti": "K"
 		},
+        "stat" : {
+            "number": "100",
+           "presymbol": false,
+           "postsymbol": "%"
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -410,6 +499,10 @@
 			}
 		},
 
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/lTxoAW056RA"
+        },
+
 		"icon" : "sbuicon-star",
 		"list" : "<ul><li><a href=\"{{url}}\">Annual Reports</a></li><li><a href=\"{{url}}\">Hot Team Reports</a></li><li><a href=\"{{url}}\">TechQual+ Survey</a></li></ul>",
 
@@ -431,7 +524,15 @@
 		"double" : "<p>Nullam lobortis elementum enim nec porta. Quisque facilisis ullamcorper nisl at pharetra. Donec sit amet nisl turpis. Fusce odio nunc, euismod eget ligula eget, cursus accumsan nisl. Vivamus sollicitudin odio a erat malesuada commodo.</p><p>Quisque ac odio vel massa tempor euismod ac nec massa. Maecenas congue sapien a diam blandit, sed facilisis augue aliquam. Pellentesque laoreet, ante quis pulvinar consequat, justo elit ultricies tortor, sed ultrices elit nisi in ligula. Sed pharetra ipsum eros, id ullamcorper felis convallis sed. Nam varius ultrices aliquet. Nam ornare fermentum ante, ac malesuada leo maximus ac.</p>"
 	},
 		"description": "Beats all you've ever saw, been in trouble with the law since the day they was born. Straight'nin' the curve, flat'nin' the hills. Someday the mountain might get 'em, but the law never will. Makin' their way, the only way they know how, that's just a little bit more than the law will allow. Just good ol' boys, wouldn't change if they could, fightin' the system like a true modern day Robin Hood.",
+        "location": "West Campus - Wang Center",
+        "audience": "Faculty, Researchers",
 		"url": "http://www.malevole.com/mv/misc/text/",
+        "cta" :
+        {
+            "url":"#",
+            "text":"Arrowed!",
+            "class":"arrow-link"
+        },
 		"name": {
 			"first": "Fergus",
 			"firsti": "F",
@@ -440,6 +541,11 @@
 			"last": "Althuis",
 			"lasti": "A"
 		},
+        "stat" : {
+            "number": "35",
+           "presymbol": false,
+           "postsymbol": false
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -487,6 +593,9 @@
 				"alt": "16x9 Image"
 			}
 		},
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/i26eE0_KHTI"
+        },
 		"icon" : "sbuicon-star-o",
 		"list" : "<ul><li><a href=\"{{url}}\">Knowledge Base</a></li><li><a href=\"{{url}}\">Submit a Ticket</a></li><li><a href=\"{{url}}\">Training &amp; Development</a></li></ul>",
 		"headline": {
@@ -507,7 +616,14 @@
 		"double" : "<p>Nullam lobortis elementum enim nec porta. Quisque facilisis ullamcorper nisl at pharetra. Donec sit amet nisl turpis. Fusce odio nunc, euismod eget ligula eget, cursus accumsan nisl. Vivamus sollicitudin odio a erat malesuada commodo.</p><p>Quisque ac odio vel massa tempor euismod ac nec massa. Maecenas congue sapien a diam blandit, sed facilisis augue aliquam. Pellentesque laoreet, ante quis pulvinar consequat, justo elit ultricies tortor, sed ultrices elit nisi in ligula. Sed pharetra ipsum eros, id ullamcorper felis convallis sed. Nam varius ultrices aliquet. Nam ornare fermentum ante, ac malesuada leo maximus ac.</p>"
 	},
 		"description": "Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people. Like pit bulls. The dog of dogs. Pit bull can be the right man's best friend... or the wrong man's worst enemy. You going to give me a dog for a pet, give me a pit bull.",
+        "location": "West Campus - LaValle Stadium",
 		"url": "http://slipsum.com/lite/",
+        "cta" :
+        {
+            "url":"#",
+            "text":"You Look So Dashing",
+            "class":"dashed-link"
+        },
 		"name": {
 			"first": "Bertil",
 			"firsti": "B",
@@ -516,6 +632,11 @@
 			"last": "Aaij",
 			"lasti": "A"
 		},
+        "stat" : {
+            "number": "90",
+           "presymbol": false,
+           "postsymbol": false
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -584,7 +705,18 @@
 		"double" : "<p>Donec malesuada enim a odio fringilla, nec porttitor orci lacinia. Mauris vel ornare ante. Pellentesque iaculis nisi id ipsum interdum dictum non tempus justo. Donec eget dolor at turpis sodales luctus.</p><p> Duis consectetur leo quis magna hendrerit egestas. Vivamus dignissim turpis magna, eget volutpat urna porta id. Praesent volutpat fermentum odio, eu facilisis quam sollicitudin sit amet. Fusce eget lorem varius, auctor dui non, tempor ligula. Nullam quis metus nec tortor sollicitudin tincidunt sed vel lorem. Nulla sed porttitor augue. Integer tincidunt eu diam non molestie. In vel scelerisque libero. Aliquam gravida at nibh vulputate lobortis. Nulla bibendum imperdiet ipsum a lacinia.</p>"
 	},
 		"description": "Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.",
+        "location": false,
+        "audience": false,
 		"url": "http://web20ipsum.com",
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/HFCPnLhUHrU"
+        },
+        "cta" :
+        {
+            "url":"#",
+            "text":"Spelling Ellipsis is Hard",
+            "class":"ellipsis-link"
+        },
 		"name": {
 			"first": "Freyr",
 			"firsti": "F",
@@ -593,6 +725,11 @@
 			"last": "Hines",
 			"lasti": "H"
 		},
+        "stat" : {
+            "number": "1035",
+           "presymbol": false,
+           "postsymbol": false
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -642,6 +779,9 @@
 				"alt": "16x9 Image"
 			}
 		},
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/EUyujom0UaU"
+        },
 		"headline": {
             "x-small" : "Pri at omnis",
 			"short": "All right. Well, take care of yourself, Han",
@@ -660,7 +800,15 @@
 		"double" : "<p>Donec malesuada enim a odio fringilla, nec porttitor orci lacinia. Mauris vel ornare ante. Pellentesque iaculis nisi id ipsum interdum dictum non tempus justo. Donec eget dolor at turpis sodales luctus.</p><p> Duis consectetur leo quis magna hendrerit egestas. Vivamus dignissim turpis magna, eget volutpat urna porta id. Praesent volutpat fermentum odio, eu facilisis quam sollicitudin sit amet. Fusce eget lorem varius, auctor dui non, tempor ligula. Nullam quis metus nec tortor sollicitudin tincidunt sed vel lorem. Nulla sed porttitor augue. Integer tincidunt eu diam non molestie. In vel scelerisque libero. Aliquam gravida at nibh vulputate lobortis. Nulla bibendum imperdiet ipsum a lacinia.</p>"
 	},
 		"description": "I find your lack of faith disturbing. A tremor in the Force. The last time I felt it was in the presence of my old master. Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. The plans you refer to will soon be back in our hands.",
+        "location": "West Campus - Wang Center - Room: Lecture Hall 2",
+        "audience": "Faculty, Staff, Teaching Assistants (TA's)",
 		"url": "http://chrisvalleskey.com/fillerama/",
+        "cta" :
+        {
+            "url":"#",
+            "text":"Call to Action Text",
+            "class":"default-button"
+        },
 		"name": {
 			"first": "Jacobus",
 			"firsti": "J",
@@ -669,6 +817,11 @@
 			"last": "Sneiders",
 			"lasti": "S"
 		},
+        "stat" : {
+            "number": "0",
+           "presymbol": false,
+           "postsymbol": false
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -716,7 +869,9 @@
 				"alt": "16x9 Image"
 			}
 		},
-
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/_mrUSQjBz4k"
+        },
 		"icon" : "sbuicon-th-large",
 		"list" : "<ul><li><a href=\"{{url}}\">Annual Reports</a></li><li><a href=\"{{url}}\">Hot Team Reports</a></li><li><a href=\"{{url}}\">TechQual+ Survey</a></li></ul>",
 
@@ -739,7 +894,15 @@
 		"double" : "<p>Donec malesuada enim a odio fringilla, nec porttitor orci lacinia. Mauris vel ornare ante. Pellentesque iaculis nisi id ipsum interdum dictum non tempus justo. Donec eget dolor at turpis sodales luctus.</p><p> Duis consectetur leo quis magna hendrerit egestas. Vivamus dignissim turpis magna, eget volutpat urna porta id. Praesent volutpat fermentum odio, eu facilisis quam sollicitudin sit amet. Fusce eget lorem varius, auctor dui non, tempor ligula. Nullam quis metus nec tortor sollicitudin tincidunt sed vel lorem. Nulla sed porttitor augue. Integer tincidunt eu diam non molestie. In vel scelerisque libero. Aliquam gravida at nibh vulputate lobortis. Nulla bibendum imperdiet ipsum a lacinia.</p>"
 	},
 		"description": "The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migrate? Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. You don't frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits!",
+        "location": false,
+        "audience": false,
 		"url": "http://chrisvalleskey.com/fillerama/",
+        "cta" :
+        {
+            "url":"#.pdf",
+            "text":"Download PDF",
+            "class":"file-link"
+        },
 		"name": {
 			"first": "Plinius",
 			"firsti": "P",
@@ -748,6 +911,11 @@
 			"last": "Sloane",
 			"lasti": "S"
 		},
+        "stat" : {
+            "number": "99",
+           "presymbol": false,
+           "postsymbol": false
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -796,6 +964,9 @@
 				"alt": "16x9 Image"
 			}
 		},
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/T6wjdpwwSwo"
+        },
 		"icon" : "sbuicon-th",
 		"list" : "<ul><li><a href=\"{{url}}\">Knowledge Base</a></li><li><a href=\"{{url}}\">Submit a Ticket</a></li><li><a href=\"{{url}}\">Training &amp; Development</a></li></ul>",
 		"headline": {
@@ -816,7 +987,17 @@
 		"double" : "<p>Lorem ipsum dolor sit amet, <a href='#'>consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <a href='#'>culpa qui officia</a> deserunt mollit anim id est laborum.</p>"
 		},
 		"description": "Sugar plum wafer soufflé ice cream. Wafer topping biscuit pie gummi bears topping. Gummies toffee powder applicake oat cake cookie. Bear claw candy tootsie roll fruitcake danish applicake candy canes macaroon. Liquorice tiramisu danish cotton candy gummies. Tiramisu dessert gummi bears macaroon sweet roll jelly-o gummi bears marzipan.",
+
+        "location": "West Campus - Staller Center - Room: Main Stage",
+        "audience": "Faculty, Staff",
+
 		"url": "http://cupcakeipsum.com/",
+        "cta" :
+        {
+            "url":"#.doc",
+            "text":"Grab the Doc",
+            "class":"file-link"
+        },
 		"name": {
 			"first": "Matthias",
 			"firsti": "M",
@@ -825,6 +1006,11 @@
 			"last": "Macguinness",
 			"lasti": "M"
 		},
+        "stat" : {
+            "number": "50",
+           "presymbol": false,
+           "postsymbol": false
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
@@ -872,6 +1058,9 @@
 				"alt": "16x9 Image"
 			}
 		},
+        "iframe" : {
+            "src": "https://www.youtube.com/embed/lmuY7pq-jEc"
+        },
 		"icon" : "sbuicon-th-list",
 		"list" : "<ul><li><a href=\"{{url}}\">Archives</a></li></ul>",
 		"headline": {
@@ -892,7 +1081,15 @@
 		"double" : "<p>Lorem ipsum dolor sit amet, <a href='#'>consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <a href='#'>culpa qui officia</a> deserunt mollit anim id est laborum.</p>"
 		},
 		"description": "Queso caerphilly cheesecake. Parmesan chalk and cheese port-salut port-salut babybel cottage cheese cheesy grin pepper jack. Croque monsieur paneer st. agur blue cheese emmental airedale monterey jack bavarian bergkase cheese triangles. Halloumi parmesan.",
+        "location": "West Campus - LaValle Stadium",
+        "audience": "Faculty, Staff, Students",
 		"url": "http://www.cheeseipsum.co.uk/",
+        "cta" :
+        {
+            "url":"#.xls",
+            "text":"Do People Even Share Spreadsheets?",
+            "class":"file-link default-button"
+        },
 		"name": {
 			"first": "Aquila",
 			"firsti": "A",
@@ -901,6 +1098,11 @@
 			"last": "Achterkamp",
 			"lasti": "A"
 		},
+        "stat" : {
+            "number": "35",
+           "presymbol": false,
+           "postsymbol": false
+       },
 		"year": {
 			"long": "2013",
 			"short": "13"
