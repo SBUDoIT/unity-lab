@@ -1,6 +1,61 @@
 /* ==========================================================================
 Hero
 ========================================================================== */
+
+.hero-modern {
+    font-weight: 400;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.hero-modern h1 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.hero-modern--navigation {
+  margin: 1em 0;
+}
+
+.hero-modern--buttons {
+  margin: 1em 0;
+}
+
+.hero-modern--navigation a{
+  margin: 0.5em 0;
+}
+
+.hero-modern--heading {
+    text-align: center;
+}
+.hero-modern--content {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.hero-modern--text a {
+  color: $gray;
+  border-bottom: 1px $gray dashed;
+}
+
+.hero-modern--text a:hover
+{
+  color: #fff;
+  border-bottom: 1px #fff solid;
+}
+
+/*
 .hero-modern {
     position: relative;
    // padding: 60px 0 60px 0;
@@ -12,7 +67,7 @@ Hero
 }
 
 .hero-modern--content {
-    text-align: center;
+
     padding: 2em 0;
     p {
         margin: 1em 0;
@@ -22,3 +77,4 @@ Hero
         border-bottom: 1px #ccc dashed;
     }
 }
+*/

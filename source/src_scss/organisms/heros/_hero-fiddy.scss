@@ -1,0 +1,48 @@
+.hero-fiddy {
+    font-weight: 400;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.hero-fiddy h1 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.hero-fiddy--navigation {
+  margin: 1em 0;
+}
+
+.hero-fiddy--buttons {
+  margin: 1em 0;
+}
+
+.hero-fiddy--navigation a{
+  margin: 0.5em 0;
+}
+
+.hero-fiddy--content {
+  margin: 1em 0;
+}
+
+.hero-fiddy--text a {
+  color: $gray;
+  border-bottom: 1px $gray dashed;
+}
+
+.hero-fiddy--text a:hover
+{
+  color: #fff;
+  border-bottom: 1px #fff solid;
+}
