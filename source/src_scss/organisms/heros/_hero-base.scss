@@ -1,61 +1,59 @@
-.hero__small {
-    min-height: 250px;
-    .content-wrap, .hero-modern--content {
-        margin: 70px auto;
-        font-weight: 300;
-    }
-}
-
-.hero__medium {
-    min-height: 500px;
-    .content-wrap, .hero-modern--content {
-        margin: 140px auto;
-        font-weight: 300;
-    }
-}
-
-.hero__large {
-    min-height: 750px;
-    .content-wrap, .hero-modern--content {
-        margin: 210px auto;
-        font-weight: 300;
-    }
-}
-
-
-
-
-.hero--navigation{
-
-
-    margin: 1em auto 0 auto;
-
-    a{
-        margin-bottom: 30px;
-    }
-}
-
-.hero--navigation
-{
-   $i: 1;
-   $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
-    @for $i from (1 + 1) through $grid-columns {
-   $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
- }
- #{$list} {
-
-   padding-left:  0.5em;
-   padding-right: 0.5em;
-   margin-bottom: 1em;
-
- }
-}
-
-
-.hero--logo
-{
+@mixin hero() {
+    font-weight: 400;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: 50% 50%;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
     width: 100%;
-    height: auto;
-    min-width: 170px;
+}
 
+@mixin hero--heading {
+    color: #fff;
+    margin-top: 0;
+    font-weight: 900;
+}
+
+@mixin hero--navigation {
+  margin: 1em 0;
+
+  a{
+    margin: 0.5em 0;
+  }
+}
+
+@mixin hero--buttons {
+  margin: 1em 0;
+}
+
+@mixin hero--content {
+  margin: 1em 0;
+}
+
+@mixin hero--text {
+  font-size: 1.2em;
+  line-height: 1.2em;
+
+  p {
+    margin-bottom: 1.1em;
+  }
+
+  a {
+    color: $gray;
+    border-bottom: 1px $gray dashed;
+  }
+
+
+  a:hover, a:focus {
+    color: #fff;
+    border-bottom: 1px #fff solid;
+  }
 }
