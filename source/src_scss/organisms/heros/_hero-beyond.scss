@@ -1,0 +1,37 @@
+.hero-beyond {
+  background: #800000 url('../images/backgrounds/sbu-stripes/red-rays-full.jpg') repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 10;
+}
+
+.hero-beyond--headings
+{
+  margin: 3.5em 0;
+}
+
+.hero-beyond--subheading {
+  width: 100%;
+  font-weight: 900;
+  margin: 4px 0;
+  color: $white;
+  font-size: 4.6em;
+  line-height: 1;
+}
+
+.hero-beyond:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.hero-beyond--heading, .hero-beyond--subheading {
+  color: $white;
+}
+
+.hero-beyond--buttons
+{
+  margin-bottom: 3.5em;
+}
