@@ -1,48 +1,24 @@
 .hero-classic {
-    font-weight: 400;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    box-sizing: border-box;
-    display: block;
-    font-size: 18px;
-    color: #fff;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-    width: 100%;
+  @include hero();
 }
 
-.hero-classic h1 {
-    color: #fff;
-    margin-top: 0;
+.hero-classic--heading {
+  @include hero--heading();
 }
 
 .hero-classic--navigation {
-  margin: 1em 0;
+  @include hero--navigation();
 }
 
 .hero-classic--buttons {
-  margin: 1em 0;
-}
-
-.hero-classic--navigation a{
-  margin: 0.5em 0;
+  @include hero--buttons();
 }
 
 .hero-classic--content {
-  margin: 1em 0;
+  @include hero--content();
 }
 
-.hero-classic--text a {
-  color: $gray;
-  border-bottom: 1px $gray dashed;
-}
+.hero-classic--text {
+  @include hero--text();
 
-.hero-classic--text a:hover
-{
-  color: #fff;
-  border-bottom: 1px #fff solid;
 }
