@@ -30,3 +30,11 @@ img{
 img.allow-spill{
     max-width: none;
 }
+
+
+.img-responsive,
+{
+  display: block;
+  width: 100%;
+  height: auto;
+}

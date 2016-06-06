@@ -4,7 +4,8 @@
 		"excerpt" : {
 			"short" : "notification! This is a variation of the core homepage template."
 		},
+		"icon" : "sbuicon-info2",
 		"title" : "notification! Don't Call an ambulance"
-		
+
 	}
 }

@@ -1,69 +1,24 @@
 .hero-classic {
-    font-weight: 400;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    box-sizing: border-box;
-    display: block;
-    font-size: 18px;
-    color: #303030;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding-bottom: 0;
-    padding-top: 0;
-    position: relative;
-    width: 100%;
+  @include hero();
 }
 
-.hero-classic h1 {
-    color: #fff;
-    margin-top: 0;
-}
-/*
-.hero-classic--content-wrap {
-    width: 100%;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    @include breakpoint($break-tablet) {
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
+.hero-classic--heading {
+  @include hero--heading();
 }
 
-.hero-classic--context-text {
-    .hero-content-text {
-        color: #fff;
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1em;
-    }
+.hero-classic--navigation {
+  @include hero--navigation();
 }
 
-.hero-classic--content-heading {
-    font-size: 2.5em;
-    color: #fff;
-    text-shadow: 2px 2px 5px #000000;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-top: 0;
-    @include breakpoint($break2) {
-        font-size: 4em;
-        text-shadow: 2px 2px 5px #000000;
-        margin-top: 0;
-        color: #fff;
-        margin-top: 0.67em;
-    }
+.hero-classic--buttons {
+  @include hero--buttons();
 }
 
-.hero-classic--buttons-wrap {
-    max-width: 800px;
-}*/
+.hero-classic--content {
+  @include hero--content();
+}
+
+.hero-classic--text {
+  @include hero--text();
+
+}
