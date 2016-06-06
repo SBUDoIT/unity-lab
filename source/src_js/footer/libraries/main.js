@@ -1,3 +1,77 @@
+
+jQuery(function($) {
+	"use strict";
+
+	$.validate();
+
+	new WOW().init();
+	//Variables
+	var fixed_point = 0;
+	var loaded = false;
+
+	$(window).load(function(){
+		$('.owl-carousel').owlCarousel({
+			items:2,
+			navigation:true,
+			autoPlay:5000,
+			navigationText: ["<i class='sbuicon-arrow-left3'></i>","<i class='sbuicon-arrow-right3'></i>"]
+		});
+		$('.main-nav').onePageNav({
+			currentClass: 'active',
+			changeHash: false,
+			scrollSpeed: 400
+		});
+		// Navbar "Breaking" Fix
+		loaded = true;
+		Adjust();
+		$('.fixedNav').after("<div class='navbar-filler'></div>");
+	});
+
+	$(window).resize(function(){
+		Adjust();
+	});
+
+
+	$(window).scroll(function(){
+
+		//Following Navbar
+		if($(window).scrollTop() > fixed_point && loaded)
+		{
+			$('.fixedNav').addClass('nav-fixed');
+			$('.navbar-filler').height($('.fixedNav').outerHeight(true));
+		}
+		else
+		{
+			$('.navbar').removeClass('nav-fixed');
+			$('.navbar-filler').height(0);
+		}
+	});
+
+	function Adjust(){
+		if(!$('.fixedNav').hasClass("nav-fixed") && loaded)
+			fixed_point = $('.fixedNav').offset().top;
+	}
+
+
+
+	// Scrolling
+	$('a.scrollto').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $("[name='" + this.hash.slice(1) +"']");
+			if (target.length) {
+
+				$('.mobile-nav').removeClass('active');
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+});
+
+
 (function($){
 
 $(document).ready(function($){
@@ -20,34 +94,34 @@ $(document).ready(function($){
 	var filter_tab_placeholder = $('.cd-tab-filter .placeholder a'),
 		filter_tab_placeholder_default_value = 'Select',
 		filter_tab_placeholder_text = filter_tab_placeholder.text();
-	
+
 	$('.cd-tab-filter li').on('click', function(event){
 		//detect which tab filter item was selected
 		var selected_filter = $(event.target).data('type');
-			
+
 		//check if user has clicked the placeholder item
 		if( $(event.target).is(filter_tab_placeholder) ) {
 			(filter_tab_placeholder_default_value == filter_tab_placeholder.text()) ? filter_tab_placeholder.text(filter_tab_placeholder_text) : filter_tab_placeholder.text(filter_tab_placeholder_default_value) ;
 			$('.cd-tab-filter').toggleClass('is-open');
 
-		//check if user has clicked a filter already selected 
+		//check if user has clicked a filter already selected
 		} else if( filter_tab_placeholder.data('type') == selected_filter ) {
 			filter_tab_placeholder.text($(event.target).text());
-			$('.cd-tab-filter').removeClass('is-open');	
+			$('.cd-tab-filter').removeClass('is-open');
 
 		} else {
 			//close the dropdown and change placeholder text/data-type value
 			$('.cd-tab-filter').removeClass('is-open');
 			filter_tab_placeholder.text($(event.target).text()).data('type', selected_filter);
 			filter_tab_placeholder_text = $(event.target).text();
-			
+
 			//add class selected to the selected filter item
 			$('.cd-tab-filter .selected').removeClass('selected');
 			$(event.target).addClass('selected');
 		}
 	});
-	
-	//close filter dropdown inside lateral .cd-filter 
+
+	//close filter dropdown inside lateral .cd-filter
 	$('.cd-filter-block h4').on('click', function(){
 		$(this).toggleClass('closed').siblings('.cd-filter-content').slideToggle(300);
 	})
@@ -65,14 +139,14 @@ $(document).ready(function($){
 		var offsetTop = $('.cd-main-content').offset().top,
 			scrollTop = $(window).scrollTop();
 		( scrollTop >= offsetTop ) ? $('.cd-main-content').addClass('is-fixed') : $('.cd-main-content').removeClass('is-fixed');
-		
+
 		}
 
 	}
 
 	/************************************
 		MitItUp filter settings
-		More details: 
+		More details:
 		https://mixitup.kunkalabs.com/
 		or:
 		http://codepen.io/patrickkunka/
@@ -111,11 +185,11 @@ $(document).ready(function($){
 	  	delay(function(){
 	    	inputText = $(".cd-filter-content input[type='search']").val().toLowerCase();
 	   		// Check to see if input field is empty
-	    	if ((inputText.length) > 0) {            
+	    	if ((inputText.length) > 0) {
 	      		$('.mix').each(function() {
 		        	var $this = $(this);
-		        
-		        	// add item to be filtered out if input text matches items inside the title   
+
+		        	// add item to be filtered out if input text matches items inside the title
 		        	if($this.attr('class').toLowerCase().match(inputText)) {
 		          		$matching = $matching.add(this);
 		        	} else {
@@ -133,7 +207,7 @@ $(document).ready(function($){
 });
 
 /*****************************************************
-	MixItUp - Define a single object literal 
+	MixItUp - Define a single object literal
 	to contain all filter custom functionality
 *****************************************************/
 var buttonFilter = {
@@ -142,28 +216,28 @@ var buttonFilter = {
   	groups: [],
   	outputArray: [],
   	outputString: '',
-  
+
   	// The "init" method will run on document ready and cache any jQuery objects we will need.
   	init: function(){
     	var self = this; // As a best practice, in each method we will asign "this" to the variable "self" so that it remains scope-agnostic. We will use it to refer to the parent "buttonFilter" object so that we can share methods and properties between all parts of the object.
-    
+
     	self.$filters = $('.cd-main-content');
     	self.$container = $('.cd-gallery ul');
-    
+
 	    self.$filters.find('.cd-filters').each(function(){
 	      	var $this = $(this);
-	      
+
 		    self.groups.push({
 		        $inputs: $this.find('.filter'),
 		        active: '',
 		        tracker: false
 		    });
 	    });
-	    
+
 	    self.bindHandlers();
   	},
-  
-  	// The "bindHandlers" method will listen for whenever a button is clicked. 
+
+  	// The "bindHandlers" method will listen for whenever a button is clicked.
   	bindHandlers: function(){
     	var self = this;
 
@@ -171,13 +245,13 @@ var buttonFilter = {
 	      	self.parseFilters();
     	});
 	    self.$filters.on('change', function(){
-	      self.parseFilters();           
+	      self.parseFilters();
 	    });
   	},
-  
+
   	parseFilters: function(){
 	    var self = this;
-	 
+
 	    // loop through each filter group and grap the active filter from each one.
 	    for(var i = 0, group; group = self.groups[i]; i++){
 	    	group.active = [];
@@ -196,24 +270,25 @@ var buttonFilter = {
 	    }
 	    self.concatenate();
   	},
-  
+
   	concatenate: function(){
     	var self = this;
-    
+
     	self.outputString = ''; // Reset output string
-    
+
 	    for(var i = 0, group; group = self.groups[i]; i++){
 	      	self.outputString += group.active;
 	    }
-    
-	    // If the output string is empty, show all rather than none:    
-	    !self.outputString.length && (self.outputString = 'all'); 
-	
-    	// Send the output string to MixItUp via the 'filter' method:    
+
+	    // If the output string is empty, show all rather than none:
+	    !self.outputString.length && (self.outputString = 'all');
+
+    	// Send the output string to MixItUp via the 'filter' method:
 		if(self.$container.mixItUp('isLoaded')){
 	    	self.$container.mixItUp('filter', self.outputString);
 		}
   	}
 };
+
 
 })(jQuery);
