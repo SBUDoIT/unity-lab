@@ -1,16 +1,16 @@
 {{# alert.class}}
-<div class="alert__{{alert.class}}">
+<div class="alert-box__{{alert.class}}">
 {{/ alert.class}}
 {{^ alert.class}}
-<div class="alert__notification">
+<div class="alert-box__notification">
 {{/ alert.class}}
-	<h2 class="alert--heading"><span class="sbuicon-info2"></span>{{headline.medium}}</h2>
-	<div class="alert--summary">
+	<h2 class="alert-box--heading"><span class="{{icon}}"></span>{{headline.medium}}</h2>
+	<div class="alert-box--summary">
 	       {{excerpt.short}}
 	</div>
 
 	 {{# cta }}
-        <div class="alert--cta">
+        <div class="alert-box--cta">
             <a href="{{cta.url}}" class="{{cta.class}}">{{cta.text}}</a>
         </div>
     {{/ cta }}

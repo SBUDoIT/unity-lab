@@ -17,6 +17,46 @@
     }
 }
 
+.bg-fixed {
+  background-attachment: fixed !important;
+}
+
+.bg-focus-top {
+  background-position-y: 0% !important;
+}
+
+.bg-focus-toward-top {
+  background-position-y: 25% !important;
+}
+
+.bg-focus-vcenter {
+  background-position-y: 50% !important;
+}
+
+.bg-focus-toward-bottom {
+  background-position-y: 75% !important;
+}
+
+.bg-focus-bottom {
+  background-position-y: 100% !important;
+}
+
+.bg-focus-left {
+  background-position-x: 0% !important;
+}
+
+.bg-focus-hcenter {
+  background-position-x: 0% !important;
+}
+
+.bg-focus-right {
+  background-position-x: 100% !important;
+}
+
+.bg-focus-center {
+  background-position: 50% 50% !important;
+}
+
 ///TEXTURES
 
 .bg-texture-60-lines {

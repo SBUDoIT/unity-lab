@@ -1,21 +1,9 @@
-/* Makes images fully responsive */
-
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 
 /* ------------------- Carousel Styling ------------------- */
 
 .carousel-inner {
   border-radius: 0px;
-  
+
 }
 
 .carousel-caption {
@@ -57,6 +45,3 @@
 .carousel-control.right {
   background-image: none;
 }
-
-
-
