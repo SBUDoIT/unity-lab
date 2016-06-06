@@ -1,6 +1,23 @@
-<!-- This Acts As a Border  -->
+<style>
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+</style>
+
+
+<!-- This Acts As a Border
 <section class="snug" style="background-image: url('/images/backgrounds/images/redSwooshes.jpg'); background-size: cover;"></section>
-<!-- End Border  -->
+End Border  -->
 
 
 <section class="homepage-hero-module">
@@ -16,13 +33,44 @@
         </div>
     </div>
 </section>
-
+<!-- Begin Navbar -->
+<div id="nav">
+  <div class="navbar navbar-default navbar-static">
+    <div class="container">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="glyphicon glyphicon-bar"></span>
+        <span class="glyphicon glyphicon-bar"></span>
+        <span class="glyphicon glyphicon-bar"></span>
+      </a>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+        <ul class="nav pull-right navbar-nav">
+          <li>
+            <form class="navbar-form">
+          <input type="text" class="form-control" placeholder="Search">
+          <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+        </form>
+          </li>
+          <li>
+            <a href="#"><i class="glyphicon glyphicon-flag"></i> <span class="badge">2</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /.navbar -->
+</div>
 <!-- This Acts As a Border  -->
 <section class="snug" style="background-image: url('/images/backgrounds/images/redSwooshes.jpg'); background-size: cover;"></section>
 <!-- End Border  -->
 
 
-<section class="getting-started-section" style="background-image: url(''); background-size: cover;">
+<section id="about" style="background-image: url(''); background-size: cover;">
     <!-- Wrapper -->
     <div class="container">
         <div class="cozy">
