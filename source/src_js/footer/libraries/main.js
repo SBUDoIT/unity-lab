@@ -24,7 +24,7 @@ jQuery(function($) {
 		// Navbar "Breaking" Fix
 		loaded = true;
 		Adjust();
-		$('.fixedNav').after("<div class='navbar-filler'></div>");
+		$('.navbar').after("<div class='navbar-filler'></div>");
 	});
 
 	$(window).resize(function(){
@@ -42,7 +42,7 @@ jQuery(function($) {
 		}
 		else
 		{
-			$('.navbar').removeClass('nav-fixed');
+			$('.fixedNav').removeClass('nav-fixed');
 			$('.navbar-filler').height(0);
 		}
 	});

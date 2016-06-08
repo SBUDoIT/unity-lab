@@ -1,66 +1,88 @@
-<section class="hidden-md hidden-lg hidden-xl snug" style="background-color: #D52027;">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2 class="heading white noMarginBottom">EXPLORE DoIT</h2>
-        <p class="small white noMarginTop">Division of Information Technology</p>
-      </div>
-    </div>
+<!-- ===========================================================================
+
+** Title Section **
+
+This section is only visible on mobile screens.
+
+
+============================================================================ -->
+
+<section class="hidden-md hidden-lg hidden-xl snug" style="background-color: #111;">
+  <div class="container noPadding">
+
+    <h2 class="heading white noMarginBottom">Explore IT For Students</h2>
+    <p class="small white noMarginTop">Division of Information Technology</p>
+
   </div>
 </section>
 
 <section class="redRaysBorder hidden-md hidden-lg" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
 
-<section class="hidden-md hidden-lg" style="background-color: #000;">"
-  <div class="container-fluid noPadding">
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
-    </div>
-  </div>
-</section>
+<!-- ===========================================================================
 
-<section class="redRaysBorder hidden-md hidden-lg" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
+** Header Video **
 
-<section class="callToActionCard hidden-md hidden-lg">
-  <a class="scrollto specialAction" href="#explore">Explore Student Technology</a>
-</section>
+A teaser video will be loaded first in order to save on bandwidth for users
+visiting the guide.
 
-<section class="redRaysBorder hidden-md hidden-lg" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
+Users will select the "Watch the Welcome Video" button, which will load/autoplay the
+orientation welcome video, which is hosted on YouTube.
 
-<section id="videohero" class="" style="height: 778px; width: 1440px;">
-  <!-- Logo -->
-  <div class="logo">
-    <a href="#explore" class="wow fadeInUp animated scrollto videoHero__button" alt="logo" data-wow-delay="0.2s">
-					Explore Student Technology &raquo;
-				</a>
-  </div>
-  <div class="">
-    <div class="" style="opacity: 1; height: 810px; width: 1440px; left: 0px; top: -35px;">
-      <video autoplay controls>
-        <source src="http://mobile.cc.stonybrook.edu/sb/40underforty/video/sbu-40-under-40.webm" type="video/webm">
-        <source src="http://mobile.cc.stonybrook.edu/sb/40underforty/video/sbu-40-under-40.mp4" type="video/mp4">
-        <source src="http://mobile.cc.stonybrook.edu/sb/40underforty/video/sbu-40-under-40.ogv" type="video/ogg">
-      </video>
-    </div>
-  </div>
-</section>
+In the event that JavaScript is disabled, the orientation-placeholder.jpg image
+will be loaded instead. The button will still appear, and users will be directed
+to the YouTube video.
+
+============================================================================ -->
+
+<div class="header-video">
+    <img src="/placeholders/images/orientation/orientation-placeholder.jpg"
+         class="header-video__media"
+         data-video-URL="https://www.youtube.com/embed/ZtUV30kfa1U?rel=0&hd=1&autohide=1&showinfo=0&autoplay=1&enablejsapi=1&origin=*"
+         data-teaser="/placeholders/video/orientation-teaser-video"
+         data-video-width="560"
+         data-video-height="315">
+    <a href="https://www.youtube.com/embed/ZtUV30kfa1U?rel=0&hd=1&autohide=1&showinfo=0&autoplay=1&enablejsapi=1&origin=*" class="default-button button-large header-video__play-trigger" id="header-video__play-trigger">Watch the Welcome Video &raquo;</a>
+    <button type="button" class="header-video__close-trigger" id="header-video__close-trigger">Close video</button>
+</div>
+
+
+<!-- ===========================================================================
+
+** Explore Button **
+
+The explore button is only vissible on viewports width 768px +
+
+============================================================================ -->
+
+<div class="header-video__button hidden-sm hidden-xs hidden-md">
+  <a href="#explore" class="wow fadeInUp animated scrollto header-video__button--link default-button button-large" alt="Continue Exploring Student Technology" data-wow-delay="0.2s">
+				Explore IT for Students &raquo;
+			</a>
+</div>
+
+<!-- ===========================================================================
+
+** Navigation **
+
+This navigation will fix to the top of the screen on scroll.
+Fixed position will be removed when back to the top of the page.
+
+============================================================================ -->
+
 
 <nav class="fixedNav navbar--fixed navbar--fixed__default noPadding noMarginBottom noBorder">
 
   <div class="container">
-
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar--fixed__header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fixedNavCollapse">
         <span class="sr-only">Toggle navigation</span>
-
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-nav-fixedbar"></span>
       </button>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar--fixed__collapse" id="fixedNavCollapse">
 
       <ul class="nav navbar--fixed__links main-nav">
@@ -71,203 +93,231 @@
         <li><a href="#gettingHelp" class="fixedNavLink scrollto">Getting Help</a></li>
       </ul>
     </div>
-    <!-- ./navbar-collapse -->
   </div>
-  <!-- /.container-fluid -->
 </nav>
 
-<section id="explore" class="fullHeightSection gradientOverlayTopRight" style="background-image: url('../../placeholders/images/Explore.jpg');">
-  <div class="container">
+<!-- ===========================================================================
+
+** Explore Introduction Section **
+
+============================================================================ -->
+
+<section id="explore" class="full-height-section gradient-overlay__TopRight fluffy" style="background-image: url('../../placeholders/images/Explore.jpg');">
+  <div class="container fluffy">
       <div class="col-md-offset-6">
         <h2 class="heading white wow animated fadeInUp">Exploring Student Technology</h2>
         <h4 class="subheading white wow animated fadeInUp">This guide is meant for new students joining the Stony Brook University family. Included in this guide you will find vital information about services offered by the Division of Information Technology (DoIT).</h4>
-        <a href="#gettingStarted" class="explore__button explore__button-red scrollto">Continue Exploring &raquo;</a>
+        <a href="#gettingStarted" class="default-button button-large scrollto">Continue Exploring &raquo;</a>
       </div>
   </div>
 </section>
 
-<section class="redRaysBorder hidden-sm hiddem-xs" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
+<section class="redRaysBorder hidden-sm hidden-xs" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
 
-<!-- Carousel section -->
-<section style="background-color: #f5f5f5">
-  <div id="gettingStarted" class="fullHeightSection">
-    <div class="container noPaddingmobile">
-      <div class="col-md-4 col-sm-12 noPadding">
-        <div class="callToActionCard" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
-	  	background-size: cover;">
-          <div class="text-left wow animated fadeInUp" style="padding: 10px 20px;">
-            <h2 class="heading white">Getting Started</h2>
-            <p class="wow animated fadeInUp white">These essential services will be your gateway to the all that DoIT has to offer.</p>
-          </div>
-        </div>
-      </div>
+<!-- ===========================================================================
 
-      <p style="font-size: .875em;" class="muted text-center-mobile hidden-md hidden-lg hidden-xl noMarginTop noMarginBottom">Use the arrows to navigate</span>
-      <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
-        <div class="owl-carousel">
-          <div class="item panelSOLAR-btn">
-            <div class="article wow animated fadeInUp">
-              <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
+** Carousel Section **
 
-              <div class="article__content">
-                <h4 class="article__title">WolfieNet (WiFi)</h4>
-                <h6 class="article__sbutitle">wifi.stonybrook.edu</h6>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+Using the owl-carousel JavaScript library. The carousels themselves are made up
+of individual cards called "article", which sit in a parent element called "articles".
+
+The settings for the "sliding" actio are set in main.js
+
+============================================================================ -->
+
+<section class="fluffy bg-x-light-gray">
+
+        <!-- ===================================================================
+        ** Getting Started Carousels **
+        ==================================================================== -->
+
+        <div id="gettingStarted" class="fluffy">
+          <div class="container noPadding">
+            <div class="col-md-4 col-sm-12 noPadding">
+              <div class="fluffy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
+      	  	background-size: cover;" data-match-height="gettingStarted">
+                <div class="text-left wow animated fadeInUp" style="padding: 10px 20px;">
+                  <h2 class="heading white">Getting Started</h2>
+                  <p class="wow animated fadeInUp white">These essential services will be your gateway to the all that DoIT has to offer.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item panelSOLAR-btn">
-            <div class="article wow animated fadeInUp">
-              <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-              <div class="article__content">
-                <h4 class="article__title">SOLAR</h4>
-                <h6 class="article__sbutitle">solar.stonybrook.edu</h6>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+            <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
+              <div class="owl-carousel">
+                <div class="item panelSOLAR-btn">
+                  <div class="article wow animated fadeInUp" data-match-height="gettingStarted">
+                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
+                    <div class="article__content">
+                      <h4 class="article__title">WolfieNet (WiFi)</h4>
+                      <h6 class="article__sbutitle">wifi.stonybrook.edu</h6>
+                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelSOLAR-btn">
+                  <div class="article wow animated fadeInUp" data-match-height="gettingStarted">
+                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
+                    <div class="article__content">
+                      <h4 class="article__title">SOLAR</h4>
+                      <h6 class="article__sbutitle">solar.stonybrook.edu</h6>
+                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelSOLAR-btn">
+                  <div class="article wow animated fadeInUp" data-match-height="gettingStarted">
+                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
+                    <div class="article__content">
+                      <h4 class="article__title">NetID</h4>
+                      <h6 class="article__sbutitle">netid.stonybrook.edu</h6>
+                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item panelSOLAR-btn">
-            <div class="article wow animated fadeInUp">
-              <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-              <div class="article__content">
-                <h4 class="article__title">NetID</h4>
-                <h6 class="article__sbutitle">netid.stonybrook.edu</h6>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <div class="col-md-12 fluffy" style="text-align: center;">
-          <a href="#aroundCampus" alt="Continue to Around Campus" class="scrollto continueArrow"><span class="sbuicon-arrow-down3"></span></a>
-        </div>
-
-    </div>
-  </div>
-
-  <div id="aroundCampus" class="fullHeightSection">
-    <div class="container noPaddingmobile">
-      <div class="col-md-4 col-sm-12 noPadding">
-        <div class="callToActionCard" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
-			background-size: cover; background-position: fixed;">
-          <div class="text-left wow animated fadeInUp" style="padding: 30px;">
-            <h2 class="heading white">Around Campus</h2>
-            <p class="wow animated fadeInUp white">DoIT provides tools to assist you in your academic endevours.</div>
-        </div>
-      </div>
-      <p style="font-size: .875em;" class="muted text-center-mobile hidden-md hidden-lg hidden-xl noMarginTop noMarginBottom">Use the arrows to navigate</span>
-
-      <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
-        <div class="owl-carousel">
-          <div class="item panelSOLAR-btn">
-            <div class="article">
-              <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-
-              <div class="article__content">
-                <h4 class="article__title">Printing</h4>
-                <h6 class="article__subtitle">printing.stonybrook.edu</h6>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
-              </div>
-            </div>
-          </div>
-          <div class="item panelSOLAR-btn">
-            <div class="article">
-              <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-              <div class="article__content">
-                <h4 class="article__title">SINC Sites</h4>
-                <h6 class="article__subtitle">sincsites.stonybrook.edu</h6>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
-              </div>
-            </div>
-          </div>
-          <div class="item panelSOLAR-btn">
-            <div class="article">
-              <img src="../../placeholders/images/orientation/1.png" class="articler-pic" alt="">
-              <div class="article__content">
-                <h4 class="article__title">Mobile Charging Stations</h4>
-
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
-              </div>
+            <!-- Moves Users to the next section -->
+            <div class="col-md-12 noPadding" style="text-align: center;">
+                <a href="#aroundCampus" alt="Continue to Around Campus" class="scrollto">Discover Services Around Campus &raquo;</span></a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-12 fluffy" style="text-align: center;">
-        <a href="#learningTools" alt="Continue to Around Campus" class="scrollto continueArrow"><span class="sbuicon-arrow-down3"></span></a>
-      </div>
-    </div>
-  </div>
 
-  <div id="learningTools" class="fullHeightSection">
-    <div class="container noPaddingmobile">
-      <div class="col-md-4 col-sm-12 noPadding">
+        <!-- ===================================================================
+        ** Around Campus Section **
+        ==================================================================== -->
 
-        <div class="callToActionCard" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
-	  	background-size: cover;">
-          <div class="text-left wow animated fadeInUp" style="padding: 30px;">
-            <h2 class="heading white">Learning Tools</h2>
-            <p class="wow animated fadeInUp white">DoIT provides tools to assist you in your academic endevours.</div>
-        </div>
-      </div>
-      <p style="font-size: .875em;" class="muted text-center-mobile hidden-md hidden-lg hidden-xl noMarginTop noMarginBottom">Use the arrows to navigate</span>
-
-      <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
-        <div class="owl-carousel">
-          <div class="item panelSOLAR-btn">
-            <div class="article wow animated fadeInUp">
-              <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-
-              <div class="article__content">
-                <h4 class="article__title">Google Apps</h4>
-                <h6 class="article__sbutitle">google.stonybrook.edu</h6>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+        <div id="aroundCampus" class="fluffy">
+          <div class="container noPadding">
+            <div class="col-md-4 col-sm-12 noPadding">
+              <div class="fluffy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
+      			background-size: cover; background-position: fixed;" data-match-height="aroundCampus">
+                <div class="text-left wow animated fadeInUp" style="padding: 30px;">
+                  <h2 class="heading white">Around Campus</h2>
+                  <p class="wow animated fadeInUp white">DoIT provides tools to assist you in your academic endevours.</div>
               </div>
             </div>
-          </div>
-          <div class="item panelSOLAR-btn">
-            <div class="article wow animated fadeInUp">
-              <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-              <div class="article__content">
-                <h4 class="article__title">Blackboard</h4>
-                <h6 class="article__sbutitle">blackboard.stonybrook.edu</h6>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+            <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
+              <div class="owl-carousel">
+                <div class="item panelSOLAR-btn">
+                  <div class="article wow animated fadeInUp" data-match-height="aroundCampus">
+                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
+                    <div class="article__content">
+                      <h4 class="article__title">Printing</h4>
+                      <h6 class="article__subtitle">printing.stonybrook.edu</h6>
+                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelSOLAR-btn">
+                  <div class="article wow animated fadeInUp" data-match-height="aroundCampus">
+                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
+                    <div class="article__content">
+                      <h4 class="article__title">SINC Sites</h4>
+                      <h6 class="article__subtitle">sincsites.stonybrook.edu</h6>
+                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelSOLAR-btn">
+                  <div class="article wow animated fadeInUp" data-match-height="aroundCampus">
+                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
+                    <div class="article__content">
+                      <h4 class="article__title">Mobile Charging Stations</h4>
+                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item panelSOLAR-btn">
-            <div class="article wow animated fadeInUp">
-              <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-              <div class="article__content">
-                <h4 class="article__title">Lynda</h4>
-                <h6 class="article__sbutitle">lynda.stonybrook.edu</h6>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
-              </div>
-            </div>
-          </div>
-          <div class="item panelSOLAR-btn">
-            <div class="article wow animated fadeInUp">
-              <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-              <div class="article__content">
-                <h4 class="article__title">echo360</h4>
-                <h6 class="article__sbutitle">lynda.stonybrook.edu</h6>
-                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
-              </div>
+            <!-- Moves Users to the next section -->
+            <div class="col-md-12 noPadding" style="text-align: center;">
+                <a href="#learningTools" alt="Continue to Around Campus" class="scrollto">Discover Learning Tools for Students &raquo;</span></a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-12 fluffy" style="text-align: center;">
-        <a href="#gettingHelp" alt="Continue to Around Campus" class="scrollto continueArrow"><span class="sbuicon-arrow-down3"></span></a>
-      </div>
-    </div>
-  </div>
+
+        <!-- ===================================================================
+        ** Learning Tools Section **
+        ==================================================================== -->
+
+        <div id="learningTools" class="fluffy">
+          <div class="container noPadding">
+            <div class="col-md-4 col-sm-12 noPadding">
+              <div class="fluffy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
+      	  	background-size: cover;" data-match-height="learningTools">
+                <div class="text-left wow animated fadeInUp" style="padding: 30px;">
+                  <h2 class="heading white">Learning Tools</h2>
+                  <p class="wow animated fadeInUp white">DoIT provides tools to assist you in your academic endevours.</div>
+              </div>
+            </div>
+            <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
+              <div class="owl-carousel">
+                <div class="item panelSOLAR-btn">
+                  <div class="article wow animated fadeInUp" data-match-height="learningTools">
+                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
+                    <div class="article__content">
+                      <h4 class="article__title">Google Apps</h4>
+                      <h6 class="article__subtitle">google.stonybrook.edu</h6>
+                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelSOLAR-btn">
+                  <div class="article wow animated fadeInUp" data-match-height="learningTools">
+                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
+                    <div class="article__content">
+                      <h4 class="article__title">Blackboard</h4>
+                      <h6 class="article__subtitle">blackboard.stonybrook.edu</h6>
+                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelSOLAR-btn">
+                  <div class="article wow animated fadeInUp" data-match-height="learningTools">
+                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
+                    <div class="article__content">
+                      <h4 class="article__title">Lynda</h4>
+                      <h6 class="article__subtitle">lynda.stonybrook.edu</h6>
+                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelSOLAR-btn">
+                  <div class="article wow animated fadeInUp" data-match-height="learningTools">
+                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
+                    <div class="article__content">
+                      <h4 class="article__title">echo360</h4>
+                      <h6 class="article__sbutitle">lynda.stonybrook.edu</h6>
+                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Moves Users to the next section -->
+            <div class="col-md-12 noPadding" style="text-align: center;">
+                <a href="#gettingHelp" alt="Continue to Around Campus" class="scrollto">Where to Find Help &raquo;</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================================================================
+        ** End of Carousels **
+        ==================================================================== -->
+
 </section>
-<!-- end Carousel section -->
+
+
+<!-- ===================================================================
+
+** Where to get help section **
+
+==================================================================== -->
 
 <section class="redRaysBorder" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
 
-<section id="gettingHelp" class="callToActionCard">
+<section id="gettingHelp" class="fluffy bg-farbeyondred">
   <div class="container">
     <div class="row fluffy">
       <div class="col-md-8 col-sm-12 wow animated fadeInUp">
@@ -276,9 +326,9 @@
       </div>
 
       <div class="col-md-4 col-sm-12 wow animated fadeInUp">
-        <a class="explore__button explore__button-white noMarginLeft" href="http://service.stonybrook.edu">Submit A Ticket</a>
+        <a class="default-button default-button__white noMarginLeft" href="http://service.stonybrook.edu">Submit A Ticket</a>
         <h3 class="heading white">Find us on Social Media</h3>
-          <div class="social noMarginLeft">
+          <div class="social-links noMarginLeft">
             <a href="#" class="facebook-circle white noPaddingLeft"><i class="sbuicon-facebook"></i></a>
             <a href="#" class="twitter-circle white"><i class="sbuicon-twitter"></i></a>
             <a href="#" class="youtube-circle white"><i class="sbuicon-youtube"></i></a>
@@ -369,12 +419,6 @@
 
 <div class="notification-box"><span>Sending...</span></div>
 
-<div class="mobile-nav">
-  <ul class="menu">
-
-  </ul>
-</div>
-
 <!-- Slideou Panel Content -->
 
 <!-- SOLAR -->
@@ -439,3 +483,18 @@
     });
 </script>
 <!-- end Slideout Panel Scripts -->
+
+<!-- video header -->
+
+<script>
+  $(document).ready(function() {
+    $('.header-video').each(function(i, elem) {
+        headerVideo = new HeaderVideo({
+          element: elem,
+          media: '.header-video__media',
+          playTrigger: '.header-video__play-trigger',
+          closeTrigger: '.header-video__close-trigger'
+        });
+    });
+  });
+</script>
