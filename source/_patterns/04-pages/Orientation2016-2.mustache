@@ -8,7 +8,7 @@ This section is only visible on mobile screens.
 ============================================================================ -->
 
 <section class="hidden-md hidden-lg hidden-xl snug" style="background-color: #111;">
-  <div class="container noPadding">
+  <div class="container">
 
     <h2 class="heading white noMarginBottom">Explore IT For Students</h2>
     <p class="small white noMarginTop">Division of Information Technology</p>
@@ -41,8 +41,8 @@ to the YouTube video.
          data-teaser="/placeholders/video/orientation-teaser-video"
          data-video-width="560"
          data-video-height="315">
-    <a href="https://www.youtube.com/embed/ZtUV30kfa1U?rel=0&hd=1&autohide=1&showinfo=0&autoplay=1&enablejsapi=1&origin=*" class="default-button button-large header-video__play-trigger" id="header-video__play-trigger">Watch the Welcome Video &raquo;</a>
-    <button type="button" class="header-video__close-trigger" id="header-video__close-trigger">Close video</button>
+    <a href="https://www.youtube.com/embed/ZtUV30kfa1U?rel=0&hd=1&autohide=1&showinfo=0&autoplay=1&enablejsapi=1&origin=*"  target="_blank" class="default-button button-large header-video__play-trigger" id="header-video__play-trigger">Watch the Welcome Video &raquo;</a>
+    <button type="button" class="default-button button-large header-video__close-trigger" id="header-video__close-trigger">Close video</button>
 </div>
 
 
@@ -59,6 +59,7 @@ The explore button is only vissible on viewports width 768px +
 				Explore IT for Students &raquo;
 			</a>
 </div>
+
 
 <!-- ===========================================================================
 
@@ -102,8 +103,8 @@ Fixed position will be removed when back to the top of the page.
 
 ============================================================================ -->
 
-<section id="explore" class="full-height-section gradient-overlay__TopRight fluffy" style="background-image: url('../../placeholders/images/Explore.jpg');">
-  <div class="container fluffy">
+<section id="explore" class="full-height-section display--flex gradient-overlay__TopRight" style="background-image: url('../../placeholders/images/Explore.jpg');">
+  <div class="container">
       <div class="col-md-offset-6">
         <h2 class="heading white wow animated fadeInUp">Exploring Student Technology</h2>
         <h4 class="subheading white wow animated fadeInUp">This guide is meant for new students joining the Stony Brook University family. Included in this guide you will find vital information about services offered by the Division of Information Technology (DoIT).</h4>
@@ -125,13 +126,19 @@ The settings for the "sliding" actio are set in main.js
 
 ============================================================================ -->
 
-<section class="fluffy bg-x-light-gray">
+<!-- This acts as a spacer on smaller screens -->
+<section class="hidden-lg" style="padding: 15px;"></section>
+
+<section class="bg-x-light-gray">
+
+<!-- This acts as a spacer on larger screens -->
+<section class="fluffy hidden-xs hidden-sm hidden-md"></section>
 
         <!-- ===================================================================
         ** Getting Started Carousels **
         ==================================================================== -->
 
-        <div id="gettingStarted" class="fluffy">
+        <div id="gettingStarted">
           <div class="container noPadding">
             <div class="col-md-4 col-sm-12 noPadding">
               <div class="fluffy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
@@ -144,50 +151,65 @@ The settings for the "sliding" actio are set in main.js
             </div>
             <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
               <div class="owl-carousel">
-                <div class="item panelSOLAR-btn">
-                  <div class="article wow animated fadeInUp" data-match-height="gettingStarted">
-                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-                    <div class="article__content">
+                <div class="item panelWiFi-btn">
+                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/WiFi-final.jpg');"  data-match-height="gettingStarted">
+                    <div class="article__content fluffy">
                       <h4 class="article__title">WolfieNet (WiFi)</h4>
                       <h6 class="article__sbutitle">wifi.stonybrook.edu</h6>
-                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                      <p class="small">WolfieNet is Stony Brook University's wireless network on West Campus, Southampton, Manhattan, and parts of East Campus. It is available to all faculty, students, staff, and guests.</p>
                     </div>
                   </div>
                 </div>
                 <div class="item panelSOLAR-btn">
-                  <div class="article wow animated fadeInUp" data-match-height="gettingStarted">
-                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-                    <div class="article__content">
+                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/SOLAR-final.jpg');" data-match-height="gettingStarted">
+                    <div class="article__content fluffy">
                       <h4 class="article__title">SOLAR</h4>
                       <h6 class="article__sbutitle">solar.stonybrook.edu</h6>
-                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                      <p class="small">SOLAR is Stony Brook University's enterprise-wide, self-service system which provides faculty, staff, and students with online access to manage personal information.</p>
                     </div>
                   </div>
                 </div>
-                <div class="item panelSOLAR-btn">
-                  <div class="article wow animated fadeInUp" data-match-height="gettingStarted">
-                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-                    <div class="article__content">
+                <div class="item panelNetID-btn">
+                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/NetID-final.jpg');" data-match-height="gettingStarted">
+                    <div class="article__content fluffy">
                       <h4 class="article__title">NetID</h4>
                       <h6 class="article__sbutitle">netid.stonybrook.edu</h6>
-                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                      <p class="small">Every active employee, student, and faculty member is assigned a NetID which is used to access various computing resources.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Moves Users to the next section -->
-            <div class="col-md-12 noPadding" style="text-align: center;">
-                <a href="#aroundCampus" alt="Continue to Around Campus" class="scrollto">Discover Services Around Campus &raquo;</span></a>
-            </div>
           </div>
         </div>
+
+        <!-- This acts as a spacer on larger screens -->
+        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
+
+        <!-- Did you know section -->
+        <section class="wow animated fadeInUp">
+          <div class="container fluffy display--flex bg-asphalt">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <h2 class="heading white">Did you know DoIT provides mobile charging stations around campus?</h2>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12 text-center text-left-mobile">
+                <a class="default-button default-button__white scrollto" href="#aroundCampus">Find out more about services around campus &raquo;</a>
+              </div>
+            </div>
+        </section>
+
+        <!-- This acts as a spacer on smaller screens -->
+        <section class="hidden-lg" style="padding: 15px;"></section>
 
         <!-- ===================================================================
         ** Around Campus Section **
         ==================================================================== -->
 
-        <div id="aroundCampus" class="fluffy">
+        <!-- This acts as a spacer on larger screens -->
+        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
+
+
+        <div id="aroundCampus">
           <div class="container noPadding">
             <div class="col-md-4 col-sm-12 noPadding">
               <div class="fluffy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
@@ -199,49 +221,68 @@ The settings for the "sliding" actio are set in main.js
             </div>
             <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
               <div class="owl-carousel">
-                <div class="item panelSOLAR-btn">
-                  <div class="article wow animated fadeInUp" data-match-height="aroundCampus">
-                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-                    <div class="article__content">
+                <div class="item panelPrinting-btn">
+                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/Printing-final.jpg');" data-match-height="aroundCampus">
+                    <!-- <img src="../../placeholders/images/orientation/Printing-final.jpg" class="article__image" alt=""> -->
+                    <div class="article__content fluffy">
                       <h4 class="article__title">Printing</h4>
                       <h6 class="article__subtitle">printing.stonybrook.edu</h6>
-                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                      <p class="small">Students can print in SINC Sites and other computer labs on campus, or by using Stony Brook's Print From Anywhere service.</p>
                     </div>
                   </div>
                 </div>
-                <div class="item panelSOLAR-btn">
-                  <div class="article wow animated fadeInUp" data-match-height="aroundCampus">
-                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-                    <div class="article__content">
+                <div class="item panelSINC-btn">
+                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/sincsites-final.jpg');" data-match-height="aroundCampus">
+                    <!-- <img src="../../placeholders/images/orientation/sincsites-final.jpg" class="article__image" alt=""> -->
+                    <div class="article__content fluffy">
                       <h4 class="article__title">SINC Sites</h4>
                       <h6 class="article__subtitle">sincsites.stonybrook.edu</h6>
-                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                      <p class="small">SINC Sites are public computer labs that allow users to access both Windows & Mac computers. SINC Sites provide printing services and access to numerous academic software titles.</p>
                     </div>
                   </div>
                 </div>
-                <div class="item panelSOLAR-btn">
-                  <div class="article wow animated fadeInUp" data-match-height="aroundCampus">
-                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-                    <div class="article__content">
+                <div class="item panelMBC-btn">
+                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/MBC.jpg');" data-match-height="aroundCampus">
+                    <!-- <img src="../../placeholders/images/orientation/MBC.jpg" class="article__image" alt=""> -->
+                    <div class="article__content fluffy">
                       <h4 class="article__title">Mobile Charging Stations</h4>
-                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                      <p class="small">There are six free-standing mobile charging stations in Frey Hall and Javits Lecture Center installed as part of the University's MOBILE/DIGITAL NOW initiative.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Moves Users to the next section -->
-            <div class="col-md-12 noPadding" style="text-align: center;">
-                <a href="#learningTools" alt="Continue to Around Campus" class="scrollto">Discover Learning Tools for Students &raquo;</span></a>
-            </div>
           </div>
         </div>
+
+        <!-- This acts as a spacer on larger screens -->
+        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
+
+
+        <!-- Did you know section -->
+        <section>
+          <div class="container fluffy bg-asphalt gradient-overlay__TopRight display--flex">
+              <div class="col-md-6 col-sm-12">
+                <h2 class="heading white">Have you ever wanted to learn computer programming?</h2>
+                <p class="subheading white">DoIT provides access to Lynda.com tutorials where you can learn new skills or brush up on some old skills at your own pace at a time and location that works best for you.</p>
+              </div>
+              <div class="col-md-6 col-sm-12 text-center text-left-mobile">
+                <a class="default-button default-button__white scrollto" href="#learningTools">Discover More About Online Learning &raquo;</a>
+              </div>
+            </div>
+        </section>
+
+        <!-- This acts as a spacer on smaller screens -->
+        <section class="hidden-lg" style="padding: 15px;"></section>
 
         <!-- ===================================================================
         ** Learning Tools Section **
         ==================================================================== -->
 
-        <div id="learningTools" class="fluffy">
+        <!-- This acts as a spacer on larger screens -->
+        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
+
+        <div id="learningTools">
           <div class="container noPadding">
             <div class="col-md-4 col-sm-12 noPadding">
               <div class="fluffy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
@@ -253,51 +294,37 @@ The settings for the "sliding" actio are set in main.js
             </div>
             <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
               <div class="owl-carousel">
-                <div class="item panelSOLAR-btn">
-                  <div class="article wow animated fadeInUp" data-match-height="learningTools">
-                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-                    <div class="article__content">
+                <div class="item panelGoogle-btn">
+                  <div class="article overlay-gray wow animated fadeInUp" style="background: url('../../placeholders/images/orientation/gapps.jpg');" data-match-height="learningTools">
+                    <!-- <img src="../../placeholders/images/orientation/gapps.jpg" class="article__image" alt=""> -->
+                    <div class="article__content fluffy">
                       <h4 class="article__title">Google Apps</h4>
                       <h6 class="article__subtitle">google.stonybrook.edu</h6>
-                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                      <p class="small">tony Brook's Google Apps suite of products includes Mail, Calendar, Drive, Contacts, Sites, Groups, Hangouts and a host of other applications to enhance communication and real-time collaboration across campus.</p>
                     </div>
                   </div>
                 </div>
-                <div class="item panelSOLAR-btn">
-                  <div class="article wow animated fadeInUp" data-match-height="learningTools">
-                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-                    <div class="article__content">
+                <div class="item panelBlackboard-btn">
+                  <div class="article overlay-gray wow animated fadeInUp" style="background: url('../../placeholders/images/orientation/blackboard.jpg');"  data-match-height="learningTools">
+                    <!-- <img src="../../placeholders/images/orientation/blackboard.jpg" class="article__image" alt=""> -->
+                    <div class="article__content fluffy">
                       <h4 class="article__title">Blackboard</h4>
                       <h6 class="article__subtitle">blackboard.stonybrook.edu</h6>
-                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
+                      <p class="small">Blackboard is Stony Brook University's learning management system (LMS), which allows instructors to supplement face-to-face classes, or launch online classes.</p>
                     </div>
                   </div>
                 </div>
-                <div class="item panelSOLAR-btn">
-                  <div class="article wow animated fadeInUp" data-match-height="learningTools">
-                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-                    <div class="article__content">
+                <div class="item panelLynda-btn">
+                  <div class="article overlay-gray wow animated fadeInUp" style="background: url('../../placeholders/images/orientation/lynda.jpg');" data-match-height="learningTools">
+                    <!-- <img src="../../placeholders/images/orientation/lynda.jpg" class="article__image" alt=""> -->
+                    <div class="article__content fluffy">
                       <h4 class="article__title">Lynda</h4>
                       <h6 class="article__subtitle">lynda.stonybrook.edu</h6>
                       <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
                     </div>
                   </div>
                 </div>
-                <div class="item panelSOLAR-btn">
-                  <div class="article wow animated fadeInUp" data-match-height="learningTools">
-                    <img src="../../placeholders/images/orientation/1.png" class="article__image" alt="">
-                    <div class="article__content">
-                      <h4 class="article__title">echo360</h4>
-                      <h6 class="article__sbutitle">lynda.stonybrook.edu</h6>
-                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id orci lectus. Etiam eleifend sed ligula vel sodales.</p>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
-            <!-- Moves Users to the next section -->
-            <div class="col-md-12 noPadding" style="text-align: center;">
-                <a href="#gettingHelp" alt="Continue to Around Campus" class="scrollto">Where to Find Help &raquo;</span></a>
             </div>
           </div>
         </div>
@@ -306,7 +333,11 @@ The settings for the "sliding" actio are set in main.js
         ** End of Carousels **
         ==================================================================== -->
 
+        <!-- This acts as a spacer on larger screens -->
+        <section class="fluffy hidden-xs hidden-sm hidden-md"></section>
+
 </section>
+
 
 
 <!-- ===================================================================
@@ -318,23 +349,13 @@ The settings for the "sliding" actio are set in main.js
 <section class="redRaysBorder" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
 
 <section id="gettingHelp" class="fluffy bg-farbeyondred">
-  <div class="container">
-    <div class="row fluffy">
-      <div class="col-md-8 col-sm-12 wow animated fadeInUp">
+  <div class="container display--flex">
+      <div class="col-md-12 wow animated fadeInUp">
         <h3 class="heading white">Where to Find Help</h3>
-        <p class="subheading white">DoIT is committed to providing outstanding service to the Stony Brook University community. Submit a help ticket through our service management system.</p>
+        <p class="subheading white">DoIT is committed to providing outstanding service to the Stony Brook University community.<br>Submit a help ticket through our service management system.</p>
       </div>
-
-      <div class="col-md-4 col-sm-12 wow animated fadeInUp">
+      <div class="col-md-6 col-sm-6 col-xs-12 wow animated fadeInUp">
         <a class="default-button default-button__white noMarginLeft" href="http://service.stonybrook.edu">Submit A Ticket</a>
-        <h3 class="heading white">Find us on Social Media</h3>
-          <div class="social-links noMarginLeft">
-            <a href="#" class="facebook-circle white noPaddingLeft"><i class="sbuicon-facebook"></i></a>
-            <a href="#" class="twitter-circle white"><i class="sbuicon-twitter"></i></a>
-            <a href="#" class="youtube-circle white"><i class="sbuicon-youtube"></i></a>
-            <a href="#" class="flickr-circle white"><i class="sbuicon-flickr"></i></a>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -419,26 +440,717 @@ The settings for the "sliding" actio are set in main.js
 
 <div class="notification-box"><span>Sending...</span></div>
 
-<!-- Slideou Panel Content -->
 
-<!-- SOLAR -->
-<div class="panelSOLAR slideout-panel from-right">
-    <header class="slideout-panel-header">
-        <h3 class="slideout-panel-title white">&nbsp;SOLAR<span class="lighter">.STONYBROOK.EDU</h3>
-        <a href="#0" class="slideout-panel-close">Close</a>
-    </header>
 
+
+<!-- ===========================================================================
+
+** Slideout Panels Content **
+
+These slideout panels are translated onto the screen when the appropriate article
+card is selected.
+
+============================================================================ -->
+
+
+  <!-- =========================================================================
+  SOLAR Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelSOLAR slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="slideout-panel-content">
-            <h2 class="section-title">What is SOLAR?</h2>
-        </div>
-        <!-- slideout-panel-content -->
-    </div>
-    <!-- slideout-panel-container -->
-</div>
-<!-- slideout-panel -->
+      <a href="#0" class="slideout-panel-close">Close</a>
 
-<!-- Slideout Panel Scripts -->
+      <!-- SOLAR Conent ================================================ -->
+      <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');">
+        <div class="slideout-panel-content">
+          <h3 class="heading heading-medium white text-center-mobile">What can SOLAR do for me?</h2>
+        </div>
+      </div>
+
+      <section class="airy">
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Registration</h4>
+            <p class="normal-text">Register for classes in SOLAR. Use our new <a href="#">schedule builder</a> tool to plan out your schedules.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Pay Your Bills</h4>
+            <p class="normal-text">You can pay room deposits, tuition fees and other bills via SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Manage NetID</h4>
+            <p class="normal-text">You can view your NetID and set your NetID password inside SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">SB Alert</h4>
+            <p class="normal-text">Set your SB Alert information in SOLAR.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="airy">
+        <div class="col-md-12 col-sm-6 wow animated fadeInUp">
+          <h4 class="heading heading-small uppercase red">SOLAR How-to Videos</h4>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/EUyujom0UaU"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ZxBivt_vAAE"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/WjR8zig6WAY"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/sk8JFfw5F0o"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of SOLAR Slideout Panel
+  ===========================================================================-->
+
+
+
+  <!-- =========================================================================
+  WiFi Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelWiFi slideout-panel from-right">
+    <div class="slideout-panel-container">
+      <a href="#0" class="slideout-panel-close">Close</a>
+
+        <!-- WiFi Conent ================================================ -->
+        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');">
+          <div class="slideout-panel-content">
+            <h3 class="heading heading-medium white text-center-mobile">What is WolfieNet?</h2>
+          </div>
+        </div>
+
+        <section class="airy">
+          <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+            <div class="text-blurb" data-match-height="whatIsSolar">
+              <h4 class="heading heading-small uppercase red">Registration</h4>
+              <p class="normal-text">Register for classes in SOLAR. Use our new <a href="#">schedule builder</a> tool to plan out your schedules.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+            <div class="text-blurb" data-match-height="whatIsSolar">
+              <h4 class="heading heading-small uppercase red">Pay Your Bills</h4>
+              <p class="normal-text">You can pay room deposits, tuition fees and other bills via SOLAR.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+            <div class="text-blurb" data-match-height="whatIsSolar">
+              <h4 class="heading heading-small uppercase red">Manage NetID</h4>
+              <p class="normal-text">You can view your NetID and set your NetID password inside SOLAR.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+            <div class="text-blurb" data-match-height="whatIsSolar">
+              <h4 class="heading heading-small uppercase red">SB Alert</h4>
+              <p class="normal-text">Set your SB Alert information in SOLAR.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="airy">
+          <div class="col-md-12 col-sm-6 wow animated fadeInUp">
+            <h4 class="heading heading-small uppercase red">SOLAR How-to Videos</h4>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="//www.youtube.com/embed/EUyujom0UaU"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ZxBivt_vAAE"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="//www.youtube.com/embed/WjR8zig6WAY"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="//www.youtube.com/embed/sk8JFfw5F0o"></iframe>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  <!-- =========================================================================
+  End of WiFi Slideout Panel
+  ===========================================================================-->
+
+
+
+  <!-- =========================================================================
+  NetID Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelNetID slideout-panel from-right">
+    <div class="slideout-panel-container">
+      <a href="#0" class="slideout-panel-close">Close</a>
+
+      <!-- NetID Conent ================================================ -->
+      <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');">
+        <div class="slideout-panel-content">
+          <h3 class="heading heading-medium white text-center-mobile">What is NetID?</h2>
+        </div>
+      </div>
+
+      <section class="airy">
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Registration</h4>
+            <p class="normal-text">Register for classes in SOLAR. Use our new <a href="#">schedule builder</a> tool to plan out your schedules.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Pay Your Bills</h4>
+            <p class="normal-text">You can pay room deposits, tuition fees and other bills via SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Manage NetID</h4>
+            <p class="normal-text">You can view your NetID and set your NetID password inside SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">SB Alert</h4>
+            <p class="normal-text">Set your SB Alert information in SOLAR.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="airy">
+        <div class="col-md-12 col-sm-6 wow animated fadeInUp">
+          <h4 class="heading heading-small uppercase red">SOLAR How-to Videos</h4>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/EUyujom0UaU"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ZxBivt_vAAE"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/WjR8zig6WAY"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/sk8JFfw5F0o"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of NetID Slideout Panel
+  ===========================================================================-->
+
+
+
+  <!-- =========================================================================
+  Printing Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelPrinting slideout-panel from-right">
+    <div class="slideout-panel-container">
+      <a href="#0" class="slideout-panel-close">Close</a>
+
+      <!-- Printing Conent ================================================ -->
+      <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');">
+        <div class="slideout-panel-content">
+          <h3 class="heading heading-medium white text-center-mobile">How do I print on campus?</h2>
+        </div>
+      </div>
+
+      <section class="airy">
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Registration</h4>
+            <p class="normal-text">Register for classes in SOLAR. Use our new <a href="#">schedule builder</a> tool to plan out your schedules.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Pay Your Bills</h4>
+            <p class="normal-text">You can pay room deposits, tuition fees and other bills via SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Manage NetID</h4>
+            <p class="normal-text">You can view your NetID and set your NetID password inside SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">SB Alert</h4>
+            <p class="normal-text">Set your SB Alert information in SOLAR.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="airy">
+        <div class="col-md-12 col-sm-6 wow animated fadeInUp">
+          <h4 class="heading heading-small uppercase red">SOLAR How-to Videos</h4>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/EUyujom0UaU"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ZxBivt_vAAE"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/WjR8zig6WAY"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/sk8JFfw5F0o"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of Printing Slideout Panel
+  ===========================================================================-->
+
+
+
+  <!-- =========================================================================
+  SINC Sites Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelSINC slideout-panel from-right">
+    <div class="slideout-panel-container">
+      <a href="#0" class="slideout-panel-close">Close</a>
+
+      <!-- SINC Sites Conent ================================================ -->
+      <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');">
+        <div class="slideout-panel-content">
+          <h3 class="heading heading-medium white text-center-mobile">What can SOLAR do for me?</h2>
+        </div>
+      </div>
+
+      <section class="airy">
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Registration</h4>
+            <p class="normal-text">Register for classes in SOLAR. Use our new <a href="#">schedule builder</a> tool to plan out your schedules.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Pay Your Bills</h4>
+            <p class="normal-text">You can pay room deposits, tuition fees and other bills via SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Manage NetID</h4>
+            <p class="normal-text">You can view your NetID and set your NetID password inside SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">SB Alert</h4>
+            <p class="normal-text">Set your SB Alert information in SOLAR.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="airy">
+        <div class="col-md-12 col-sm-6 wow animated fadeInUp">
+          <h4 class="heading heading-small uppercase red">SOLAR How-to Videos</h4>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/EUyujom0UaU"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ZxBivt_vAAE"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/WjR8zig6WAY"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/sk8JFfw5F0o"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of SINC Sites Slideout Panel
+  ===========================================================================-->
+
+
+
+  <!-- =========================================================================
+  Mobile Charging Stations Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelMBC slideout-panel from-right">
+    <div class="slideout-panel-container">
+      <a href="#0" class="slideout-panel-close">Close</a>
+
+      <!-- MCS Conent ================================================ -->
+      <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');">
+        <div class="slideout-panel-content">
+          <h3 class="heading heading-medium white text-center-mobile">Charge Your Devices Around Campus</h2>
+        </div>
+      </div>
+
+      <section class="airy">
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Registration</h4>
+            <p class="normal-text">Register for classes in SOLAR. Use our new <a href="#">schedule builder</a> tool to plan out your schedules.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Pay Your Bills</h4>
+            <p class="normal-text">You can pay room deposits, tuition fees and other bills via SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Manage NetID</h4>
+            <p class="normal-text">You can view your NetID and set your NetID password inside SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">SB Alert</h4>
+            <p class="normal-text">Set your SB Alert information in SOLAR.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="airy">
+        <div class="col-md-12 col-sm-6 wow animated fadeInUp">
+          <h4 class="heading heading-small uppercase red">SOLAR How-to Videos</h4>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/EUyujom0UaU"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ZxBivt_vAAE"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/WjR8zig6WAY"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/sk8JFfw5F0o"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of Mobile Charging Stations Slideout Panel
+  ===========================================================================-->
+
+
+
+  <!-- =========================================================================
+  Google Apps Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelGoogle slideout-panel from-right">
+    <div class="slideout-panel-container">
+      <a href="#0" class="slideout-panel-close">Close</a>
+
+      <!-- Google Conent ================================================ -->
+      <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');">
+        <div class="slideout-panel-content">
+          <h3 class="heading heading-medium white text-center-mobile">Google Apps</h2>
+        </div>
+      </div>
+
+      <section class="airy">
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Registration</h4>
+            <p class="normal-text">Register for classes in SOLAR. Use our new <a href="#">schedule builder</a> tool to plan out your schedules.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Pay Your Bills</h4>
+            <p class="normal-text">You can pay room deposits, tuition fees and other bills via SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Manage NetID</h4>
+            <p class="normal-text">You can view your NetID and set your NetID password inside SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">SB Alert</h4>
+            <p class="normal-text">Set your SB Alert information in SOLAR.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="airy">
+        <div class="col-md-12 col-sm-6 wow animated fadeInUp">
+          <h4 class="heading heading-small uppercase red">SOLAR How-to Videos</h4>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/EUyujom0UaU"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ZxBivt_vAAE"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/WjR8zig6WAY"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/sk8JFfw5F0o"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of Google Apps Slideout Panel
+  ===========================================================================-->
+
+
+
+  <!-- =========================================================================
+  Blackboard Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelBlackboard slideout-panel from-right">
+    <div class="slideout-panel-container">
+      <a href="#0" class="slideout-panel-close">Close</a>
+
+            <!-- SOLAR Conent ================================================ -->
+            <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');">
+              <div class="slideout-panel-content">
+                <h3 class="heading heading-medium white text-center-mobile">Course Management with Blackboard</h2>
+              </div>
+            </div>
+
+            <section class="airy">
+              <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+                <div class="text-blurb" data-match-height="whatIsSolar">
+                  <h4 class="heading heading-small uppercase red">Registration</h4>
+                  <p class="normal-text">Register for classes in SOLAR. Use our new <a href="#">schedule builder</a> tool to plan out your schedules.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+                <div class="text-blurb" data-match-height="whatIsSolar">
+                  <h4 class="heading heading-small uppercase red">Pay Your Bills</h4>
+                  <p class="normal-text">You can pay room deposits, tuition fees and other bills via SOLAR.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+                <div class="text-blurb" data-match-height="whatIsSolar">
+                  <h4 class="heading heading-small uppercase red">Manage NetID</h4>
+                  <p class="normal-text">You can view your NetID and set your NetID password inside SOLAR.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+                <div class="text-blurb" data-match-height="whatIsSolar">
+                  <h4 class="heading heading-small uppercase red">SB Alert</h4>
+                  <p class="normal-text">Set your SB Alert information in SOLAR.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="airy">
+              <div class="col-md-12 col-sm-6 wow animated fadeInUp">
+                <h4 class="heading heading-small uppercase red">SOLAR How-to Videos</h4>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/EUyujom0UaU"></iframe>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ZxBivt_vAAE"></iframe>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/WjR8zig6WAY"></iframe>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/sk8JFfw5F0o"></iframe>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+  <!-- =========================================================================
+  End of Blackboard Slideout Panel
+  ===========================================================================-->
+
+
+
+  <!-- =========================================================================
+  LYNDA.COM Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelLynda slideout-panel from-right">
+    <div class="slideout-panel-container">
+      <a href="#0" class="slideout-panel-close">Close</a>
+
+      <!-- Lynda.com Conent ================================================ -->
+      <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');">
+        <div class="slideout-panel-content">
+          <h3 class="heading heading-medium white text-center-mobile">Lessons On-Demand</h2>
+        </div>
+      </div>
+
+      <section class="airy">
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Registration</h4>
+            <p class="normal-text">Register for classes in SOLAR. Use our new <a href="#">schedule builder</a> tool to plan out your schedules.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Pay Your Bills</h4>
+            <p class="normal-text">You can pay room deposits, tuition fees and other bills via SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">Manage NetID</h4>
+            <p class="normal-text">You can view your NetID and set your NetID password inside SOLAR.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow animated fadeInUp">
+          <div class="text-blurb" data-match-height="whatIsSolar">
+            <h4 class="heading heading-small uppercase red">SB Alert</h4>
+            <p class="normal-text">Set your SB Alert information in SOLAR.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="airy">
+        <div class="col-md-12 col-sm-6 wow animated fadeInUp">
+          <h4 class="heading heading-small uppercase red">SOLAR How-to Videos</h4>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/EUyujom0UaU"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ZxBivt_vAAE"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/WjR8zig6WAY"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/sk8JFfw5F0o"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of LYNDA.COM Slideout Panel
+  ========================================================================== -->
+
+
+
+<!-- ===========================================================================
+
+  ** END of Slideout Panels Content **
+
+============================================================================ -->
+
+
+
+<!-- ===========================================================================
+
+Slideout Panel Scripts
+
+============================================================================ -->
+
 <script>
     jQuery(document).ready(function($) {
         //open SOLAR panel
@@ -480,11 +1192,92 @@ The settings for the "sliding" actio are set in main.js
             }
         });
 
+        //open Printing panel
+        $('.panelPrinting-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelPrinting').addClass('is-visible');
+        });
+        //close Printing panel
+        $('.panelPrinting').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelPrinting').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+
+        //open SINC Sites panel
+        $('.panelSINC-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelSINC').addClass('is-visible');
+        });
+        //close SINC panel
+        $('.panelSINC').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelSINC').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+
+        //open Mobile Charging Stations panel
+        $('.panelMBC-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelMBC').addClass('is-visible');
+        });
+        //close Mobile Charging Stations panel
+        $('.panelMBC').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelMBC').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+
+        //open Google Apps panel
+        $('.panelGoogle-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelGoogle').addClass('is-visible');
+        });
+        //close Google Apps panel
+        $('.panelGoogle').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelGoogle').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+
+        //open Blackboard panel
+        $('.panelBlackboard-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelBlackboard').addClass('is-visible');
+        });
+        //close Google Apps panel
+        $('.panelBlackboard').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelBlackboard').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+
+        //open Lynda panel
+        $('.panelLynda-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelLynda').addClass('is-visible');
+        });
+        //close Lynda panel
+        $('.panelLynda').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelLynda').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+
     });
 </script>
-<!-- end Slideout Panel Scripts -->
 
-<!-- video header -->
+<!-- ===========================================================================
+
+Video header script
+
+============================================================================ -->
 
 <script>
   $(document).ready(function() {
