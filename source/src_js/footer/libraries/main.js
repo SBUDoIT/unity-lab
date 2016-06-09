@@ -11,7 +11,7 @@ jQuery(function($) {
 
 	$(window).load(function(){
 		$('.owl-carousel').owlCarousel({
-			items:2,
+			items:1,
 			navigation:true,
 			autoPlay:5000,
 			navigationText: ["<i class='sbuicon-arrow-left3'></i>","<i class='sbuicon-arrow-right3'></i>"]

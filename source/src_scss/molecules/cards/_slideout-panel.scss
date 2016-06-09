@@ -1,3 +1,10 @@
+/* =============================================================================
+
+Slideout Panel basic stylings and keyframe properties (The stylings for what
+it looks like as the slideout panel is being translated into view).
+
+============================================================================= */
+
 .slideout-panel {
   z-index: 9999;
   position: fixed;
@@ -110,57 +117,12 @@
     transform: rotate(-45deg);
   }
 }
-.slideout-panel-header {
-  position: fixed;
-  width: 90%;
-  height: 200px;
-  line-height: 50px;
-  background-image: url('../images/backgrounds/images/redSwooshes.jpg');
-  background-size: cover;
-  z-index: 2;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
-  -webkit-transition: top 0.3s 0s;
-  -moz-transition: top 0.3s 0s;
-  transition: top 0.3s 0s;
-}
-.slideout-panel-header .slideout-panel-title {
-  font-family: $font;
-  text-transform: uppercase;
-  font-size: 72px;
-  padding-left: 50px;
-  padding-top: 72px;
-  font-weight: 900;
 
-  .lighter {
-    opacity: 0.5;
-    word-wrap: break-word;
-  }
-}
-.from-right .slideout-panel-header, .from-left .slideout-panel-header {
-  top: -50px;
-}
-.from-right .slideout-panel-header {
-  right: 0;
-}
-.from-left .slideout-panel-header {
-  left: 0;
-}
-.is-visible .slideout-panel-header {
-  top: 0;
-  -webkit-transition: top 0.3s 0.3s;
-  -moz-transition: top 0.3s 0.3s;
-  transition: top 0.3s 0.3s;
-}
-@media only screen and (min-width: 768px) {
-  .slideout-panel-header {
-    width: 70%;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .slideout-panel-header {
-    width: 85%;
-  }
-}
+/* =============================================================================
+
+Closing icon position and styling
+
+============================================================================= */
 
 .slideout-panel-close {
   content: "Close";
@@ -170,15 +132,14 @@
   right: 0;
   height: 60px;
   width: 60px;
-  /* image replacement */
   display: inline-block;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
   background-color: transparent;
+  z-index: 1;
 }
 .slideout-panel-close::before, .slideout-panel-close::after {
-  /* close icon created in CSS */
   content: "Close";
   position: absolute;
   top: 22px;
@@ -189,7 +150,6 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: $white;
-
 }
 .slideout-panel-close::before {
   -webkit-transform: rotate(45deg);
@@ -205,7 +165,6 @@
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
 .no-touch .slideout-panel-close:hover::before, .no-touch .slideout-panel-close:hover::after {
   background-color: $white;
   -webkit-transition-property: -webkit-transform;
@@ -230,9 +189,15 @@
   transform: rotate(135deg);
 }
 
+/* =============================================================================
+
+SLideout Panel Container
+
+============================================================================= */
+
 .slideout-panel-container {
   position: fixed;
-  width: 90%;
+  width: 50%;
   height: 100%;
   top: 0;
   background: #ffffff;
@@ -249,6 +214,7 @@
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+  overflow-x: scroll;
 }
 .from-right .slideout-panel-container {
   right: 0;
@@ -276,38 +242,101 @@
   -moz-transition-delay: 0s;
   transition-delay: 0s;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .slideout-panel-container {
-    width: 70%;
+    width: 100%;
   }
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (max-width: 1170px) {
   .slideout-panel-container {
-    width: 85%;
+    width: 100%;
   }
 }
 
+.slideout-panel-content {
+  padding: 20px 30px;
+}
+.slideout-panel-content:after {
+    clear: both;
+}
+.slideout-panel-content:before, .slideout-panel-contentr:after {
+    content: " ";
+    display: table;
+}
+
+
+/* Deprecated styles ===========================================================
+
+.slideout-panel-header {
+  position: fixed;
+  width: 50%;
+  height: auto;
+  z-index: 2;
+  -webkit-transition: top 0.3s 0s;
+  -moz-transition: top 0.3s 0s;
+  transition: top 0.3s 0s;
+  background-color: #D52027;
+  color: $white;
+}
+.slideout-panel-header .slideout-panel-title {
+
+}
+.from-right .slideout-panel-header, .from-left .slideout-panel-header {
+  top: -50px;
+}
+.from-right .slideout-panel-header {
+  right: 0;
+}
+.from-left .slideout-panel-header {
+  left: 0;
+}
+.is-visible .slideout-panel-header {
+  top: 0;
+  -webkit-transition: top 0.3s 0.3s;
+  -moz-transition: top 0.3s 0.3s;
+  transition: top 0.3s 0.3s;
+}
+@media only screen and (max-width: 768px) {
+  .slideout-panel-header {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .slideout-panel-header {
+    width: 85%;
+  }
+}
 .slideout-panel-content {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 240px 50px;
+  padding-top: 20%;
   overflow: auto;
-  /* smooth scrolling on touch devices */
   -webkit-overflow-scrolling: touch;
 }
-
-/* Stylings for inner Slideout Panel Content */
-
+@media only screen and (max-width: 990px) {
+  .slideout-panel-content {
+    padding-top: 42%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slideout-panel-content {
+    padding-top: 62%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .slideout-panel-content {
+    padding-top: 85%;
+  }
+}
 .slideoutPanelSectionTitle {
   font-family: $font;
   text-transform: uppercase;
   font-weight: 900;
 
 }
-
 .slideout-panel-content p:first-of-type {
   margin-top: 0;
 }
@@ -317,55 +346,5 @@
     line-height: 1.6;
   }
 }
-/* Media Queries for Slide out Panel Header and Content */
-@media only screen and (max-width: 479px) {
-  .slideout-panel-header {
-    height: 10%;
-  }
-  .slideout-panel-header .slideout-panel-title {
-    font-size: 24px;
-    padding-left: 14px;
-    padding-top: 80px;
-  }
-  .slideout-panel-content {
-    padding: 142px 20px;
-  }
-}
 
-@media only screen and (min-width: 480px) {
-  .slideout-panel-header .slideout-panel-title {
-    font-size: 24px;
-    padding-left: 44px;
-    padding-top: 150px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .slideout-panel-header .slideout-panel-title {
-    font-size: 30px;
-    padding-left: 22px;
-    padding-top: 140px;
-  }
-  .slideout-panel-content {
-    padding: 230px 30px;
-  }
-}
-@media only screen  and (min-width : 1289px) {
-  .slideout-panel-header .slideout-panel-title {
-    font-size: 48px;
-    padding-left: 30px;
-    padding-top: 120px;
-  }
-  .slideout-panel-content {
-    padding: 230px 40px;
-  }
-}
-@media only screen  and (min-width : 1824px) {
-  .slideout-panel-header .slideout-panel-title {
-    font-size: 60px;
-    padding-left: 30px;
-    padding-top: 100px;
-  }
-  .slideout-panel-content {
-    padding: 240px 40px;
-  }
-}
+============================================================================= */
