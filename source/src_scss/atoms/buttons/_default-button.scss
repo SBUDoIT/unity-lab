@@ -29,14 +29,14 @@
 }
 
 .default-button__white {
-  background: transparent;
-  border: 1px solid white;
-  color: #fff;
+  background: $white;
+  border: 2px solid white;
+  color: $red !important;
 
   &:hover,
   &:focus {
-    background-color: white;
-    border: 1px solid white;
-    color: #990000 !important;
+    background-color: transparent;
+    border: 2px solid white;
+    color: $white !important;
   }
 }

@@ -1,7 +1,4 @@
 .no-bullets, ul.no-bullets, ul.no-bullets li {
-    margin-left: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 14px;
     padding: 0;
     list-style: none;
     list-style-type: none;
@@ -13,7 +10,7 @@ ul.star-bullets {
 
     li:before {
         content: "\2605";
-        margin: 0 10px 0 0;
+        margin: 0 auto;
         font-style: normal;
         font-weight: normal;
         line-height: 1;
@@ -28,7 +25,7 @@ ul.star-bullets {
 ul, ul.bullets {
     list-style: disc;
     list-style-type: disc outside;
-    
+
     li {
         @extend .no-bullets;
 
@@ -71,7 +68,7 @@ ul.default-bullets, {
     li:before {
 
         content: "\f061";
-        margin: 0 10px 0 0;
+        margin: 0 auto;
         font-style: normal;
         font-weight: normal;
         line-height: 1;
@@ -114,10 +111,6 @@ The list-icon class styles the individual icons to ensure equidistant spacing.
 
  */
 
-ul.list-icon-group li {
-
-    margin-top: 0.5em;
-}
 .list-icon {
 
     display: inline-block;
@@ -125,7 +118,7 @@ ul.list-icon-group li {
     @extend .no-bullets;
 }
 .no-bullets, ul.no-bullets, ul.no-bullets li {
-    margin-left: 1.5em;
+    margin-left: 0;
     margin-top: 0.5em;
     margin-bottom: 14px;
     padding: 0;
@@ -139,7 +132,7 @@ ul.star-bullets {
 
     li:before {
         content: "\2605";
-        margin: 0 10px 0 0;
+        margin: 0 auto;
         font-style: normal;
         font-weight: normal;
         line-height: 1;
@@ -175,7 +168,7 @@ ul.default-bullets, {
     li:before {
         display: inline-block;
         content: "\2022";
-        margin: 0 0 0 0;
+        margin: 0 auto;
         font-style: normal;
         font-weight: normal;
         font-family: arial;
@@ -197,7 +190,7 @@ ul.default-bullets, {
     li:before {
 
         content: "\f061";
-        margin: 0 10px 0 0;
+        margin: 0 auto;
         font-style: normal;
         font-weight: normal;
         line-height: 1;
@@ -216,7 +209,7 @@ ul.default-bullets, {
     li:before {
 
         content: "\f00c";
-        margin: 0 10px 0 0;
+        margin: 0 auto;
         font-style: normal;
         font-weight: normal;
         line-height: 1;

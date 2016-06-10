@@ -179,7 +179,7 @@ into the project as a whole.
 
 // Changes text alignment based on viewport size
 
-@media(max-width:768px) {
+@media(max-width: 990px) {
 	.text-left-mobile {
 		text-align: left;
 	}
@@ -229,12 +229,9 @@ into the project as a whole.
 }
 
 .text-blurb {
-  margin-bottom: 3em;
+  padding: 10px 0 10px 0;
 }
-.text-blurb__border-red {
-  padding: 0px 20px;
-  border-left: 5px solid #D52027;
-}
+
 
 
 /* =============================================================================
