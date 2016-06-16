@@ -9,14 +9,12 @@ This section is only visible on mobile screens.
 
 <section class="hidden-md hidden-lg hidden-xl snug" style="background-color: #111;">
   <div class="container">
-
     <h2 class="heading white noMarginBottom">Explore IT For Students</h2>
     <p class="small white noMarginTop">Division of Information Technology</p>
-
   </div>
 </section>
 
-<section class="redRaysBorder hidden-md hidden-lg" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
+<section class="redRaysBorder hidden-md hidden-lg" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg');"></section>
 
 <!-- ===========================================================================
 
@@ -35,14 +33,14 @@ to the YouTube video.
 ============================================================================ -->
 
 <div class="header-video">
-    <img src="/placeholders/images/orientation/orientation-placeholder.jpg"
+    <img src="/placeholders/images/orientation/orientation-placeholder.jpg" alt="Students working at computers"
          class="header-video__media"
-         data-video-URL="https://www.youtube.com/embed/ZtUV30kfa1U?rel=0&hd=1&autohide=1&showinfo=0&autoplay=1&enablejsapi=1&origin=*"
+         data-video-URL="https://www.youtube.com/embed/DJ8hg4m6Nbg?rel=0&hd=1&autohide=1&showinfo=0&autoplay=1&enablejsapi=1&origin=*"
          data-teaser="/placeholders/video/orientation-teaser-video"
          data-video-width="560"
          data-video-height="315">
     <div class="header-video__play-trigger">
-      <a href="https://www.youtube.com/embed/ZtUV30kfa1U?rel=0&hd=1&autohide=1&showinfo=0&autoplay=1&enablejsapi=1&origin=*"  target="_blank" class="default-button button-large" id="header-video__play-trigger">Watch the Welcome Video &raquo;</a>
+      <a href="https://www.youtube.com/embed/DJ8hg4m6Nbg?rel=0&hd=1&autohide=1&showinfo=0&autoplay=1&enablejsapi=1&origin=*"  target="_blank" class="default-button button-large" id="header-video__play-trigger">Watch the Welcome Video &raquo;</a>
       <a href="#explore" class="default-button button-large scrollto">Explore Student Technology &raquo;</a>
     </div>
     <button type="button" class="default-button button-large header-video__close-trigger" id="header-video__close-trigger">Close video</button>
@@ -85,26 +83,32 @@ Fixed position will be removed when back to the top of the page.
   </div>
 </nav>
 
+
+
 <!-- ===========================================================================
 
 ** Explore Introduction Section **
 
 ============================================================================ -->
 
-<section id="explore" class="full-height-section display--flex gradient-overlay__TopRight" style="background-image: url('../../placeholders/images/Explore.jpg');">
-  <div class="container">
-      <div class="col-md-offset-6 wow animated fadeInUp">
-        <div class="airy bg-white side-padding">
-          <h2 class="heading red">Exploring Student Technology</h2>
-          <h4 class="subheading">This guide will provide you with an overview on essential services offered by the Division of Information Technology (DoIT) that will enable you to be successful at Stony Brook University.</h4>
+<section class="bg-space-blue gradient-overlay__TopRight">
+  <div id="explore" class="fluffy full-height-section display--flex">
+    <div class="container">
+      <div class="col-md-5">
+        <img src="../../placeholders/images/orientation/Explore.png" class="hidden-sm hidden-xs" alt="Student sitting on chair using laptop">
+      </div>
+      <div class="col-md-7">
+        <div class="airy noPaddingmobile">
+          <h2 class="heading white">Exploring Student Technology</h2>
+          <h4 class="subheading white">This guide will provide you with an overview on essential services offered by the Division of Information Technology (DoIT) that will enable you to be successful at Stony Brook University.</h4>
           <br>
-          <a href="#gettingStarted" class="default-button button-large scrollto">Continue Exploring &raquo;</a>
+          <a href="#gettingStarted" class="default-button button-large default-button__white scrollto">Continue Exploring &raquo;</a>
         </div>
       </div>
+    </div>
   </div>
-</section>
 
-<section class="redRaysBorder hidden-sm hidden-xs" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
+  <hr class="white">
 
 <!-- ===========================================================================
 
@@ -113,220 +117,232 @@ Fixed position will be removed when back to the top of the page.
 Using the owl-carousel JavaScript library. The carousels themselves are made up
 of individual cards called "article", which sit in a parent element called "articles".
 
-The settings for the "sliding" actio are set in main.js
+The settings for the "sliding" action are set in main.js
 
 ============================================================================ -->
 
-  <!-- This acts as a spacer on smaller screens -->
-  <section class="hidden-lg" style="padding: 15px;"></section>
+    <!-- This acts as a spacer on larger screens -->
+    <!-- <section class="fluffy hidden-xs hidden-sm hidden-md"></section> -->
 
-<section class="bg-x-light-gray">
-
-  <!-- This acts as a spacer on larger screens -->
-  <section class="fluffy hidden-xs hidden-sm hidden-md"></section>
-
-        <!-- ===================================================================
+      <!-- =====================================================================
         ** Getting Started Carousels **
-        ==================================================================== -->
-
-        <div id="gettingStarted">
-          <div class="container noPadding">
-            <div class="col-md-4 col-sm-12 noPadding">
-              <div class="fluffy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
-      	  	background-size: cover;" data-match-height="gettingStarted">
-                <div class="text-left wow animated fadeInUp" style="padding: 10px 20px;">
+      ====================================================================== -->
+      <section id="gettingStarted">
+        <div class="full-height-section display--flex">
+          <div class="container">
+            <div class="col-md-12 col-sm-12 cozy">
+              <div class="cozy text-center">
                   <h2 class="heading white">Getting Started</h2>
-                  <p class="normal-text wow animated fadeInUp white">You will learn about <a class="panelWiFi-btn white">WiFi</a>, <a href="#panelSOLAR-btn" class="white">SOLAR</a> and your <a href="#panelNetID-btn" class="white">NetID</a> in this section.</p>
-                </div>
+                  <p class="normal-text white">Use the arrows to navigate and learn more about Wi-Fi, SOLAR, and NetID.</strong></p>
               </div>
+              <hr class="white hidden-md hidden-lg">
             </div>
-            <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
+            <div id="articles" class="articles col-md-12 col-sm-12">
               <div class="owl-carousel">
                 <div class="item panelWiFi-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/WiFi-final.jpg');"  data-match-height="gettingStarted">
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">WolfieNet (WiFi)</h4>
-                      <h6 class="article__sbutitle">wifi.stonybrook.edu</h6>
-                      <p class="small">WolfieNet is Stony Brook University's wireless network on West Campus, Southampton, Manhattan, and parts of East Campus. It is available to all faculty, students, staff, and guests.</p>
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/WiFi-final.png" alt="Person holding smartphone with WiFi symbol on screen">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">WolfieNet (Wi-Fi)</h2>
+                      <h4 class="subheading white">WolfieNet is Stony Brook University's wireless network on West Campus, Southampton, Manhattan, and parts of East Campus. It is available to all faculty, students, staff, and guests.</h4>
+                      <br>
+                      <span href="panelWifi-btn" class="default-button default-button__white">Learn More About Wi-Fi &raquo;</span></p>
                     </div>
                   </div>
                 </div>
                 <div class="item panelSOLAR-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/SOLAR-final.jpg');" data-match-height="gettingStarted">
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">SOLAR</h4>
-                      <h6 class="article__sbutitle">solar.stonybrook.edu</h6>
-                      <p class="small">SOLAR is Stony Brook University's enterprise-wide, self-service system which provides faculty, staff, and students with online access to manage personal information.</p>
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/SOLAR-final.png" alt="Wolfie in a space suit floating in space">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">SOLAR</h2>
+                      <h4 class="subheading white">SOLAR is Stony Brook University's enterprise-wide, self-service system which provides faculty, staff, and students with online access to manage personal information.</h4>
+                      <br>
+                      <span href="panelSOLAR-btn" class="default-button default-button__white">Learn More About SOLAR &raquo;</span></p>
                     </div>
                   </div>
                 </div>
                 <div class="item panelNetID-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/NetID-final.jpg');" data-match-height="gettingStarted">
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">NetID</h4>
-                      <h6 class="article__sbutitle">netid.stonybrook.edu</h6>
-                      <p class="small">Every active employee, student, and faculty member is assigned a NetID which is used to access various computing resources.</p>
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/NetID-final.png" alt="Students and professor looking at tablet">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">NetID</h2>
+                      <h4 class="subheading white">Every active employee, student, and faculty member is assigned a NetID which is used to access various computing resources.</h4>
+                      <br>
+                      <span href="panelNetID-btn" class="default-button default-button__white">Learn More About NetID &raquo;</span></p>
                     </div>
                   </div>
+                </div>
+              </div>
+              <hr class="white hidden-md hidden-lg">
+            </div>
+            <div class="col-md-12 noPadding">
+              <div class="fluffy">
+                <div class="side-padding text-center">
+                  <p class="normal-text white">Continue to Learn More About Student Services Around Campus</p><br><a href="#aroundCampus" class="scrollto"><span class="continue-arrow sbuicon-arrow-down3" aria-hidden="true"></span><span class="sr-only">Go to Next Section Now</span></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- This acts as a spacer on larger screens -->
-        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
-
-        <!-- Did you know section -->
-        <section class="wow animated fadeInUp">
-          <div class="container fluffy display--flex bg-asphalt">
-              <div class="col-md-6 col-sm-12 col-xs-12">
-                <h2 class="heading white">Did you know DoIT provides mobile charging stations around campus?</h2>
-              </div>
-              <div class="col-md-6 col-sm-12 col-xs-12 text-center text-left-mobile">
-                <a class="default-button default-button__white scrollto" href="#aroundCampus">Find out more about services around campus &raquo;</a>
-              </div>
-            </div>
-        </section>
-
-        <!-- This acts as a spacer on smaller screens -->
-        <section class="hidden-lg" style="padding: 15px;"></section>
-
-        <!-- ===================================================================
-        ** Around Campus Section **
-        ==================================================================== -->
-
-        <!-- This acts as a spacer on larger screens -->
-        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
-
-
-        <div id="aroundCampus">
-          <div class="container noPadding">
-            <div class="col-md-4 col-sm-12 noPadding">
-              <div class="fluffy" data-match-height="aroundCampus" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
-      			background-size: cover; background-position: fixed;" >
-                <div class="text-left wow animated fadeInUp" style="padding: 30px;">
+      </section>
+      <hr class="white">
+      <!-- ===================================================================
+      ** Around Campus Section **
+      ==================================================================== -->
+      <section id="aroundCampus">
+        <div class="full-height-section display--flex">
+          <div class="container">
+            <div class="col-md-12 col-sm-12 cozy">
+              <div class="cozy text-center">
                   <h2 class="heading white">Student Services</h2>
-                  <p class="wow animated fadeInUp white">DoIT provides tools to assist you in your academic endevours.</div>
+                  <p class="normal-text  white">Use the arrows to navigate and learn more about Printing, SINC Sites, Hardware/Software, and Mobile Charging Stations.</strong></p>
               </div>
+              <hr class="white hidden-md hidden-lg">
             </div>
-            <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
+            <div id="articles" class="articles col-md-12 col-sm-12">
               <div class="owl-carousel">
                 <div class="item panelPrinting-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" data-match-height="aroundCampus" style="background-image: url('../../placeholders/images/orientation/Printing-final.jpg');">
-                    <!-- <img src="../../placeholders/images/orientation/Printing-final.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">Printing</h4>
-                      <h6 class="article__subtitle">printing.stonybrook.edu</h6>
-                      <p class="small">Students can print in SINC Sites and other computer labs on campus, or by using Stony Brook's Print From Anywhere service.</p>
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/Printing-final.png" class="" alt="Person using a multifunction printer">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy">
+                      <h2 class="heading white">Printing</h2>
+                      <h4 class="subheading white">Students can print in SINC Sites and other computer labs on campus, or by using Stony Brook's Print From Anywhere service.</h4>
+                      <br>
+                      <span class="default-button default-button__white panelPrinting-btn">Learn More About Printing &raquo;</span></p>
                     </div>
                   </div>
                 </div>
                 <div class="item panelSINC-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/sincsites-final.jpg');" data-match-height="aroundCampus">
-                    <!-- <img src="../../placeholders/images/orientation/sincsites-final.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">SINC Sites</h4>
-                      <h6 class="article__subtitle">sincsites.stonybrook.edu</h6>
-                      <p class="small">SINC Sites are public computer labs that allow users to access both Windows & Mac computers. SINC Sites provide printing services and access to numerous academic software titles.</p>
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/sincsites-final.png" class="" alt="Computer lab with students using computers">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy">
+                      <h2 class="heading white">SINC Sites</h2>
+                      <h4 class="subheading white">SINC Sites are public computer labs that allow users to access both Windows & Mac computers. SINC Sites provide printing services and access to numerous academic software titles.</h4>
+                      <br>
+                      <span href="panelSINC-btn" class="default-button default-button__white">Learn More About SINC Sites &raquo;</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelHwSw-btn">
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/WiFi-final.png" class="" alt="Person holding smartphone with WiFi symbol on screen">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Software / Hardware</h2>
+                      <h4 class="subheading white">DoIT provides reccommendations and discounts on the latest computer hardware, as well as provides essential software for academic success.</h4>
+                      <br>
+                      <span href="panelHwSw-btn" class="default-button default-button__white">Learn More About Hardware & Software &raquo;</span></p>
                     </div>
                   </div>
                 </div>
                 <div class="item panelMBC-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/MBC.jpg');" data-match-height="aroundCampus">
-                    <!-- <img src="../../placeholders/images/orientation/MBC.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">Mobile Charging Stations</h4>
-                      <p class="small">There are six free-standing mobile charging stations in Frey Hall and Javits Lecture Center installed as part of the University's MOBILE/DIGITAL NOW initiative.</p>
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/mobile-charging.png" class="" alt="Person holding smartphone with WiFi symbol on screen">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Mobile Charging Stations</h2>
+                      <h4 class="subheading white">There are six free-standing mobile charging stations in Frey Hall and Javits Lecture Center installed as part of the University's MOBILE/DIGITAL NOW initiative.</h4>
+                      <br>
+                      <span href="panelHwSw-btn" class="default-button default-button__white">Learn More About Hardware & Software &raquo;</span></p>
                     </div>
                   </div>
+                </div>
+              </div>
+              <hr class="white hidden-md hidden-lg">
+            </div>
+            <div class="col-md-12 noPadding">
+              <div class="fluffy">
+                <div class="side-padding text-center">
+                  <a href="#learningTools" class="scrollto"><p class="normal-text white">Continue to Learn More About Learning Tools</p><br><span class="continue-arrow sbuicon-arrow-down3" aria-hidden="true"></span><span class="sr-only">Go to Next Section Now</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- This acts as a spacer on larger screens -->
-        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
-
-
-        <!-- Did you know section -->
-        <section>
-          <div class="container fluffy bg-asphalt gradient-overlay__TopRight display--flex">
-              <div class="col-md-6 col-sm-12">
-                <h2 class="heading white">Have you ever wanted to learn computer programming?</h2>
-                <p class="subheading white">DoIT provides access to Lynda.com tutorials where you can learn new skills or brush up on some old skills at your own pace at a time and location that works best for you.</p>
-              </div>
-              <div class="col-md-6 col-sm-12 text-center text-left-mobile">
-                <a class="default-button default-button__white scrollto" href="#learningTools">Discover More About Online Learning &raquo;</a>
-              </div>
-            </div>
-        </section>
-
-        <!-- This acts as a spacer on smaller screens -->
-        <section class="hidden-lg" style="padding: 15px;"></section>
-
-        <!-- ===================================================================
-        ** Learning Tools Section **
-        ==================================================================== -->
-
-        <!-- This acts as a spacer on larger screens -->
-        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
-
-        <div id="learningTools">
-          <div class="container noPadding">
-            <div class="col-md-4 col-sm-12 noPadding">
-              <div class="fluffy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
-      	  	background-size: cover;" data-match-height="learningTools">
-                <div class="text-left wow animated fadeInUp" style="padding: 30px;">
+      </section>
+      <hr class="white">
+      <!-- =====================================================================
+      ** Learning Tools Section **
+      ====================================================================== -->
+      <section id="learningTools">
+        <div class="full-height-section display--flex">
+          <div class="container">
+            <div class="col-md-12 col-sm-12 cozy">
+              <<div class="cozy text-center">
                   <h2 class="heading white">Learning Tools</h2>
-                  <p class="wow animated fadeInUp white">DoIT provides tools to assist you in your academic endevours.</div>
+                  <p class="normal-text  white">Use the arrows to navigate and learn more about Google Apps, Blackboard, and Lynda.com.</strong></p>
               </div>
+              <hr class="white hidden-md hidden-lg">
             </div>
-            <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
+            <div id="articles" class="articles col-md-12 col-sm-12">
               <div class="owl-carousel">
                 <div class="item panelGoogle-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background: url('../../placeholders/images/orientation/gapps.jpg');" data-match-height="learningTools">
-                    <!-- <img src="../../placeholders/images/orientation/gapps.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">Google Apps</h4>
-                      <h6 class="article__subtitle">google.stonybrook.edu</h6>
-                      <p class="small">Stony Brook's Google Apps suite of products includes Mail, Calendar, Drive, Contacts, Sites, Groups, Hangouts and a host of other applications to enhance communication and real-time collaboration across campus.</p>
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/gapps.png" class="" alt="Laptop on desk">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy">
+                      <h2 class="heading white">Google Apps</h2>
+                      <h4 class="subheading white">Stony Brook's Google Apps suite of products includes Mail, Calendar, Drive, Contacts, Sites, Groups, Hangouts and a host of other applications to enhance communication and real-time collaboration across campus.</h4>
+                      <br>
+                      <span href="panelGoogle-btn" class="default-button default-button__white">Learn More About Google Apps &raquo;</span>
                     </div>
                   </div>
                 </div>
                 <div class="item panelBlackboard-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background: url('../../placeholders/images/orientation/blackboard.jpg');"  data-match-height="learningTools">
-                    <!-- <img src="../../placeholders/images/orientation/blackboard.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">Blackboard</h4>
-                      <h6 class="article__subtitle">blackboard.stonybrook.edu</h6>
-                      <p class="small">Blackboard is Stony Brook University's learning management system (LMS), which allows instructors to supplement face-to-face classes, or launch online classes.</p>
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/blackboard.png" class="" alt="Student working on homework on their laptop">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Blackboard</h2>
+                      <h4 class="subheading white">Blackboard is Stony Brook University's learning management system (LMS), which allows instructors to supplement face-to-face classes, or launch online classes.</h4>
+                      <br>
+                      <span href="panelBlackboard-btn" class="default-button default-button__white">Learn More About Blackboard &raquo;</span>
                     </div>
                   </div>
                 </div>
                 <div class="item panelLynda-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background: url('../../placeholders/images/orientation/lynda.jpg');" data-match-height="learningTools">
-                    <!-- <img src="../../placeholders/images/orientation/lynda.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">Lynda.com</h4>
-                      <h6 class="article__subtitle">lynda.stonybrook.edu</h6>
-                      <p class="small">Lynda.com is a service that offers high-quality video tutorials for common computer applications and other skills.</p>
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/lynda.png" class="" alt="3 students looking at a computer">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Lynda.com</h2>
+                      <h4 class="subheading white">Lynda.com is a service that offers high-quality video tutorials for common computer applications and other skills.</h4>
+                      <br>
+                      <span href="panelLynda-btn" class="default-button default-button__white">Learn More About Lynda &raquo;</span>
                     </div>
                   </div>
+                </div>
+              </div>
+              <hr class="white hidden-md hidden-lg">
+            </div>
+            <div class="col-md-12 noPadding">
+              <div class="fluffy">
+                <div class="side-padding text-center">
+                  <a href="#gettingHelp" class="scrollto"><p class="normal-text white">Continue to Learn More About Where to Find Help</p><br><span class="continue-arrow sbuicon-arrow-down3" aria-hidden="true"></span><span class="sr-only">Go to Next Section Now</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+      </section>
         <!-- ===================================================================
         ** End of Carousels **
         ==================================================================== -->
-
-        <!-- This acts as a spacer on larger screens -->
-        <section class="fluffy hidden-xs hidden-sm hidden-md"></section>
-
 </section>
 
 <!-- ===================================================================
@@ -335,22 +351,22 @@ The settings for the "sliding" actio are set in main.js
 
 ==================================================================== -->
 
-<section class="redRaysBorder" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
+<section class="redRaysBorder" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg');"></section>
 
 <section id="gettingHelp" class="fluffy bg-farbeyondred">
   <div class="container display--flex">
-      <div class="col-md-12 wow animated fadeInUp">
+      <div class="col-md-12 ">
         <h3 class="heading white">Where to Find Help</h3>
-        <p class="subheading white">DoIT is committed to providing outstanding service to the Stony Brook University community.<br>Submit a help ticket through our service management system.</p>
+        <p class="normal-text white">DoIT is committed to providing outstanding service to the Stony Brook University community. Submit a help ticket through our service management system.</p>
       </div>
-      <div class="col-md-6 col-sm-6 col-xs-12 wow animated fadeInUp">
-        <a class="default-button default-button__white noMarginLeft" href="http://service.stonybrook.edu">Submit A Ticket</a>
+      <div class="col-md-6 col-sm-6 col-xs-12 ">
+        <a class="default-button default-button__white noMarginLeft" href="http://service.stonybrook.edu">Submit A Ticket &raquo;</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="redRaysBorder" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
+<section class="redRaysBorder" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg');"></section>
 
 <!-- ===========================================================================
 
@@ -368,7 +384,7 @@ card is selected.
 
   <div class="panelSOLAR slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -380,7 +396,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -394,7 +410,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="register">
                 <h4 class="heading heading-small uppercase dark-gray">Accessing SOLAR</h4>
                 <p class="normal-text">
@@ -411,7 +427,7 @@ card is selected.
                 <p class="normal-text">
                   In SOLAR you will be able to register for classes. You can use our new schedule builder tool that is integrated with SOLAR to help build your class schedule much quicker.
                   <br><br>
-                  <a href="http://it.stonybrook.edu/services/schedule-builder">Learn More About Schedule Builder &raquo;</a>
+                  <a href="http://it.stonybrook.edu/node/24371">Learn More About Schedule Builder &raquo;</a>
                 </p>
               </div>
               <hr>
@@ -445,7 +461,7 @@ card is selected.
                 <h4 class="heading heading-small uppercase dark-gray">SB Alert</h4>
                 <p class="normal-text">SB Alert is the University's emergency notification system used to alert the campus community of major emergencies, immediate threats or impending situations that could pose harm, disrupt classes, impact facilities, activities, or other operations.
                   <br><br>
-                  <a href="http://it.stonybrook.edu/help/kb/configuring-sb-alert">Configuring SB Alert &raquo;</a>
+                  <a href="http://it.stonybrook.edu/node/6103">Configuring SB Alert &raquo;</a>
                 </p>
               </div>
             </div>
@@ -467,7 +483,7 @@ card is selected.
 
   <div class="panelWiFi slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -479,7 +495,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -489,7 +505,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="availablenetworks">
                 <h4 class="heading heading-small uppercase dark-gray">Available Networks</h4>
                 <p class="normal-text">
@@ -503,7 +519,7 @@ card is selected.
                   Available only in residence halls for gaming systems. Do not use for academic work or transactions such as banking or online shopping.<br><br>
                   <strong>Eduroam</strong><br>
                   Eduroam allows students, researchers and staff from participating institutions to obtain Internet connectivity across campus and when visiting other participating institutions.<br>
-                  <a href="http://it.stonybrook.edu/services/eduroam">Learn More About Eduroam &raquo;</a>
+                  <a href="http://it.stonybrook.edu/node/15191">Learn More About Eduroam &raquo;</a>
                   <br><br>
                   <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
                   <a href="https://youtu.be/jNIimBjxMCc?list=PLxRC1iccSum8U0S3GeJF7OIegIBy34ylv">How to Connect to WolfieNet-Secure on iOS</a><br>
@@ -539,7 +555,7 @@ card is selected.
 
   <div class="panelNetID slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -551,7 +567,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -562,7 +578,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="availablenetworks">
                 <h4 class="heading heading-small uppercase dark-gray">What is my NetID?</h4>
                 <p class="normal-text">Every active employee, student, and faculty member is assigned a NetID which is used to access various computing resources.
@@ -577,22 +593,18 @@ card is selected.
               <div class="text-blurb" id="netidtrouble">
                 <h4 class="heading heading-small uppercase dark-gray">Services Accessed with NetID</h4>
                   <ul class="bullets normal-text">
-                    <li><a href="http://it.stonybrook.edu/services/blackboard">Blackboard &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/894">Blackboard &raquo;</a></li>
                     <li><a href="http://sincsites.stonybrook.edu">SINC Site computers and printers &raquo;</a></li>
-                    <li><a href="">Department Shared Folders &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/3037">Department Shared Folders &raquo;</a></li>
                     <li><a href="http://wifi.stonybrook.edu">Wi-Fi (WolfieNet) &raquo;</a></li>
                     <li><a href="http://google.stonybrook.edu">Google Apps for Education (Email, Calendar, Docs, etc.) &raquo;</a></li>
-                    <li><a href="">Library databases &raquo;</a></li>
-                    <li><a href="">MySBfiles &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/911">MySBfiles &raquo;</a></li>
                     <li><a href="http://yammer.stonybrook.edu">Yammer &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/qualtrics">Qualtrics Online Survey Tool &raquo;</a></li>
-                    <li><a href="">Research Interests and Funding Opportunities Database &raquo;</a></li>
-                    <li><a href="">SUNYSB.EDU Domain &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/sbyou">SB You WordPress &raquo;</a></li>
-                    <li><a href="">Softweb &raquo;</a></li>
-                    <li><a href="">Virtual SINC Site &raquo;</a></li>
-                    <li><a href="">VPN &raquo;</a></li>
-                    <li><a href="">Off-Campus Housing rental listings &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6335">Qualtrics Online Survey Tool &raquo;</a></li>
+                    <li><a href="http://you.stonybrook.edu">SB You WordPress &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/5454">Virtual SINC Site &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/916">Virtual Private Network (VPN) &raquo;</a></li>
+                    <li><a href="https://och.stonybrook.edu/">Off-Campus Housing rental listings &raquo;</a></li>
                   </ul>
               </div>
               <hr>
@@ -619,7 +631,7 @@ card is selected.
 
   <div class="panelPrinting slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -631,7 +643,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -641,7 +653,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="printquota">
                 <h4 class="heading heading-small uppercase dark-gray">Print Quota</h4>
                 <p class="normal-text">
@@ -660,9 +672,9 @@ card is selected.
                   <strong>Print From Anywhere</strong><br>
                   The Print From Anywhere service allows students to send print jobs to the SINC Site print queue from their own computers whether on campus or off campus. Students need to install the Print From Anywhere Client on their personal machine(s).
                   <br><br>
-                  <a href="http://it.stonybrook.edu/help/kb/using-print-from-anywhere">Learn More About Using Print From Anywhere &raquo;</a><br><br>
+                  <a href="http://it.stonybrook.edu/node/5580">Learn More About Using Print From Anywhere &raquo;</a><br><br>
                   <strong>Email</strong><br>
-                  Send an email with an attached document from your @stonybrook.edu address to printfromanywhere@stonybrook.edu. Use your Stony Brook ID card to release your job at one of our <a href="http://it.stonybrook.edu/help/kb/pharos-release-station-locations">printing release stations</a>.
+                  Send an email with an attached document from your @stonybrook.edu address to printfromanywhere@stonybrook.edu. Use your Stony Brook ID card to release your job at one of our <a href="http://it.stonybrook.edu/node/5466">printing release stations</a>.
                 </p>
               </div>
             </div>
@@ -684,7 +696,7 @@ card is selected.
 
   <div class="panelSINC slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -696,7 +708,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -706,7 +718,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="whatissincsite">
                 <h4 class="heading heading-small uppercase dark-gray">What is a SINC Site?</h4>
                 <p class="normal-text">
@@ -724,11 +736,11 @@ card is selected.
                 </p><br>
                 <p class="normal-text"><strong>Popular SINC Site Locations</strong>
                   <ul class="normal-text bullets">
-                    <li><a href="http://it.stonybrook.edu/services/sinc-sites/melville-library-sinc-site">Melville Library &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/sinc-sites/computer-science-sinc-site">Computer Science &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/sinc-sites/north-reading-room">North Reading Room &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/sinc-sites/tabler-digital-arts-media-lab">Tabler Digital Arts Lab &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/sinc-sites/humanities-sinc-site">Humanities &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1573">Melville Library &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1582">Computer Science &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6689">North Reading Room &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6775">Tabler Digital Arts Lab &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1589">Humanities &raquo;</a></li>
                   </ul>
                 </p>
 
@@ -747,12 +759,82 @@ card is selected.
 
 
   <!-- =========================================================================
+  Hardware/Software Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelHwSw slideout-panel from-right">
+    <div class="slideout-panel-container">
+        <div class="cozy" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
+          <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
+            <!-- SOLAR Conent ================================================ -->
+            <div class="slideout-panel-content text-center">
+                <h3 class="heading heading-extra-large white noMarginBottom">Software / Hardware</h2>
+                  <a href="http://software.stonybrook.edu" class="default-button default-button__white">software.stonybrook.edu &raquo;</a></p>
+                  <a href="http://hardware.stonybrook.edu" class="default-button default-button__white">hadware.stonybrook.edu &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+        <section class="airy">
+          <div class="container">
+            <div class="col-md-3 col-sm-12 ">
+              <div class="text-blurb">
+                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
+                <p class="normal-text">
+                  <a href="#software">Software</a><br>
+                  <a href="#hardware">Hardware</a><br>
+                </p>
+              </div>
+              <hr class="hidden-lg">
+            </div>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="software">
+                <h4 class="heading heading-small uppercase dark-gray">Software</h4>
+                <p class="normal-text">
+                  The Division of Information Technology (DoIT) offers students free software, operating system upgrages, and antivirus software to ensure all students have the tools they need to be academically successful.<br>
+                  <ul class="no-bullets normal-text">
+                    <li><a href="http://it.stonybrook.edu/node/5402/">Free Microsoft Office Suite &raquo;</a></li>
+                    <li><a href="https://stonybrook.onthehub.com/">Free Windows Operating System Upgrade &raquo;</a></li>
+                    <li><a href="https://softweb.cc.stonybrook.edu/">Free Symantec Antivirus Software &raquo;</a></li>
+                  </ul>
+                </p>
+              </div>
+              <hr>
+              <div class="text-blurb" id="hardware">
+                <h4 class="heading heading-small uppercase dark-gray">Hardware</h4>
+                <p class="normal-text">
+                  Students can recieve discounts on competitive brands like <strong>Apple</strong>, <strong>Dell</strong>, <strong>HP</strong>, and <strong>Lenovo</strong>.
+                  <br><br>
+                  <strong>Recommended Specifications</strong><br>
+                  If purchasing a laptop/computer, DoIT reccommends the following specifications:
+                  <ul class="no-bullets normal-text">
+                    <li><strong>Processor:</strong> Core i5</li>
+                    <li><strong>RAM:</strong> Minimum 4 GB</li>
+                    <li><strong>Hard Drive:</strong> Minimum 250 GB</li>
+                    <li><strong>Warranty:</strong> 3 years</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of Hardaware/Software Slideout Panel
+  ===========================================================================-->
+
+
+
+  <!-- =========================================================================
   Mobile Charging Stations Slideout Panel
   ===========================================================================-->
 
   <div class="panelMBC slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -763,7 +845,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -773,7 +855,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="whatismcs">
                 <h4 class="heading heading-small uppercase dark-gray">What is a Mobile Charging Station?</h4>
                 <p class="normal-text">
@@ -808,7 +890,7 @@ card is selected.
 
   <div class="panelGoogle slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -820,7 +902,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -829,7 +911,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="googleapps">
                 <h4 class="heading heading-small uppercase dark-gray">Your Email, calendar and collaboration Toolkit</h4>
                 <p class="normal-text">
@@ -869,7 +951,7 @@ card is selected.
 
   <div class="panelBlackboard slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -881,7 +963,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -891,7 +973,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="whatisblackboard">
                 <h4 class="heading heading-small uppercase dark-gray">What is Blackboard?</h4>
                 <p class="normal-text">
@@ -933,7 +1015,7 @@ card is selected.
 
   <div class="panelLynda slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('/placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -945,7 +1027,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -955,7 +1037,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="whatislynda">
                 <h4 class="heading heading-small uppercase dark-gray">What is Lynda.com?</h4>
                 <p class="normal-text">
@@ -1072,15 +1154,28 @@ Slideout Panel Scripts
             }
         });
 
-        //open Mobile Charging Stations panel
+        //open Hardware/Software panel
         $('.panelMBC-btn').on('click', function(event) {
             event.preventDefault();
             $('.panelMBC').addClass('is-visible');
         });
-        //close Mobile Charging Stations panel
+        //close Hardware/Software panel
         $('.panelMBC').on('click', function(event) {
             if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
                 $('.panelMBC').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+
+        //open Mobile Charging Stations panel
+        $('.panelHwSw-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelHwSw').addClass('is-visible');
+        });
+        //close Mobile Charging Stations panel
+        $('.panelHwSw').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelHwSw').removeClass('is-visible');
                 event.preventDefault();
             }
         });
