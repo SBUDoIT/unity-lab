@@ -1,0 +1,10 @@
+{
+    "projects": {
+        "src": ["./public/css/**/*", "./public/js/**/*", "./public/fonts/**/*", "./public/images/**/*" ],
+        "dest": ["d:/git/doitsbu/docroot/sites/all/libraries/unity-lab/latest", "d:/testing"],
+        "base": "./public"
+    },
+    "project": {
+        "dest": "d:/testing"
+    }
+}
