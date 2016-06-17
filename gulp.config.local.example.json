@@ -5,6 +5,6 @@
         "base": "./public"
     },
     "project": {
-        "dest": "d:/git/unity-site/themes/unity/latest"
+        "dest": ""
     }
 }
