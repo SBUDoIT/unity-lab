@@ -168,7 +168,7 @@
 
 ///OVERLAYS
 
-.overlay-gray, .overlay-white, .overlay-black, .overlay-river, .overlay-turquoise, .overlay-red {
+.overlay-gray, .overlay-dark-gray, .overlay-white, .overlay-black, .overlay-river, .overlay-turquoise, .overlay-red {
     @include section-light-theme;
     position: relative;
 }
