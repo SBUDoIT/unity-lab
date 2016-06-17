@@ -82,7 +82,7 @@ HeaderVideo.prototype.getVideoDetails = function() {
 
     return {
         videoURL: mediaElement.attr('data-video-URL'),
-        teaser: mediaElement.attr('data-teaser'),
+        // teaser: mediaElement.attr('data-teaser'),
         videoHeight: mediaElement.attr('data-video-height'),
         videoWidth: mediaElement.attr('data-video-width')
     };
