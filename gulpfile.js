@@ -26,7 +26,8 @@ var config = require('./gulp.config.json');
 var localconfig = require('./gulp.config.local.json');
 var shell = require('gulp-shell');
 var buildArgs = require('./gulp.build.args.js');
-
+var runSequence = require('run-sequence');
+var git = require('gulp-git');
 
 gulp.task('bump', function () {
   return gulp.src(['./package.json'])
