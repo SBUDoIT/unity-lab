@@ -7,3 +7,4 @@ source/css
 source/js
 releases
 gulp.config.local.json
+.vagrant

@@ -28,6 +28,7 @@ var shell = require('gulp-shell');
 var buildArgs = require('./gulp.build.args.js');
 var runSequence = require('run-sequence');
 var git = require('gulp-git');
+var zip = require('gulp-zip');
 
 gulp.task('bump', function () {
   return gulp.src(['./package.json'])
@@ -69,6 +70,8 @@ gulp.task('release', function (callback) {
     'commit-changes',
     'push-changes',
     'create-new-tag',
+    'copy:release',
+    'copy:distribute',
 //    'github-release',
     function (error) {
       if (error) {
@@ -80,13 +83,31 @@ gulp.task('release', function (callback) {
     });
 });
 
-/*
+
 gulp.task('copy:release', function() {
     var pkg = require('./package.json');
     gulp.src(config.release.src)
+        .pipe(gulp.dest(config.release.dest + "/" + pkg.version + "/" + pkg.version + "-pattern-lab"))
+        .pipe(zip(pkg.version + "-pattern-lab.zip"))
         .pipe(gulp.dest(config.release.dest + "/" + pkg.version));
+});
 
-});*/
+
+gulp.task('copy:distribute', function() {
+
+    var pkg = require('./package.json');
+  var dest = config.release.dest + "/" + pkg.version + "/" + pkg.version + "-distribute/";
+
+   var stream = gulp.src(localconfig.projects.src, {base: localconfig.projects.base })
+                    .pipe(gulp.dest(dest))
+                    .pipe(zip(pkg.version + "-distribute.zip"))
+                    .pipe(gulp.dest(config.release.dest + "/" + pkg.version));
+
+
+   return stream;
+
+
+});
 
 
 
