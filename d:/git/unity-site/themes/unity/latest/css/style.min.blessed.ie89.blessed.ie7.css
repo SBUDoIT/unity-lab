@@ -1,12 +1,4 @@
-@import url('style.min.blessed.ie89-blessed1.css?z=1466187810852');
-
-.sbuicon-fax:before {
-  content: "\f1ac";
-}
-
-.sbuicon-building:before {
-  content: "\f1ad";
-}
+@import url('style.min.blessed.ie89-blessed1.css?z=1466188475771');
 
 .sbuicon-child:before {
   content: "\f1ae";
@@ -1630,6 +1622,7 @@ html[xmlns] .slides {
 .slides:after {
   content: "\0020";
   clear: both;
+  visibility: hidden;
   line-height: 0;
   height: 0;
 }
@@ -1771,6 +1764,11 @@ html[xmlns] .slides {
 
 .flex-direction-nav {
   visibility: visible!important;
+}
+
+.slick-loading .slick-slide,
+.slick-loading .slick-track {
+  visibility: hidden;
 }
 
 .flex-direction-nav a.flex-next {
@@ -2346,6 +2344,12 @@ table.tablesaw thead th {
   font-size: 1.17em;
 }
 
+.simple-two-col-table tr,
+.view table td,
+.view.top td {
+  vertical-align: top;
+}
+
 .tablesaw tbody th .btn,
 .tablesaw td .btn {
   margin: 0;
@@ -2670,6 +2674,10 @@ table.tablesaw thead th {
 
 .tablesaw-sortable .not-applicable span {
   display: none;
+}
+
+.tablesaw-advance {
+  float: right;
 }
 
 .tablesaw-advance.minimap {
@@ -6518,7 +6526,6 @@ ul.default-bullets li:before {
 .arrow-bullets li:before,
 .check-bullets li:before {
   margin: 0 auto;
-  font-style: normal;
   line-height: 1;
   position: relative;
   z-index: 1;
@@ -6526,6 +6533,7 @@ ul.default-bullets li:before {
   width: 10px;
   text-align: center;
   font-weight: 400;
+  font-style: normal;
 }
 
 .arrow-bullets li:before {
@@ -6544,10 +6552,6 @@ ul.default-bullets li:before {
 
 .simple-two-col-table {
   margin: 10px 0;
-}
-
-.simple-two-col-table tr {
-  vertical-align: top;
 }
 
 .simple-two-col-table td {
@@ -7233,11 +7237,6 @@ span.dual-tone-button--icon {
   position: relative;
 }
 
-.view table td,
-.view.top td {
-  vertical-align: top;
-}
-
 .rounded-image-button:hover {
   border-radius: 15px;
   box-shadow: 0 0 25px 1px rgba(0,0,0,.75);
@@ -7627,11 +7626,6 @@ span.dual-tone-button--icon {
   min-width: 50%;
   min-height: 50%;
   overflow-x: hidden;
-}
-
-.main-site-nav-wrap .main-site-nav ul li:first-child a,
-.main-site-nav-wrap .main-site-nav ul li:last-child a {
-  min-width: 80px;
 }
 
 .drop-accordion-cards {
@@ -8885,8 +8879,16 @@ body.is-touch .tiles article .content {
   top: 1px;
 }
 
+.main-site-nav-wrap .main-site-nav ul li:first-child a {
+  min-width: 80px;
+}
+
 .main-site-nav-wrap .main-site-nav ul li:last-child {
   border-right: 1px solid #800;
+}
+
+.main-site-nav-wrap .main-site-nav ul li:last-child a {
+  min-width: 80px;
 }
 
 .main-site-nav-wrap .main-site-nav ul a {
@@ -11301,11 +11303,6 @@ th.centered {
   padding: 0;
 }
 
-.noMarginLeft,
-.noMarginLeftRight {
-  margin-left: 0!important;
-}
-
 .shadow-grid-3-column ul li a {
   display: block;
   height: 135px;
@@ -11398,8 +11395,6 @@ th.centered {
 }
 
 .fix-width-100,
-.header-video iframe,
-.header-video video,
 .width-100 {
   width: 100%;
 }
@@ -11479,6 +11474,62 @@ table th {
   background-position: center center;
 }
 
+.youtube-container {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.youtube-player {
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: hand;
+  cursor: pointer;
+  display: block;
+}
+
+img.youtube-thumb {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: auto;
+}
+
+div.play-button {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
+  position: absolute;
+  background: url(http://i.imgur.com/TxzC70f.png) no-repeat;
+  z-index: 99;
+}
+
+.noMarginLeft,
+.noMarginLeftRight {
+  margin-left: 0!important;
+}
+
+#youtube-iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .header-video {
   position: relative;
   overflow: hidden;
@@ -11495,6 +11546,11 @@ table th {
 
 .header-video iframe {
   height: 100%;
+  width: 100%;
+}
+
+.header-video video {
+  width: 100%;
 }
 
 .header-video__media,
@@ -11796,7 +11852,6 @@ table th {
 }
 
 .owl-controls {
-  -ms-user-select: none;
   user-select: none;
 }
 
