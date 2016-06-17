@@ -5,6 +5,12 @@ img {
   border: 0;
 }
 
+.owl-controls,
+.slick-slider,
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .btn-group>.btn-group,
 .btn-toolbar .btn-group,
 .btn-toolbar .input-group,
@@ -40,8 +46,10 @@ label {
 }
 
 .btn,
+.owl-controls,
 .slick-slider {
-  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 .navbar-fixed-bottom .navbar--fixed__collapse,
@@ -50,20 +58,6 @@ label {
 .navbar-fixed-top .navbar-collapse,
 .pre-scrollable {
   max-height: 340px;
-}
-
-.owl-controls,
-.slick-slider {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.owl-controls,
-.slick-slider,
-html {
-  -webkit-tap-highlight-color: transparent;
 }
 
 p {
@@ -3244,6 +3238,11 @@ textarea.form-control {
   margin-left: 10px;
 }
 
+.btn-block+.btn-block,
+.help-block {
+  margin-top: 5px;
+}
+
 .checkbox-inline.disabled,
 .checkbox.disabled label,
 .radio-inline.disabled,
@@ -3520,7 +3519,6 @@ textarea.input-lg {
 
 .help-block {
   display: block;
-  margin-top: 5px;
   margin-bottom: 10px;
   color: #737373;
 }
@@ -3638,9 +3636,14 @@ textarea.input-lg {
   font-size: 14px;
   line-height: 1.42857;
   border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
+}
+
+.owl-controls,
+.slick-slider {
+  -khtml-user-select: none;
+  -ms-user-select: none;
 }
 
 .btn.active.focus,
@@ -4011,10 +4014,6 @@ fieldset[disabled] .btn-link:hover {
 .btn-block {
   display: block;
   width: 100%;
-}
-
-.btn-block+.btn-block {
-  margin-top: 5px;
 }
 
 input[type=button].btn-block,
@@ -7261,12 +7260,6 @@ button.close {
   visibility: hidden!important;
 }
 
-.slick-loading .slick-slide,
-.slick-loading .slick-track,
-.slides:after {
-  visibility: hidden;
-}
-
 .affix {
   position: fixed;
 }
@@ -9771,8 +9764,7 @@ a[href$=".pptx"].file-link:after {
   float: none;
 }
 
-.float-right,
-.tablesaw-advance {
+.float-right {
   float: right;
 }
 
@@ -11512,4 +11504,12 @@ body {
 
 .sbuicon-language:before {
   content: "\f1ab";
+}
+
+.sbuicon-fax:before {
+  content: "\f1ac";
+}
+
+.sbuicon-building:before {
+  content: "\f1ad";
 }
