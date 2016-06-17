@@ -370,7 +370,7 @@ Slider Articles
     padding: 30px 0px !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .articles {
     padding: 0 !important;
   }
@@ -392,13 +392,11 @@ Owl Slider Stylings
   	padding: 40px 10px;
   }
 }
-
 .owl-carousel .owl-controls {
 	position: absolute;
 	width: 100%;
 	top:calc(50% - 30px);
 }
-
 .owl-carousel .owl-controls .owl-prev,
 .owl-carousel .owl-controls .owl-next {
 	position: absolute;
@@ -423,8 +421,6 @@ Owl Slider Stylings
 .owl-carousel .owl-controls .owl-next {
 	right: 0;
 }
-
-
 .owl-carousel{
   display: none;
   position: relative;
