@@ -116,11 +116,13 @@ gulp.task('copy:projects', ['clean:projects'], function() {
     //    .pipe(gulp.dest(localconfig.projects.dest));
 
     //var dests = ['./out1', './out2', './out3'];
+    var pkg = require('./package.json');
     var dests = localconfig.projects.dest;
 
    var stream = gulp.src(localconfig.projects.src, {base: localconfig.projects.base });
    for (var i = 0; i < dests.length; i++) {
-       stream = stream.pipe(gulp.dest(dests[i]));
+       stream = stream.pipe(gulp.dest(dests[i] + "/" + pkg.version))
+                        .pipe(gulp.dest(dests[i] + "/latest"));
    }
    return stream;
 
@@ -145,12 +147,12 @@ gulp.task('clean:before', function () {
 gulp.task('jsheader', function() {
     return gulp.src(config.jsheader.src)
         .pipe(concat('header.dev.js'))
-        .pipe(gulp.dest(localconfig.project.dest + "/js/header"))
+        .pipe(gulp.dest(config.jsheader.dest))
         .pipe(rename('header.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(config.jsheader.dest))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest(localconfig.project.dest + "/js/header"));
+        .pipe(browserSync.reload({stream:true}));
+
 
 });
 
@@ -159,29 +161,24 @@ gulp.task('jsfooter', function() {
     return gulp.src(config.jsfooter.src)
         .pipe(concat('footer.dev.js'))
         .pipe(gulp.dest(config.jsfooter.dest))
-        .pipe(gulp.dest(localconfig.project.dest + "/js/footer"))
         .pipe(rename('footer.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(config.jsfooter.dest))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest(localconfig.project.dest + "/js/footer"));
+        .pipe(browserSync.reload({stream:true}));
 });
 
 //copy fonts to wwwroot
 gulp.task('fonts', function() {
     return gulp.src(config.fonts.src)
         .pipe(gulp.dest(config.fonts.dest))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest(localconfig.project.dest + "/fonts"));
-
+        .pipe(browserSync.reload({stream:true}));
 });
 
 //copy images to wwwroot
 gulp.task('images', function() {
     return gulp.src(config.images.src)
         .pipe(gulp.dest(config.images.dest))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest(localconfig.project.dest + "/images"));
+        .pipe(browserSync.reload({stream:true}));
 });
 
 //copy placeholder assets to wwwroot
@@ -224,27 +221,22 @@ gulp.task('scss', function() {
         .pipe(browserSync.reload({stream:true}))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(gulp.dest(config.scss.dest))
-        .pipe(gulp.dest(localconfig.project.dest + "/css"))
         .pipe(rename({
             suffix: '.min'
         }))
         .pipe(minifycss())
         .pipe(gulp.dest(config.scss.dest))
-        .pipe(gulp.dest(localconfig.project.dest + "/css"))
         .pipe(rename({
             suffix: '.blessed.ie89'
         }))
         .pipe(bless())
         .pipe(gulp.dest(config.scss.dest))
-        .pipe(gulp.dest(localconfig.project.dest + "/css"))
         .pipe(mqRemove({ width: "1280px" }))
         .pipe(rename({
             suffix: '.blessed.ie7'
         }))
         .pipe(bless())
-        .pipe(gulp.dest(localconfig.project.dest + "/css"))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest(localconfig.project.dest + "/css"));
+        .pipe(browserSync.reload({stream:true}));
 });
 
 
