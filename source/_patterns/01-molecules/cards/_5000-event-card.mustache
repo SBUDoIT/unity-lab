@@ -1,14 +1,12 @@
 <div class="event-card" data-match-height="event-card">
-  <div class="bg-pom" data-match-height="event-card--heading-wrap">
-    <h2 class="event-card--heading">
-    <a class="event-card--heading-link" href="{{url}}">{{headline.short}}</a>
-    </h2>
-
+  <div class="event-card--date-time">
+    {{month.long}} {{day.short}}{{day.ordinal}}, {{year.long}} {{hour.short}}:{{minute.long}} {{hour.ampm }}
+  </div>
+  <div class="event-card--heading" data-match-height="event-card--heading-wrap">
+      <a class="event-card--heading-link" href="{{url}}">{{headline.short}}</a>
   </div>
   <div class="event-card--content" data-match-height="event-card--content">
-    <div class="event-card--date-time">
-      {{month.long}} {{day.short}}{{day.ordinal}}, {{year.long}} {{hour.short}}:{{minute.long}} {{hour.ampm }}
-    </div>
+
     {{# location }}
     <div class="event-card--map">
       <a href="{{url}}">{{location}}</a>
