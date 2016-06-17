@@ -23,8 +23,31 @@ var through = require('through2');
 var directoryMap = require("gulp-directory-map");
 var bump = require("gulp-bump");
 var config = require('./gulp.config.json');
+var localconfig = require('./gulp.config.local.json');
 var shell = require('gulp-shell');
 
+
+gulp.task('copy:projects', ['clean:projects'], function() {
+    //return gulp.src(localconfig.projects.src, { base: localconfig.projects.base })
+    //    .pipe(gulp.dest(localconfig.projects.dest));
+
+    //var dests = ['./out1', './out2', './out3'];
+    var dests = localconfig.projects.dest;
+
+   var stream = gulp.src(localconfig.projects.src, {base: localconfig.projects.base });
+   for (var i = 0; i < dests.length; i++) {
+       stream = stream.pipe(gulp.dest(dests[i]));
+   }
+   return stream;
+
+});
+
+gulp.task('clean:projects', function () {
+  return gulp.src(localconfig.projects.dest)
+    .pipe(clean({
+      force: true
+    }))
+});
 
 // Description: Removing compiled files before running other tasks, this helps keep deleted source files from sticking around
 gulp.task('clean:before', function () {
@@ -38,11 +61,13 @@ gulp.task('clean:before', function () {
 gulp.task('jsheader', function() {
     return gulp.src(config.jsheader.src)
         .pipe(concat('header.dev.js'))
-        .pipe(gulp.dest(config.jsheader.dest))
+        .pipe(gulp.dest(localconfig.project.dest + "/js/header"))
         .pipe(rename('header.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(config.jsheader.dest))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest(localconfig.project.dest + "/js/header"));
+
 });
 
 // Concatenate & Minify Footer JS files
@@ -50,17 +75,20 @@ gulp.task('jsfooter', function() {
     return gulp.src(config.jsfooter.src)
         .pipe(concat('footer.dev.js'))
         .pipe(gulp.dest(config.jsfooter.dest))
+        .pipe(gulp.dest(localconfig.project.dest + "/js/footer"))
         .pipe(rename('footer.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(config.jsfooter.dest))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest(localconfig.project.dest + "/js/footer"));
 });
 
 //copy fonts to wwwroot
 gulp.task('fonts', function() {
     return gulp.src(config.fonts.src)
         .pipe(gulp.dest(config.fonts.dest))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest(localconfig.project.dest + "/fonts"));
 
 });
 
@@ -68,7 +96,8 @@ gulp.task('fonts', function() {
 gulp.task('images', function() {
     return gulp.src(config.images.src)
         .pipe(gulp.dest(config.images.dest))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest(localconfig.project.dest + "/images"));
 });
 
 //copy placeholder assets to wwwroot
@@ -111,23 +140,27 @@ gulp.task('scss', function() {
         .pipe(browserSync.reload({stream:true}))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(gulp.dest(config.scss.dest))
+        .pipe(gulp.dest(localconfig.project.dest + "/css"))
         .pipe(rename({
             suffix: '.min'
         }))
         .pipe(minifycss())
         .pipe(gulp.dest(config.scss.dest))
+        .pipe(gulp.dest(localconfig.project.dest + "/css"))
         .pipe(rename({
             suffix: '.blessed.ie89'
         }))
         .pipe(bless())
         .pipe(gulp.dest(config.scss.dest))
+        .pipe(gulp.dest(localconfig.project.dest + "/css"))
         .pipe(mqRemove({ width: "1280px" }))
         .pipe(rename({
             suffix: '.blessed.ie7'
         }))
         .pipe(bless())
-        .pipe(gulp.dest(config.scss.dest))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(gulp.dest(localconfig.project.dest + "/css"))
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest(localconfig.project.dest + "/css"));
 });
 
 
