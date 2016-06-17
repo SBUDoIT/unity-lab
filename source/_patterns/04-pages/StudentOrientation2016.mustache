@@ -18,30 +18,27 @@ This section is only visible on mobile screens.
 
 <!-- ===========================================================================
 
-** Header Video **
-
-A teaser video will be loaded first in order to save on bandwidth for users
-visiting the guide.
-
-Users will select the "Watch the Welcome Video" button, which will load/autoplay the
-orientation welcome video, which is hosted on YouTube.
-
-In the event that JavaScript is disabled, the orientation-placeholder.jpg image
-will be loaded instead. The button will still appear, and users will be directed
-to the YouTube video.
+** Welcome section + Video **
 
 ============================================================================ -->
 
-<div class="header-video gradient-overlay__TopRight">
-    <img src="/placeholders/images/orientation/orientation-hero.jpg" alt="Students working at computers" class="header-video__media">
-    <div class="header-video__play-trigger text-center">
-      <h2 class="heading white">Welcome to IT Student Orientation</h2>
-      <a href="https://www.youtube.com/embed/DJ8hg4m6Nbg?rel=0&hd=1&autohide=1&showinfo=0&autoplay=1&enablejsapi=1&origin=*"  class="default-button button-large" id="header-video__play-trigger">Watch the Welcome Video &raquo;</a>
-      <a href="#explore" class="default-button button-large scrollto">Explore Student Technology &raquo;</a>
+<section class="fluffy full-height-section display--flex gradient-overlay__TopRight" style="background: url('/placeholders/images/orientation/orientation-hero.jpg'); background-size: cover;">
+  <div class="container display--flex">
+    <div class="col-md-7">
+      <h2 class="heading white">Welcome to Student Technology</h2>
+      <p class="normal-text white">Watch our welcome video!</p>
+      <div class="youtube-container">
+        <div class="youtube-player" data-id="DJ8hg4m6Nbg"></div>
+      </div>
     </div>
-    <button type="button" class="default-button button-large header-video__close-trigger" id="header-video__close-trigger">Close video</button>
-</div>
 
+    <div class="col-md-5">
+      <p class="normal-text white">This guide will provide you with an overview on essential services offered by the Division of Information Technology (DoIT) that will enable you to be successful at Stony Brook University.</p>
+      <br>
+      <a href="#gettingStarted" class="default-button button-large scrollto">Continue Exploring &raquo;</a>
+    </div>
+  </div>
+</section>
 
 <!-- ===========================================================================
 
@@ -88,7 +85,7 @@ Fixed position will be removed when back to the top of the page.
 ============================================================================ -->
 
 <section class="bg-space-blue gradient-overlay__TopRight">
-  <div id="explore" class="fluffy full-height-section display--flex">
+  <!-- <div id="explore" class="fluffy full-height-section display--flex">
     <div class="container">
       <div class="col-md-5">
         <img src="../../placeholders/images/orientation/Explore.png" class="hidden-sm hidden-xs" alt="Student sitting on chair using laptop">
@@ -104,7 +101,7 @@ Fixed position will be removed when back to the top of the page.
     </div>
   </div>
 
-  <hr class="white">
+  <hr class="white"> -->
 
 <!-- ===========================================================================
 
@@ -1227,14 +1224,25 @@ Video header script
 ============================================================================ -->
 
 <script>
-  $(document).ready(function() {
-    $('.header-video').each(function(i, elem) {
-        headerVideo = new HeaderVideo({
-          element: elem,
-          media: '.header-video__media',
-          playTrigger: '.header-video__play-trigger',
-          closeTrigger: '.header-video__close-trigger'
-        });
-    });
-  });
+(function() {
+    var v = document.getElementsByClassName("youtube-player");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = orientationVideo(v[n].dataset.id);
+        p.onclick = orientationVideoIframe;
+        v[n].appendChild(p);
+    }
+})();
+
+function orientationVideo(id) {
+    return '<img class="youtube-thumb" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="play-button"></div>';
+}
+
+function orientationVideoIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "//www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=1");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("id", "youtube-iframe");
+    this.parentNode.replaceChild(iframe, this);
+}
 </script>
