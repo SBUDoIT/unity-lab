@@ -4,15 +4,15 @@
 		"title": "Nullizzle shizznit velizzle, hizzle, suscipit own yo', gravida vizzle, arcu.",
 		"img": {
             "square": {
-                "src": "/placeholders/images/sbu/regatta-1200x1200.jpg",
+                "src": "../../placeholders/images/sbu/regatta-1200x1200.jpg",
                 "alt": "Square"
             },
             "landscape-4x3": {
-                "src": "/placeholders/images/sbu/regatta-1200x900.jpg",
+                "src": "../../placeholders/images/sbu/regatta-1200x900.jpg",
                 "alt": "4x3 Image"
             },
             "landscape-16x9": {
-                "src": "/placeholders/images/sbu/regatta-1600x900.jpg",
+                "src": "../../placeholders/images/sbu/regatta-1600x900.jpg",
                 "alt": "16x9 Image"
             }
 		},
@@ -102,16 +102,16 @@
 		"title": "Veggies sunt bona vobis, proinde vos postulo",
 		"img": {
             "square": {
-				"src": "/placeholders/images/sbu/regatta-800x800.jpg",
+				"src": "../../placeholders/images/sbu/regatta-800x800.jpg",
 				"alt": "Square"
 			},
 
 			"landscape-4x3": {
-				"src": "/placeholders/images/sbu/regatta-800x600.jpg",
+				"src": "../../placeholders/images/sbu/regatta-800x600.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "/placeholders/images/sbu/regatta-800x450.jpg",
+				"src": "../../placeholders/images/sbu/regatta-800x450.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -199,15 +199,15 @@
 		"title": "Bacon ipsum dolor sit amet turducken strip steak beef ribs shank",
 		"img": {
 			"square": {
-				"src": "/placeholders/images/sbu/regatta-640x640.jpg",
+				"src": "../../placeholders/images/sbu/regatta-640x640.jpg",
 				"alt": "Square"
 			},
 			"landscape-4x3": {
-				"src": "/placeholders/images/sbu/regatta-640x480.jpg",
+				"src": "../../placeholders/images/sbu/regatta-640x480.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "/placeholders/images/sbu/regatta-640x360.jpg",
+				"src": "../../placeholders/images/sbu/regatta-640x360.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -295,15 +295,15 @@
 		"title": "Whatever swag accusamus occupy, gentrify butcher tote bag",
 		"img": {
 			"square": {
-				"src": "/placeholders/images/sbu/sac-1200x1200.jpg",
+				"src": "../../placeholders/images/sbu/sac-1200x1200.jpg",
 				"alt": "Square"
 			},
 			"landscape-4x3": {
-				"src": "/placeholders/images/sbu/sac-1200x900.jpg",
+				"src": "../../placeholders/images/sbu/sac-1200x900.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "/placeholders/images/sbu/sac-1600x900.jpg",
+				"src": "../../placeholders/images/sbu/sac-1600x900.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -390,16 +390,16 @@
 		"title": "Marshall McLuhan Colbert bump backpack journalist vast wasteland Romenesko CPM",
 		"img": {
 			"square": {
-				"src": "/placeholders/images/sbu/sac-800x800.jpg",
+				"src": "../../placeholders/images/sbu/sac-800x800.jpg",
 				"alt": "Square"
 			},
 
 			"landscape-4x3": {
-				"src": "/placeholders/images/sbu/sac-800x600.jpg",
+				"src": "../../placeholders/images/sbu/sac-800x600.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "/placeholders/images/sbu/sac-800x450.jpg",
+				"src": "../../placeholders/images/sbu/sac-800x450.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -486,15 +486,15 @@
 		"title": "Thunder, thunder, thundercats, Ho!",
 		"img": {
 			"square": {
-				"src": "/placeholders/images/sbu/sac-640x640.jpg",
+				"src": "../../placeholders/images/sbu/sac-640x640.jpg",
 				"alt": "Square"
 			},
 			"landscape-4x3": {
-				"src": "/placeholders/images/sbu/sac-640x480.jpg",
+				"src": "../../placeholders/images/sbu/sac-640x480.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "/placeholders/images/sbu/sac-640x360.jpg",
+				"src": "../../placeholders/images/sbu/sac-640x360.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -581,15 +581,15 @@
 		"title": "Yeah, I like animals better than people sometimes",
 		"img": {
             "square": {
-				"src": "/placeholders/images/sbu/library-1200x1200.jpg",
+				"src": "../../placeholders/images/sbu/library-1200x1200.jpg",
 				"alt": "Square"
 			},
 			"landscape-4x3": {
-				"src": "/placeholders/images/sbu/library-1200x900.jpg",
+				"src": "../../placeholders/images/sbu/library-1200x900.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "/placeholders/images/sbu/library-1600x900.jpg",
+				"src": "../../placeholders/images/sbu/library-1600x900.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -672,16 +672,16 @@
 		"title": "Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo",
 		"img": {
             "square": {
-				"src": "/placeholders/images/sbu/library-800x800.jpg",
+				"src": "../../placeholders/images/sbu/library-800x800.jpg",
 				"alt": "Square"
 			},
 
 			"landscape-4x3": {
-				"src": "/placeholders/images/sbu/library-800x600.jpg",
+				"src": "../../placeholders/images/sbu/library-800x600.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "/placeholders/images/sbu/library-800x450.jpg",
+				"src": "../../placeholders/images/sbu/library-800x450.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -767,15 +767,15 @@
 		"list" : "<ul><li><a href=\"{{url}}\">Project Management Office</a></li><li><a href=\"{{url}}\">Project Status</a></li><li><a href=\"{{url}}\">Request a Project</a></li></ul>",
 		"img": {
             "square": {
-				"src": "/placeholders/images/sbu/library-640x640.jpg",
+				"src": "../../placeholders/images/sbu/library-640x640.jpg",
 				"alt": "Square"
 			},
 			"landscape-4x3": {
-				"src": "/placeholders/images/sbu/library-640x480.jpg",
+				"src": "../../placeholders/images/sbu/library-640x480.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "/placeholders/images/sbu/library-640x360.jpg",
+				"src": "../../placeholders/images/sbu/library-640x360.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -857,15 +857,15 @@
 		"title": "Help, help, I'm being repressed!",
 		"img": {
             "square": {
-				"src": "/placeholders/images/sbu/sac-1200x1200.jpg",
+				"src": "../../placeholders/images/sbu/sac-1200x1200.jpg",
 				"alt": "Square"
 			},
 			"landscape-4x3": {
-				"src": "/placeholders/images/sbu/sac-1200x900.jpg",
+				"src": "../../placeholders/images/sbu/sac-1200x900.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "/placeholders/images/sbu/sac-1600x900.jpg",
+				"src": "../../placeholders/images/sbu/sac-1600x900.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -951,16 +951,16 @@
 		"title": "Danish danish candy canes bonbon cheesecake danish marzipan",
 		"img": {
             "square": {
-				"src": "/placeholders/images/sbu/sac-800x800.jpg",
+				"src": "../../placeholders/images/sbu/sac-800x800.jpg",
 				"alt": "Square"
 			},
 
 			"landscape-4x3": {
-				"src": "/placeholders/images/sbu/sac-800x600.jpg",
+				"src": "../../placeholders/images/sbu/sac-800x600.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "/placeholders/images/sbu/sac-800x450.jpg",
+				"src": "../../placeholders/images/sbu/sac-800x450.jpg",
 				"alt": "16x9 Image"
 			}
 		},
@@ -1046,15 +1046,15 @@
 		"title": "Cottage cheese brie lancashire. Boursin when the cheese comes out.",
 		"img": {
             "square": {
-				"src": "/placeholders/images/sbu/sac-640x640.jpg",
+				"src": "../../placeholders/images/sbu/sac-640x640.jpg",
 				"alt": "Square"
 			},
 			"landscape-4x3": {
-				"src": "/placeholders/images/sbu/sac-640x480.jpg",
+				"src": "../../placeholders/images/sbu/sac-640x480.jpg",
 				"alt": "4x3 Image"
 			},
 			"landscape-16x9": {
-				"src": "/placeholders/images/sbu/sac-640x360.jpg",
+				"src": "../../placeholders/images/sbu/sac-640x360.jpg",
 				"alt": "16x9 Image"
 			}
 		},

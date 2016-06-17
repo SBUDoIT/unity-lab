@@ -1,10 +1,7 @@
 {
     "projects": {
         "src": ["./public/css/**/*", "./public/js/**/*", "./public/fonts/**/*", "./public/images/**/*" ],
-        "dest": ["d:/git/unity-site/themes/unity/latest"],
+        "dest": [""],
         "base": "./public"
-    },
-    "project": {
-        "dest": ""
     }
 }

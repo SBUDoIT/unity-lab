@@ -4,15 +4,15 @@
 	"bodyClass": "body",
 	"img": {
 		"landscape-4x3": {
-			"src": "/placeholders/images/sbu/regatta-800x600.jpg",
+			"src": "../../placeholders/images/sbu/regatta-800x600.jpg",
 			"alt": "4x3 Image"
 		},
 		"landscape-16x9": {
-			"src": "/placeholders/images/sbu/regatta-800x450.jpg",
+			"src": "../../placeholders/images/sbu/regatta-800x450.jpg",
 			"alt": "16x9 Image"
 		},
 		"square": {
-			"src": "/placeholders/images/sbu/regatta-800x800.jpg",
+			"src": "../../placeholders/images/sbu/regatta-800x800.jpg",
 			"alt": "Square Thumbnail"
 		}
 	},

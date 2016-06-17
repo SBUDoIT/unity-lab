@@ -4,8 +4,8 @@
 
 <div id="video-container">
 <video autoplay loop class="fillWidth">
-<source src="/placeholders/video/video.mp4" type="video/mp4"/>
-<source src="/placeholders/video/video.webm" type="video/webm"/>
+<source src="../../placeholders/video/video.mp4" type="video/mp4"/>
+<source src="../../placeholders/video/video.webm" type="video/webm"/>
 Your browser does not support the video tag. I suggest you upgrade your browser.
 </video>
 </div><!-- end video-container -->
