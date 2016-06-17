@@ -26,7 +26,9 @@
     "gulp-uglify": "^1.1.0",
     "gulp-util": "^3.0.4",
     "lodash.template": "^3.3.2",
-    "through2": "^0.6.3"
+    "run-sequence": "^1.2.1",
+    "through2": "^0.6.3",
+    "yargs": "^4.7.1"
   },
   "engines": {
     "node": ">=0.8.0"

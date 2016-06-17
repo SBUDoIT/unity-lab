@@ -52,6 +52,11 @@
          "source/_patterns/**/*.json",
          "source/_data/*.json"
        ]
-    }
+   },
+
+   "release": {
+       "src": "./public/**/*",
+       "dest": "./releases"
+   }
 
 }
