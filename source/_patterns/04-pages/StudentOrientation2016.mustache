@@ -24,19 +24,15 @@ This section is only visible on mobile screens.
 
 <section class="fluffy full-height-section display--flex gradient-overlay__TopRight" style="background: url('/placeholders/images/orientation/orientation-hero.jpg'); background-size: cover;">
   <div class="container display--flex">
-    <div class="col-md-7">
-      <h2 class="heading white">Welcome to Student Technology</h2>
-      <p class="normal-text white">Watch our welcome video!</p>
+    <div class="col-md-12">
+      <h2 class="heading white">Student Information Technology Guide</h2>
+        <p class="normal-text white">This guide will provide you with an overview on essential services offered by the Division of Information Technology (DoIT) that will enable you to be successful at Stony Brook University.</p>
       <div class="youtube-container">
         <div class="youtube-player" data-id="DJ8hg4m6Nbg"></div>
       </div>
-    </div>
-
-    <div class="col-md-5">
-      <p class="normal-text white">This guide will provide you with an overview on essential services offered by the Division of Information Technology (DoIT) that will enable you to be successful at Stony Brook University.</p>
-      <br>
       <a href="#gettingStarted" class="default-button button-large scrollto">Continue Exploring &raquo;</a>
     </div>
+
   </div>
 </section>
 
@@ -1224,7 +1220,11 @@ Video header script
 ============================================================================ -->
 
 <script>
-(function() {
+
+  // Allows fullscreen option
+  window.parent.document.querySelector('iframe').setAttribute('allowfullscreen',true);
+
+  (function() {
     var v = document.getElementsByClassName("youtube-player");
     for (var n = 0; n < v.length; n++) {
         var p = document.createElement("div");
@@ -1232,17 +1232,18 @@ Video header script
         p.onclick = orientationVideoIframe;
         v[n].appendChild(p);
     }
-})();
+  })();
 
-function orientationVideo(id) {
+  function orientationVideo(id) {
     return '<img class="youtube-thumb" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="play-button"></div>';
-}
+  }
 
-function orientationVideoIframe() {
+  function orientationVideoIframe() {
     var iframe = document.createElement("iframe");
-    iframe.setAttribute("src", "//www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=1");
+    iframe.setAttribute("src", "//www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=1&");
     iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", ""); // Allows fullscreen option
     iframe.setAttribute("id", "youtube-iframe");
     this.parentNode.replaceChild(iframe, this);
-}
+  }
 </script>
