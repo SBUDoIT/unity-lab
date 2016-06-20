@@ -120,13 +120,13 @@ ul.icons li span:before {
 }
 
 #hero-example {
-    background-image: url("/placeholders/images/wolfie-550.jpg");
+    background-image: url("../../placeholders/images/wolfie-550.jpg");
     @include breakpoint($break2) {
-        background-image: url("/placeholders/images/wolfie-1200.jpg");
+        background-image: url("../../placeholders/images/wolfie-1200.jpg");
     }
 
     @include breakpoint($break3) {
-        background-image: url("/placeholders/images/wolfie-1600.jpg");
+        background-image: url("../../placeholders/images/wolfie-1600.jpg");
     }
 }
 
