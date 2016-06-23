@@ -13,7 +13,7 @@ jQuery(function($) {
 		$('.owl-carousel').owlCarousel({
 			items:1,
 			navigation:true,
-			autoPlay:5000,
+			autoPlay:false,
 			navigationText: ["<i class='sbuicon-arrow-left3'></i>","<i class='sbuicon-arrow-right3'></i>"]
 		});
 		$('.main-nav').onePageNav({
