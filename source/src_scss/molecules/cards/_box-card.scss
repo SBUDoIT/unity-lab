@@ -1,22 +1,45 @@
 /* cards */
 .box-card {
+    font-size: 1.5em;
+    line-height: 1.4;
     margin: 1em 0;
-    padding: 1em;
+    padding: .5em;
     width: 100%;
     max-width: 500px;
     border: 1px solid #000;
     background-color: #fff;
     color: #000;
-
-    h1,h2,h3,h4,h5,h6{
-        color: #000;
-    }
 }
-
-
+.box-card--image-wrap {
+  display: block;
+}
+.box-card--image {
+  width: 100%;
+}
+.box-card--heading {
+  font-weight: 700;
+  margin-bottom: .1em !important;
+}
+.box-card--subheading {
+  font-size: .9em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
 
 .box-card--content {
     margin-bottom: 1em;
 }
 
-.box-card--cta {}
+.box-card--cta {
+  font-size: .8em;
+  line-height: 1em;
+  text-align: left;
+
+    button {
+      display: block !important;
+    }
+}
+
+.box-card__no-border {
+  border: 0 !important;
+}

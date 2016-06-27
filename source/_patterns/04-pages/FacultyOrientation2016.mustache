@@ -9,45 +9,29 @@ This section is only visible on mobile screens.
 
 <section class="hidden-md hidden-lg hidden-xl snug" style="background-color: #111;">
   <div class="container">
-
     <h2 class="heading white noMarginBottom">Explore IT For Faculty</h2>
     <p class="small white noMarginTop">Division of Information Technology</p>
-
   </div>
 </section>
 
-<section class="redRaysBorder hidden-md hidden-lg" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
+<section class="redRaysBorder hidden-md hidden-lg" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg');"></section>
 
 <!-- ===========================================================================
 
-** Header Video **
-
-A teaser video will be loaded first in order to save on bandwidth for users
-visiting the guide.
-
-Users will select the "Watch the Welcome Video" button, which will load/autoplay the
-orientation welcome video, which is hosted on YouTube.
-
-In the event that JavaScript is disabled, the orientation-placeholder.jpg image
-will be loaded instead. The button will still appear, and users will be directed
-to the YouTube video.
+** Welcome section + Video **
 
 ============================================================================ -->
-<!--
-<div class="header-video">
-    <img src="/placeholders/images/orientation/orientation-placeholder.jpg"
-         class="header-video__media"
-         data-video-URL="https://www.youtube.com/embed/ZtUV30kfa1U?rel=0&hd=1&autohide=1&showinfo=0&autoplay=1&enablejsapi=1&origin=*"
-         data-teaser="/placeholders/video/orientation-teaser-video"
-         data-video-width="560"
-         data-video-height="315">
-    <div class="header-video__play-trigger">
-      <a href="https://www.youtube.com/embed/ZtUV30kfa1U?rel=0&hd=1&autohide=1&showinfo=0&autoplay=1&enablejsapi=1&origin=*"  target="_blank" class="default-button button-large" id="header-video__play-trigger">Watch the Welcome Video &raquo;</a>
-      <a href="#explore" class="default-button button-large scrollto">Explore Student Technology &raquo;</a>
+
+<section class="fluffy full-height-section display--flex gradient-overlay__TopRight" style="background: url('http://it.stonybrook.edu/sites/all/themes/custom/unity3/templates/snowflakes/images/faculty-booklet/faculty.jpg'); background-size: cover;">
+  <div class="container display--flex">
+    <div class="col-md-6 bg-white cozy side-padding">
+      <h2 class="heading red">Faculty Information Technology Guide</h2>
+        <p class="normal-text">This guide will provide you with an overview on essential services offered by the Division of Information Technology (DoIT) that will enable you to be successful at Stony Brook University.</p>
+      <a href="#gettingStarted" class="default-button button-large scrollto">Continue Exploring &raquo;</a>
     </div>
-    <button type="button" class="default-button button-large header-video__close-trigger" id="header-video__close-trigger">Close video</button>
-</div>
--->
+
+  </div>
+</section>
 
 <!-- ===========================================================================
 
@@ -75,15 +59,17 @@ Fixed position will be removed when back to the top of the page.
     <div class="collapse navbar--fixed__collapse" id="fixedNavCollapse">
 
       <ul class="nav navbar--fixed__links main-nav">
-        <li><a href="#explore" class="fixedNavLink scrollto">Let's Begin</a></li>
         <li><a href="#gettingStarted" class="fixedNavLink scrollto">Getting Started</a></li>
-        <li><a href="#aroundCampus" class="fixedNavLink scrollto">Student Services</a></li>
-        <li><a href="#learningTools" class="fixedNavLink scrollto">Learning Tools</a></li>
+        <li><a href="#aroundCampus" class="fixedNavLink scrollto">IT Services</a></li>
+        <li><a href="#learningTools" class="fixedNavLink scrollto">Academic Tools</a></li>
+        <li><a href="#academicFacilities" class="fixedNavLink scrollto">Academic Facilities</a></li>
         <li><a href="#gettingHelp" class="fixedNavLink scrollto">Getting Help</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+
 
 <!-- ===========================================================================
 
@@ -91,20 +77,24 @@ Fixed position will be removed when back to the top of the page.
 
 ============================================================================ -->
 
-<section id="explore" class="full-height-section display--flex gradient-overlay__TopRight" style="background-image: url('../../placeholders/images/Explore.jpg');">
-  <div class="container">
-      <div class="col-md-offset-6 wow animated fadeInUp">
-        <div class="airy bg-white side-padding">
-          <h2 class="heading red">Exploring Technology for Faculty</h2>
-          <h4 class="subheading">This guide will provide you with an overview on essential services offered by the Division of Information Technology (DoIT) that will enable you to be successful at Stony Brook University.</h4>
+<section class="bg-space-blue gradient-overlay__TopRight">
+  <!-- <div id="explore" class="fluffy full-height-section display--flex">
+    <div class="container">
+      <div class="col-md-5">
+        <img src="../../placeholders/images/orientation/Explore.png" class="hidden-sm hidden-xs" alt="Student sitting on chair using laptop">
+      </div>
+      <div class="col-md-7">
+        <div class="airy noPaddingmobile">
+          <h2 class="heading white">Exploring Student Technology</h2>
+          <h4 class="subheading white">This guide will provide you with an overview on essential services offered by the Division of Information Technology (DoIT) that will enable you to be successful at Stony Brook University.</h4>
           <br>
-          <a href="#gettingStarted" class="default-button button-large scrollto">Continue Exploring &raquo;</a>
+          <a href="#gettingStarted" class="default-button button-large default-button__white scrollto">Continue Exploring &raquo;</a>
         </div>
       </div>
+    </div>
   </div>
-</section>
 
-<section class="redRaysBorder hidden-sm hidden-xs" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
+  <hr class="white"> -->
 
 <!-- ===========================================================================
 
@@ -113,220 +103,340 @@ Fixed position will be removed when back to the top of the page.
 Using the owl-carousel JavaScript library. The carousels themselves are made up
 of individual cards called "article", which sit in a parent element called "articles".
 
-The settings for the "sliding" actio are set in main.js
+The settings for the "sliding" action are set in main.js
 
 ============================================================================ -->
 
-  <!-- This acts as a spacer on smaller screens -->
-  <section class="hidden-lg" style="padding: 15px;"></section>
+    <!-- This acts as a spacer on larger screens -->
+    <!-- <section class="fluffy hidden-xs hidden-sm hidden-md"></section> -->
 
-<section class="bg-x-light-gray">
-
-  <!-- This acts as a spacer on larger screens -->
-  <section class="fluffy hidden-xs hidden-sm hidden-md"></section>
-
-        <!-- ===================================================================
+      <!-- =====================================================================
         ** Getting Started Carousels **
-        ==================================================================== -->
-
-        <div id="gettingStarted">
-          <div class="container noPadding">
-            <div class="col-md-4 col-sm-12 noPadding">
-              <div class="fluffy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
-      	  	background-size: cover;" data-match-height="gettingStarted">
-                <div class="text-left wow animated fadeInUp" style="padding: 10px 20px;">
-                  <h2 class="heading white">Getting Started</h2>
-                  <p class="normal-text wow animated fadeInUp white">You will learn about <a class="panelWiFi-btn white">WiFi</a>, <a href="#panelSOLAR-btn" class="white">SOLAR</a> and your <a href="#panelNetID-btn" class="white">NetID</a> in this section.</p>
+      ====================================================================== -->
+      <section id="gettingStarted">
+        <div class="full-height-section display--flex">
+          <div class="container">
+            <div class="col-md-12 col-sm-12 cozy">
+                <div class="cozy text-center">
+                    <h2 class="heading white">Getting Started</h2>
+                    <p class="normal-text white">Use the arrows to navigate and learn more about Wi-Fi, SOLAR, NetID, and Faculty Profiles.</strong>
+                    </p>
+                </div>
+                <hr class="white hidden-md hidden-lg">
+            </div>
+          <div class="articles col-md-12 col-sm-12">
+            <div class="owl-carousel">
+              <div class="item panelWiFi-btn">
+                <div class="col-md-5 hidden-sm hidden-xs">
+                  <img src="../../placeholders/images/orientation/WiFi-final.png" alt="Person holding smartphone with WiFi symbol on screen">
+                </div>
+                <div class="col-md-7 col-sm-12">
+                  <div class="airy side-padding">
+                    <h2 class="heading white">WolfieNet (Wi-Fi)</h2>
+                    <h4 class="subheading white">WolfieNet is Stony Brook University's wireless network on West Campus, Southampton, Manhattan, and parts of East Campus. It is available to all faculty, students, staff, and guests.</h4>
+                    <br>
+                  <span href="panelWifi-btn" class="default-button default-button__white">Learn More About Wi-Fi &raquo;</span></p>
                 </div>
               </div>
             </div>
-            <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
-              <div class="owl-carousel">
-                <div class="item panelWiFi-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/WiFi-final.jpg');"  data-match-height="gettingStarted">
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">WolfieNet (WiFi)</h4>
-                      <h6 class="article__sbutitle">wifi.stonybrook.edu</h6>
-                      <p class="small">WolfieNet is Stony Brook University's wireless network on West Campus, Southampton, Manhattan, and parts of East Campus. It is available to all faculty, students, staff, and guests.</p>
-                    </div>
+              <div class="item panelSOLAR-btn">
+                <div class="col-md-5 hidden-sm hidden-xs">
+                    <img src="../../placeholders/images/orientation/SOLAR-final.png" alt="Wolfie in a space suit floating in space">
+                </div>
+                <div class="col-md-7 col-sm-12">
+                  <div class="airy side-padding">
+                    <h2 class="heading white">SOLAR</h2>
+                    <h4 class="subheading white">SOLAR is Stony Brook University's enterprise-wide, self-service system which provides faculty, staff, and students with online access to manage personal information.</h4>
+                    <br>
+                    <span href="panelSOLAR-btn" class="default-button default-button__white">Learn More About SOLAR &raquo;</span></p>
                   </div>
                 </div>
-                <div class="item panelSOLAR-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/SOLAR-final.jpg');" data-match-height="gettingStarted">
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">SOLAR</h4>
-                      <h6 class="article__sbutitle">solar.stonybrook.edu</h6>
-                      <p class="small">SOLAR is Stony Brook University's enterprise-wide, self-service system which provides faculty, staff, and students with online access to manage personal information.</p>
-                    </div>
+              </div>
+              <div class="item panelNetID-btn">
+                <div class="col-md-5 hidden-sm hidden-xs">
+                  <img src="../../placeholders/images/orientation/NetID-final.png" alt="Students and professor looking at tablet">
+                </div>
+                <div class="col-md-7 col-sm-12">
+                  <div class="airy side-padding">
+                    <h2 class="heading white">NetID</h2>
+                    <h4 class="subheading white">Every active employee, student, and faculty member is assigned a NetID which is used to access various computing resources.</h4>
+                    <br>
+                    <span href="panelNetID-btn" class="default-button default-button__white">Learn More About NetID &raquo;</span></p>
                   </div>
                 </div>
-                <div class="item panelNetID-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/NetID-final.jpg');" data-match-height="gettingStarted">
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">NetID</h4>
-                      <h6 class="article__sbutitle">netid.stonybrook.edu</h6>
-                      <p class="small">Every active employee, student, and faculty member is assigned a NetID which is used to access various computing resources.</p>
-                    </div>
+              </div>
+              <div class="item panelFacPro-btn">
+                <div class="col-md-5 hidden-sm hidden-xs">
+                  <img src="../../placeholders/images/orientation/facultypro.png" alt="Students and professor looking at tablet">
+                </div>
+                <div class="col-md-7 col-sm-12">
+                  <div class="airy side-padding">
+                    <h2 class="heading white">Faculty Profiles</h2>
+                    <h4 class="subheading white">The SBU Faculty Profiles website is a single place where faculty can update, review, and download their faculty profile.</h4>
+                    <br>
+                    <span href="panelFacPro-btn" class="default-button default-button__white">Learn More About Faculty Profiles &raquo;</span></p>
                   </div>
+                </div>
+              </div>
+            </div>
+            <hr class="white hidden-md hidden-lg">
+            </div>
+            <div class="col-md-12 noPadding">
+              <div class="fluffy">
+                <div class="side-padding text-center">
+                  <p class="normal-text white">Continue to Learn More About IT Services Offered From DoIT</p>
+                  <br><a href="#aroundCampus" class="scrollto"><span class="continue-arrow sbuicon-arrow-down3" aria-hidden="true"></span><span class="sr-only">Go to Next Section Now</span></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- This acts as a spacer on larger screens -->
-        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
-
-        <!-- Did you know section -->
-        <section class="wow animated fadeInUp">
-          <div class="container fluffy display--flex bg-asphalt">
-              <div class="col-md-6 col-sm-12 col-xs-12">
-                <h2 class="heading white">Did you know DoIT provides mobile charging stations around campus?</h2>
+      </section>
+      <hr class="white">
+      <!-- ===================================================================
+      ** Around Campus Section **
+      ==================================================================== -->
+      <section id="aroundCampus">
+        <div class="full-height-section display--flex">
+          <div class="container">
+            <div class="col-md-12 col-sm-12 cozy">
+              <div class="cozy text-center">
+                  <h2 class="heading white">IT Services</h2>
+                  <p class="normal-text  white">Use the arrows to navigate and learn more about Software / Hardware, Google Apps, and Research Resources.</strong></p>
               </div>
-              <div class="col-md-6 col-sm-12 col-xs-12 text-center text-left-mobile">
-                <a class="default-button default-button__white scrollto" href="#aroundCampus">Find out more about services around campus &raquo;</a>
-              </div>
+              <hr class="white hidden-md hidden-lg">
             </div>
-        </section>
-
-        <!-- This acts as a spacer on smaller screens -->
-        <section class="hidden-lg" style="padding: 15px;"></section>
-
-        <!-- ===================================================================
-        ** Around Campus Section **
-        ==================================================================== -->
-
-        <!-- This acts as a spacer on larger screens -->
-        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
-
-
-        <div id="aroundCampus">
-          <div class="container noPadding">
-            <div class="col-md-4 col-sm-12 noPadding">
-              <div class="fluffy" data-match-height="aroundCampus" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
-      			background-size: cover; background-position: fixed;" >
-                <div class="text-left wow animated fadeInUp" style="padding: 30px;">
-                  <h2 class="heading white">Student Services</h2>
-                  <p class="wow animated fadeInUp white">DoIT provides tools to assist you in your academic endevours.</div>
-              </div>
-            </div>
-            <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
+            <div class="articles col-md-12 col-sm-12">
               <div class="owl-carousel">
-                <div class="item panelPrinting-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" data-match-height="aroundCampus" style="background-image: url('../../placeholders/images/orientation/Printing-final.jpg');">
-                    <!-- <img src="../../placeholders/images/orientation/Printing-final.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">Printing</h4>
-                      <h6 class="article__subtitle">printing.stonybrook.edu</h6>
-                      <p class="small">Students can print in SINC Sites and other computer labs on campus, or by using Stony Brook's Print From Anywhere service.</p>
+                <div class="item panelHwSw-btn">
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/WiFi-final.png" class="" alt="Person holding smartphone with WiFi symbol on screen">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Software / Hardware</h2>
+                      <h4 class="subheading white">DoIT provides reccommendations and discounts on the latest computer hardware, as well as provides essential software for academic success.</h4>
+                      <br>
+                      <span href="panelHwSw-btn" class="default-button default-button__white">Learn More About Hardware & Software &raquo;</span></p>
                     </div>
                   </div>
                 </div>
-                <div class="item panelSINC-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/sincsites-final.jpg');" data-match-height="aroundCampus">
-                    <!-- <img src="../../placeholders/images/orientation/sincsites-final.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">SINC Sites</h4>
-                      <h6 class="article__subtitle">sincsites.stonybrook.edu</h6>
-                      <p class="small">SINC Sites are public computer labs that allow users to access both Windows & Mac computers. SINC Sites provide printing services and access to numerous academic software titles.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item panelMBC-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background-image: url('../../placeholders/images/orientation/MBC.jpg');" data-match-height="aroundCampus">
-                    <!-- <img src="../../placeholders/images/orientation/MBC.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">Mobile Charging Stations</h4>
-                      <p class="small">There are six free-standing mobile charging stations in Frey Hall and Javits Lecture Center installed as part of the University's MOBILE/DIGITAL NOW initiative.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- This acts as a spacer on larger screens -->
-        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
-
-
-        <!-- Did you know section -->
-        <section>
-          <div class="container fluffy bg-asphalt gradient-overlay__TopRight display--flex">
-              <div class="col-md-6 col-sm-12">
-                <h2 class="heading white">Have you ever wanted to learn computer programming?</h2>
-                <p class="subheading white">DoIT provides access to Lynda.com tutorials where you can learn new skills or brush up on some old skills at your own pace at a time and location that works best for you.</p>
-              </div>
-              <div class="col-md-6 col-sm-12 text-center text-left-mobile">
-                <a class="default-button default-button__white scrollto" href="#learningTools">Discover More About Online Learning &raquo;</a>
-              </div>
-            </div>
-        </section>
-
-        <!-- This acts as a spacer on smaller screens -->
-        <section class="hidden-lg" style="padding: 15px;"></section>
-
-        <!-- ===================================================================
-        ** Learning Tools Section **
-        ==================================================================== -->
-
-        <!-- This acts as a spacer on larger screens -->
-        <section class="cozy hidden-xs hidden-sm hidden-md"></section>
-
-        <div id="learningTools">
-          <div class="container noPadding">
-            <div class="col-md-4 col-sm-12 noPadding">
-              <div class="fluffy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');
-      	  	background-size: cover;" data-match-height="learningTools">
-                <div class="text-left wow animated fadeInUp" style="padding: 30px;">
-                  <h2 class="heading white">Learning Tools</h2>
-                  <p class="wow animated fadeInUp white">DoIT provides tools to assist you in your academic endevours.</div>
-              </div>
-            </div>
-            <div id="articles" class="articles col-md-8 col-sm-12 wow animated fadeInUp">
-              <div class="owl-carousel">
                 <div class="item panelGoogle-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background: url('../../placeholders/images/orientation/gapps.jpg');" data-match-height="learningTools">
-                    <!-- <img src="../../placeholders/images/orientation/gapps.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">Google Apps</h4>
-                      <h6 class="article__subtitle">google.stonybrook.edu</h6>
-                      <p class="small">Stony Brook's Google Apps suite of products includes Mail, Calendar, Drive, Contacts, Sites, Groups, Hangouts and a host of other applications to enhance communication and real-time collaboration across campus.</p>
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/gapps.png" class="" alt="Laptop on desk">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy">
+                      <h2 class="heading white">Google Apps</h2>
+                      <h4 class="subheading white">Stony Brook's Google Apps suite of products includes Mail, Calendar, Drive, Contacts, Sites, Groups, Hangouts and a host of other applications to enhance communication and real-time collaboration across campus.</h4>
+                      <br>
+                      <span href="panelGoogle-btn" class="default-button default-button__white">Learn More About Google Apps &raquo;</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelResearch-btn">
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/researchresources.png" class="" alt="Researcher in lab">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy">
+                      <h2 class="heading white">Research Resources</h2>
+                      <h4 class="subheading white"></h4>
+                      <br>
+                      <span href="panelResearch-btn" class="default-button default-button__white">Learn More About Research Resources &raquo;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="white hidden-md hidden-lg">
+            </div>
+            <div class="col-md-12 noPadding">
+              <div class="fluffy">
+                <div class="side-padding text-center">
+                  <a href="#learningTools" class="scrollto"><p class="normal-text white">Continue to Learn More About Teaching & Learning Tools</p><br><span class="continue-arrow sbuicon-arrow-down3" aria-hidden="true"></span><span class="sr-only">Go to Next Section Now</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="white">
+      <!-- =====================================================================
+      ** Learning Tools Section **
+      ====================================================================== -->
+      <section id="learningTools">
+        <div class="full-height-section display--flex">
+          <div class="container">
+            <div class="col-md-12 col-sm-12 cozy">
+              <<div class="cozy text-center">
+                  <h2 class="heading white">Teaching & Learning Tools</h2>
+                  <p class="normal-text  white">Use the arrows to navigate and learn more about Assessment, Course Design, Blackboard, the Teaching & Learning Lab, and Academic Technology Services.</strong></p>
+              </div>
+              <hr class="white hidden-md hidden-lg">
+            </div>
+            <div class="articles col-md-12 col-sm-12">
+              <div class="owl-carousel">
+                <div class="item panelAssessment-btn">
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/assessment.png" class="" alt="Woman writing on board">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Assessment</h2>
+                      <h4 class="subheading white">Schedule a one-on-one consultation with the Faculty Center to get help with testing, measurement, rubric development and data analysis. </h4>
+                      <br>
+                      <span href="panelAssessment-btn" class="default-button default-button__white">Learn More About Assessment &raquo;</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelCourseDesign-btn">
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/coursedesign.png" class="" alt="Professor teaching in front of class">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Course Design</h2>
+                      <h4 class="subheading white">TLT's Faculty Center and Academic Technology Services group work together to answer all pedagogical and technical questions.</h4>
+                      <br>
+                      <span href="panelCourseDesign-btn" class="default-button default-button__white">Learn More About Course Design &raquo;</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelCourseEvals-btn">
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/courseevals.png" class="" alt="Man in front of blackboard">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Course Evaluations</h2>
+                      <h4 class="subheading white">Each semester, faculty receive student evaluation reports by email after all grades have been posted.</h4>
+                      <br>
+                      <span href="panelCourseEvals-btn" class="default-button default-button__white">Learn More About Course Evaluations &raquo;</span>
                     </div>
                   </div>
                 </div>
                 <div class="item panelBlackboard-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background: url('../../placeholders/images/orientation/blackboard.jpg');"  data-match-height="learningTools">
-                    <!-- <img src="../../placeholders/images/orientation/blackboard.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">Blackboard</h4>
-                      <h6 class="article__subtitle">blackboard.stonybrook.edu</h6>
-                      <p class="small">Blackboard is Stony Brook University's learning management system (LMS), which allows instructors to supplement face-to-face classes, or launch online classes.</p>
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/blackboard.png" class="" alt="Student working on homework on their laptop">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Blackboard</h2>
+                      <h4 class="subheading white">Blackboard is Stony Brook University's learning management system (LMS), which allows instructors to supplement face-to-face classes, or launch online classes.</h4>
+                      <br>
+                      <span href="panelBlackboard-btn" class="default-button default-button__white">Learn More About Blackboard &raquo;</span>
                     </div>
                   </div>
                 </div>
-                <div class="item panelLynda-btn">
-                  <div class="article overlay-gray wow animated fadeInUp" style="background: url('../../placeholders/images/orientation/lynda.jpg');" data-match-height="learningTools">
-                    <!-- <img src="../../placeholders/images/orientation/lynda.jpg" class="article__image" alt=""> -->
-                    <div class="article__content fluffy">
-                      <h4 class="article__title">Lynda.com</h4>
-                      <h6 class="article__subtitle">lynda.stonybrook.edu</h6>
-                      <p class="small">Lynda.com is a service that offers high-quality video tutorials for common computer applications and other skills.</p>
+                <div class="item panelTLL-btn">
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/tll.png" class="" alt="Door with sign that reads Teaching & Learning Lab">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Teaching & Learning Lab</h2>
+                      <h4 class="subheading white">Faculty who need assistance with ePortfolios, multimedia development, and instructional technology can find help at the Teaching and Learning Lab.</h4>
+                      <br>
+                      <span href="panelTLL-btn" class="default-button default-button__white">Learn More About the Teaching & Learning Lab &raquo;</span>
                     </div>
                   </div>
+                </div>
+                <div class="item panelATS-btn">
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/ats.png" class="" alt="Woman standing at podium">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Academic Technology Services</h2>
+                      <h4 class="subheading white">TLT's Academic Technology Services team provides consultations for faculty who are interested in incorporating technology into their courses.</h4>
+                      <br>
+                      <span href="panelTLL-btn" class="default-button default-button__white">Learn More About the Academic Technology Services &raquo;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="white hidden-md hidden-lg">
+            </div>
+            <div class="col-md-12 noPadding">
+              <div class="fluffy">
+                <div class="side-padding text-center">
+                  <a href="#academicFacilities" class="scrollto"><p class="normal-text white">Continue to Learn More About Academic Facilities</p><br><span class="continue-arrow sbuicon-arrow-down3" aria-hidden="true"></span><span class="sr-only">Go to Next Section Now</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+      </section>
+      <hr class="white">
+      <!-- =====================================================================
+      ** Academic Facilites Section **
+      ====================================================================== -->
+      <section id="academicFacilities">
+        <div class="full-height-section display--flex">
+          <div class="container">
+            <div class="col-md-12 col-sm-12 cozy">
+              <<div class="cozy text-center">
+                  <h2 class="heading white">Academic Facilities</h2>
+                  <p class="normal-text  white">Use the arrows to navigate and learn more about Audio/Visual Services, Computer Classrooms, and the Testing Center\.</strong></p>
+              </div>
+              <hr class="white hidden-md hidden-lg">
+            </div>
+            <div class="articles col-md-12 col-sm-12">
+              <div class="owl-carousel">
+                <div class="item panelAVServices-btn">
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/avservices.png" class="" alt="Three people standing around a laptop">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Audio Visual Services</h2>
+                      <h4 class="subheading white">Audio Visual (A/V) Services provides short-term daily loans of equipment (projectors, computers, cables, and more) and also provides media systems training to instructors. </h4>
+                      <br>
+                      <span href="panelAssessment-btn" class="default-button default-button__white">Learn More About A/V Services &raquo;</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelCompClass-btn">
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/compclass.png" class="" alt="Rows of computer stations">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Requesting Computer Classrooms (SINC Sites)</h2>
+                      <h4 class="subheading white">Most student SINC Sites can be reserved for classes. Additionally, some computer classrooms are reserved exclusively for course use.</h4>
+                      <br>
+                      <span href="panelCourseDesign-btn" class="default-button default-button__white">Learn More About Requesting Computer Classrooms &raquo;</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item panelTestingCenter-btn">
+                  <div class="col-md-5 hidden-sm hidden-xs hidden-md">
+                    <img src="../../placeholders/images/orientation/testingcenter.png" class="" alt="Multiple images of computer stations">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <div class="airy side-padding">
+                      <h2 class="heading white">Testing Center</h2>
+                      <h4 class="subheading white">The testing center serves as a place for students to take online exams, and for teacher certification tests to be administered.</h4>
+                      <br>
+                      <span href="panelCourseEvals-btn" class="default-button default-button__white">Learn More About the Testing Center &raquo;</span>
+                    </div>
+                  </div>
+                </div>
+              <hr class="white hidden-md hidden-lg">
+            </div>
+            <div class="col-md-12 noPadding">
+              <div class="fluffy">
+                <div class="side-padding text-center">
+                  <a href="#gettingHelp" class="scrollto"><p class="normal-text white">Continue to Learn More About Where to Find Help</p><br><span class="continue-arrow sbuicon-arrow-down3" aria-hidden="true"></span><span class="sr-only">Go to Next Section Now</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
         <!-- ===================================================================
         ** End of Carousels **
         ==================================================================== -->
-
-        <!-- This acts as a spacer on larger screens -->
-        <section class="fluffy hidden-xs hidden-sm hidden-md"></section>
-
 </section>
 
 <!-- ===================================================================
@@ -335,22 +445,22 @@ The settings for the "sliding" actio are set in main.js
 
 ==================================================================== -->
 
-<section class="redRaysBorder" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
+<section class="redRaysBorder" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg');"></section>
 
 <section id="gettingHelp" class="fluffy bg-farbeyondred">
   <div class="container display--flex">
-      <div class="col-md-12 wow animated fadeInUp">
+      <div class="col-md-12 ">
         <h3 class="heading white">Where to Find Help</h3>
-        <p class="subheading white">DoIT is committed to providing outstanding service to the Stony Brook University community.<br>Submit a help ticket through our service management system.</p>
+        <p class="normal-text white">DoIT is committed to providing outstanding service to the Stony Brook University community. Submit a help ticket through our service management system.</p>
       </div>
-      <div class="col-md-6 col-sm-6 col-xs-12 wow animated fadeInUp">
-        <a class="default-button default-button__white noMarginLeft" href="http://service.stonybrook.edu">Submit A Ticket</a>
+      <div class="col-md-6 col-sm-6 col-xs-12 ">
+        <a class="default-button default-button__white noMarginLeft" href="http://service.stonybrook.edu">Submit A Ticket &raquo;</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="redRaysBorder" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg');"></section>
+<section class="redRaysBorder" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg');"></section>
 
 <!-- ===========================================================================
 
@@ -363,111 +473,12 @@ card is selected.
 
 
   <!-- =========================================================================
-  SOLAR Slideout Panel
-  ===========================================================================-->
-
-  <div class="panelSOLAR slideout-panel from-right">
-    <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
-          <div class="container">
-            <a href="#0" class="slideout-panel-close">Close</a>
-            <!-- SOLAR Conent ================================================ -->
-            <div class="slideout-panel-content text-center">
-                <h3 class="heading heading-extra-large white noMarginBottom">SOLAR</h2>
-                <a href="http://solar.stonybrook.edu" class="default-button default-button__white">solar.stonybrook.edu &raquo;</a></p>
-            </div>
-          </div>
-        </div>
-        <section class="airy">
-          <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
-              <div class="text-blurb">
-                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
-                <p class="normal-text">
-                  <a href="#accessingsolar">Accessing SOLAR</a><br>
-                  <a href="#register" class="scrollto">Register for Classes</a><br>
-                  <a href="#pay" class="scrollto">Pay Your Bills</a><br>
-                  <a href="#viewgrades" class="scrollto">View Your Grades</a><br>
-                  <a href="#managenetid" class="scrollto">Manage NetID</a><br>
-                  <a href="#sbalert" class="scrollto">SB Alert</a><br>
-                </p>
-              </div>
-              <hr class="hidden-lg">
-            </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
-              <div class="text-blurb" id="register">
-                <h4 class="heading heading-small uppercase dark-gray">Accessing SOLAR</h4>
-                <p class="normal-text">
-                  To access SOLAR visit <a href="http://solar.stonybrook.edu">solar.stonybrook.edu</a>. Use your 9-digit SOLAR ID and password to login.
-                  If you are a student, your initial password is your birthday in MMDDYY format.
-                  <br><br>
-                  <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
-                  <a href="https://youtu.be/EUyujom0UaU?list=PLxRC1iccSum8U0S3GeJF7OIegIBy34ylv">How to Access SOLAR</a>
-                </p>
-              </div>
-              <hr>
-              <div class="text-blurb" id="register">
-                <h4 class="heading heading-small uppercase dark-gray">Register For Classes</h4>
-                <p class="normal-text">
-                  In SOLAR you will be able to register for classes. You can use our new schedule builder tool that is integrated with SOLAR to help build your class schedule much quicker.
-                  <br><br>
-                  <a href="http://it.stonybrook.edu/services/schedule-builder">Learn More About Schedule Builder &raquo;</a>
-                </p>
-              </div>
-              <hr>
-              <div class="text-blurb" id="pay">
-                <h4 class="heading heading-small uppercase dark-gray">Pay Your Bills</h4>
-                <p class="normal-text">
-                  In SOLAR you will be able to pay room deposits, tuition fees, and pay other bills. You will be notified via email if there is an outstanding financial obligation in your account.
-                  <br><br>
-                  <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
-                  <a href="https://youtu.be/ZxBivt_vAAE?list=PLxRC1iccSum8U0S3GeJF7OIegIBy34ylv">What Do I Owe? / Pay Tuition and Fees</a>
-                </p>
-              </div>
-              <hr>
-              <div class="text-blurb" id="viewgrades">
-                <h4 class="heading heading-small uppercase dark-gray">View Your Grades</h4>
-                <p class="normal-text">
-                  Final course grades are posted in SOLAR. You can view grades from current and past semesters.<br><br>
-                  <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
-                  <a href="https://youtu.be/WjR8zig6WAY">View My Course History/Grades</a>
-                </p>
-              </div>
-              <hr>
-              <div class="text-blurb" id="managenetid">
-                <h4 class="heading heading-small uppercase dark-gray">Manage NetID</h4>
-                <p class="normal-text">You can view your NetID and set your NetID password inside SOLAR.<br><br>
-                <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
-                <a href="https://youtu.be/sk8JFfw5F0o?list=PLxRC1iccSum8U0S3GeJF7OIegIBy34ylv">View Your NetID / Where to Change NetID Password</a></p>
-              </div>
-              <hr>
-              <div class="text-blurb" id="sbalert">
-                <h4 class="heading heading-small uppercase dark-gray">SB Alert</h4>
-                <p class="normal-text">SB Alert is the University's emergency notification system used to alert the campus community of major emergencies, immediate threats or impending situations that could pose harm, disrupt classes, impact facilities, activities, or other operations.
-                  <br><br>
-                  <a href="http://it.stonybrook.edu/help/kb/configuring-sb-alert">Configuring SB Alert &raquo;</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div>
-
-  <!-- =========================================================================
-  End of SOLAR Slideout Panel
-  ===========================================================================-->
-
-
-
-  <!-- =========================================================================
   WiFi Slideout Panel
   ===========================================================================-->
 
   <div class="panelWiFi slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -479,7 +490,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -489,7 +500,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="availablenetworks">
                 <h4 class="heading heading-small uppercase dark-gray">Available Networks</h4>
                 <p class="normal-text">
@@ -503,7 +514,7 @@ card is selected.
                   Available only in residence halls for gaming systems. Do not use for academic work or transactions such as banking or online shopping.<br><br>
                   <strong>Eduroam</strong><br>
                   Eduroam allows students, researchers and staff from participating institutions to obtain Internet connectivity across campus and when visiting other participating institutions.<br>
-                  <a href="http://it.stonybrook.edu/services/eduroam">Learn More About Eduroam &raquo;</a>
+                  <a href="http://it.stonybrook.edu/node/15191">Learn More About Eduroam &raquo;</a>
                   <br><br>
                   <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
                   <a href="https://youtu.be/jNIimBjxMCc?list=PLxRC1iccSum8U0S3GeJF7OIegIBy34ylv">How to Connect to WolfieNet-Secure on iOS</a><br>
@@ -531,7 +542,88 @@ card is selected.
   End of WiFi Slideout Panel
   ===========================================================================-->
 
+  <!-- =========================================================================
+  SOLAR Slideout Panel
+  ===========================================================================-->
 
+  <div class="panelSOLAR slideout-panel from-right">
+    <div class="slideout-panel-container">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
+          <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
+            <!-- SOLAR Conent ================================================ -->
+            <div class="slideout-panel-content text-center">
+                <h3 class="heading heading-extra-large white noMarginBottom">SOLAR</h2>
+                <a href="http://solar.stonybrook.edu" class="default-button default-button__white">solar.stonybrook.edu &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+        <section class="airy">
+          <div class="container">
+            <div class="col-md-3 col-sm-12 ">
+              <div class="text-blurb">
+                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
+                <p class="normal-text">
+                  <a href="#accessingsolar">Accessing SOLAR</a><br>
+                  <a href="#insideSOLAR" class="scrollto">Inside SOLAR</a><br>
+                  <a href="#managenetid" class="scrollto">Manage NetID</a><br>
+                  <a href="#sbalert" class="scrollto">SB Alert</a><br>
+                </p>
+              </div>
+              <hr class="hidden-lg">
+            </div>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="register">
+                <h4 class="heading heading-small uppercase dark-gray">Accessing SOLAR</h4>
+                <p class="normal-text">
+                  To access SOLAR visit <a href="http://solar.stonybrook.edu">solar.stonybrook.edu</a>. Use your 9-digit SOLAR ID and password to login.
+                  <br><br>
+                  <strong>Initial SOLAR Password</strong><br>
+                  If you are faculty, the initial SOLAR password can be obtained by clicking the SOLAR Password Help link on the SOLAR Login page.
+                  Enter your Stony Brook ID and click Submit. A password will be electronically generated and instructions for how to construct your password will be sent to all e-mail addresses listed in the University's PeopleSoft system.
+                  <br><br>
+                  <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
+                  <a href="https://youtu.be/EUyujom0UaU?list=PLxRC1iccSum8U0S3GeJF7OIegIBy34ylv">How to Access SOLAR</a>
+                </p>
+              </div>
+              <hr>
+              <div class="text-blurb" id="insideSOLAR">
+                <h4 class="heading heading-small uppercase dark-gray">Inside SOLAR</h4>
+                <p class="normal-text">
+                  In SOLAR you will be able to:
+                  <ul class="normal-text">
+                    <li>Access course information, grade rosters, and schedules</li>
+                    <li>Submit time/attendance</li>
+                    <li>Approve student time sheets</li>
+                    <li>Manage personal information</li>
+                  </ul>
+                </p>
+              </div>
+              <hr>
+              <div class="text-blurb" id="managenetid">
+                <h4 class="heading heading-small uppercase dark-gray">Manage NetID</h4>
+                <p class="normal-text">You can view your NetID and set your NetID password inside SOLAR.<br><br>
+                <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
+                <a href="https://youtu.be/sk8JFfw5F0o?list=PLxRC1iccSum8U0S3GeJF7OIegIBy34ylv">View Your NetID / Where to Change NetID Password</a></p>
+              </div>
+              <hr>
+              <div class="text-blurb" id="sbalert">
+                <h4 class="heading heading-small uppercase dark-gray">SB Alert</h4>
+                <p class="normal-text">SB Alert is the University's emergency notification system used to alert the campus community of major emergencies, immediate threats or impending situations that could pose harm, disrupt classes, impact facilities, activities, or other operations.
+                  <br><br>
+                  <a href="http://it.stonybrook.edu/node/6103">Configuring SB Alert &raquo;</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of SOLAR Slideout Panel
+  ===========================================================================-->
 
   <!-- =========================================================================
   NetID Slideout Panel
@@ -539,7 +631,7 @@ card is selected.
 
   <div class="panelNetID slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -551,7 +643,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -562,7 +654,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="availablenetworks">
                 <h4 class="heading heading-small uppercase dark-gray">What is my NetID?</h4>
                 <p class="normal-text">Every active employee, student, and faculty member is assigned a NetID which is used to access various computing resources.
@@ -577,22 +669,18 @@ card is selected.
               <div class="text-blurb" id="netidtrouble">
                 <h4 class="heading heading-small uppercase dark-gray">Services Accessed with NetID</h4>
                   <ul class="bullets normal-text">
-                    <li><a href="http://it.stonybrook.edu/services/blackboard">Blackboard &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/894">Blackboard &raquo;</a></li>
                     <li><a href="http://sincsites.stonybrook.edu">SINC Site computers and printers &raquo;</a></li>
-                    <li><a href="">Department Shared Folders &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/3037">Department Shared Folders &raquo;</a></li>
                     <li><a href="http://wifi.stonybrook.edu">Wi-Fi (WolfieNet) &raquo;</a></li>
                     <li><a href="http://google.stonybrook.edu">Google Apps for Education (Email, Calendar, Docs, etc.) &raquo;</a></li>
-                    <li><a href="">Library databases &raquo;</a></li>
-                    <li><a href="">MySBfiles &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/911">MySBfiles &raquo;</a></li>
                     <li><a href="http://yammer.stonybrook.edu">Yammer &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/qualtrics">Qualtrics Online Survey Tool &raquo;</a></li>
-                    <li><a href="">Research Interests and Funding Opportunities Database &raquo;</a></li>
-                    <li><a href="">SUNYSB.EDU Domain &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/sbyou">SB You WordPress &raquo;</a></li>
-                    <li><a href="">Softweb &raquo;</a></li>
-                    <li><a href="">Virtual SINC Site &raquo;</a></li>
-                    <li><a href="">VPN &raquo;</a></li>
-                    <li><a href="">Off-Campus Housing rental listings &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6335">Qualtrics Online Survey Tool &raquo;</a></li>
+                    <li><a href="http://you.stonybrook.edu">SB You WordPress &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/5454">Virtual SINC Site &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/916">Virtual Private Network (VPN) &raquo;</a></li>
+                    <li><a href="https://och.stonybrook.edu/">Off-Campus Housing rental listings &raquo;</a></li>
                   </ul>
               </div>
               <hr>
@@ -611,58 +699,115 @@ card is selected.
   End of NetID Slideout Panel
   ===========================================================================-->
 
-
-
   <!-- =========================================================================
-  Printing Slideout Panel
+  Faculty Profiles Panel
   ===========================================================================-->
 
-  <div class="panelPrinting slideout-panel from-right">
+  <div class="panelFacPro slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
             <div class="slideout-panel-content text-center">
-                <h3 class="heading heading-extra-large white noMarginBottom">Printing</h2>
-                <a href="http://printing.stonybrook.edu" class="default-button default-button__white">printing.stonybrook.edu &raquo;</a></p>
+                <h3 class="heading heading-extra-large white noMarginBottom">Faculty Profiles</h2>
+                <a href="https://it.stonybrook.edu/services/faculty-profiles" class="default-button default-button__white">Go to Faculty Profiles &raquo;</a></p>
             </div>
           </div>
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
-                  <a href="#printquota">Print Quota</a><br>
-                  <a href="#howtoprint">How to Print</a><br>
+                  <a href="#facultyprofiles">What is Faculty Profiles?</a><br>
                 </p>
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
-              <div class="text-blurb" id="printquota">
-                <h4 class="heading heading-small uppercase dark-gray">Print Quota</h4>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="netidtrouble">
+                <h4 class="heading heading-small uppercase dark-gray">What is faculty profiles?</h4>
+                <p class="normal-text">You can use your Faculty Profile to update and review:</p>
+                  <ul class="bullets normal-text">
+                    <li>Contact and personal information</li>
+                    <li>Courses taught</li>
+                    <li>Research proposals submitted</li>
+                    <li>Grants received</li>
+                    <li>Scholarly work</li>
+                    <li>University and professional service</li>
+                    <li>Student mentorship</li>
+                    <li>Positions held at the University and honors and awards received.</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of Faculty Profiles Panel
+  ===========================================================================-->
+
+
+  <!-- =========================================================================
+  Hardware/Software Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelHwSw slideout-panel from-right">
+    <div class="slideout-panel-container">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
+          <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
+            <!-- SOLAR Conent ================================================ -->
+            <div class="slideout-panel-content text-center">
+                <h3 class="heading heading-extra-large white noMarginBottom">Software / Hardware</h2>
+                  <a href="http://software.stonybrook.edu" class="default-button default-button__white">software.stonybrook.edu &raquo;</a></p>
+                  <a href="http://hardware.stonybrook.edu" class="default-button default-button__white">hadware.stonybrook.edu &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+        <section class="airy">
+          <div class="container">
+            <div class="col-md-3 col-sm-12 ">
+              <div class="text-blurb">
+                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
-                  All registered Stony Brook students are provided with a semester long quota of 2100 black and white pages in the SINC Sites, Health Sciences Library, and Residential Computing Centers or by using the Print From Anywhere service.
-                  <br><br>
-                  <strong>Available Print Quota</strong><br>
-                  To check your available print quota, log in to the <a href="https://print.stonybrook.edu/MyPrintCenter/">Print Center</a> with your NetID and NetID password.
+                  <a href="#software">Software</a><br>
+                  <a href="#hardware">Hardware</a><br>
+                </p>
+              </div>
+              <hr class="hidden-lg">
+            </div>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="software">
+                <h4 class="heading heading-small uppercase dark-gray">Software</h4>
+                <p class="normal-text">
+                  Stony Brook University offers a variety of software to assist faculty and staff with their computing needs. Here are several important software assets.<br>
+                  <ul class="no-bullets normal-text">
+                    <li><a href="http://it.stonybrook.edu/node/5402/">Offic365 &raquo;</a><br>Log in to <a href="http://it.stonybrook.edu/node/5402/">office365.com</a> with your Stony Brook email address to download Office 365.</li>
+                    <li><a href="https://stonybrook.onthehub.com/">Windows Operating System Upgrade &raquo;</a><br>Visit <a href="https://stonybrook.onthehub.com/">stonybrook.onthehub.com</a> to install the latest version of Microsoft Windows for a nominal fee.</li>
+                    <li><a href="https://softweb.cc.stonybrook.edu/">Free Symantec Antivirus Software &raquo;</a><br>Log in at <a href="https://softweb.cc.stonybrook.edu/">softweb.cc.stonybrook.edu</a> and download the Symantec client for your personal computer.</li>
+                  </ul>
                 </p>
               </div>
               <hr>
-              <div class="text-blurb" id="howtoprint">
-                <h4 class="heading heading-small uppercase dark-gray">How to Print</h4>
+              <div class="text-blurb" id="hardware">
+                <h4 class="heading heading-small uppercase dark-gray">Hardware</h4>
                 <p class="normal-text">
-                  <strong>SINC Sites</strong><br>
-                  Send a print job directly to a printer located in a SINC site from a SINC Site computer. For a complete list of SINC site locations visit <a href="http://sincsites.stonybrook.edu">sincsites.stonybrook.edu</a>.<br><br>
-                  <strong>Print From Anywhere</strong><br>
-                  The Print From Anywhere service allows students to send print jobs to the SINC Site print queue from their own computers whether on campus or off campus. Students need to install the Print From Anywhere Client on their personal machine(s).
+                  The Division of Information Technology’s Client Support department has instituted hardware support standards.
                   <br><br>
-                  <a href="http://it.stonybrook.edu/help/kb/using-print-from-anywhere">Learn More About Using Print From Anywhere &raquo;</a><br><br>
-                  <strong>Email</strong><br>
-                  Send an email with an attached document from your @stonybrook.edu address to printfromanywhere@stonybrook.edu. Use your Stony Brook ID card to release your job at one of our <a href="http://it.stonybrook.edu/help/kb/pharos-release-station-locations">printing release stations</a>.
+                  <strong>Recommended Specifications</strong><br>
+                  If purchasing a laptop/computer, DoIT reccommends the following specifications:
+                  <ul class="no-bullets normal-text">
+                    <li><strong>Processor:</strong> Core i5</li>
+                    <li><strong>RAM:</strong> Minimum 4 GB</li>
+                    <li><strong>Hard Drive:</strong> Minimum 250 GB</li>
+                    <li><strong>Warranty:</strong> 3 years</li>
+                  </ul>
                 </p>
               </div>
             </div>
@@ -673,120 +818,68 @@ card is selected.
   </div>
 
   <!-- =========================================================================
-  End of Printing Slideout Panel
+  End of Hardaware/Software Slideout Panel
   ===========================================================================-->
 
 
 
   <!-- =========================================================================
-  SINC Sites Slideout Panel
+  Research Resources Stations Slideout Panel
   ===========================================================================-->
 
-  <div class="panelSINC slideout-panel from-right">
+  <div class="panelResearch slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
             <div class="slideout-panel-content text-center">
-                <h3 class="heading heading-extra-large white noMarginBottom">SINC Sites</h2>
-                <a href="http://sincsites.stonybrook.edu" class="default-button default-button__white">sincsites.stonybrook.edu &raquo;</a></p>
+                <h3 class="heading heading-extra-large white noMarginBottom">Research Resources</h2>
             </div>
           </div>
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
-                  <a href="#whatissincsite">What is a SINC Site?</a><br>
-                  <a href="#sinclocations">SINC Site Locations</a><br>
+                  <a href="#coeus">COEUS</a><br>
+                  <a href="#irbnet">IRBNet</a><br>
+                  <a href="#rfreports">RF Report Center</a><br>
+                  <a href="#researchtech">Research Technologies</a><br>
                 </p>
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
-              <div class="text-blurb" id="whatissincsite">
-                <h4 class="heading heading-small uppercase dark-gray">What is a SINC Site?</h4>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="coeus">
+                <h4 class="heading heading-small uppercase dark-gray">COEUS</h4>
                 <p class="normal-text">
-                  SINC Sites are public computer labs that allow users to access both Windows & Mac computers. SINC Sites provide printing services and access to numerous academic software titles. These computer labs are located in a majority of the academic buildings on campus and have scheduled open hours.
-                  <br><br>
-                  <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
-                   <a href="https://www.youtube.com/embed/_mrUSQjBz4k">SINC Site Promotional Video</a><br>
+                  COEUS allows for the preparation of research proposals and submission of system-to-system proposals to Grants.gov.<br>
+                  More information about COEUS at <a href="//research.stonybrook.edu/coeus">research.stonybrook.edu/coeus &raquo;</a>
                 </p>
               </div>
               <hr>
-              <div class="text-blurb" id="sinclocations">
-                <h4 class="heading heading-small uppercase dark-gray">SINC Site Locations</h4>
-                <p class="normal-text">Visit <a href="http://sincsites.stonybrook.edu">sincsites.stonybrook.edu </a> for a full list of SINC Site locations,
-                  or view the <a href="http://it.stonybrook.edu/services/computer-labs/map">Campus SINC Site Map</a>.
-                </p><br>
-                <p class="normal-text"><strong>Popular SINC Site Locations</strong>
-                  <ul class="normal-text bullets">
-                    <li><a href="http://it.stonybrook.edu/services/sinc-sites/melville-library-sinc-site">Melville Library &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/sinc-sites/computer-science-sinc-site">Computer Science &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/sinc-sites/north-reading-room">North Reading Room &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/sinc-sites/tabler-digital-arts-media-lab">Tabler Digital Arts Lab &raquo;</a></li>
-                    <li><a href="http://it.stonybrook.edu/services/sinc-sites/humanities-sinc-site">Humanities &raquo;</a></li>
-                  </ul>
-                </p>
-
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div>
-
-  <!-- =========================================================================
-  End of SINC Sites Slideout Panel
-  ===========================================================================-->
-
-
-
-  <!-- =========================================================================
-  Mobile Charging Stations Slideout Panel
-  ===========================================================================-->
-
-  <div class="panelMBC slideout-panel from-right">
-    <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
-          <div class="container">
-            <a href="#0" class="slideout-panel-close">Close</a>
-            <!-- SOLAR Conent ================================================ -->
-            <div class="slideout-panel-content text-center">
-                <h3 class="heading heading-extra-large white noMarginBottom">Mobile Charging Stations</h2>
-            </div>
-          </div>
-        </div>
-        <section class="airy">
-          <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
-              <div class="text-blurb">
-                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
+              <div class="text-blurb" id="irbnet">
+                <h4 class="heading heading-small uppercase dark-gray">IRBNet</h4>
                 <p class="normal-text">
-                  <a href="#whatismcs">What is a Mobile Charging Station?</a><br>
-                  <a href="#mcslocations">Mobile Charging Station Locations</a><br>
+                  Web-based system for the administration and management of human subjects, animal use, stem cell, and biosafety study protocols.<br>
+                  More information about IRBNet at <a href="//research.stonybrook.edu/irbnet">research.stonybrook.edu/irbnet &raquo;</a>
                 </p>
               </div>
-              <hr class="hidden-lg">
-            </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
-              <div class="text-blurb" id="whatismcs">
-                <h4 class="heading heading-small uppercase dark-gray">What is a Mobile Charging Station?</h4>
+              <div class="text-blurb" id="rfreports">
+                <h4 class="heading heading-small uppercase dark-gray">RF Report Center</h4>
                 <p class="normal-text">
-                  There are six free-standing mobile charging stations in Frey Hall and Javits Lecture Center this semester as part of the University’s Mobile/Digital Now initiative. This particular project is considered a pilot to test the usefulness of electrical power charging stations that students and other members of the campus community can use to plug their mobile devices into whenever batteries run low.
+                  Use this system to look up any financial information related to your RFSUNY grant account, including salary, purchasing, and supplies.
+                  More information about RF Report Center at <a href="//research.stonybrook.edu/rf-report-center">research.stonybrook.edu/rf-report-center &raquo;</a>
                 </p>
               </div>
-              <hr>
-              <div class="text-blurb" id="mcslocations">
-                <h4 class="heading heading-small uppercase dark-gray">Mobile Charging Station Locations</h4>
-                  <ul class="normal-text bullets">
-                    <li>Frey Hall Floors 1, 2, & 3</li>
-                    <li>Javits Lecture Center (Main Lobby)</li>
-                  </ul>
+              <div class="text-blurb" id="researchtech">
+                <h4 class="heading heading-small uppercase dark-gray">Research Technologies</h4>
+                <p class="normal-text">
+                  Research Technologies is an area within the Division of Information Technology that acts as a liaison with campus researchers and offers technical expertise and the opportunity to collaborate with a variety of IT leaders and IT partners.<br>
+                  More information about Research Technolgies at <a href="//stonybrook.edu/researchtech">stonybrook.edu/researchtech &raquo;</a>
                 </p>
               </div>
             </div>
@@ -808,7 +901,7 @@ card is selected.
 
   <div class="panelGoogle slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -820,7 +913,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -829,7 +922,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="googleapps">
                 <h4 class="heading heading-small uppercase dark-gray">Your Email, calendar and collaboration Toolkit</h4>
                 <p class="normal-text">
@@ -864,12 +957,202 @@ card is selected.
 
 
   <!-- =========================================================================
+  Assessment Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelAssessment slideout-panel from-right">
+    <div class="slideout-panel-container">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
+          <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
+            <!-- SOLAR Conent ================================================ -->
+            <div class="slideout-panel-content text-center">
+                <h3 class="heading heading-extra-large white noMarginBottom">Assessment</h2>
+                <a href="//facultycenter.stonybrook.edu" class="default-button default-button__white">facultycenter.stonybrook.edu &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+        <section class="airy">
+          <div class="container">
+            <div class="col-md-3 col-sm-12 ">
+              <div class="text-blurb">
+                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
+                <p class="normal-text">
+                  <a href="#assessment">Assessment</a><br>
+                  <a href="#opscan">OpScan Test Scoring</a><br>
+                </p>
+              </div>
+              <hr class="hidden-lg">
+            </div>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="assessment">
+                <h4 class="heading heading-small uppercase dark-gray">Assessment</h4>
+                <p class="normal-text">
+                  Academic Assessment at Stony Brook is supported through the Faculty Center in Teaching, Learning & Technology.  Our staff have expertise in all areas of assessment and quantitative measurement, testing, surveys and rubric development, qualitative methods of collecting formative and summative assessment data.   Our University is currently engaged in assessment of student learning activities including the Assessment Academy and the Assessment Task Force.
+                  <br><br>
+                  Learn More About Assessment at <a href="//facultycenter.stonybrook.edu/assessment">facultycenter.stonybrook.edu/assessment &raquo;</a>
+                </p>
+              </div>
+              <hr>
+              <div class="text-blurb" id="opscan">
+                <h4 class="heading heading-small uppercase dark-gray">OpScan Test Scoring</h4>
+                <p class="normal-text">
+                  The OpScan Test Scanning Office provides scanning services for multiple-choice exams and tests using bubble sheets.
+                  <br><br>
+                  Contact the OpScan Test Scanning Office at <a href="tel:631-632-8032">631-632-8032</a> or email <a href="opscan@stonybrook.edu">opscan@stonybrook.edu</a>.
+                  <br><br>
+                  Learn More More About OpSCan Test Scoring at <a href="//http://it.stonybrook.edu/node/848">it.stonybrook.edu/services/opscan-test-scoring &raquo;</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of Assessment Slideout Panel
+  ===========================================================================-->
+
+
+
+  <!-- =========================================================================
+  Course Design Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelCourseDesign slideout-panel from-right">
+    <div class="slideout-panel-container">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
+          <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
+            <!-- SOLAR Conent ================================================ -->
+            <div class="slideout-panel-content text-center">
+                <h3 class="heading heading-extra-large white noMarginBottom">Course Design and Development</h2>
+                <a href="//facultycenter.stonybrook.edu" class="default-button default-button__white">facultycenter.stonybrook.edu &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+        <section class="airy">
+          <div class="container">
+            <div class="col-md-3 col-sm-12 ">
+              <div class="text-blurb">
+                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
+                <p class="normal-text">
+                  <a href="#coursedesign">Course Design and Development</a><br>
+                </p>
+              </div>
+              <hr class="hidden-lg">
+            </div>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="whatissincsite">
+                <h4 class="heading heading-small uppercase dark-gray">Course Design and Development</h4>
+                <p class="normal-text">
+                  Instructional designers, technologists and assessment specialists work with faculty and departments to develop hybrid and fully online courses. TLT's Faculty Center and Academic Technology Services group work together to answer all pedagogical and technical questions.
+                </p>
+              </div>
+              <hr>
+              <div class="text-blurb" id="sinclocations">
+                <h4 class="heading heading-small uppercase dark-gray">SINC Site Locations</h4>
+                <p class="normal-text">Visit <a href="http://sincsites.stonybrook.edu">sincsites.stonybrook.edu </a> for a full list of SINC Site locations,
+                  or view the <a href="http://it.stonybrook.edu/services/computer-labs/map">Campus SINC Site Map</a>.
+                </p><br>
+                <p class="normal-text"><strong>Popular SINC Site Locations</strong>
+                  <ul class="normal-text bullets">
+                    <li><a href="http://it.stonybrook.edu/node/1573">Melville Library &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1582">Computer Science &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6689">North Reading Room &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6775">Tabler Digital Arts Lab &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1589">Humanities &raquo;</a></li>
+                  </ul>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of Course Design Slideout Panel
+  ===========================================================================-->
+
+  <!-- =========================================================================
+  Course Evaluations Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelCourseEvals slideout-panel from-right">
+    <div class="slideout-panel-container">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
+          <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
+            <!-- SOLAR Conent ================================================ -->
+            <div class="slideout-panel-content text-center">
+                <h3 class="heading heading-extra-large white noMarginBottom">Course Evaluations</h2>
+                <a href="http://sincsites.stonybrook.edu" class="default-button default-button__white">sincsites.stonybrook.edu &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+        <section class="airy">
+          <div class="container">
+            <div class="col-md-3 col-sm-12 ">
+              <div class="text-blurb">
+                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
+                <p class="normal-text">
+                  <a href="#whatissincsite">What is a SINC Site?</a><br>
+                  <a href="#sinclocations">SINC Site Locations</a><br>
+                </p>
+              </div>
+              <hr class="hidden-lg">
+            </div>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="whatissincsite">
+                <h4 class="heading heading-small uppercase dark-gray">What is a SINC Site?</h4>
+                <p class="normal-text">
+                  SINC Sites are public computer labs that allow users to access both Windows & Mac computers. SINC Sites provide printing services and access to numerous academic software titles. These computer labs are located in a majority of the academic buildings on campus and have scheduled open hours.
+                  <br><br>
+                  <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
+                   <a href="https://www.youtube.com/embed/_mrUSQjBz4k">SINC Site Promotional Video</a><br>
+                </p>
+              </div>
+              <hr>
+              <div class="text-blurb" id="sinclocations">
+                <h4 class="heading heading-small uppercase dark-gray">SINC Site Locations</h4>
+                <p class="normal-text">Visit <a href="http://sincsites.stonybrook.edu">sincsites.stonybrook.edu </a> for a full list of SINC Site locations,
+                  or view the <a href="http://it.stonybrook.edu/services/computer-labs/map">Campus SINC Site Map</a>.
+                </p><br>
+                <p class="normal-text"><strong>Popular SINC Site Locations</strong>
+                  <ul class="normal-text bullets">
+                    <li><a href="http://it.stonybrook.edu/node/1573">Melville Library &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1582">Computer Science &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6689">North Reading Room &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6775">Tabler Digital Arts Lab &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1589">Humanities &raquo;</a></li>
+                  </ul>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of Course Evaluations Slideout Panel
+  ===========================================================================-->
+
+
+  <!-- =========================================================================
   Blackboard Slideout Panel
   ===========================================================================-->
 
   <div class="panelBlackboard slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
@@ -881,7 +1164,7 @@ card is selected.
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
@@ -891,7 +1174,7 @@ card is selected.
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-9 col-sm-12 ">
               <div class="text-blurb" id="whatisblackboard">
                 <h4 class="heading heading-small uppercase dark-gray">What is Blackboard?</h4>
                 <p class="normal-text">
@@ -925,58 +1208,60 @@ card is selected.
   End of Blackboard Slideout Panel
   ===========================================================================-->
 
-
-
   <!-- =========================================================================
-  LYNDA.COM Slideout Panel
+  Computer Teaching & Learning Lab Panel
   ===========================================================================-->
 
-  <div class="panelLynda slideout-panel from-right">
+  <div class="panelTLL slideout-panel from-right">
     <div class="slideout-panel-container">
-        <div class="cozy" style="background-image: url('http://www.stonybrook.edu/sb/far-beyond/img/home-apr15/redSwooshes.jpg'); background-size: cover;">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
             <a href="#0" class="slideout-panel-close">Close</a>
             <!-- SOLAR Conent ================================================ -->
             <div class="slideout-panel-content text-center">
-                <h3 class="heading heading-extra-large white noMarginBottom">Lynda.com</h2>
-                <a href="http://lynda.stonybrook.edu" class="default-button default-button__white">lynda.stonybrook.edu &raquo;</a></p>
+                <h3 class="heading heading-extra-large white noMarginBottom">Teaching & Learning Lab</h2>
+                <a href="http://sincsites.stonybrook.edu" class="default-button default-button__white">sincsites.stonybrook.edu &raquo;</a></p>
             </div>
           </div>
         </div>
         <section class="airy">
           <div class="container">
-            <div class="col-md-3 col-sm-12 wow animated fadeInUp">
+            <div class="col-md-3 col-sm-12 ">
               <div class="text-blurb">
                 <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
                 <p class="normal-text">
-                  <a href="#whatislynda">What is Lynda.com?</a><br>
-                  <a href="#accessingblackboard">Accessing Lynda</a><br>
+                  <a href="#whatissincsite">What is a SINC Site?</a><br>
+                  <a href="#sinclocations">SINC Site Locations</a><br>
                 </p>
               </div>
               <hr class="hidden-lg">
             </div>
-            <div class="col-md-9 col-sm-12 wow animated fadeInUp">
-              <div class="text-blurb" id="whatislynda">
-                <h4 class="heading heading-small uppercase dark-gray">What is Lynda.com?</h4>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="whatissincsite">
+                <h4 class="heading heading-small uppercase dark-gray">What is a SINC Site?</h4>
                 <p class="normal-text">
-                  Lynda.com is available to all Stony Brook University students, faculty and staff at no charge. With Lynda.com, you can learn new computer applications, design and business skills or brush up on some old skills at your own pace at a time and location that works best for you.
+                  SINC Sites are public computer labs that allow users to access both Windows & Mac computers. SINC Sites provide printing services and access to numerous academic software titles. These computer labs are located in a majority of the academic buildings on campus and have scheduled open hours.
+                  <br><br>
+                  <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
+                   <a href="https://www.youtube.com/embed/_mrUSQjBz4k">SINC Site Promotional Video</a><br>
                 </p>
               </div>
               <hr>
-              <div class="text-blurb" id="accessingblackboard">
-                <h4 class="heading heading-small uppercase dark-gray">Accessing Lynda</h4>
-                <p class="normal-text">
-                  <strong>Web Browser</strong><br>
-                  From your browser, you can access Lynda via your browser by heading to <a href="http://lynda.stonybrook.edu">lynda.stonybrook.edu</a>. You will use your NetID and NetID password to log in.
-                  <br><br>
-                  <strong>Lynda Mobile App</strong><br>
-                  You can access Lynda on your mobile device by downloading the Lynda App. Log in with your NetID and NetID password once the app is installed on your device.<br>
+              <div class="text-blurb" id="sinclocations">
+                <h4 class="heading heading-small uppercase dark-gray">SINC Site Locations</h4>
+                <p class="normal-text">Visit <a href="http://sincsites.stonybrook.edu">sincsites.stonybrook.edu </a> for a full list of SINC Site locations,
+                  or view the <a href="http://it.stonybrook.edu/services/computer-labs/map">Campus SINC Site Map</a>.
+                </p><br>
+                <p class="normal-text"><strong>Popular SINC Site Locations</strong>
                   <ul class="normal-text bullets">
-                    <li><a href="https://itunes.apple.com/us/app/lynda-learn-new-skills-online/id356169777?mt=8">iOS Devices &raquo;</a></li>
-                    <li><a href="https://play.google.com/store/apps/details?id=com.lynda.android.root&hl=en">Android Devices &raquo;</a></li>
-                    <li><a href="https://www.microsoft.com/en-us/store/apps/lyndacom/9wzdncrdsd1w">Windows Devices &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1573">Melville Library &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1582">Computer Science &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6689">North Reading Room &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6775">Tabler Digital Arts Lab &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1589">Humanities &raquo;</a></li>
                   </ul>
                 </p>
+
               </div>
             </div>
           </div>
@@ -986,9 +1271,274 @@ card is selected.
   </div>
 
   <!-- =========================================================================
-  End of LYNDA.COM Slideout Panel
-  ========================================================================== -->
+  End of Teaching & Learning Lab Panel
+  ===========================================================================-->
 
+  <!-- =========================================================================
+  Academic Technology Services Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelATS slideout-panel from-right">
+    <div class="slideout-panel-container">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
+          <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
+            <!-- SOLAR Conent ================================================ -->
+            <div class="slideout-panel-content text-center">
+                <h3 class="heading heading-extra-large white noMarginBottom">Academic Technology Services</h2>
+                <a href="http://sincsites.stonybrook.edu" class="default-button default-button__white">sincsites.stonybrook.edu &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+        <section class="airy">
+          <div class="container">
+            <div class="col-md-3 col-sm-12 ">
+              <div class="text-blurb">
+                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
+                <p class="normal-text">
+                  <a href="#whatissincsite">What is a SINC Site?</a><br>
+                  <a href="#sinclocations">SINC Site Locations</a><br>
+                </p>
+              </div>
+              <hr class="hidden-lg">
+            </div>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="whatissincsite">
+                <h4 class="heading heading-small uppercase dark-gray">What is a SINC Site?</h4>
+                <p class="normal-text">
+                  SINC Sites are public computer labs that allow users to access both Windows & Mac computers. SINC Sites provide printing services and access to numerous academic software titles. These computer labs are located in a majority of the academic buildings on campus and have scheduled open hours.
+                  <br><br>
+                  <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
+                   <a href="https://www.youtube.com/embed/_mrUSQjBz4k">SINC Site Promotional Video</a><br>
+                </p>
+              </div>
+              <hr>
+              <div class="text-blurb" id="sinclocations">
+                <h4 class="heading heading-small uppercase dark-gray">SINC Site Locations</h4>
+                <p class="normal-text">Visit <a href="http://sincsites.stonybrook.edu">sincsites.stonybrook.edu </a> for a full list of SINC Site locations,
+                  or view the <a href="http://it.stonybrook.edu/services/computer-labs/map">Campus SINC Site Map</a>.
+                </p><br>
+                <p class="normal-text"><strong>Popular SINC Site Locations</strong>
+                  <ul class="normal-text bullets">
+                    <li><a href="http://it.stonybrook.edu/node/1573">Melville Library &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1582">Computer Science &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6689">North Reading Room &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6775">Tabler Digital Arts Lab &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1589">Humanities &raquo;</a></li>
+                  </ul>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of Academic Technology Services Slideout Panel
+  ===========================================================================-->
+
+  <!-- =========================================================================
+  A/V / Services Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelAVServices slideout-panel from-right">
+    <div class="slideout-panel-container">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
+          <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
+            <!-- SOLAR Conent ================================================ -->
+            <div class="slideout-panel-content text-center">
+                <h3 class="heading heading-extra-large white noMarginBottom">Audio/Visual Services</h2>
+                <a href="http://sincsites.stonybrook.edu" class="default-button default-button__white">sincsites.stonybrook.edu &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+        <section class="airy">
+          <div class="container">
+            <div class="col-md-3 col-sm-12 ">
+              <div class="text-blurb">
+                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
+                <p class="normal-text">
+                  <a href="#whatissincsite">What is a SINC Site?</a><br>
+                  <a href="#sinclocations">SINC Site Locations</a><br>
+                </p>
+              </div>
+              <hr class="hidden-lg">
+            </div>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="whatissincsite">
+                <h4 class="heading heading-small uppercase dark-gray">What is a SINC Site?</h4>
+                <p class="normal-text">
+                  SINC Sites are public computer labs that allow users to access both Windows & Mac computers. SINC Sites provide printing services and access to numerous academic software titles. These computer labs are located in a majority of the academic buildings on campus and have scheduled open hours.
+                  <br><br>
+                  <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
+                   <a href="https://www.youtube.com/embed/_mrUSQjBz4k">SINC Site Promotional Video</a><br>
+                </p>
+              </div>
+              <hr>
+              <div class="text-blurb" id="sinclocations">
+                <h4 class="heading heading-small uppercase dark-gray">SINC Site Locations</h4>
+                <p class="normal-text">Visit <a href="http://sincsites.stonybrook.edu">sincsites.stonybrook.edu </a> for a full list of SINC Site locations,
+                  or view the <a href="http://it.stonybrook.edu/services/computer-labs/map">Campus SINC Site Map</a>.
+                </p><br>
+                <p class="normal-text"><strong>Popular SINC Site Locations</strong>
+                  <ul class="normal-text bullets">
+                    <li><a href="http://it.stonybrook.edu/node/1573">Melville Library &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1582">Computer Science &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6689">North Reading Room &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6775">Tabler Digital Arts Lab &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1589">Humanities &raquo;</a></li>
+                  </ul>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of A/V Services Slideout Panel
+  ===========================================================================-->
+
+
+  <!-- =========================================================================
+  Computer Classrooms Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelCompClass slideout-panel from-right">
+    <div class="slideout-panel-container">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
+          <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
+            <!-- SOLAR Conent ================================================ -->
+            <div class="slideout-panel-content text-center">
+                <h3 class="heading heading-extra-large white noMarginBottom">Requqesting Computer Classrooms</h2>
+                <a href="http://sincsites.stonybrook.edu" class="default-button default-button__white">sincsites.stonybrook.edu &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+        <section class="airy">
+          <div class="container">
+            <div class="col-md-3 col-sm-12 ">
+              <div class="text-blurb">
+                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
+                <p class="normal-text">
+                  <a href="#whatissincsite">What is a SINC Site?</a><br>
+                  <a href="#sinclocations">SINC Site Locations</a><br>
+                </p>
+              </div>
+              <hr class="hidden-lg">
+            </div>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="whatissincsite">
+                <h4 class="heading heading-small uppercase dark-gray">What is a SINC Site?</h4>
+                <p class="normal-text">
+                  SINC Sites are public computer labs that allow users to access both Windows & Mac computers. SINC Sites provide printing services and access to numerous academic software titles. These computer labs are located in a majority of the academic buildings on campus and have scheduled open hours.
+                  <br><br>
+                  <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
+                   <a href="https://www.youtube.com/embed/_mrUSQjBz4k">SINC Site Promotional Video</a><br>
+                </p>
+              </div>
+              <hr>
+              <div class="text-blurb" id="sinclocations">
+                <h4 class="heading heading-small uppercase dark-gray">SINC Site Locations</h4>
+                <p class="normal-text">Visit <a href="http://sincsites.stonybrook.edu">sincsites.stonybrook.edu </a> for a full list of SINC Site locations,
+                  or view the <a href="http://it.stonybrook.edu/services/computer-labs/map">Campus SINC Site Map</a>.
+                </p><br>
+                <p class="normal-text"><strong>Popular SINC Site Locations</strong>
+                  <ul class="normal-text bullets">
+                    <li><a href="http://it.stonybrook.edu/node/1573">Melville Library &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1582">Computer Science &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6689">North Reading Room &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6775">Tabler Digital Arts Lab &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1589">Humanities &raquo;</a></li>
+                  </ul>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of Computer Classrooms Slideout Panel
+  ===========================================================================-->
+
+
+  <!-- =========================================================================
+  Testing Center Slideout Panel
+  ===========================================================================-->
+
+  <div class="panelTestingCenter slideout-panel from-right">
+    <div class="slideout-panel-container">
+        <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
+          <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
+            <!-- SOLAR Conent ================================================ -->
+            <div class="slideout-panel-content text-center">
+                <h3 class="heading heading-extra-large white noMarginBottom">Testing Center</h2>
+                <a href="http://sincsites.stonybrook.edu" class="default-button default-button__white">sincsites.stonybrook.edu &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+        <section class="airy">
+          <div class="container">
+            <div class="col-md-3 col-sm-12 ">
+              <div class="text-blurb">
+                <h4 class="heading heading-small uppercase dark-gray">This Section</h4>
+                <p class="normal-text">
+                  <a href="#whatissincsite">What is a SINC Site?</a><br>
+                  <a href="#sinclocations">SINC Site Locations</a><br>
+                </p>
+              </div>
+              <hr class="hidden-lg">
+            </div>
+            <div class="col-md-9 col-sm-12 ">
+              <div class="text-blurb" id="whatissincsite">
+                <h4 class="heading heading-small uppercase dark-gray">What is a SINC Site?</h4>
+                <p class="normal-text">
+                  SINC Sites are public computer labs that allow users to access both Windows & Mac computers. SINC Sites provide printing services and access to numerous academic software titles. These computer labs are located in a majority of the academic buildings on campus and have scheduled open hours.
+                  <br><br>
+                  <strong><span class="sbuicon-youtube"></span>  Related Videos</strong><br>
+                   <a href="https://www.youtube.com/embed/_mrUSQjBz4k">SINC Site Promotional Video</a><br>
+                </p>
+              </div>
+              <hr>
+              <div class="text-blurb" id="sinclocations">
+                <h4 class="heading heading-small uppercase dark-gray">SINC Site Locations</h4>
+                <p class="normal-text">Visit <a href="http://sincsites.stonybrook.edu">sincsites.stonybrook.edu </a> for a full list of SINC Site locations,
+                  or view the <a href="http://it.stonybrook.edu/services/computer-labs/map">Campus SINC Site Map</a>.
+                </p><br>
+                <p class="normal-text"><strong>Popular SINC Site Locations</strong>
+                  <ul class="normal-text bullets">
+                    <li><a href="http://it.stonybrook.edu/node/1573">Melville Library &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1582">Computer Science &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6689">North Reading Room &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/6775">Tabler Digital Arts Lab &raquo;</a></li>
+                    <li><a href="http://it.stonybrook.edu/node/1589">Humanities &raquo;</a></li>
+                  </ul>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+  End of Testing Center Slideout Panel
+  ===========================================================================-->
 
 
 <!-- ===========================================================================
@@ -1033,6 +1583,19 @@ Slideout Panel Scripts
             }
         });
 
+        //open Faculty Profiles panel
+        $('.panelFacPro-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelFacPro').addClass('is-visible');
+        });
+        //close Faculty Profiles panel
+        $('.panelFacPro').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelFacPro').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+
         //open WiFi panel
         $('.panelWiFi-btn').on('click', function(event) {
             event.preventDefault();
@@ -1042,19 +1605,6 @@ Slideout Panel Scripts
         $('.panelWiFi').on('click', function(event) {
             if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
                 $('.panelWiFi').removeClass('is-visible');
-                event.preventDefault();
-            }
-        });
-
-        //open Printing panel
-        $('.panelPrinting-btn').on('click', function(event) {
-            event.preventDefault();
-            $('.panelPrinting').addClass('is-visible');
-        });
-        //close Printing panel
-        $('.panelPrinting').on('click', function(event) {
-            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
-                $('.panelPrinting').removeClass('is-visible');
                 event.preventDefault();
             }
         });
@@ -1072,15 +1622,28 @@ Slideout Panel Scripts
             }
         });
 
-        //open Mobile Charging Stations panel
-        $('.panelMBC-btn').on('click', function(event) {
+        //open Research panel
+        $('.panelResearch-btn').on('click', function(event) {
             event.preventDefault();
-            $('.panelMBC').addClass('is-visible');
+            $('.panelResearch').addClass('is-visible');
         });
-        //close Mobile Charging Stations panel
-        $('.panelMBC').on('click', function(event) {
+        //close Research panel
+        $('.panelResearch').on('click', function(event) {
             if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
-                $('.panelMBC').removeClass('is-visible');
+                $('.panelResearch').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+
+        //open Hardware/Software panel
+        $('.panelHwSw-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelHwSw').addClass('is-visible');
+        });
+        //close Hardware/Software panel
+        $('.panelHwSw').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelHwSw').removeClass('is-visible');
                 event.preventDefault();
             }
         });
@@ -1098,28 +1661,97 @@ Slideout Panel Scripts
             }
         });
 
-        //open Blackboard panel
+        //open Assessment panel
+        $('.panelAssessment-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelAssessment').addClass('is-visible');
+        });
+        //close Assessment panel
+        $('.panelAssessment').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelAssessment').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });//open Course Design panel
+        $('.panelCourseDesign-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelCourseDesign').addClass('is-visible');
+        });
+        //close Course Design panel
+        $('.panelCourseDesign').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelCourseDesign').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });//open Blackboard panel
         $('.panelBlackboard-btn').on('click', function(event) {
             event.preventDefault();
             $('.panelBlackboard').addClass('is-visible');
         });
-        //close Google Apps panel
+        //close Blackboard panel
         $('.panelBlackboard').on('click', function(event) {
             if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
                 $('.panelBlackboard').removeClass('is-visible');
                 event.preventDefault();
             }
         });
-
-        //open Lynda panel
-        $('.panelLynda-btn').on('click', function(event) {
+        //open TLL panel
+        $('.panelTLL-btn').on('click', function(event) {
             event.preventDefault();
-            $('.panelLynda').addClass('is-visible');
+            $('.panelTLL').addClass('is-visible');
         });
-        //close Lynda panel
-        $('.panelLynda').on('click', function(event) {
+        //close TLL panel
+        $('.panelTLL').on('click', function(event) {
             if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
-                $('.panelLynda').removeClass('is-visible');
+                $('.panelTLL').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+        //open ATS Panel
+        $('.panelATS-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelATS').addClass('is-visible');
+        });
+        //close ATS Panel
+        $('.panelATS').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelATS').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+        //open A/V Services panel
+        $('.panelAVServices-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelAVServices').addClass('is-visible');
+        });
+        //close A/V Services panel
+        $('.panelAVServices').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelAVServices').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+        //open Requesting Computer Classrooms panel
+        $('.panelCompClass-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelCompClass').addClass('is-visible');
+        });
+        //close Requesting Computer Classrooms panel
+        $('.panelCompClass').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelCompClass').removeClass('is-visible');
+                event.preventDefault();
+            }
+        });
+        //open Testing Center panel
+        $('.panelTestingCenter-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.panelTestingCenter').addClass('is-visible');
+        });
+        //close A/V Services panel
+        $('.panelTestingCenter').on('click', function(event) {
+            if ($(event.target).is('.slideout-panel') || $(event.target).is('.slideout-panel-close')) {
+                $('.panelTestingCenter').removeClass('is-visible');
                 event.preventDefault();
             }
         });
@@ -1134,14 +1766,30 @@ Video header script
 ============================================================================ -->
 
 <script>
-  $(document).ready(function() {
-    $('.header-video').each(function(i, elem) {
-        headerVideo = new HeaderVideo({
-          element: elem,
-          media: '.header-video__media',
-          playTrigger: '.header-video__play-trigger',
-          closeTrigger: '.header-video__close-trigger'
-        });
-    });
-  });
+
+  // Allows fullscreen option
+  window.parent.document.querySelector('iframe').setAttribute('allowfullscreen',true);
+
+  (function() {
+    var v = document.getElementsByClassName("youtube-player");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = orientationVideo(v[n].dataset.id);
+        p.onclick = orientationVideoIframe;
+        v[n].appendChild(p);
+    }
+  })();
+
+  function orientationVideo(id) {
+    return '<img class="youtube-thumb" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="play-button"></div>';
+  }
+
+  function orientationVideoIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "//www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=1&");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", ""); // Allows fullscreen option
+    iframe.setAttribute("id", "youtube-iframe");
+    this.parentNode.replaceChild(iframe, this);
+  }
 </script>
