@@ -1,4 +1,3 @@
-
 /* =============================================================================
 
 Video Header Stylings
@@ -69,6 +68,14 @@ into the project as a whole.
 
 ============================================================================= */
 
+// .no-scroll is added to the body tag when slideout panels are translated into view
+// this prevents double scrolling on the body as well as the slideout panel
+
+.no-scroll {
+margin: 0;
+height: 100%;
+overflow: hidden
+}
 
 // .redRaysBorder creates a 'border' with a height of 25px featuring the new far beyond red rays.
 
@@ -212,6 +219,13 @@ into the project as a whole.
 .heading-extra-large {
   font-size: 8em;
 }
+@media(max-width:768px) {
+  .heading-extra-large {
+    font-size: 2em;
+  }
+}
+
+
 .heading-super-large {
   font-size: 10em;
 }
