@@ -268,6 +268,7 @@ overflow: hidden
 
 .navbar--fixed__default {
   @extend .navbar-default;
+
 }
 .navbar--fixed__links {
   @extend .navbar-nav;
@@ -281,10 +282,11 @@ overflow: hidden
 }
 .navbar--fixed__header, .navbar--fixed__collapse {
 	margin-top:10px;
+  padding-left: 0 !important;
 }
 
 .navbar--fixed__default .navbar--fixed__links > li {
-	margin-left:40px;
+	margin-right: 1.5em;
 }
 
 .navbar--fixed__default .navbar--fixed__links > li > a {
