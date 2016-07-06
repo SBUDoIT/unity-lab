@@ -149,3 +149,9 @@
     padding-right: 0px !important; //override pull-left padding
 }
 
+
+@media (max-width: 480px) {
+ .mobile-block {
+   display: block !important;
+ }
+}
