@@ -14,3 +14,23 @@
 }
 
 //end from screenshot class
+
+// Display-flex, to be used when aligning items centered relative to each other
+// in bootstrap columns. Will not work on screensizes smaller than 1025px.
+
+.display--flex {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1025px) {
+  .display--flex {
+    display: block;
+  }
+}
+
+// Use display--flex-mobile if you need items to display: flex on mobile screens AND desktop.
+
+.display--flex-mobile {
+  display: flex;
+  align-items: center;
+}
