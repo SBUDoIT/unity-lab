@@ -46,6 +46,7 @@
         <li><a href="#blackboardBasics" class="fixedNavLink scrollto">Blackboard Basics</a></li>
         <li><a href="#studentGuide" class="fixedNavLink scrollto">For Students</a></li>
         <li><a href="#instructorGuide" class="fixedNavLink scrollto">For Instructors</a></li>
+        <li><a href="#FAQ" class="fixedNavLink scrollto">Frequently Asked Questions</a></li>
         <li><a href="#gettingHelp" class="fixedNavLink scrollto">Getting Help</a></li>
       </ul>
     </div>
@@ -231,15 +232,75 @@ Blackboard is a web-based course management system that is used as a tool to del
   </div>
 </section>
 
-<section id="gettingHelp" class="fluffy bg-asphalt">
+<section id="FAQ" class="fluffy hero-beyond__white bg-white">
   <div class="container">
-    <div class="row display--flex">
-      <div class="col-md-6">
-        <h2 class="heading white">Frequently Asked Questions</h2>
-        <p class="introduction white">The Division of Information Technology provides support on all of our services. If you require assistance please submit a support ticket thought the IT Service Management system. </p>
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h2 class="heading red">Frequently Asked Questions</h2>
+        <p class="introduction">Search through our knowledge base articles for commonly asked questions about this service.</p>
+        <div id="custom-search-input">
+          <div class="input-group col-md-12">
+            <input type="text" class="form-control input-lg" placeholder="How do I download the Blackboard Learn App?" />
+            <span class="input-group-btn">
+              <button class="btn btn-info btn-lg bg-red" type="button">
+                <i class="sbuicon-search"></i>
+              </button>
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <a class="default-button button-large bg-black" href="#">Submit A Ticket</a>
+      <div class="col-sm-12 col-md-6">
+        <div class="drop-accordion-card">
+          <div class="drop-accordion-card--tab">
+            <div class="display--flex-mobile">
+              <span class="drop-accordion-card--icon sbuicon-angle-down"></span>
+              <span class="drop-accordion-card--headline">{{headline.medium}}</span>
+            </div>
+          </div>
+          <div class="drop-accordion-card--content-wrap hide-accessible">
+            <div class="drop-accordion-card--content">
+              {{{paragraph.double}}} {{# cta }}
+              <div class="simple-blurb--cta">
+                  <a href="{{cta.url}}" class="{{cta.class}}">{{cta.text}}</a>
+              </div>
+              {{/ cta }}
+            </div>
+          </div>
+        </div>
+        <div class="drop-accordion-card">
+          <div class="drop-accordion-card--tab">
+            <div class="display--flex-mobile">
+              <span class="drop-accordion-card--icon sbuicon-angle-down"></span>
+              <span class="drop-accordion-card--headline">{{headline.medium}}</span>
+            </div>
+          </div>
+          <div class="drop-accordion-card--content-wrap hide-accessible">
+            <div class="drop-accordion-card--content">
+              {{{paragraph.double}}} {{# cta }}
+              <div class="simple-blurb--cta">
+                  <a href="{{cta.url}}" class="{{cta.class}}">{{cta.text}}</a>
+              </div>
+              {{/ cta }}
+            </div>
+          </div>
+        </div>
+        <div class="drop-accordion-card">
+          <div class="drop-accordion-card--tab">
+            <div class="display--flex-mobile">
+              <span class="drop-accordion-card--icon sbuicon-angle-down"></span>
+              <span class="drop-accordion-card--headline">{{headline.medium}}</span>
+            </div>
+          </div>
+          <div class="drop-accordion-card--content-wrap hide-accessible">
+            <div class="drop-accordion-card--content">
+              {{{paragraph.double}}} {{# cta }}
+              <div class="simple-blurb--cta">
+                  <a href="{{cta.url}}" class="{{cta.class}}">{{cta.text}}</a>
+              </div>
+              {{/ cta }}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -248,12 +309,29 @@ Blackboard is a web-based course management system that is used as a tool to del
 <section id="gettingHelp" class="fluffy hero-beyond gradient-overlay__TopRight">
   <div class="container">
     <div class="row display--flex">
-      <div class="col-md-8">
+      <div class="col-md-5">
         <h2 class="heading white">Getting Help</h2>
         <p class="introduction white">The Division of Information Technology provides support on all of our services. If you require assistance please submit a support ticket thought the IT Service Management system. </p>
+          <a class="default-button button-large bg-black" href="#">Submit A Ticket</a>
       </div>
-      <div class="col-md-4">
-        <a class="default-button button-large bg-black" href="#">Submit A Ticket</a>
+      <div class="col-sm-12 col-md-7">
+        <h3 class="subheading white">Additional support for this service</h3>
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title font-alt">
+                Academic Technology Services
+              </h4>
+            </div>
+            <div class="panel-body">
+              <p></p>
+              <ul class="no-bullets">
+                <li><a class="sbuicon-envelope" href="mailto:tlt@stonybrook.edu">tlt@stonybrook.edu</a></li>
+                <li><span class="sbuicon-phone">(631) 632-2777</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
