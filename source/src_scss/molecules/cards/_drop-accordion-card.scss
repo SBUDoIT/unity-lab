@@ -21,7 +21,7 @@
     display: block;
     border: 1px solid $gray;
     font-size: 1.3em;
-    font-family: 'Trade Gothic W01 Light';
+    font-family: $font;
     cursor: pointer;
     z-index: 101;
     padding: 1em 1.5em;
@@ -30,10 +30,13 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
+    .drop-accordion-card--headline {
+      margin-left: .5em;
+
+    }
     .drop-accordion-card--icon {
         display: inline-block;
         font-size: 2em;
-        margin-right: 1em;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         transition: all 0.3s;
@@ -65,7 +68,7 @@
 .drop-accordion-card--content
 {
 
-    
+
     padding: 3em;
 
     p,
