@@ -266,6 +266,7 @@ gulp.task('browser-sync', function() {
     host: 'unity-lab.localhost.stonybrook.edu',
     port: 3000,
     ghostMode: true,
+    https: true,
     open: "external"
   });
 });
