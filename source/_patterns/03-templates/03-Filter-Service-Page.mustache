@@ -22,10 +22,13 @@
                 <div class="col-md-3">
                     <h3 class="heading red">Search Services</h3>
                 </div>
+                <form id="live-search">
+
+
                 <div class="col-md-9">
                     <div id="custom-search-input">
                         <div class="input-group col-md-12">
-                            <input type="text" class="form-control input-lg" placeholder="WolfieNet (WiFi), echo360, Qualtrics..." />
+                            <input id="service-filter" type="text" class="form-control input-lg" placeholder="WolfieNet (WiFi), echo360, Qualtrics..." />
                             <span class="input-group-btn">
                   <button class="btn btn-info btn-lg bg-red" type="button">
                       <i class="sbuicon-search"></i>
@@ -34,6 +37,7 @@
                         </div>
                     </div>
                 </div>
+                </form>
             </div>
         </div>
     </div>
@@ -41,86 +45,176 @@
 
 <section class="fluffy">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="box-card no-border noPadding">
-                    <div>
-                        <h3 class="box-card--heading red display--flex">25Live <div class="status-indicator--button bg-emerald" role="alert">Online</div></h3>
-                        <strong class="box-card--subheading">Category:</strong> Business Systems
-                        <br>
-                        <strong class="box-card--subheading">Audience:</strong> Faculty, Staff, Students
-                        <br>
-                    </div>
-                    <div class="box-card--content">
-                        <p>Nullam lobortis elementum enim nec porta. Quisque facilisis ullamcorper nisl at pharetra. Donec sit amet nisl turpis. Fusce odio nunc, euismod eget ligula eget, cursus accumsan nisl. Vivamus sollicitudin odio a erat malesuada commodo.</p>
-                    </div>
-                    <div class="box-card--cta">
-                        <a href="#" class="arrow-link">Go to Service Page</a>
-                    </div>
-                </div>
-            </div>
-            <section class="divider">
-                <div class="container">
-                    <hr class="divider-gray">
-                </div>
-            </section>
-            <div class="col-md-12">
-                <div class="box-card no-border noPadding">
-                    <div>
-                        <h3 class="box-card--heading red display--flex">25Live <span class="status-indicator--button bg-red" role="alert">Service Outage</span></h3>
-                        <strong class="box-card--subheading">Hong Kong Phooey, quicker than the human eye. He's got style, a groovy</strong>
-                    </div>
-                    <div class="box-card--content">
-                        <p>Nullam lobortis elementum enim nec porta. Quisque facilisis ullamcorper nisl at pharetra. Donec sit amet nisl turpis. Fusce odio nunc, euismod eget ligula eget, cursus accumsan nisl. Vivamus sollicitudin odio a erat malesuada commodo.</p>
-                    </div>
-                    <div class="box-card--cta">
-                        <a href="#" class="arrow-link">Go to Service Page</a>
-                    </div>
-                </div>
-            </div>
-            <section class="divider">
-                <div class="container">
-                    <hr class="divider-gray">
-                </div>
-            </section>
-            <div class="col-md-12">
-                <div class="box-card no-border noPadding">
-                    <div>
-                        <h3 class="box-card--heading red display--flex">25Live <div class="status-indicator--button bg-river" role="alert">Service Notification</div></h3>
-                        <strong class="box-card--subheading">Hong Kong Phooey, quicker than the human eye. He's got style, a groovy</strong>
-                    </div>
-                    <div class="box-card--content">
-                        <p>Nullam lobortis elementum enim nec porta. Quisque facilisis ullamcorper nisl at pharetra. Donec sit amet nisl turpis. Fusce odio nunc, euismod eget ligula eget, cursus accumsan nisl. Vivamus sollicitudin odio a erat malesuada commodo.</p>
-                    </div>
-                    <div class="box-card--cta">
-                        <a href="#" class="arrow-link">Go to Service Page</a>
-                    </div>
-                </div>
-            </div>
-            <section class="divider">
-                <div class="container">
-                    <hr class="divider-gray">
-                </div>
-            </section>
-            <div class="col-md-12">
-                <div class="box-card no-border noPadding">
-                    <div>
-                        <h3 class="box-card--heading red display--flex">25Live <div class="status-indicator--button bg-sun" role="alert">Service Disruption</div></h3>
-                        <strong class="box-card--subheading">Hong Kong Phooey, quicker than the human eye. He's got style, a groovy</strong>
-                    </div>
-                    <div class="box-card--content">
-                        <p>Nullam lobortis elementum enim nec porta. Quisque facilisis ullamcorper nisl at pharetra. Donec sit amet nisl turpis. Fusce odio nunc, euismod eget ligula eget, cursus accumsan nisl. Vivamus sollicitudin odio a erat malesuada commodo.</p>
-                    </div>
-                    <div class="box-card--cta">
-                        <a href="#" class="arrow-link">Go to Service Page</a>
-                    </div>
-                </div>
-            </div>
-            <section class="divider">
-                <div class="container">
-                    <hr class="divider-gray">
-                </div>
-            </section>
+
+        <div class="services">
         </div>
     </div>
 </section>
+
+<script id="service-template" type="text/template">
+
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.3/mustache.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+    // The Google Geocoding API url used to get the JSON data
+    var servicesURL = "";
+
+    $.ajax({
+            url: "https://it.stonybrook.edu/api/v1/services/list?callback=jsonp",
+            //jsonp: "$jsonp",
+            dataType: "jsonp"
+    }).done(function(data) {
+
+
+
+    var serviceList = data.nodes;
+
+    var serviceData = [];
+
+
+
+    $.each(serviceList, function(index, service) {
+
+        console.log(index);
+        console.log(service.node);
+
+        var $service = new Object();
+        $service.title = service.node.title;
+        $service.audience = service.node.field_audience;
+        $service.categories = service.node.field_service_categories;
+
+        $stickers = service.node.field_stickers;
+        $stickers = $stickers.split(", ");
+
+        $stickerArr = [];
+
+        $.each($stickers, function(index, sticker) {
+            console.log(sticker);
+            if(sticker != null && sticker != "") {
+                $sticker = new Object();
+                $sticker.name = sticker;
+
+                $stickerArr.push($sticker);
+            }
+
+        })
+
+        if($stickerArr.length > 0)
+        {
+            $service.stickers = $stickerArr;
+            $service.hasStickers = true;
+        }
+        else {
+            $service.hasStickers = false;
+        }
+
+        var hasStatus = service.node.field_display_status_on;
+
+        if(hasStatus == null || hasStatus == "" || hasStatus.toLowerCase() == "never")
+        {
+            hasStatus = false;
+        }
+        else {
+            hasStatus = true;
+        }
+
+        $service.hasStatus = hasStatus;
+
+
+        $hashtags = service.node.field_hashtags;
+        $hashtags = $hashtags.split(", ");
+
+        $hashtagArr = [];
+
+        $.each($hashtags, function(index, hashtag) {
+            console.log(hashtag);
+            if(hashtag != null && hashtag != "") {
+                $hashtag = new Object();
+                hashtag = hashtag.replace(" ", "");
+                hashtag = "#" + hashtag;
+
+                $hashtag.name = hashtag;
+
+                $hashtagArr.push($hashtag);
+            }
+
+        })
+
+        if($hashtagArr.length > 0)
+        {
+            $service.hashtags = $hashtagArr;
+            $service.hasHashtags = true;
+        }
+        else {
+            $service.hasHashtags = false;
+        }
+
+        
+        $service.url = service.node.path;
+        $service.introduction = service.node.introduction;
+
+        serviceData.push($service);
+
+        console.log($service);
+    })
+
+
+
+    console.log(serviceData);
+
+
+    var template = $("#service-template").html();
+
+    $.get('/placeholders/templates/service-template.mst', function(template) {
+
+        $.each(serviceData, function(index, service){
+            var rendered = Mustache.render(template, service);
+            $(".services").append(rendered);
+        })
+
+    });
+
+
+
+    });
+
+
+
+});
+
+
+$(document).ready(function(){
+    console.log($("#service-filter"));
+
+    $("#service-filter").keyup(function(){
+        console.log("Test");
+        // Retrieve the input field text and reset the count to zero
+        var filter = $(this).val(), count = 0;
+        console.log(filter);
+
+        // Loop through the comment list
+        $(".services .service-card").each(function(){
+
+            // If the list item does not contain the text phrase fade it out
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).show();
+                count++;
+            }
+        });
+
+        // Update the count
+        var numberItems = count;
+        $("#filter-count").text("Number of Icons = "+count);
+    });
+});
+
+</script>
