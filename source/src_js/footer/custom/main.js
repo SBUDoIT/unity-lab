@@ -16,7 +16,7 @@ jQuery(function($) {
 			autoPlay:false,
 			navigationText: ["<i class='sbuicon-arrow-left3'></i>","<i class='sbuicon-arrow-right3'></i>"]
 		});
-		
+
 		$('.main-nav').onePageNav({
 			currentClass: 'active',
 			changeHash: false,
@@ -50,7 +50,14 @@ jQuery(function($) {
 
 	function Adjust(){
 		if(!$('.fixedNav').hasClass("nav-fixed") && loaded)
-			fixed_point = $('.fixedNav').offset().top;
+        {
+            
+            if($('.fixedNav').offset()) {
+                    fixed_point = $('.fixedNav').offset().top;
+            }
+
+        }
+
 	}
 
 
