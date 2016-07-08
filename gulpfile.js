@@ -261,7 +261,11 @@ gulp.task('patternlab', function () {
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
-        baseDir: config.wwwroot
+        baseDir: config.wwwroot,
+        middleware: function (req, res, next) {
+            res.setHeader('Access-Control-Allow-Origin', '*');
+            next();
+        }
     },
     host: 'unity-lab.localhost.stonybrook.edu',
     port: 3000,
