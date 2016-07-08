@@ -23,14 +23,17 @@
 .box-card--subheading {
   font-size: .9em;
   font-weight: 500;
+  margin-top: .5em;
+  display: block;
+  line-height: 1.2em;
 }
 .box-card--content {
     margin-top: 1em;
     margin-bottom: 1em;
 }
 .box-card--cta {
-  font-size: .8em;
-  line-height: 1em;
+  font-size: 1em;
+  line-height: 1.2em;
   text-align: left;
 
     button {
