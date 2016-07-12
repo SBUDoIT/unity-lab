@@ -63,11 +63,11 @@ Fixed position will be removed when back to the top of the page.
     <div class="collapse navbar--fixed__collapse" id="fixedNavCollapse">
 
       <ul class="nav navbar--fixed__links main-nav">
-        <li><a href="#top" class="fixedNavLink scrollto">Top</a></li>
-        <li><a href="#gettingStarted" class="fixedNavLink scrollto">Getting Started</a></li>
-        <li><a href="#studentServices" class="fixedNavLink scrollto">Student Services</a></li>
-        <li><a href="#learningTools" class="fixedNavLink scrollto">Learning Tools</a></li>
-        <li><a href="#gettingHelp" class="fixedNavLink scrollto">Getting Help</a></li>
+        <li><a data-toggle="collapse" data-target="#fixedNavCollapse" href="#top" class="fixedNavLink scrollto">Top</a></li>
+        <li><a data-toggle="collapse" data-target="#fixedNavCollapse" href="#gettingStarted" class="fixedNavLink scrollto">Getting Started</a></li>
+        <li><a data-toggle="collapse" data-target="#fixedNavCollapse" href="#studentServices" class="fixedNavLink scrollto">Student Services</a></li>
+        <li><a data-toggle="collapse" data-target="#fixedNavCollapse" href="#learningTools" class="fixedNavLink scrollto">Learning Tools</a></li>
+        <li><a data-toggle="collapse" data-target="#fixedNavCollapse" href="#gettingHelp" class="fixedNavLink scrollto">Getting Help</a></li>
       </ul>
     </div>
   </div>
@@ -87,24 +87,6 @@ Fixed position will be removed when back to the top of the page.
       <div class="col-md-12 col-sm-12">
         <h2 class="heading text-left">Getting Started</h2>
         <p class="normal-text text-left">This section will help you learn more about Wi-Fi, SOLAR, and NetID.</strong></p>
-      </div>
-
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <div class="box-card no-border bg-x-light-gray" data-match-height="gettingStarted">
-          <div class="box-card--image-wrap">
-            <img class="box-card--image" src="../../placeholders/images/orientation/wifi.jpg" alt="person holding phone with wifi symbol">
-          </div>
-          <div data-match-height="box-card--headings">
-              <h3 class="box-card--heading red">WolfieNet</h3>
-              <h4 class="box-card--subheading">wolfienet.stonybrook.edu</h4>
-          </div>
-          <div class="box-card--content" data-match-height="box-card--content">
-            WolfieNet is Stony Brook University's wireless network on West Campus, Southampton, Manhattan, and parts of East Campus. It is available to all faculty, students, staff, and guests.
-          </div>
-          <div class="box-card--cta">
-            <div class="panelWiFi-btn default-button button-large button-block scrollto">More About Wi-Fi &raquo;</div>
-          </div>
-        </div>
       </div>
 
       <div class="col-md-4 col-sm-12 col-xs-12">
@@ -143,6 +125,26 @@ Fixed position will be removed when back to the top of the page.
         </div>
       </div>
 
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="box-card no-border bg-x-light-gray" data-match-height="gettingStarted">
+          <div class="box-card--image-wrap">
+            <img class="box-card--image" src="../../placeholders/images/orientation/wifi.jpg" alt="person holding phone with wifi symbol">
+          </div>
+          <div data-match-height="box-card--headings">
+              <h3 class="box-card--heading red">WolfieNet</h3>
+              <h4 class="box-card--subheading">wolfienet.stonybrook.edu</h4>
+          </div>
+          <div class="box-card--content" data-match-height="box-card--content">
+            WolfieNet is Stony Brook University's wireless network on West Campus, Southampton, Manhattan, and parts of East Campus. It is available to all faculty, students, staff, and guests.
+          </div>
+          <div class="box-card--cta">
+            <div class="panelWiFi-btn default-button button-large button-block scrollto">More About Wi-Fi &raquo;</div>
+          </div>
+        </div>
+      </div>
+
+
+
       <div class="col-md-12 col-sm-6 col-xs-12">
         <div class="fluffy">
           <div class="text-center text-left-mobile">
@@ -166,20 +168,21 @@ Fixed position will be removed when back to the top of the page.
         <p class="normal-text text-left">This section will help you learn more about Printing, SINC Sites, Hardware/Software.</strong></p>
       </div>
 
+
+
       <div class="col-md-4 col-sm-12 col-xs-12">
         <div class="box-card no-border bg-white" data-match-height="studentServices">
           <div class="box-card--image-wrap">
-            <img class="box-card--image" src="../../placeholders/images/orientation/printing.jpg" alt="person using multifunction printer">
+            <img class="box-card--image" src="../../placeholders/images/orientation/software.jpg" alt="person sitting in front of laptop">
           </div>
           <div data-match-height="box-card--headings">
-              <h3 class="box-card--heading red">Printing</h3>
-              <h4 class="box-card--subheading">printing.stonybrook.edu</h4>
+              <h3 class="box-card--heading red">Software / Hardware</h3>
           </div>
           <div class="box-card--content" data-match-height="box-card--content">
-            Students can print in SINC Sites and other computer labs on campus, or by using Stony Brook's Print From Anywhere service.
+            Enjoy free software titles such as Microsoft Office, and free Windows OS upgrades.
           </div>
           <div class="box-card--cta">
-            <div class="panelPrinting-btn default-button button-large button-block scrollto">More About Printing &raquo;</div>
+            <div class="panelHwSw-btn default-button button-large button-block scrollto">More About Software / Hardware &raquo;</div>
           </div>
         </div>
       </div>
@@ -205,19 +208,21 @@ Fixed position will be removed when back to the top of the page.
       <div class="col-md-4 col-sm-12 col-xs-12">
         <div class="box-card no-border bg-white" data-match-height="studentServices">
           <div class="box-card--image-wrap">
-            <img class="box-card--image" src="../../placeholders/images/orientation/software.jpg" alt="person sitting in front of laptop">
+            <img class="box-card--image" src="../../placeholders/images/orientation/printing.jpg" alt="person using multifunction printer">
           </div>
           <div data-match-height="box-card--headings">
-              <h3 class="box-card--heading red">Software / Hardware</h3>
+              <h3 class="box-card--heading red">Printing</h3>
+              <h4 class="box-card--subheading">printing.stonybrook.edu</h4>
           </div>
           <div class="box-card--content" data-match-height="box-card--content">
-            Enjoy free software titles such as Microsoft Office, and free Windows OS upgrades.
+            Students can print in SINC Sites and other computer labs on campus, or by using Stony Brook's Print From Anywhere service.
           </div>
           <div class="box-card--cta">
-            <div class="panelHwSw-btn default-button button-large button-block scrollto">More About Software / Hardware &raquo;</div>
+            <div class="panelPrinting-btn default-button button-large button-block scrollto">More About Printing &raquo;</div>
           </div>
         </div>
       </div>
+
       <div class="col-md-12 col-sm-6 col-xs-12">
         <div class="fluffy">
           <div class="text-center text-left-mobile">
@@ -249,24 +254,6 @@ Fixed position will be removed when back to the top of the page.
       <div class="col-md-4 col-sm-12 col-xs-12">
         <div class="box-card no-border bg-x-light-gray" data-match-height="learningTools">
           <div class="box-card--image-wrap">
-            <img class="box-card--image" src="../../placeholders/images/orientation/google.jpg" alt="person in front of laptop with google apps logos on screen">
-          </div>
-          <div data-match-height="box-card--headings">
-              <h3 class="box-card--heading red">Google</h3>
-              <h4 class="box-card--subheading">google.stonybrook.edu</h4>
-          </div>
-          <div class="box-card--content" data-match-height="box-card--content">
-            Stony Brook's Google Apps suite of products includes Mail, Calendar, Drive, Contacts, Sites, Groups, Hangouts and a host of other applications to enhance communication and real-time collaboration across campus.
-          </div>
-          <div class="box-card--cta">
-            <div class="panelGoogle-btn default-button button-large button-block scrollto">More About Google &raquo;</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <div class="box-card no-border bg-x-light-gray" data-match-height="learningTools">
-          <div class="box-card--image-wrap">
             <img class="box-card--image" src="../../placeholders/images/orientation/blackboard.jpg" ald="student doing homework in front of laptop">
           </div>
           <div data-match-height="box-card--headings">
@@ -285,10 +272,31 @@ Fixed position will be removed when back to the top of the page.
       <div class="col-md-4 col-sm-12 col-xs-12">
         <div class="box-card no-border bg-x-light-gray" data-match-height="learningTools">
           <div class="box-card--image-wrap">
+            <img class="box-card--image" src="../../placeholders/images/orientation/google.jpg" alt="person in front of laptop with google apps logos on screen">
+          </div>
+          <div data-match-height="box-card--headings">
+              <h3 class="box-card--heading red">Google</h3>
+              <h4 class="box-card--subheading">google.stonybrook.edu</h4>
+          </div>
+          <div class="box-card--content" data-match-height="box-card--content">
+            Stony Brook's Google Apps suite of products includes Mail, Calendar, Drive, Contacts, Sites, Groups, Hangouts and a host of other applications to enhance communication and real-time collaboration across campus.
+          </div>
+          <div class="box-card--cta">
+            <div class="panelGoogle-btn default-button button-large button-block scrollto">More About Google &raquo;</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="box-card no-border bg-x-light-gray" data-match-height="learningTools">
+          <div class="box-card--image-wrap">
             <img class="box-card--image" src="../../placeholders/images/orientation/lynda.jpg" alt="students working together at computer station">
           </div>
           <div data-match-height="box-card--headings">
               <h3 class="box-card--heading red">Lynda.com</h3>
+              <h4 class="box-card--subheading">lynda.stonybrook.edu</h4>
           </div>
           <div class="box-card--content" data-match-height="box-card--content">
             Stony Brook offers Lynda.com as a service. Lynda.com offers high-quality video tutorials for common computer applications and other skills.
@@ -313,6 +321,7 @@ Fixed position will be removed when back to the top of the page.
 <!-- ===========================================================================
   ** End of Learning Tools **
 ============================================================================ -->
+
 
 
 <!-- ===================================================================
@@ -360,6 +369,7 @@ Fixed position will be removed when back to the top of the page.
             <p><span class="sbuicon-phone white"></span>631-632-9602</p>
             <p><span class="sbuicon-envelope-o white"></span>helpme@stonybrook.edu</p>
             <p><span class="sbuicon-bubbles white"></span><a href="http://a.velaro.com/visitor/requestchat.aspx?siteid=4625&showwhen=inqueue" class="white">Chat live &raquo;</a></p>
+            <p><span class="sbuicon-facebook white"></span><a href="http://facebook.com/sincsites" class="white">SINC Sites Facebook &raquo;</a></p>
           </div>
         </div>
       </div>
@@ -367,6 +377,23 @@ Fixed position will be removed when back to the top of the page.
   </div>
 </section>
 
+<section class="bg-black cozy">
+  <div class="container">
+    <div class="row">
+      <div class="display--flex">
+        <div class="col-md-6">
+          <h2 class="white">Win prizes by visiting DoIT's Student Technology table at the 2016 freshman orientation!</h2>
+        </div>
+        <div class="col-md-6">
+          <div class="youtube-container">
+            <div class="youtube-player" data-id="W0qgj29m1n0"></div>
+            <p class="font-alt white">Watch this video to find out more about the prizes you can win.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div>
+</section>
 <!-- ===========================================================================
 
 ** Slideout Panels Content **
@@ -486,8 +513,8 @@ card is selected.
     <div class="slideout-panel-container">
         <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
-            <div class="row">
-              <a href="#0" class="slideout-panel-close">Close</a>
+            <a href="#0" class="slideout-panel-close">Close</a>
+              <div class="row">
               <!-- SOLAR Conent ================================================ -->
               <div class="slideout-panel-content text-center">
                   <h3 class="heading heading-extra-large white noMarginBottom">WolfieNet (Wi-Fi)</h2>
@@ -562,8 +589,8 @@ card is selected.
     <div class="slideout-panel-container">
         <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
-            <div class="row">
-              <a href="#0" class="slideout-panel-close">Close</a>
+            <a href="#0" class="slideout-panel-close">Close</a>
+              <div class="row">
               <!-- SOLAR Conent ================================================ -->
               <div class="slideout-panel-content text-center">
                   <h3 class="heading heading-extra-large white noMarginBottom">NetID</h2>
@@ -642,8 +669,8 @@ card is selected.
     <div class="slideout-panel-container">
         <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
               <div class="row">
-              <a href="#0" class="slideout-panel-close">Close</a>
               <!-- SOLAR Conent ================================================ -->
               <div class="slideout-panel-content text-center">
                   <h3 class="heading heading-extra-large white noMarginBottom">Printing</h2>
@@ -711,8 +738,8 @@ card is selected.
     <div class="slideout-panel-container">
         <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
               <div class="row">
-              <a href="#0" class="slideout-panel-close">Close</a>
               <!-- SOLAR Conent ================================================ -->
               <div class="slideout-panel-content text-center">
                   <h3 class="heading heading-extra-large white noMarginBottom">SINC Sites</h2>
@@ -782,8 +809,8 @@ card is selected.
     <div class="slideout-panel-container">
         <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
-            <div class="row">
-              <a href="#0" class="slideout-panel-close">Close</a>
+            <a href="#0" class="slideout-panel-close">Close</a>
+              <div class="row">
               <!-- SOLAR Conent ================================================ -->
               <div class="slideout-panel-content text-center">
                   <h3 class="heading heading-extra-large white noMarginBottom">Software / Hardware</h2>
@@ -856,8 +883,8 @@ card is selected.
     <div class="slideout-panel-container">
         <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
-            <div class="row">
-              <a href="#0" class="slideout-panel-close">Close</a>
+            <a href="#0" class="slideout-panel-close">Close</a>
+              <div class="row">
               <!-- SOLAR Conent ================================================ -->
               <div class="slideout-panel-content text-center">
                   <h3 class="heading heading-extra-large white noMarginBottom">Mobile Charging Stations</h2>
@@ -916,8 +943,8 @@ card is selected.
     <div class="slideout-panel-container">
         <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
-            <div class="row">
-              <a href="#0" class="slideout-panel-close">Close</a>
+            <a href="#0" class="slideout-panel-close">Close</a>
+              <div class="row">
               <!-- SOLAR Conent ================================================ -->
               <div class="slideout-panel-content text-center">
                   <h3 class="heading heading-extra-large white noMarginBottom">Google Apps</h2>
@@ -981,8 +1008,8 @@ card is selected.
     <div class="slideout-panel-container">
         <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
-            <div class="row">
-              <a href="#0" class="slideout-panel-close">Close</a>
+            <a href="#0" class="slideout-panel-close">Close</a>
+              <div class="row">
               <!-- SOLAR Conent ================================================ -->
               <div class="slideout-panel-content text-center">
                   <h3 class="heading heading-extra-large white noMarginBottom">Blackboard</h2>
@@ -1049,8 +1076,8 @@ card is selected.
     <div class="slideout-panel-container">
         <div class="cozy" style="background-image: url('../../placeholders/images/orientation/redSwooshes.jpg'); background-size: cover;">
           <div class="container">
+            <a href="#0" class="slideout-panel-close">Close</a>
               <div class="row">
-              <a href="#0" class="slideout-panel-close">Close</a>
               <!-- SOLAR Conent ================================================ -->
               <div class="slideout-panel-content text-center">
                   <h3 class="heading heading-extra-large white noMarginBottom">Lynda.com</h2>
@@ -1123,8 +1150,17 @@ Slideout Panel Scripts
 
 ============================================================================ -->
 
+
 <script>
     jQuery(document).ready(function($) {
+
+      $(".navbar-nav li a").click(function (event) {
+// check if window is small enough so dropdown is created
+var toggle = $(".navbar-toggle").is(":visible");
+if (toggle) {
+  $(".navbar-collapse").collapse('hide');
+}
+});
 
         //open SOLAR panel
         $('.panelSOLAR-btn').on('click', function(event) {
