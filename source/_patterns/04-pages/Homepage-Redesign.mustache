@@ -11,9 +11,9 @@
               <div class="search-container default clearfix border-box hidden-md hidden-sm hidden-xs">
         		    <form class="search-wrapper" action="http://stonybrook.edu/search">
           		    <input type="text" id="search-form-query1" name="q" title="Search" value="" class="populate" size="30" placeholder="Search This Site">
-                  <button name="submit" type="submit" class="btn" id="search-form-submit1" alt="Search" aria-label="search">
+                  <!-- <button name="submit" type="submit" class="btn" id="search-form-submit1" alt="Search" aria-label="search">
   	                <span class="sbuicon-search"></span>
-                  </button>
+                  </button> -->
                 </form>
       	      </div>
             <li class="hidden-lg"><a href="#">Search</a></li>
@@ -315,11 +315,51 @@ News & Events Sections
       </div>
     </div>
 
+
+    <div class="cozy">
+      <ul class="pills-tabs">
+        <li class="active"><a href="#tab_a" data-toggle="pill">Services</a></li>
+        <li class=""><a href="#tab_b" data-toggle="pill">System Status</a></li>
+        <li class=""><a href="#tab_c" data-toggle="pill">Scheduled Maintenance</a></li>
+      </ul>
+      <div class="tab-content cozy">
+        <div class="tab-pane active" id="tab_a">
+          <h4 class="heading">SERVICES</h4>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+            ac turpis egestas.</p>
+        </div>
+        <div class="tab-pane" id="tab_b">
+          <h4 class="heading">SYSTEM STATUS</h4>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+          ac turpis egestas.</p>
+        </div>
+        <div class="tab-pane" id="tab_c">
+          <h4 class="heading">SCHEDULED MAINTENANCE</h4>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+          ac turpis egestas.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="divider">
-  <div class="container">
-    <hr class="divider-gray">
-  </div>
-</section>
+<div class="shield-footer fluffy">
+    <div class="container">
+        <div class="row">
+
+            {{# listItems.four }}
+                <div class="col-md-3">
+                    {{> molecules-footer-nav }}
+                </div>
+            {{/ listItems.four }}
+        </div>
+        <div class="row">
+
+            {{# listItems.three }}
+                <div class="col-md-3">
+                    {{> molecules-footer-nav }}
+                </div>
+            {{/ listItems.three }}
+        </div>
+    </div>
+</div>

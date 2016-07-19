@@ -1,7 +1,9 @@
+.search-container {
+  display: inline-block;
+}
 .search-container.default input[type="text"] {
   font-size: 11px;
   height: 21px;
-  margin: 10px 1% 4px 9%;
   box-shadow: none;
   border: 1px solid #ddd;
   background: #ddd;
@@ -381,5 +383,32 @@ a.bold-story--button {
 @media (max-width: 992px) {
   .event-stamp {
     margin-bottom: 1em;
+  }
+}
+
+/* =============================================================================
+
+Tabs as Pills
+
+============================================================================= */
+
+.pills-tabs {
+  @extend .nav;
+  @extend .nav-pills;
+  @extend .nav-justified;
+
+  margin-left: 0 !important;
+  margin-right: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  li a {
+    border: 1px solid #eee;
+    margin-right: 1em;
+
+    &:hover,
+    &:focus {
+      transition: .3s ease all;
+    }
   }
 }
