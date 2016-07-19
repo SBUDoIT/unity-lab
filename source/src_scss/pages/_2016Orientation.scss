@@ -117,9 +117,22 @@ overflow: hidden
 	left: 0;
 	background-image: linear-gradient(to bottom left,#000000,transparent);
 	opacity: .6;
-  z-index: -1;
+  z-index: 1;
 }
-
+.gradient-overlay__topLeft {
+  position: relative;
+}
+.gradient-overlay__topLeft:before {
+  content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#000000,transparent);
+	opacity: .6;
+  z-index: 1;
+}
 .continue-arrow {
   font-size: 3em;
   color: rgba(255, 255, 255, 0.5);

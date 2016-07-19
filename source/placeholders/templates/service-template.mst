@@ -11,25 +11,28 @@
                 <strong class="box-card--subheading">Audience:</strong> {{audience}}
                 <br>
                 {{/audience}}
-                {{# hasStickers }}
-                <strong class="box-card--subheading">Stickers:</strong>
-                {{/ hasStickers }}
 
-                {{# stickers }}
-                 <span class="label label-default">{{name}}</span>
-                {{/ stickers }}
-
-                {{# hasHashtags}}
-                <strong class="box-card--subheading">Hashtags:</strong>
-                {{/ hasHashtags }}
-
-                {{ #hashtags }}
-                        <span class="label label-primary">{{name}}</span>
-                {{ /hashtags }}
             </div>
             <div class="box-card--content">
                 {{introduction}}
             </div>
+
+            {{# hasStickers }}
+            <strong class="box-card--subheading">Stickers:</strong>
+            {{/ hasStickers }}
+
+            {{# stickers }}
+             <span class="label label-default">{{name}}</span>
+            {{/ stickers }}
+
+            {{# hasHashtags}}
+            <strong class="box-card--subheading">Hashtags:</strong>
+            {{/ hasHashtags }}
+
+            {{ #hashtags }}
+                    <span class="label label-primary">{{name}}</span>
+            {{ /hashtags }}
+            <br>
             <div class="box-card--cta">
                 <a href="{{url}}" class="arrow-link">Go to Service Page</a>
             </div>
