@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <div class="service-card box-card no-border noPadding">
             <div>
-                <h3 class="box-card--heading red display--flex">{{title}} {{# hasStatus }}<div class="status-indicator--button bg-emerald" role="alert">NEED SOLUTION</div>{{/hasStatus}}</h3>
+                <h3 class="box-card--heading red display--flex">{{title}} {{# hasStatus }}<div class="status-indicator--button bg-emerald" role="alert">ONLINE</div>{{/hasStatus}}</h3>
                 {{#categories}}
                 <strong class="box-card--subheading">Category:</strong> {{categories}}
                 <br>
