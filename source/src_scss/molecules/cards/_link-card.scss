@@ -2,9 +2,26 @@
 
 	text-align: left;
 	margin-bottom: 2em;
-}
 
+	ul.link-card-item {
+		margin-left: 0;
 
+		li {
+		list-style: none;
+		margin-left: none;
+
+			a {
+				color: $dark-gray;
+
+				&:hover,
+				&:focus {
+					color: $red;
+					transition: .3s ease all;
+				}
+
+			}
+		}
+	}
 	.link-card--icon {
 
 		font-size: 3em;
@@ -13,14 +30,16 @@
 	}
 
 	.link-card--heading {
-		font-size: 1.3em;
+		font-size: 1em;
 		color: $dark-gray;
-		
+		font-family: $font-alt;
+		font-weight: 400;
+
 	}
 
 	.link-card--text {
 
-		
+
 		padding: .2em;
 
 		ul, ul li
@@ -35,4 +54,4 @@
 		}
 
 	}
-
+}
