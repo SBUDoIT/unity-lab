@@ -188,3 +188,14 @@ i.heading-icon {
     display: block;
     margin-bottom: 2em;
 }
+
+
+.bold-introduction-heading {
+  line-height: .8em;
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: 900;
+  color: $red;
+  padding-right: 3rem;
+  margin-bottom: 1rem;
+}
