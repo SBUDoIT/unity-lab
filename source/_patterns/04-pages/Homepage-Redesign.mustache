@@ -1,86 +1,15 @@
-<section class="top-navigation">
-  <div class="container disable-container-mobile">
-    <div class="row no-margin-mobile">
-      <div class="col-md-offset-6">
-        <div class="top-navigation--container">
-          <ul class="horizontal-list ">
-            <li><a href="#" class="">Solar</a></li>
-            <li><a href="#" class="">Blackboard</a></li>
-            <li><a href="#" class="">Google Apps</a></li>
-            <li><a href="#" class="">System Status</a></li>
-              <div class="search-container default clearfix border-box hidden-md hidden-sm hidden-xs">
-        		    <form class="search-wrapper" action="http://stonybrook.edu/search">
-          		    <input type="text" id="search-form-query1" name="q" title="Search" value="" class="populate" size="30" placeholder="Search This Site">
-                  <!-- <button name="submit" type="submit" class="btn" id="search-form-submit1" alt="Search" aria-label="search">
-  	                <span class="sbuicon-search"></span>
-                  </button> -->
-                </form>
-      	      </div>
-            <li class="hidden-lg"><a href="#">Search</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{{> organisms-alert-bar(backcolor:'bg-emerald', excerpt.short:'All systems reported <a href="#">online</a>. If you are experiencing issues, <a href="#">report a problem now</a>.') }}
+
+{{> molecules-quick-nav}}
 
 <div class="page" id="page">
 	{{> organisms-header }}
-  <nav class="unity-navbar">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="unity-navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="unity-nav-icon-bar"></span>
-              <span class="unity-nav-icon-bar"></span>
-              <span class="unity-nav-icon-bar"></span>
-            </button>
-          </div>
-          <div id="navbar" class="unity-navbar-collapse collapse">
-            <ul class="unity-navbar-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">Events</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                <ul class="unity-navbar-dropdown-menu">
-                  <li><a href="#">Services A-Z</a></li>
-                  <li><a href="#">Services by Category</a></li>
-                  <li><a href="#">System Status</a></li>
-                  <li><a href="#">System Status</a></li>
-                </ul>
-              </li>
-              <li><a href="#contact">Projects</a></li>
-              <li><a href="#contact">Help</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </nav>
 
-<section class="bold-story gradient-overlay__topLeft">
-  <img class="" src="../../placeholders/images/bold-story.jpg">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="system-status-bar--online">
-            All systems reported <a href="#">online</a>.
-            If you are experiencing issues, <a href="#">report a problem now</a>.
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="bold-story--content">
-            <h1 class="bold-story--heading">
-              Best In Class<br>
-              Services
-            </h1>
-            <p class="bold-story--text">
-            DoIT takes you far beyond with best in class services and support.
-            </p>
-            <a href="#" class="bold-story--button">Read The Story <span class="bold-story--icon sbuicon-long-arrow-right"></span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
+    {{> molecules-unity-navbar}}
+
+    {{> organisms-far-beyond-hero}}
+
+
 
 <!-- ===========================================================================
 
@@ -130,52 +59,24 @@ News & Events Sections
       <div class="row">
 
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="bold-moves-box" style="background-image: url('../../placeholders/images/thumb-square-fire.jpg')">
-            <a href="#" class="bold-moves-box--title">
-              <h3>New Services Offered</h3>
-            </a>
-            <a href="#" class="bold-moves-box--story">
-              <p>Learn more about DoIT's new services.</p>
-              <span class="bold-moves-box--fullStory">Read Story</span>
-            </a>
-            <a href="#" class="bold-moves-box--link">
-              <span class="bold-moves-box--engaged-text">DoIT News</span>
-              <span class="bold-moves-box--disengaged-text">Read This Story</span>
-            </a>
-          </div>
+
+            {{> molecules-bold-moves-button(img.square.src:'../../placeholders/images/thumb-square-fire.jpg', headline.short:'New Services Offered', excerpt.medium:'Learn more about DoIT's new services.', excerpt.x-small:'DoIT News', headline.x-small:'Read This Story') }}
+
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="bold-moves-box" style="background-image: url('../../placeholders/images/thumb-square-yosemite.jpg')">
-            <a href="#" class="bold-moves-box--title">
-              <h3>News Story Title</h3>
-            </a>
-            <a href="#" class="bold-moves-box--story">
-              <p>News Story Description</p>
-              <span class="bold-moves-box--fullStory">Read Story</span>
-            </a>
-            <a href="#" class="bold-moves-box--link">
-              <span class="bold-moves-box--engaged-text">DoIT News</span>
-              <span class="bold-moves-box--disengaged-text">Read This Story</span>
-            </a>
-          </div>
+
+            {{> molecules-bold-moves-button(img.square.src:'../../placeholders/images/thumb-square-yosemite.jpg', headline.short:'New Services Offered', excerpt.medium:'Learn more about DoIT's new services.', excerpt.x-small:'DoIT News', headline.x-small:'Read This Story') }}
+
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="bold-moves-box" style="background-image: url('../../placeholders/images/thumb-square-gear.jpg')">
-            <a href="#" class="bold-moves-box--title">
-              <h3>News Story Title</h3>
-            </a>
-            <a href="#" class="bold-moves-box--story">
-              <p>News Story Description</p>
-              <span class="bold-moves-box--fullStory">Read Story</span>
-            </a>
-            <a href="#" class="bold-moves-box--link">
-              <span class="bold-moves-box--engaged-text">DoIT News</span>
-              <span class="bold-moves-box--disengaged-text">Read This Story</span>
-            </a>
-          </div>
+
+            {{> molecules-bold-moves-button(img.square.src:'../../placeholders/images/thumb-square-gear.jpg', headline.short:'New Services Offered', excerpt.medium:'Learn more about DoIT's new services.', excerpt.x-small:'DoIT News', headline.x-small:'Read This Story') }}
+
         </div>
+
+
       </div>
     </div>
   </div>
@@ -254,72 +155,11 @@ News & Events Sections
 
     <div class="cozy">
       <div class="row">
-        <div class="col-sm-6 col-md-3 no-padding-right">
-          <div class="event-stamp">
-            <div class="display--flex-mobile">
-              <div class="event-stamp-date">
-                <time datetime="2016-09-01">
-                  <span class="event-stamp-month">September</span>
-                  <span class="event-stamp-day">01</span>
-                </time>
-              </div>
-              <div class="event-stamp-information">
-                <a href="#">Mini Byte: New to Mac</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3 no-padding-right">
-          <div class="event-stamp">
-            <div class="display--flex-mobile">
-              <div class="event-stamp-date">
-                <time datetime="2016-09-01">
-                  <span class="event-stamp-month">October</span>
-                  <span class="event-stamp-day">01</span>
-                </time>
-              </div>
-              <div class="event-stamp-information">
-                <a href="#">Mini Byte: New to Mac</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3 no-padding-right">
-          <div class="event-stamp">
-            <div class="display--flex-mobile">
-              <div class="event-stamp-date">
-                <time datetime="2016-09-01">
-                  <span class="event-stamp-month">November</span>
-                  <span class="event-stamp-day">01</span>
-                </time>
-              </div>
-              <div class="event-stamp-information">
-                <a href="#">Mini Byte: New to Mac</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-3 no-padding-right">
-          <div class="event-stamp">
-            <div class="display--flex-mobile">
-              <div class="event-stamp-date">
-                <time datetime="2016-09-01">
-                  <span class="event-stamp-month">December</span>
-                  <span class="event-stamp-day">01</span>
-                </time>
-              </div>
-              <div class="event-stamp-information">
-                <a href="#">Mini Byte: New to Mac</a>
-              </div>
-            </div>
-          </div>
-        </div>
+          {{>molecules-event-stamp-buttons}}
       </div>
     </div>
   </div>
+
 </section>
 
 <section class="divider">
@@ -342,8 +182,6 @@ News & Events Sections
         </div>
       </div>
     </div>
-
-
     <div class="cozy">
       <ul class="pills-tabs">
         <li class="active"><a href="#tab_a" data-toggle="pill">Services</a></li>
@@ -352,21 +190,206 @@ News & Events Sections
       </ul>
       <div class="tab-content cozy">
         <div class="tab-pane active" id="tab_a">
-          <h4 class="heading">SERVICES</h4>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-            ac turpis egestas.</p>
+          <h4 class="heading">SERVICES BY CATEGORY</h4>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="link-card" data-match-height="hsc">
+              <h2 class="link-card--heading">Accounts and Passwords</h2>
+              <ul class="link-card link-card-item">
+                <li><a class=" " href="/services/netid">NetID</a></li>
+                <li><a class=" " href="/services/single-sign-on-sso">Single Sign On (SSO)</a></li>
+                <li><a class=" " href="/services/solar">SOLAR</a></li>
+              </ul>
+            </div>
+          </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="link-card" data-match-height="hsc">
+            <h2 class="link-card--heading">Business Systems</h2>
+            <ul class="link-card link-card-item">
+              <li><a class=" " href="/services/accessvis">accessVIS</a></li>
+              <li><a class=" " href="/services/aleph">Aleph</a></li>
+              <li><a class=" " href="/services/cbase">CBase</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="tab-pane" id="tab_b">
-          <h4 class="heading">SYSTEM STATUS</h4>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-          ac turpis egestas.</p>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="link-card" data-match-height="hsc"  >
+            <h2 class="link-card--heading">Classrooms and Computer Labs</h2>
+            <ul class="link-card link-card-item">
+              <li><a class=" " href="/services/25live">25Live</a></li>
+              <li><a class=" " href="/services/sinc-sites">SINC Sites</a></li>
+              <li><a class=" " href="/services/classroom-finder">Classroom Finder</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="tab-pane" id="tab_c">
-          <h4 class="heading">SCHEDULED MAINTENANCE</h4>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-          ac turpis egestas.</p>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="link-card" data-match-height="hsc"  >
+            <h2 class="link-card--heading">Email and Collaboration</h2>
+            <ul class="link-card link-card-item">
+              <li><a class=" " href="/services/google-apps">Google Apps</a></li>
+              <li><a class=" " href="/services/electronic-post-office-epo">Electronic Post Office (EPO)</a></li>
+              <li><a class=" " href="/services/sharepoint-online">SharePoint Online</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="link-card" data-match-height="hsc">
+            <h2 class="link-card--heading">Hardware</h2>
+            <ul class="link-card link-card-item">
+              <li><a class=" " href="/services/hardware/faculty-staff-computer-support">Faculty/Staff Computer Support</a></li>
+              <li><a class=" " href="/services/hardware/student-computer-support">Student Computer Support</a></li>
+              <li><a class=" " href="/services/hardware/mobile-device-support">Mobile Device Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="link-card" data-match-height="hsc">
+            <h2 class="link-card--heading">Networking Phones and TV</h2>
+            <ul class="link-card link-card-item">
+              <li><a class=" " href="/services/wolfienet">WolfieNet</a></li>
+              <li><a class=" " href="/services/hbo-go">HBO GO</a></li>
+              <li><a class=" " href="/services/vpn">VPN</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="link-card" data-match-height="hsc">
+            <h2 class="link-card--heading">Printing</h2>
+            <ul class="link-card link-card-item">
+              <li><a class=" " href="/services/printing">Printing</a></li>
+              <li><a class=" " href="/services/sinc-sites">SINC Sites</a></li>
+              <li><a class=" " href="/services/virtual-sinc-site">Virtual SINC Site</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="link-card" data-match-height="hsc">
+            <h2 class="link-card--heading">Servers Storage and Backup</h2>
+            <ul class="link-card link-card-item">
+              <li><a class=" " href="/services/department-shared-folders">Department Shared Folders</a></li>
+              <li><a class=" " href="/services/mysbfiles">MySBfiles</a></li>
+              <li><a class=" " href="/services/virtual-servers">Virtual Servers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="link-card" data-match-height="hsc">
+            <h2 class="link-card--heading">Software</h2>
+            <ul class="link-card link-card-item">
+              <li><a class=" " href="/services/onthehubcom">OnTheHub.com</a></li>
+              <li><a class=" " href="/services/software-catalog">Software Catalog</a></li>
+              <li><a class=" " href="/services/faculty-staff-software-support">Faculty/Staff Software Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="link-card" data-match-height="hsc">
+            <h2 class="link-card--heading">Support Services</h2>
+            <ul class="link-card link-card-item">
+              <li><a class=" " href="/services/audio-visual-services">Audio Visual Services</a></li>
+              <li><a class=" " href="/services/client-support-service-center">Client Support Service Center</a></li>
+              <li><a class=" " href="/services/itsm">ITSM (IT Service Management)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="link-card" data-match-height="hsc">
+            <h2 class="link-card--heading">Teaching and Learning Tools</h2>
+            <ul class="link-card link-card-item">
+              <li><a class=" " href="/services/blackboard">Blackboard</a></li>
+              <li><a class=" " href="/services/lynda">Lynda.com</a></li>
+              <li><a class=" " href="/services/office-365">Office 365</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="link-card" data-match-height="hsc">
+            <h2 class="link-card--heading">Web Services</h2>
+            <ul class="link-card link-card-item">
+              <li><a class=" " href="/services/sb-you">SB You</a></li>
+              <li><a class=" " href="/services/drupal-content-management-system">Drupal Content Management System</a></li>
+              <li><a class=" " href="/services/yammer">Yammer</a></li>
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="tab-pane" id="tab_b">
+      <h4 class="heading">SYSTEM STATUS</h4>
+      <div class="row">
+        <div class="col-md-12">
+
+          <table class="table unity-table">
+            <thead>
+              <tr>
+                <th>System / Service</th>
+                <th class="text-right">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>SOLAR</th>
+                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+              </tr>
+              <tr>
+                <th>Blackboard</th>
+                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+              </tr>
+              <tr>
+                <th>Google Apps</th>
+                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+              </tr>
+              <tr>
+                <th>WolfieNet (Wi-Fi)</th>
+                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+              </tr>
+              <tr>
+                <th>Network (Wired)</th>
+                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+              </tr>
+              <tr>
+                <th>Talent Management System (TMS)</th>
+                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+              </tr>
+              <tr>
+                <th>ITSM (Service Management</th>
+                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+              </tr>
+              <tr>
+                <th>Telephone Systems</th>
+                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+              </tr>
+              <tr>
+                <th>Virtual SINC Site</th>
+                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+              </tr>
+              <tr>
+                <th>SB You<</th>
+                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+              </tr>
+              <tr>
+                <th>PeopleSoft</th>
+                <td class="text-right"><span class="system-status-bar--online-small">Online</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="#">View All System Status &raquo;</th>
+                <th scope="row" class="text-right"><a href="#">Report A Problem &raquo;</th>
+              </tr>
+            </tbody>
+          </table>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="tab-pane" id="tab_c">
+      <h4 class="heading">SCHEDULED MAINTENANCE</h4>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+      ac turpis egestas.</p>
     </div>
   </div>
 </section>

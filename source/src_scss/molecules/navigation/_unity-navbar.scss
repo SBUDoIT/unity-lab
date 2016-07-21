@@ -1,0 +1,123 @@
+
+
+.unity-navbar {
+  @extend .navbar;
+  @extend .navbar-default;
+  @extend .navbar-static-top;
+
+  background-color: #990000;
+  margin-bottom: 0 !important;
+  border: 0 !important;
+
+  .unity-navbar-collapse {
+    @extend .navbar-collapse;
+
+    border: 0 !important;
+  }
+
+  .unity-navbar-toggle {
+    @extend .navbar-toggle;
+    border: 0 !important;
+    border-color: none !important;
+
+    &:hover,
+    &:focus {
+
+      background-color: transparent;
+
+    }
+
+    .unity-nav-icon-bar {
+      @extend .icon-bar;
+      height: 3px;
+      width: 25px;
+      background-color: #f7f7f7 !important;
+    }
+  }
+
+  .unity-navbar-nav {
+    @extend .nav;
+    @extend .navbar-nav;
+
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+
+    > .open > a {
+      background-color: #a00;
+      color: #f7f7f7;
+
+      &:hover,
+      &:focus {
+        background-color: #a00;
+        color: #f7f7f7;
+      }
+    }
+
+    .unity-navbar-dropdown-menu {
+      @extend .dropdown-menu;
+      background-color: #990000;
+
+      li {
+        margin: 0 !important;
+        font-size: 18px;
+        list-style: none;
+
+        a {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #eeeeee;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+
+          &:hover,
+          &:focus,
+          {
+            background-color: #a00;
+            color: #f7f7f7;
+          }
+        }
+      }
+    }
+
+    li.active {
+        background-color: #a00;
+        color: #f7f7f7;
+    }
+    li {
+      margin: 0 !important;
+      font-size: 18px;
+
+      a {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #eeeeee;
+
+        &:hover,
+        &:focus,
+        {
+          background-color: #a00;
+          color: #f7f7f7;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .unity-navbar .unity-navbar-nav > li {
+    box-sizing: border-box;
+    border-top: 1px solid #800;
+  }
+
+  .unity-navbar .unity-navbar-nav .open .unity-navbar-dropdown-menu > li > a {
+
+    color: #eeeeee;
+
+    &:hover,
+    &:focus {
+      background-color: #a00;
+      color: #f7f7f7;
+    }
+  }
+}

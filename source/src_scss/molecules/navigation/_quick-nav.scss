@@ -1,0 +1,128 @@
+.quick-nav--search-container {
+  display: inline-block;
+}
+.quick-nav--search {
+  font-size: 11px;
+  height: 21px;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  background: #ddd;
+  border-radius: 20px;
+  width: 100%;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.quick-nav--search-button .sbuicon-search {
+    margin-top: -2px;
+    display: block;
+}
+
+
+
+.quick-nav--container {
+  background-color: #111;
+  border: 0;
+  border-radius: 0;
+  text-transform: none;
+  font-size: .875em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint($screen-md) {
+
+      padding: .5em;
+      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+      color: $dark-gray;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: .78em;
+      background-color: #fff;
+
+  }
+}
+
+.quick-nav--link {
+
+ color: #ddd;
+
+
+
+    @include breakpoint($screen-md) {
+         color: $dark-gray;
+
+         &:hover,
+         &:focus {
+           color: $red;
+         }
+         &:visited {
+           color: $gray;
+         }
+    }
+
+}
+
+.quick-nav--list li:last-of-type {
+  border-right: 0 !important;
+}
+
+.quick-nav--list {
+      margin-bottom: 0 !important;
+
+
+      @include breakpoint($screen-md) {
+
+          margin: 0 !important;
+          padding: 0 !important;
+
+      }
+
+
+}
+
+.quick-nav--list-item {
+
+    width: 20%;
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid #4b4b4b;
+    text-align: center;
+    margin: 0 -1px 0 -1px;
+    padding: 10px 0;
+
+
+    @include breakpoint($screen-md) {
+
+        display: inline;
+        list-style: none;
+        margin-right: .5em;
+        padding-right: .5em;
+        border-right: 1px solid #ccc;
+
+
+
+    }
+
+    &:hover, &focus {
+
+        background-color: $red;
+
+        .quick-nav--link {
+                color: $white;
+        }
+
+        @include breakpoint($screen-md) {
+            background-color: #fff;
+
+            .quick-nav--link {
+                color: $red;
+            }
+        }
+    }
+
+}
