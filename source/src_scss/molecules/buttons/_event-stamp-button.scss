@@ -3,36 +3,42 @@
   width: 100%;
   margin-bottom: 1em;
   background-color: #fff;
+  box-sizing: border-box;
+  border-top: 2px solid transparent;
 
   &:hover,
   &:focus {
-    background-color: #efefef;
+    background-color: rgba(51,51,51,0.1);
     transition: .3s ease all;
+    border-top: 2px solid $dark-gray;
   }
 
   .event-stamp-button--date {
-    width: 120px;
-    background-color: white;
+    width: 100px;
+    background-color: $dark-gray;
     border: 1px solid $dark-gray;
     margin-right: 1em;
     text-align: center;
     text-transform: uppercase;
+    color: $white;
+    font-family: $font-alt;
 
     .event-stamp-button--month {
       background-color: $dark-gray;
       font-weight: 900;
       color: $white;
       display: inline-block;
-      padding: 5px;
+      padding: 5px 5px 0 5px;
       width: 100%;
     }
     .event-stamp-button--day {
       display: inline-block;
       font-family: $font-alt;
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: 400;
-      color: $dark-gray;
-      padding: 10px 0;
+      color: $white;
+      padding: 0px 10px 10px 10px;
+      background-color: $dark-gray;
     }
   }
 
