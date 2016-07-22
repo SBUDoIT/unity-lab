@@ -2,21 +2,21 @@
 .event-stamp-button {
   width: 100%;
   margin-bottom: 1em;
-  background-color: #fff;
+  background-color: transparent;
   box-sizing: border-box;
   border-top: 2px solid transparent;
 
   &:hover,
   &:focus {
-    background-color: rgba(51,51,51,0.1);
+    background-color: rgba(255,255,255,0.2);
     transition: .3s ease all;
-    border-top: 2px solid $dark-gray;
+    border-top: 2px solid $red;
   }
 
   .event-stamp-button--date {
     width: 100px;
-    background-color: $dark-gray;
-    border: 1px solid $dark-gray;
+    background-color: $red;
+    border: 1px solid $red;
     margin-right: 1em;
     text-align: center;
     text-transform: uppercase;
@@ -24,7 +24,7 @@
     font-family: $font-alt;
 
     .event-stamp-button--month {
-      background-color: $dark-gray;
+      background-color: $red;
       font-weight: 900;
       color: $white;
       display: inline-block;
@@ -38,7 +38,7 @@
       font-weight: 400;
       color: $white;
       padding: 0px 10px 10px 10px;
-      background-color: $dark-gray;
+      background-color: $red;
     }
   }
 
