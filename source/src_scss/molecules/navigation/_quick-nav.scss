@@ -1,7 +1,7 @@
 .quick-nav--search-container {
   display: inline-block;
 }
-.quick-nav--search {
+.quick-nav--search-input {
   font-size: 11px;
   height: 21px;
   box-shadow: none;
@@ -11,6 +11,10 @@
   width: 100%;
   padding-left: 10px;
   display: inline-block;
+}
+//TODO HACKS
+.quick-nav--search-button {
+  display: none;
 }
 
 .quick-nav--search-button .sbuicon-search {
