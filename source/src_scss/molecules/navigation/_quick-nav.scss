@@ -67,24 +67,25 @@
 
 }
 
+
+.quick-nav--list {
+  margin-bottom: 0 !important;
+
+  @include breakpoint($screen-md) {
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+  }
+}
+// Removes default left-margin on ul tag
+ul.quick-nav--list {
+  margin-left: 0 !important;
+}
+
 .quick-nav--list li:last-of-type {
   border-right: 0 !important;
 }
-
-.quick-nav--list {
-      margin-bottom: 0 !important;
-
-
-      @include breakpoint($screen-md) {
-
-          margin: 0 !important;
-          padding: 0 !important;
-
-      }
-
-
-}
-
 .quick-nav--list-item {
 
     width: 20%;
@@ -94,6 +95,7 @@
     text-align: center;
     margin: 0 -1px 0 -1px;
     padding: 10px 0;
+    box-sizing: border-box;
 
 
     @include breakpoint($screen-md) {
@@ -101,8 +103,7 @@
         display: inline;
         list-style: none;
         margin-right: .5em;
-        padding-right: .5em;
-        border-right: 1px solid #ccc;
+        padding: 0 1em;
 
 
 

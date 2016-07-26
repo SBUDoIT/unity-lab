@@ -42,14 +42,35 @@
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 
+    > .active a {
+      color: $white;
+      background-color: rgba(170,0,0,0.5);
+
+      &:hover,
+      &:focus {
+        color: $white;
+        background-color: rgba(170,0,0,1);
+      }
+    }
+
     > .open > a {
-      background-color: #a00;
+      background-color: rgba(170,0,0,0.5);
       color: #f7f7f7;
 
       &:hover,
       &:focus {
-        background-color: #a00;
+        background-color: rgba(170,0,0,1);
         color: #f7f7f7;
+      }
+    }
+
+    // Simple css solution to allow hover dropdown.
+    &:hover .unity-navbar-dropdown-menu {
+      display: block;
+
+      @include breakpoint($screen-md) {
+        display: inline;
+        position: relative;
       }
     }
 

@@ -117,7 +117,7 @@ overflow: hidden
 	left: 0;
 	background-image: linear-gradient(to bottom left,#000000,transparent);
 	opacity: .6;
-  z-index: 1;
+  z-index: -1;
 }
 .gradient-overlay__topLeft {
   position: relative;
@@ -131,7 +131,7 @@ overflow: hidden
 	left: 0;
 	background-image: linear-gradient(to bottom right,#000000,transparent);
 	opacity: .6;
-  z-index: 1;
+  z-index: -1;
 }
 .continue-arrow {
   font-size: 3em;
