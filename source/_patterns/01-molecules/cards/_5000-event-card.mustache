@@ -1,7 +1,5 @@
 <div class="event-card" data-match-height="event-card">
-  <div class="event-card--date-time">
-    {{month.long}} {{day.short}}{{day.ordinal}}, {{year.long}} {{hour.short}}:{{minute.long}} {{hour.ampm }}
-  </div>
+
   <div class="event-card--heading" data-match-height="event-card--heading-wrap">
       <a class="event-card--heading-link" href="{{url}}">{{headline.short}}</a>
   </div>
@@ -18,11 +16,15 @@
     </div>
     {{/ audience }}
 
+    <div class="event-card--date-time">
+      {{month.long}} {{day.short}}{{day.ordinal}}, {{year.long}} {{hour.short}}:{{minute.long}} {{hour.ampm }}
     </div>
-    <div class="event-card--register" data-match-height="event-card--register">
+
+    </div>
+    <!-- <div class="event-card--register" data-match-height="event-card--register">
 
       <a class="event-card--button event-card--registration-button" href="{{url}}">Register</a>
       <a class="event-card--button event-card--add-to-cal-button" href="#">Add To Calendar</a>
 
-    </div>
+    </div> -->
   </div>
