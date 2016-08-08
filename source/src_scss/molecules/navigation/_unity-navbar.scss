@@ -65,12 +65,10 @@
     }
 
     // Simple css solution to allow hover dropdown.
-    &:hover .unity-navbar-dropdown-menu {
-      display: block;
+  &:hover .unity-navbar-dropdown-menu {
 
-      @include breakpoint($screen-md) {
-        display: inline;
-        position: relative;
+    @include breakpoint($screen-md) {
+       display: inherit;
       }
     }
 
