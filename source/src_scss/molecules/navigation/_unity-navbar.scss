@@ -8,6 +8,7 @@
   background-color: #990000;
   margin-bottom: 0 !important;
   border: 0 !important;
+  z-index: 10;
 
   .unity-navbar-collapse {
     @extend .navbar-collapse;
