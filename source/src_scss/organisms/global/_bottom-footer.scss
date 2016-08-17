@@ -4,3 +4,14 @@
   text-align: center;
   color: #fff;
 }
+
+
+.bottom-footer a {
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+}
+
+.bottom-footer a:hover, .bottom-footer a:focus {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
