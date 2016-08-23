@@ -1,4 +1,6 @@
-.social-link {
+.social-links {
+
+a.social-link {
     display: inline-block;
     padding: 10px 10px 0;
     margin: 0 4px;
@@ -12,13 +14,14 @@
     line-height: 0;
     text-shadow: 0 0 4px rgba(70, 70, 70, 0.3);
     color: #ccc;
+
 }
 
-.social-link:hover {
+a.social-link:hover {
     color: #fff;
 }
 
-.social-link:before {
+a.social-link:before {
     margin-right: 0;
     font-family: 'sbu-icons';
     speak: none;
@@ -39,51 +42,52 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.social-link--facebook {
+a.social-link--facebook {
     background-color: $facebook;
     //padding: 12px 12px 0;
 }
 
-.social-link--facebook:before {
+a.social-link--facebook:before {
     content: "\f09a";
 }
 
-.social-link--twitter {
+a.social-link--twitter {
     background-color: $twitter;
 }
 
-.social-link--twitter:before {
+a.social-link--twitter:before {
     content: "\eeed";
 }
 
-.social-link--youtube {
+a.social-link--youtube {
     background-color: $red;
 }
 
-.social-link--youtube:before {
+a.social-link--youtube:before {
     content: "\eef3";
 }
 
-.social-link--flickr {
+a.social-link--flickr {
     background-color: #0063dc;
 }
 
-.social-link--flickr:before {
+a.social-link--flickr:before {
     content: "\f16e";
 }
 
-.social-link--instagram {
+a.social-link--instagram {
     background-color: #3f729b;
 }
 
-.social-link--instagram:before {
+a.social-link--instagram:before {
     content: "\f16d";
 }
 
-.social-link--yammer {
+a.social-link--yammer {
     background-color: $yammer;
 }
 
-.social-link--yammer:before {
+a.social-link--yammer:before {
     content: "\e601";
+}
 }
