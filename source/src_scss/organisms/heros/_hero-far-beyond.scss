@@ -3,8 +3,9 @@
 .hero-far-beyond {
   position: relative;
   background-size: cover;
-  min-height: 350px;
+  //min-height: 350px;
   overflow: hidden;
+  padding: 2.5em 0;
 
   img {
     position: absolute;
@@ -20,19 +21,19 @@
 
 @media (min-width: 1760px) {
 .hero-far-beyond {
-    height: 760px;
+//    height: 760px;
   }
 }
 @media (min-width: 1540px) {
 .hero-far-beyond {
-    height: 700px;
+//    height: 700px;
   }
 }
 
 @media (min-width: 1160px) {
   .hero-far-beyond {
     overflow: hidden;
-    height: 680px;
+//    height: 680px;
   }
 }
 .hero-far-beyond--content {
@@ -48,6 +49,7 @@
   text-transform: uppercase;
   display: block;
   margin-bottom: 2rem;
+  margin-top: 0;
 }
 .hero-far-beyond--text {
   font-family: $font-alt;

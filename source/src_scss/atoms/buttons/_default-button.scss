@@ -1,4 +1,4 @@
-.default-button {
+.default-button, a.default-button {
   display: inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -28,7 +28,13 @@
   }
 }
 
-.default-button__white {
+a.default-button, a.default-button, a.default-button:active
+{
+    color: #fff !important;
+}
+
+
+.default-button__white, a.default-button__white {
   background: $white;
   border: 2px solid white;
   color: $red !important;
