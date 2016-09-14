@@ -1,6 +1,6 @@
 {
   "name": "unity-lab",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "dependencies": {
     "gulp-jshint-html-reporter": "^0.1.2"
   },

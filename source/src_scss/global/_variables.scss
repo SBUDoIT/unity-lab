@@ -21,10 +21,11 @@ $stony-brook-red: $red;
 $dark-red: #890000;
 $alt-red: #aa0000;
 $light-red: #ff9999;
+$dark-blue: #000033;
 
-$gray: #cccccc;
-$dark-gray: #333333;
-$light-gray: #eeeeee;
+$gray: #828282;
+$dark-gray: #4b4b4b;
+$light-gray: #bebebe;
 $x-light-gray: #f6f6f6;
 
 //Supplemental Colors
@@ -49,7 +50,7 @@ $flickr: #ff0084;
 
 $paddingList: ("pudgy" 9em) ("meaty" 8.5em) ("portly" 8em) ("hefty" 7.5em) ("bulky" 7em) ("beefy", 6.5em) ("fluffy" 6em) ("cushy" 5em) ("airy" 4.5em) ("spacey" 4em) ("comfy" 3em) ("homey" 2.5em) ("cozy" 2em) ("narrow" 1.5em) ("snug" 1em) ("compact" 1.5em) ("tight" 0em);
 
-$darkColorsList: ("black" $black) ("red" $red) ("dark-red" $dark-red) ("dark-gray" $dark-gray) ("asphalt" $asphalt) ("alizarin" $alizarin) ("amethyst" $amethyst) ("emerald" $emerald) ("pom" $pom) ("river" $river) ("turquoise" $turquoise) ("facebook" $facebook) ("twitter" $twitter) ("youtube" $youtube) ("google-plus" $google-plus) ("yammer" $yammer) ("tumblr" $tumblr) ("instagram" $instagram) ("flickr" $flickr);
+$darkColorsList: ("black" $black) ("red" $red) ("dark-red" $dark-red) ("dark-blue" $dark-blue) ("dark-gray" $dark-gray) ("asphalt" $asphalt) ("alizarin" $alizarin) ("amethyst" $amethyst) ("emerald" $emerald) ("pom" $pom) ("river" $river) ("turquoise" $turquoise) ("facebook" $facebook) ("twitter" $twitter) ("youtube" $youtube) ("google-plus" $google-plus) ("yammer" $yammer) ("tumblr" $tumblr) ("instagram" $instagram) ("flickr" $flickr);
 
 //$darkColorsList: black red dark-red dark-gray asphalt alizarin amethyst emerald pom river turquoise facebook twitter youtube google-plus yammer tumblr instagram flickr x-light-gray;
 //$darkColorsList-vars: $black $red $dark-red $dark-gray $asphalt $alizarin $amethyst $emerald $pom $river $turquoise $facebook $twitter $youtube $google-plus $yammer $tumblr $instagram $flickr $x-light-gray;
@@ -282,7 +283,7 @@ $input-bg: white !default;
 $input-bg-disabled: $gray-lighter !default;
 
 //** Text color for `<input>`s
-$input-color: $gray !default;
+$input-color: $dark-gray !default;
 
 //** `<input>` border color
 $input-border: #cccccc !default;
