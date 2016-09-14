@@ -4,6 +4,18 @@
     list-style-type: none;
 }
 
+ul.icon-list {
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+}
+
+ul.icon-list li {
+    text-indent: -2em;
+    list-style: none;
+    margin-left: 1.5em;
+    margin-top: 0;
+}
 
 ul.star-bullets {
     @extend .no-bullets;

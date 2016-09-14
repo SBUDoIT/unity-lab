@@ -41,7 +41,7 @@
 			easing: 'swing',
 			filter: '',
 			scrollSpeed: 750,
-			scrollThreshold: 0.5,
+			scrollThreshold: 0.2,
 			begin: false,
 			end: false,
 			scrollChange: false
@@ -199,7 +199,20 @@
 		},
 
 		scrollTo: function(target, callback) {
-			var offset = $(target).offset().top;
+
+            var additionalOffset = 50;
+            console.log(target);
+            console.log($(target).offset().top);
+
+            if(!$('#jump-nav').hasClass('nav-fixed')) {
+                additionalOffset=150;
+            }
+
+            console.log(additionalOffset);
+
+            var offset = $(target).offset().top-additionalOffset;
+
+
 
 			$('html, body').animate({
 				scrollTop: offset
