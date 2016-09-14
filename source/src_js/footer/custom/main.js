@@ -51,7 +51,7 @@ jQuery(function($) {
 	function Adjust(){
 		if(!$('.fixedNav').hasClass("nav-fixed") && loaded)
         {
-            
+
             if($('.fixedNav').offset()) {
                     fixed_point = $('.fixedNav').offset().top;
             }
@@ -60,23 +60,6 @@ jQuery(function($) {
 
 	}
 
-
-
-	// Scrolling
-	$('a.scrollto').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $("[name='" + this.hash.slice(1) +"']");
-			if (target.length) {
-
-				$('.mobile-nav').removeClass('active');
-				$('html,body').animate({
-					scrollTop: target.offset().top
-				}, 1000);
-				return false;
-			}
-		}
-	});
 });
 
 

@@ -17,19 +17,19 @@
     background-color: $red;
     padding: 1em;
 }
-.event-card--heading-link {
+.event-card--heading-link, a.event-card--heading-link {
   color: $white;
 
   &:hover,
   &:focus {
-    color: $red;
+    color: $white;
     transition: .3s ease all;
   }
   &:visited {
-    color: $dark-gray;
+    color: $white;
   }
   &:visited:hover {
-    color: $red;
+    color: $white;
   }
 }
 
@@ -52,21 +52,31 @@
    @extend .sbuicon;
     color: $red;
     content: "\ea4d";
-    margin-right: 1em;
+    float: left;
+    width: 2em;
+    text-indent: -2em;
+    margin-top: 0.2em;
 }
 
 .event-card--map:before {
     @extend .sbuicon;
     color: $red;
     content: "\ea38";
-    margin-right: 1em;
+
+    float: left;
+    width: 2em;
+    text-indent: -2em;
+    margin-top: 0.2em;
 }
 
 .event-card--audience:before {
     @extend .sbuicon;
     color: $red;
     content: "\eaf4";
-    margin-right: 1em;
+    float: left;
+    width: 2em;
+    text-indent: -2em;
+    margin-top: 0.2em;
 }
 
 .event-card--register {
