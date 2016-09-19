@@ -31,13 +31,14 @@ h1.site-name {
     display: block;
     width: 100%;
     text-align: center;
-    font-family: 'CenturyExpandedLTW01-Ro';
+    font-family: $font;
     font-weight: 400;
     text-transform: none;
     color: #000;
+    margin-top: 19px !important;
 
     @include breakpoint($screen-md) {
-        font-size: 3.3em;
+        font-size: 2em;
         float: left;
         width: auto;
         display: inline-block;
@@ -47,12 +48,12 @@ h1.site-name {
 
     a {
         color: #000;
-        font-family: 'CenturyExpandedLTW01-Ro';
+        font-family: $font;
         margin: 0 0 20px;
         padding: 0 10px;
 
         @include breakpoint($screen-md) {
-            font-size: 26px;
+
             width: 585px;
             text-align: left;
             margin: 7px 0 0;
@@ -198,4 +199,8 @@ i.heading-icon {
   color: $red;
   padding-right: 3rem;
   margin-bottom: 1rem;
+}
+
+.section-heading {
+    margin-bottom: 1em;
 }

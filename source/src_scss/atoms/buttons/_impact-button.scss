@@ -38,4 +38,7 @@
     &:active {
         background: $red;
     }
+    &:visited {
+        color: $white;
+    }
 }
