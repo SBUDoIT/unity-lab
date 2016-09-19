@@ -8,10 +8,11 @@
 
 .bottom-footer a {
     color: #fff;
-    border-bottom: 1px dashed #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .bottom-footer a:hover, .bottom-footer a:focus {
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: $light-gray;
+    border-bottom: 1px solid $light-gray;
+
 }
