@@ -1,51 +1,65 @@
-.simple-blurb-card {
+.bar-card {
     /* padding: 2em; */
     margin-bottom: 2em;
   }
 
-.simple-blurb-card--icon {
-    @extend .card--icon;
+.bar-card--icon {
+    font-size: 1em;
+    display: inline;
 }
 
-.simple-blurb-card--image {
+.bar-card--image {
 	@extend .card--image;
 	/* padding: 10px; */
 	/* border: 1px solid #eee; */
 	/* margin-bottom: 15px; */
 }
 
-.simple-blurb-card--heading {
+.bar-card--heading {
     /* @extend .card--heading; */
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1em;
+    color: $red;
+    font-size: 1.25em;
+
 }
 
-.simple-blurb-card--subheading {
+.bar-card--subheading {
     @extend .card--subheading;
     line-height: 1em !important;
+    font-size: 1.1em;
 }
 
-.simple-blurb-card--text {
+.bar-card--text {
     /* @extend .card--text; */
     font-size: 1em;
     line-height: 1.5em;
 }
 
-.simple-blurb-card--cta {
+.bar-card--cta {
     @extend .card--cta;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
-.simple-blurb-card--video-container {
+.bar-card--video-container {
 	@extend .embed-responsive;
 	@extend .embed-responsive-16by9;
 
-	border: 1px solid #eee;
+    border-bottom: 1em solid $red;
+    margin-bottom: 1em;
+
 }
 
-.simple-blurb-card--video {
+.bar-card--image {
+    border-bottom: 1em solid $red;
+    margin-bottom: 1em;
+
+}
+
+.bar-card--video {
 	@extend .embed-responsive-item;
 
-	padding: 10px;
+	padding: 0;
 	margin-bottom: 15px;
+
 }
