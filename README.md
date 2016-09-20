@@ -1,62 +1,49 @@
-## About Pattern Lab
-- [Pattern Lab Website](http://patternlab.io/)
-- [About Pattern Lab](http://patternlab.io/about.html)
-- [Documentation](http://patternlab.io/docs/index.html)
-- [Demo](http://demo.patternlab.io/)
+## About Unity Lab
+The purpose of this project is to provide a set of flexible and reusable UI components designed to work across browsers, devices and screen sizes. This project is meant to be platform agnostic, meaning it should work equally well across different CMS platforms as well as on static sites.
 
-The PHP version of Pattern Lab is, at its core, a static site generator. It combines platform-agnostic assets, like the [Mustache](http://mustache.github.io/)-based patterns and the JavaScript-based viewer, with a PHP-based "builder" that transforms and dynamically builds the Pattern Lab site. By making it a static site generator, Pattern Lab strongly separates patterns, data, and presentation from build logic. 
+The project is maintained by DoIT Communications staff, primiarly for use on projects we manage, but we see value in sharing our work and collaborating with the University at large as such we will make regular releases and keep the source code available through our GitHub.
+
+We use a variety of open source technologies and methodologies to help keep us inline with industry and design trends. These technologies include: SASS, GULP, Pattern Lab, Web Fonts and several opensource CSS and JS Libraries including Bootstrap, AnimateCSS, and Breakpoint.
 
 ## Demo
+You can learn more about the Unity Project, play with our Pattern Lab and get links to sites using it at: https://unity.it.stonybrook.edu
 
-You can play with a demo of the front-end of Pattern Lab at [demo.patternlab.io](http://demo.patternlab.io).
+## Requirements
+
+* GIT
+* NodeJS v5.7.1
+* NPM 3.6.0
 
 ## Getting Started
 
-* [Requirements](http://patternlab.io/docs/requirements.html)
-* [Installing the PHP Version of Pattern Lab](http://patternlab.io/docs/installation.html)
-* [Upgrading the PHP Version of Pattern Lab](http://patternlab.io/docs/upgrading.html)
-* [Generating the Pattern Lab Website for the First Time](http://patternlab.io/docs/first-run.html)
-* [Editing the Pattern Lab Website Source Files](http://patternlab.io/docs/editing-source-files.html)
-* [Using the Command-line Options](http://patternlab.io/docs/command-line.html)
-* [Command Prompt on Windows](http://patternlab.io/docs/command-prompt-windows.html)
+* Clone Repository
+* Run NPM Install in main folder
+* Run gulp serve
 
-## Working with Patterns
 
-Patterns are the core element of Pattern Lab. Understanding how they work is the key to getting the most out of the system. Patterns use [Mustache](http://mustache.github.io/) so please read [Mustache's docs](http://mustache.github.io/mustache.5.html) as well.
 
-* [How Patterns Are Organized](http://patternlab.io/docs/pattern-organization.html)
-* [Adding New Patterns](http://patternlab.io/docs/pattern-add-new.html)
-* [Reorganizing Patterns](http://patternlab.io/docs/pattern-reorganizing.html)
-* [Including One Pattern Within Another via Partials](http://patternlab.io/docs/pattern-including.html)
-* [Managing Assets for a Pattern: JavaScript, images, CSS, etc.](http://patternlab.io/docs/pattern-managing-assets.html)
-* [Modifying the Pattern Header and Footer](http://patternlab.io/docs/pattern-header-footer.html)
-* [Using Pseudo-Patterns](http://patternlab.io/docs/pattern-pseudo-patterns.html)
-* [Using Pattern Parameters](http://patternlab.io/docs/pattern-parameters.html)
-* [Using Pattern State](http://patternlab.io/docs/pattern-states.html)
-* ["Hiding" Patterns in the Navigation](http://patternlab.io/docs/pattern-hiding.html)
-* [Adding Annotations](http://patternlab.io/docs/pattern-adding-annotations.html)
-* [Viewing Patterns on a Mobile Device](http://patternlab.io/docs/pattern-mobile-view.html)
+## Project Layout
 
-## Creating & Working With Dynamic Data for a Pattern
+### .cert -- Self signed cert to allow the pattern lab to be delivered over HTTPS. Certs may need to be added to certificate store
+### config -- Pattern Lab Configuration Files. Do not edit
+### core -- Pattern Lab Core Files. Do not edit
+### extras -- Pattern Lab Folder. Not Required. Do not edit
+### node_modules -- dependencies loaded from running npm install. No need to edit
+### public -- This is where the compiled HTML, CSS and JS gets copied / served. Do not edit the files in here.
+### releases -- When a new release is cut, the compiled assets get copied here in a versioned folder
+### Source
+* \_data -- Folder that contains sample data and other json objects used to generate SASS and the library.
+* \_patterns -- Folder that contains the HTML/Mustache Templates used to generate Pattern Lab
+* placeholders -- Images, video and other media used in templates but not meant to be included in library.
+* src_fonts -- Web Fonts / Icon Sets Included in Project
+* src_images -- Images that are meant to be included and distributed in library. Typically logos, favicons, backgrounds, textures, icons and other common UI imagery
+* src_js -- Javascript files and libraries split into header/footer sub folders based on where the JS can be included.
+* src_scss -- SASS based CSS files and libraries
+### Vendor -- Composer based folder for downloading required PHP Libraries. Do Not Edit. May not be included.
 
-The PHP version of Pattern Lab utilizes Mustache as the template language for patterns. In addition to allowing for the [inclusion of one pattern within another](http://patternlab.io/docs/pattern-including.html) it also gives pattern developers the ability to include variables. This means that attributes like image sources can be centralized in one file for easy modification across one or more patterns. The PHP version of Pattern Lab uses a JSON file, `source/_data/data.json`, to centralize many of these attributes.
+## Important Files
 
-* [Introduction to JSON & Mustache Variables](http://patternlab.io/docs/data-json-mustache.html)
-* [Overriding the Central `data.json` Values with Pattern-specific Values](http://patternlab.io/docs/data-pattern-specific.html)
-* [Linking to Patterns with Pattern Lab's Default `link` Variable](http://patternlab.io/docs/data-link-variable.html)
-* [Creating Lists with Pattern Lab's Default `listItems` Variable](http://patternlab.io/docs/data-listitems.html)
-
-## Using Pattern Lab's Advanced Features
-
-By default, the Pattern Lab assets can be manually generated and the Pattern Lab site manually refreshed but who wants to waste time doing that? Here are some ways that Pattern Lab can make your development workflow a little smoother:
-
-* [Watching for Changes and Auto-Regenerating Patterns](http://patternlab.io/docs/advanced-auto-regenerate.html)
-* [Auto-Reloading the Browser Window When Changes Are Made](http://patternlab.io/docs/advanced-reload-browser.html)
-* [Multi-browser & Multi-device Testing with Page Follow](http://patternlab.io/docs/advanced-page-follow.html)
-* [Keyboard Shortcuts](http://patternlab.io/docs/advanced-keyboard-shortcuts.html)
-* [Special Pattern Lab-specific Query String Variables ](http://patternlab.io/docs/pattern-linking.html)
-* [Preventing the Cleaning of public/](http://patternlab.io/docs/advanced-clean-public.html)
-* [Generating CSS](http://patternlab.io/docs/advanced-generating-css.html)
-* [Modifying the Pattern Lab Nav](http://patternlab.io/docs/advanced-pattern-lab-nav.html)
-* [Editing the config.ini Options](http://patternlab.io/docs/advanced-config-options.html)
-* [Integration with Compass](http://patternlab.io/docs/advanced-integration-with-compass.html)
+* gulpfile.js -- This is the gulp script that compiles our SASS to CSS, aggregates our JS, minifies our production files and acts as our build process. You shouldn't edit this.
+* gulp.config.json / gulp.config.local.json -- Editable configuration that feeds into gulp process
+* composer.json -- Node Packages and versions required for this project. Don't edit.
+* .gitignore -- Configured to not include compiled assets into repository.
