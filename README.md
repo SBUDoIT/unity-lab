@@ -24,14 +24,21 @@ You can learn more about the Unity Project, play with our Pattern Lab and get li
 
 ## Project Layout
 
-### .cert -- Self signed cert to allow the pattern lab to be delivered over HTTPS. Certs may need to be added to certificate store
-### config -- Pattern Lab Configuration Files. Do not edit
-### core -- Pattern Lab Core Files. Do not edit
-### extras -- Pattern Lab Folder. Not Required. Do not edit
-### node_modules -- dependencies loaded from running npm install. No need to edit
-### public -- This is where the compiled HTML, CSS and JS gets copied / served. Do not edit the files in here.
-### releases -- When a new release is cut, the compiled assets get copied here in a versioned folder
-### Source
+### .cert
+Self signed cert to allow the pattern lab to be delivered over HTTPS. Certs may need to be added to certificate store
+### config
+Pattern Lab Configuration Files. Do not edit
+### core
+Pattern Lab Core Files. Do not edit
+### extras
+Pattern Lab Folder. Not Required. Do not edit
+### node_modules
+Dependencies loaded from running npm install. No need to edit
+### public
+This is where the compiled HTML, CSS and JS gets copied / served. Do not edit the files in here.
+### releases
+When a new release is cut, the compiled assets get copied here in a versioned folder
+### source
 * \_data -- Folder that contains sample data and other json objects used to generate SASS and the library.
 * \_patterns -- Folder that contains the HTML/Mustache Templates used to generate Pattern Lab
 * placeholders -- Images, video and other media used in templates but not meant to be included in library.
@@ -39,7 +46,8 @@ You can learn more about the Unity Project, play with our Pattern Lab and get li
 * src_images -- Images that are meant to be included and distributed in library. Typically logos, favicons, backgrounds, textures, icons and other common UI imagery
 * src_js -- Javascript files and libraries split into header/footer sub folders based on where the JS can be included.
 * src_scss -- SASS based CSS files and libraries
-### Vendor -- Composer based folder for downloading required PHP Libraries. Do Not Edit. May not be included.
+### vendor
+Composer based folder for downloading required PHP Libraries. Do Not Edit. May not be included.
 
 ## Important Files
 
