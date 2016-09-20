@@ -34,6 +34,19 @@
       width: 25px;
       background-color: #f7f7f7 !important;
     }
+
+    .unity-navbar-toggle--button-hamburger {
+        display: inline-block;
+    }
+
+    .unity-navbar-toggle--button-text {
+        color: #fff;
+        margin-left: 0.25em;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.5em;
+        display: inline-block;
+    }
   }
 
   ul.unity-navbar-nav {

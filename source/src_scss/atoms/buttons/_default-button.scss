@@ -1,4 +1,4 @@
-.default-button, a.default-button {
+.default-button, a.default-button, .simple-btn, a.simple-btn {
   display: inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,6 +8,8 @@
   font-weight: normal;
   font-size: inherit;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
   cursor: pointer;
   border-radius: 2px;
   @extend .button-trans;
@@ -28,7 +30,7 @@
   }
 }
 
-a.default-button, a.default-button, a.default-button:active
+a.default-button, a.default-button, a.default-button:active, a.simple-btn, a.simple-btn, a.simple-btn:active
 {
     color: #fff !important;
 }
