@@ -12,12 +12,16 @@ You can learn more about the Unity Project, play with our Pattern Lab and get li
 
 * GIT
 * NodeJS v5.7.1
+* PHP 5 or 7 (Recommend installing XAMPP)
 * NPM 3.6.0
+* GULP Installed Globally: npm install --global gulp
 
 ## Getting Started
 
 * Clone Repository
-* Run NPM Install in main folder
+* Rename local gulp config example file: gulp.config.local.json.example to gulp.config.local.json
+* Run npm install in main folder
+* Add host entry for unity-lab.localhost.stonybrook.edu
 * Run gulp serve
 
 
