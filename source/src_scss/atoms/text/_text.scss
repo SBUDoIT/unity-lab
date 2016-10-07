@@ -1,3 +1,17 @@
+.font-secondary {
+    font-family: $font-secondary;
+}
+
+.font-small {
+    font-size: 0.8em;
+}
+
+body {
+    font-family: $font;
+}
+
+
+
 .font-default{
   font-family: $font;
   font-weight: normal;
