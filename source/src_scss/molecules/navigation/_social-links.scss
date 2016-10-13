@@ -20,11 +20,13 @@ a.social-link {
     line-height: 0;
     text-shadow: 0 0 4px rgba(70, 70, 70, 0.3);
     color: #ccc;
+    text-decoration: none;
 
 }
 
 a.social-link:hover {
     color: #fff;
+    text-decoration: none;
 }
 
 a.social-link:before {
