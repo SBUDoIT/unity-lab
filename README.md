@@ -20,6 +20,7 @@ You can learn more about the Unity Project, play with our Pattern Lab and get li
 
 * Clone Repository
 * Rename local gulp config example file: gulp.config.local.json.example to gulp.config.local.json
+* Create a folder called public in the root of the project. Copy the styleguide folder from /core into this public folder.
 * Run npm install in main folder
 * Add host entry for unity-lab.localhost.stonybrook.edu
 * Run gulp serve
