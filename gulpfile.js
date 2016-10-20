@@ -86,7 +86,7 @@ gulp.task('release', function (callback) {
 
 gulp.task('copy:release', function() {
     var pkg = require('./package.json');
-    gulp.src(config.release.src)
+    gulp.src(config.release.complete_src)
         .pipe(gulp.dest(config.release.dest + "/" + pkg.version + "/" + pkg.version + "-pattern-lab"))
         .pipe(zip(pkg.version + "-pattern-lab.zip"))
         .pipe(gulp.dest(config.release.dest + "/" + pkg.version));
@@ -98,7 +98,7 @@ gulp.task('copy:distribute', function() {
     var pkg = require('./package.json');
   var dest = config.release.dest + "/" + pkg.version + "/" + pkg.version + "-distribute/";
 
-   var stream = gulp.src(localconfig.projects.src, {base: localconfig.projects.base })
+   var stream = gulp.src(config.release.distribute_src, {base: config.release.base })
                     .pipe(gulp.dest(dest))
                     .pipe(zip(pkg.version + "-distribute.zip"))
                     .pipe(gulp.dest(config.release.dest + "/" + pkg.version));
