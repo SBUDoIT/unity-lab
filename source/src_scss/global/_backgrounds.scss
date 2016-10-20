@@ -188,12 +188,12 @@
 }
 
 .overlay-white {
-    @extend .section-dark-theme;
+    @include section-dark-theme;
     position: relative;
 }
 
 .overlay-black:before {
-    @extend .section-light-theme;
+    @include section-light-theme;
     position: absolute;
     display: block;
     content: " ";
@@ -209,7 +209,7 @@
 }
 
 .overlay-dark-gray:before {
-    @extend .section-light-theme;
+    @include section-light-theme;
     position: absolute;
     display: block;
     content: " ";
@@ -240,7 +240,7 @@
 }
 
 .overlay-red:before {
-    @extend .section-light-theme;
+    @include section-light-theme;
     position: absolute;
     content: " ";
     top: 0;
@@ -253,7 +253,7 @@
 }
 
 .overlay-river:before {
-    @extend .section-light-theme;
+    @include section-light-theme;
     position: absolute;
     content: " ";
     top: 0;
@@ -266,7 +266,7 @@
 }
 
 .overlay-turquoise:before {
-    @extend .section-light-theme;
+    @include section-light-theme;
     position: absolute;
     content: " ";
     top: 0;
@@ -279,7 +279,7 @@
 }
 
 .overlay-white:before {
-    @extend .section-light-theme;
+    @include section-light-theme;
     position: absolute;
     display: block;
     content: " ";

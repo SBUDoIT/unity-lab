@@ -40,7 +40,8 @@
 
             li > a:after {
                 @include breakpoint($screen-lg) {
-                    @extend .sbuicon;
+                    //TODO FIGURE THIS OUT.
+                    //@extend .sbuicon;
                     content: "\edc6";
                     margin-left: 5px;
                     top: 1px;
@@ -134,7 +135,8 @@
 
             li.expanded > a:after {
                 @include breakpoint($screen-lg) {
-                    @extend .sbuicon;
+                    //TODO: FIGURE THIS OUT
+                    //@extend .sbuicon;
                     content: "\edc6";
                     margin-left: 5px;
                     top: 1px;
