@@ -12,7 +12,7 @@ You can learn more about the Unity Project, play with our Pattern Lab and get li
 
 * GIT
 * NodeJS v5.7.1
-* PHP 5 or 7 (Recommend installing XAMPP)
+* PHP 5 or 7 You can use either XAMPP or install php directly. Make sure its added to your PATH For windows, use thread safe(Recommend installing XAMPP)
 * NPM 3.6.0
 * GULP Installed Globally: npm install --global gulp
 
@@ -20,9 +20,11 @@ You can learn more about the Unity Project, play with our Pattern Lab and get li
 
 * Clone Repository
 * Rename local gulp config example file: gulp.config.local.json.example to gulp.config.local.json
+* Create a folder called public in the root of the project. Copy the styleguide folder from /core into this public folder.
 * Run npm install in main folder
 * Add host entry for unity-lab.localhost.stonybrook.edu
 * Run gulp serve
+* Add Certificate to Certifcate store / trust the cert.  You should add the CA Cert to Trusted Root Certification Authority
 
 
 

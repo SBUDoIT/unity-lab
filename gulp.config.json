@@ -55,8 +55,10 @@
    },
 
    "release": {
-       "src": "./public/**/*",
-       "dest": "./releases"
+       "complete_src": "./public/**/*",
+       "distribute_src": ["./public/css/**/*", "./public/js/**/*", "./public/fonts/**/*", "./public/images/**/*" ],
+       "dest": "./releases",
+       "base": "./public"
    }
 
 }
