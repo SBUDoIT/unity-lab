@@ -1,0 +1,16 @@
+.news-item-link {
+      border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+    font-family: 'CenturyExpandedLTW01-Ro';
+    font-size: 1.2em;
+    line-height: 1.35em;
+    color: $black;
+}
+
+.news-item-link a, .news-item-link a:visited {
+  color: $black;
+}
+
+.news-item-link a:hover, .news-item-link a:focus {
+  color: $red;
+}

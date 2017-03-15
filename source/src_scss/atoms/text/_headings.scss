@@ -204,3 +204,25 @@ i.heading-icon {
 .section-heading {
     margin-bottom: 1em;
 }
+
+
+.stripes-heading {
+    background: #900;
+    background: url(../images/backgrounds/farbeyond-stripes/red-rays-full.jpg) 0 0 no-repeat;
+    background-size: cover;
+    color: #fff;
+    letter-spacing: 0.005em;
+    //font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    line-height: 1em;
+    text-rendering: optimizeLegibility;
+    font-family: 'Museo Slab W01';
+    padding: 16px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 10px;
+}

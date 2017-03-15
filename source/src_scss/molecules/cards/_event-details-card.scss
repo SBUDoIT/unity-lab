@@ -1,0 +1,92 @@
+
+.event-details-card {
+  width: 100%;
+  margin-bottom: 1em;
+  background-color: transparent;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+
+ 
+}
+
+a.event-details-card, a.event-details-card:visited {
+  color: $red;
+  text-decoration: none;
+
+  display: block;
+}
+
+a.event-details-card:hover {
+  background-color: #eee;
+}
+
+.event-details-card--wrap {
+      display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: flex-start; 
+    -ms-flex-align: flex-start; 
+    align-items: flex-start; 
+}
+
+  .event-details-card--date {
+    width: 18%;
+    max-width: 80px;
+    min-width: 64px;
+    background-color: $white;
+    border: 2px solid $red;
+    margin-right: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $red;
+    font-family: $font-alt;
+    padding: 6px;
+
+}
+
+.event-details-card--month {
+  background-color: $white;
+  
+  color: $red;
+
+  
+  
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-family: 'Effra W01';
+    font-weight: 700;
+}
+
+.event-details-card--day {
+    
+  color: $red;
+  background-color: $white;
+
+      
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'CenturyExpandedLTW01-Ro';
+    font-size: 2.1rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-family: 'Effra W01';
+    font-weight: 700;
+}
+
+
+.event-details-card--text {
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+    font-family: 'Effra W01';
+    font-weight: 700;
+}
+
